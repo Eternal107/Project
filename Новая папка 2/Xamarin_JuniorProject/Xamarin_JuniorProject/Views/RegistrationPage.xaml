@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_JuniorProject.Views.RegistrationPage"
+             Title="{Binding Title}">
+    
+        
+            
+        
+        <StackLayout VerticalOptions="Center" >
+            <Label Text="Name" />
+            <Entry  Text="{Binding Name}" Placeholder="Name" />
+            <Label Text="Username" />
+            <Entry  Text="{Binding Login}" Placeholder="username" />
+            <Label Text="Password" />
+            <Entry Text="{Binding Password}" IsPassword="true" Placeholder="Password" />
+            <Button Text="Register" Command="{Binding ToTabbedPage}" />
+           
+        </StackLayout>
+        
+   
+</ContentPage>

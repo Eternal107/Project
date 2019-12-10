@@ -1,0 +1,13 @@
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/bin/Debug/netstandard2.0/Xamarin_JuniorProject.deps.json
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/bin/Debug/netstandard2.0/Xamarin_JuniorProject.dll
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/bin/Debug/netstandard2.0/Xamarin_JuniorProject.pdb
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/obj/Debug/netstandard2.0/Xamarin_JuniorProject.csprojAssemblyReference.cache
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/obj/Debug/netstandard2.0/Views/MainPage.xaml.g.cs
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/obj/Debug/netstandard2.0/Xamarin_JuniorProject.AssemblyInfoInputs.cache
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/obj/Debug/netstandard2.0/Xamarin_JuniorProject.AssemblyInfo.cs
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/obj/Debug/netstandard2.0/Xamarin_JuniorProject.dll
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/obj/Debug/netstandard2.0/Xamarin_JuniorProject.pdb
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/obj/Debug/netstandard2.0/Views/RegistrationPage.xaml.g.cs
+/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject/obj/Debug/netstandard2.0/Views/TabbedMapPage.xaml.g.cs

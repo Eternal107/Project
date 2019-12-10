@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{896562E4-65D0-49AE-983C-A11DA00F1031}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Xamarin_JuniorProject/Xamarin_JuniorProject/App.xaml.cs">
+    <Files>
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/Views/MainPage.xaml" Line="7" Column="74" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/Views/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/ViewModels/MainPageViewModel.cs" Line="15" Column="13" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/ViewModels/ViewModelBase.cs" Line="26" Column="91" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/App.xaml" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/App.xaml.cs" Line="19" Column="1" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/Views/TabbedMapPage.cs" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/Views/TabbedMapPage.xaml" Line="5" Column="26" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/Views/TabbedMapPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/Services/Repository.cs" Line="66" Column="1" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/Database/User.cs" Line="10" Column="1" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/Views/RegistrationPage.xaml" Line="1" Column="2" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/Views/RegistrationPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Xamarin_JuniorProject/Xamarin_JuniorProject/ViewModels/RegistrationPageViewModel.cs" Line="24" Column="50" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Xamarin_JuniorProject" expanded="True">
+            <Node name="Xamarin_JuniorProject" expanded="True">
+              <Node name="Database" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="MainPage.xaml" expanded="True" />
+                <Node name="RegistrationPage.xaml" expanded="True" />
+                <Node name="TabbedMapPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Xamarin__JuniorProject.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Xamarin__JuniorProject.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.46BC114C-4A12-46BB-ADAA-528A2307F189" />
+</Properties>

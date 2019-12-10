@@ -1,0 +1,34 @@
+@string/appbar_scrolling_view_behavior;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/flyoutcontent.xml
+@string/appbar_scrolling_view_behavior;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/rootlayout.xml
+alpha;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/anim/enterfromleft.xml
+alpha;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/anim/exittoleft.xml
+android.support.design.widget.AppBarLayout;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/flyoutcontent.xml
+android.support.design.widget.AppBarLayout;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/rootlayout.xml
+android.support.design.widget.AppBarLayout;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/shellcontent.xml
+android.support.design.widget.BottomNavigationView;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/bottomtablayout.xml
+android.support.design.widget.CoordinatorLayout;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/flyoutcontent.xml
+android.support.design.widget.CoordinatorLayout;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/rootlayout.xml
+android.support.design.widget.CoordinatorLayout;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/shellcontent.xml
+android.support.design.widget.TabLayout;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/rootlayout.xml
+android.support.design.widget.TabLayout;obj/Debug/res/layout/tabbar.xml
+android.support.v7.widget.RecyclerView;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/flyoutcontent.xml
+android.support.v7.widget.Toolbar;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/rootlayout.xml
+android.support.v7.widget.Toolbar;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/shellcontent.xml
+android.support.v7.widget.Toolbar;obj/Debug/res/layout/toolbar.xml
+FrameLayout;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/bottomtablayout.xml
+item;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/values/styles.xml
+item;obj/Debug/res/values/styles.xml
+LinearLayout;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/bottomtablayout.xml
+resources;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/values/styles.xml
+resources;obj/Debug/res/values/styles.xml
+set;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/anim/enterfromleft.xml
+set;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/anim/enterfromright.xml
+set;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/anim/exittoleft.xml
+set;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/anim/exittoright.xml
+style;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/values/styles.xml
+style;obj/Debug/res/values/styles.xml
+translate;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/anim/enterfromleft.xml
+translate;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/anim/enterfromright.xml
+translate;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/anim/exittoleft.xml
+translate;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/anim/exittoright.xml
+xamarin.forms.platform.android.appcompat.FormsViewPager;/Users/user/Desktop/Новая папка 2/Xamarin_JuniorProject/Xamarin_JuniorProject.Android/obj/Debug/lp/41/jl/res/layout/rootlayout.xml
