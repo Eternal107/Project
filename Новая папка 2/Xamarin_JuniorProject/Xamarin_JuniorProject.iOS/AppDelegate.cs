@@ -2,7 +2,7 @@
 using Prism;
 using Prism.Ioc;
 using UIKit;
-
+using Xamarin.Forms.GoogleMaps.iOS;
 
 namespace Xamarin_JuniorProject.iOS
 {
@@ -22,7 +22,15 @@ namespace Xamarin_JuniorProject.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App(new iOSInitializer()));
+
+            // Override default ImageFactory by your implementation. 
+            var platformConfig = new PlatformConfig
+            {
+                ImageFactory = new CachingImageFactory()
+            };
+
+            Xamarin.FormsGoogleMaps.Init(Variables.GOOGLE_MAPS_IOS_API_KEY, platformConfig);
+            LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
         }

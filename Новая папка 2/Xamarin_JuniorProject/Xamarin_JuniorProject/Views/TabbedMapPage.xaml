@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Xamarin_JuniorProject.Views.TabbedMapPage">
-    <ContentPage.Content>
-
-    </ContentPage.Content>
-</ContentPage>
+             x:Class="Xamarin_JuniorProject.Views.TabbedMapPage"
+            xmlns:local="clr-namespace:Xamarin_JuniorProject.Views;assembly=Xamarin_JuniorProject"
+           >
+   
+    <TabbedPage.Children>
+        <local:MyMapPage />
+        <local:SavedPinsPage/>
+    </TabbedPage.Children>
+</TabbedPage>

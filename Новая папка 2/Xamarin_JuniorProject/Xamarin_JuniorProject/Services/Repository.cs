@@ -23,9 +23,8 @@ namespace Xamarin_JuniorProject.Services
     {
         private SQLiteAsyncConnection db;
 
-        public Repository(SQLiteAsyncConnection db)
+        public Repository()
         {
-            this.db = db;
         }
 
         public AsyncTableQuery<T> AsQueryable() =>

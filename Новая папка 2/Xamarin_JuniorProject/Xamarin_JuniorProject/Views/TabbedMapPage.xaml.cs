@@ -5,11 +5,12 @@ using Xamarin.Forms;
 
 namespace Xamarin_JuniorProject.Views
 {
-    public partial class TabbedMapPage : ContentPage
+    public partial class TabbedMapPage : TabbedPage
     {
         public TabbedMapPage()
         {
             InitializeComponent();
+            
         }
     }
 }

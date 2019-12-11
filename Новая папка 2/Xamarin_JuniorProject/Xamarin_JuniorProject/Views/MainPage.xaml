@@ -15,7 +15,7 @@
             <Entry  Text="{Binding Login}" Placeholder="username" />
             <Label Text="Password" />
             <Entry Text="{Binding Password}" IsPassword="true" Placeholder="Password" />
-            <Button Text="Login" Command="{Binding ToClockPage}" />
+            <Button Text="Login" Command="{Binding ToTabbedPage}" />
             <Label x:Name="messageLabel" />
         </StackLayout>
         

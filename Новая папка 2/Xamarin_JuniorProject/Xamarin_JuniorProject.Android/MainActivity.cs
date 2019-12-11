@@ -3,6 +3,7 @@ using Android.Content.PM;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
+using Xamarin.Forms.GoogleMaps.Android;
 
 namespace Xamarin_JuniorProject.Droid
 {
@@ -17,6 +18,13 @@ namespace Xamarin_JuniorProject.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            // Override default BitmapDescriptorFactory by your implementation. 
+            var platformConfig = new PlatformConfig
+            {
+                BitmapDescriptorFactory = new CachingNativeBitmapDescriptorFactory()
+            };
+
+            Xamarin.FormsGoogleMaps.Init(this, bundle, platformConfig); // initialize for Xamarin.Forms.GoogleMaps
             LoadApplication(new App(new AndroidInitializer()));
         }
     }

@@ -39,6 +39,10 @@ namespace Xamarin_JuniorProject
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<RegistrationPage,RegistrationPageViewModel>();
+            containerRegistry.RegisterForNavigation<MyMapPage,MyMapPageViewModel>();
+            containerRegistry.RegisterForNavigation<SavedPinsPage, SavePinsPageViewModel>();
+            containerRegistry.RegisterForNavigation<TabbedMapPage>();
             containerRegistry.RegisterInstance<IRepository<User>>(Container.Resolve<Repository<User>>());
         }
     }

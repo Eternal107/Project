@@ -46,13 +46,13 @@ namespace Xamarin_JuniorProject.ViewModels
         private async void PushTabbedPage()
         {
          
-                    await NavigationService.NavigateAsync("/NavigationPage/TabbedPage");
+                    await NavigationService.NavigateAsync("/NavigationPage/TabbedMapPage");
                 
             
         }
         private async void PushRegistrationPage()
         {
-            await NavigationService.NavigateAsync("/NavigationPage/RegistrationPage");
+            await NavigationService.NavigateAsync("NavigationPage/RegistrationPage");
         }
     }
 }
