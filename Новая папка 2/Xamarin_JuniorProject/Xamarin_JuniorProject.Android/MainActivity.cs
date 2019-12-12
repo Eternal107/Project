@@ -1,4 +1,5 @@
-﻿using Android.App;
+﻿using Acr.UserDialogs;
+using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Prism;
@@ -23,7 +24,7 @@ namespace Xamarin_JuniorProject.Droid
             {
                 BitmapDescriptorFactory = new CachingNativeBitmapDescriptorFactory()
             };
-
+            UserDialogs.Init(this);
             Xamarin.FormsGoogleMaps.Init(this, bundle, platformConfig); // initialize for Xamarin.Forms.GoogleMaps
             LoadApplication(new App(new AndroidInitializer()));
         }

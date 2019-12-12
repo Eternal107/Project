@@ -1,14 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps" xmlns:maps1="clr-namespace:Xamarin_JuniorProject.Controls"
              x:Class="Xamarin_JuniorProject.Views.MyMapPage"
              Title="{Binding Title}">
 
     <ContentPage.Content>
-        <maps:Map x:Name="map"
+        <maps1:CustomMap x:Name="MyMap" PinSource="{Binding Pins}" MyMapLongClicked="{Binding LongClicked}"
+                      
+                         
                       InitialCameraUpdate="-23.68, -46.87, 13, 30, 60"
                       VerticalOptions="FillAndExpand"
                   />
+        
     </ContentPage.Content>
 </ContentPage>

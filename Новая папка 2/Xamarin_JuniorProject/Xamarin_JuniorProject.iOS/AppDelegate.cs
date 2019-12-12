@@ -24,12 +24,9 @@ namespace Xamarin_JuniorProject.iOS
             global::Xamarin.Forms.Forms.Init();
 
             // Override default ImageFactory by your implementation. 
-            var platformConfig = new PlatformConfig
-            {
-                ImageFactory = new CachingImageFactory()
-            };
+            
 
-            Xamarin.FormsGoogleMaps.Init(Variables.GOOGLE_MAPS_IOS_API_KEY, platformConfig);
+            Xamarin.FormsGoogleMaps.Init(Variables.GOOGLE_MAPS_IOS_API_KEY);
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
