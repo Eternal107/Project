@@ -20,12 +20,9 @@ namespace Xamarin_JuniorProject.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             // Override default BitmapDescriptorFactory by your implementation. 
-            var platformConfig = new PlatformConfig
-            {
-                BitmapDescriptorFactory = new CachingNativeBitmapDescriptorFactory()
-            };
+            
             UserDialogs.Init(this);
-            Xamarin.FormsGoogleMaps.Init(this, bundle, platformConfig); // initialize for Xamarin.Forms.GoogleMaps
+            Xamarin.FormsGoogleMaps.Init(this, bundle); // initialize for Xamarin.Forms.GoogleMaps
             LoadApplication(new App(new AndroidInitializer()));
         }
     }

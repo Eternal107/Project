@@ -23,8 +23,10 @@ namespace Xamarin_JuniorProject.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            // Override default ImageFactory by your implementation. 
+
             
+
+            SlideOverKit.iOS.SlideOverKit.Init();
 
             Xamarin.FormsGoogleMaps.Init(Variables.GOOGLE_MAPS_IOS_API_KEY);
             LoadApplication(new App());

@@ -6,7 +6,7 @@
            >
    
     <TabbedPage.Children>
-        <local:MyMapPage BindingContext="{Binding MapPageViewModel}"/>
+        <local:MyMapPage BindingContext="{Binding MapPageViewModel}" />
         <local:SavedPinsPage BindingContext="{Binding PinsPageViewModel}"/>
     </TabbedPage.Children>
 </TabbedPage>

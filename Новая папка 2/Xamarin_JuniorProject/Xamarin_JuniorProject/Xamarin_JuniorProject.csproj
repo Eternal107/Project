@@ -10,6 +10,7 @@
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
     <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="3.2.0" />
     <PackageReference Include="Acr.UserDialogs" Version="7.0.35" />
+    <PackageReference Include="SlideOverKit" Version="2.1.6.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +19,9 @@
     <Folder Include="Database\" />
     <Folder Include="Views\" />
     <Folder Include="Controls\" />
+    <Folder Include="SlideUp\" />
+    <Folder Include="Services\Repository\" />
+    <Folder Include="Services\Authorization\" />
   </ItemGroup>
 
   <ItemGroup>
