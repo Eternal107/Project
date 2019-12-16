@@ -9,12 +9,14 @@ using Xamarin_JuniorProject.Database;
 using System.IO;
 using System;
 using SQLite;
+using Xamarin_JuniorProject.Services.Authorization;
+using Xamarin_JuniorProject.Services.Repository;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xamarin_JuniorProject
 {
     public partial class App
-    {   private string DataBasePath;
+    {   
         public App() : this(null) { }
 
         public App(IPlatformInitializer initializer) : base(initializer) { }
@@ -26,24 +28,19 @@ namespace Xamarin_JuniorProject
             await NavigationService.NavigateAsync("NavigationPage/MainPage");
         }
 
-        private void InnitDataBase()
-        {
-            DataBasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DataBase0" + ".db3");
-
-            var connection = new SQLiteAsyncConnection(DataBasePath);
-            connection.CreateTableAsync<User>();
-
-        }
+        
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterInstance<IRepositoryService>(Container.Resolve<RepositoryService>());
+            containerRegistry.RegisterInstance<IAuthorizationService>(Container.Resolve<AuthorizationService>());
+
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
-            containerRegistry.RegisterForNavigation<RegistrationPage,RegistrationPageViewModel>();
-            containerRegistry.RegisterForNavigation<MyMapPage>();
-            containerRegistry.RegisterForNavigation<SavedPinsPage>();
-            containerRegistry.RegisterForNavigation<TabbedMapPage>();
-            containerRegistry.RegisterInstance<IRepository<User>>(Container.Resolve<Repository<User>>());
+            containerRegistry.RegisterForNavigation<RegistrationPage, RegistrationPageViewModel>();
+            containerRegistry.RegisterForNavigation<MyMapPage,MyMapPageViewModel>();
+            containerRegistry.RegisterForNavigation<SavedPinsPage,SavePinsPageViewModel>();
+            containerRegistry.RegisterForNavigation<TabbedMapPage,TabbedMapPageViewModel>();
         }
     }
 }

@@ -2,6 +2,8 @@
 using Prism.Navigation;
 using Xamarin_JuniorProject.Database;
 using Xamarin_JuniorProject.Services;
+using Xamarin_JuniorProject.Services.Authorization;
+using Xamarin_JuniorProject.Services.Repository;
 
 namespace Xamarin_JuniorProject.ViewModels
 {
@@ -24,11 +26,11 @@ namespace Xamarin_JuniorProject.ViewModels
             set { SetProperty(ref pinsPageViewModel, value); }
         }
             
-        public TabbedMapPageViewModel(INavigationService navigationService, IRepository<User> user)
-            : base(navigationService, user)
+        public TabbedMapPageViewModel(INavigationService navigationService, IRepositoryService repositoryService, IAuthorizationService authorizationService)
+            : base(navigationService, repositoryService, authorizationService)
         {
-            PinsPageViewModel = new SavePinsPageViewModel(navigationService, user);
-            MapPageViewModel = new MyMapPageViewModel(navigationService, user);
+            PinsPageViewModel = new SavePinsPageViewModel(navigationService, repositoryService, authorizationService);
+            MapPageViewModel = new MyMapPageViewModel(navigationService, repositoryService, authorizationService);
         }
     }
 }

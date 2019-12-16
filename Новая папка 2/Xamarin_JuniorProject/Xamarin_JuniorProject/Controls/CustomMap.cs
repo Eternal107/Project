@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
+using Xamarin.Forms.GoogleMaps.Clustering;
 
 namespace Xamarin_JuniorProject.Controls
 {
-    public class CustomMap:Map
+    public class CustomMap:ClusteredMap
     {
         public static readonly BindableProperty PinSourceProperty = BindableProperty.Create(
             nameof(PinSource),
@@ -30,7 +31,12 @@ namespace Xamarin_JuniorProject.Controls
             propertyChanged: (bindable, oldValue, newValue) =>
             {
                 var Map = (CustomMap)bindable;
-                Map.MapLongClicked += (EventHandler<MapLongClickedEventArgs>)newValue;
+                if(newValue!=null)
+                {
+                    Map.MapLongClicked -= (EventHandler<MapLongClickedEventArgs>)oldValue;
+                    Map.MapLongClicked += (EventHandler<MapLongClickedEventArgs>)newValue;
+                }
+               
             });
 
 
@@ -42,18 +48,39 @@ namespace Xamarin_JuniorProject.Controls
         }
 
 
+        public static readonly BindableProperty MyPinClickedProperty = BindableProperty.Create(
+            nameof(MyPinClicked),
+            typeof(EventHandler<PinClickedEventArgs>),
+            typeof(CustomMap),
+            null,
+            propertyChanged: (bindable, oldValue, newValue) =>
+            {
+                var Map = (CustomMap)bindable;
+                if (newValue != null)
+                {
+                    Map.PinClicked -= (EventHandler<PinClickedEventArgs>)oldValue;
+                    Map.PinClicked += (EventHandler<PinClickedEventArgs>)newValue;
+                }
 
+            });
+
+
+
+        public EventHandler<PinClickedEventArgs> MyPinClicked
+        {
+            get => (EventHandler<PinClickedEventArgs>)GetValue(PinSourceProperty);
+            set => SetValue(PinSourceProperty, value);
+        }
 
 
 
 
         public CustomMap()
         {
+           
             this.MapType = MapType.Street;
 
             this.MyLocationEnabled = true;
-
-
 
             this.UiSettings.CompassEnabled = true;
 
@@ -61,12 +88,10 @@ namespace Xamarin_JuniorProject.Controls
 
             this.UiSettings.MyLocationButtonEnabled = true;
 
-
             // IndoorLevelPickerEnabled
             this.UiSettings.IndoorLevelPickerEnabled = true;
 
             // ScrollGesturesEnabled
-
             this.UiSettings.ScrollGesturesEnabled = true;
 
 
@@ -78,7 +103,7 @@ namespace Xamarin_JuniorProject.Controls
             // ZoomControlsEnabled
 
             this.UiSettings.ZoomControlsEnabled = true;
-
+            
 
             // ZoomGesturesEnabled
 

@@ -28,6 +28,7 @@ namespace Xamarin_JuniorProject.SlideUp
             // In this case we need to set different size for Android.
             if (Device.RuntimePlatform == Device.Android)
                 this.HeightRequest += 50;
+            
         }
     }
 

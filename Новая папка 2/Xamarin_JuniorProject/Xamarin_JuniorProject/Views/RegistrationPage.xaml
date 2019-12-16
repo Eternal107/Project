@@ -8,12 +8,13 @@
             
         
         <StackLayout VerticalOptions="Center" >
-            <Label Text="Name" />
-            <Entry  Text="{Binding Name}" Placeholder="Name" />
-            <Label Text="Username" />
-            <Entry  Text="{Binding Login}" Placeholder="username" />
+            <Label Text="Email" />
+            <Entry  Text="{Binding Email}" Placeholder="Email" />
+            <Label Text="Login" />
+            <Entry  Text="{Binding Login}" Placeholder="Login" />
             <Label Text="Password" />
             <Entry Text="{Binding Password}" IsPassword="true" Placeholder="Password" />
+             <Entry Text="{Binding ConfirmPassword}" IsPassword="true" Placeholder="Confirm Password" />
             <Button Text="Register" Command="{Binding ToTabbedPage}" />
            
         </StackLayout>

@@ -5,12 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991221" />
     <PackageReference Include="Prism.Unity.Forms" Version="7.2.0.1422" />
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
     <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="3.2.0" />
     <PackageReference Include="Acr.UserDialogs" Version="7.0.35" />
     <PackageReference Include="SlideOverKit" Version="2.1.6.2" />
+    <PackageReference Include="Xamarin.Forms.GoogleMaps.Clustering" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
+using System;
 using SlideOverKit;
 using Xamarin.Forms;
-using Xamarin.Forms.GoogleMaps;
 using Xamarin_JuniorProject.Controls;
 using Xamarin_JuniorProject.SlideUp;
 
@@ -17,6 +16,9 @@ namespace Xamarin_JuniorProject.Views
 
 
 
+            this.SlideMenu = new MyPage();
+
+            ShowSlider += ShowMenu;
 
 
 
@@ -26,7 +28,21 @@ namespace Xamarin_JuniorProject.Views
 
 
 
+        }
 
+        public static readonly BindableProperty ShowSliderProperty = BindableProperty.Create(
+            nameof(ShowSlider),
+            typeof(Action),
+            typeof(TestSliderPage),
+            null, BindingMode.OneWayToSource);
+
+
+
+
+        public Action ShowSlider
+        {
+            get => (Action)GetValue(ShowSliderProperty);
+            set => SetValue(ShowSliderProperty, value);
         }
     }
 }

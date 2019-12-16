@@ -28,7 +28,7 @@ namespace Xamarin_JuniorProject.iOS
 
             SlideOverKit.iOS.SlideOverKit.Init();
 
-            Xamarin.FormsGoogleMaps.Init(Variables.GOOGLE_MAPS_IOS_API_KEY);
+            Xamarin.FormsGoogleMaps.Init(Constants.GOOGLE_MAPS_API_KEY);
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

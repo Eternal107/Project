@@ -4,8 +4,11 @@ using Android.Content.PM;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
-using Xamarin.Forms.GoogleMaps.Android;
+using Xamarin.Forms;
+using Xamarin.Forms.GoogleMaps.Clustering;
+using Xamarin.Forms.GoogleMaps.Clustering.Android;
 
+[assembly: ExportRenderer(typeof(ClusteredMap), typeof(ClusteredMapRenderer))]
 namespace Xamarin_JuniorProject.Droid
 {
     [Activity(Label = "Xamarin_JuniorProject", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]

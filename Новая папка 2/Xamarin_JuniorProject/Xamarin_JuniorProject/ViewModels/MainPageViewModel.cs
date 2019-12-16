@@ -1,22 +1,19 @@
 ﻿using Prism.Commands;
-using Prism.Mvvm;
 using Prism.Navigation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Xamarin_JuniorProject.Database;
-using Xamarin_JuniorProject.Services;
+using Xamarin_JuniorProject.Services.Authorization;
+using Xamarin_JuniorProject.Services.Repository;
 
 namespace Xamarin_JuniorProject.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
-        public DelegateCommand TabbedPage;
+
+
+        private DelegateCommand TabbedPage;
         public DelegateCommand ToTabbedPage =>
             TabbedPage ?? (TabbedPage = new DelegateCommand(PushTabbedPage));
 
-        public DelegateCommand RegistrationPage;
+        private DelegateCommand RegistrationPage;
         public DelegateCommand ToRegistrationPage =>
             RegistrationPage ?? (RegistrationPage = new DelegateCommand(PushRegistrationPage));
 
@@ -37,18 +34,20 @@ namespace Xamarin_JuniorProject.ViewModels
 
 
 
-        public MainPageViewModel(INavigationService navigationService, IRepository<User> user)
-            : base(navigationService,user)
+        public MainPageViewModel(INavigationService navigationService, IRepositoryService repositoryService, IAuthorizationService authorizationService)
+            : base(navigationService, repositoryService, authorizationService)
         {
             Title = "Login Page";
+
         }
 
         private async void PushTabbedPage()
         {
-         
-                    await NavigationService.NavigateAsync("/NavigationPage/TabbedMapPage");
-                
-            
+           // var Loginization = await AuthorizationService.Login(Login, Password);
+            //if (Loginization)
+                await NavigationService.NavigateAsync("/NavigationPage/TabbedMapPage");
+
+
         }
         private async void PushRegistrationPage()
         {

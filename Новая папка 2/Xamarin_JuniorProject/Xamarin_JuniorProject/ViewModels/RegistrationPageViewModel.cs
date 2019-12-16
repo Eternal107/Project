@@ -3,6 +3,8 @@ using Prism.Commands;
 using Prism.Navigation;
 using Xamarin_JuniorProject.Database;
 using Xamarin_JuniorProject.Services;
+using Xamarin_JuniorProject.Services.Authorization;
+using Xamarin_JuniorProject.Services.Repository;
 
 namespace Xamarin_JuniorProject.ViewModels
 {
@@ -15,13 +17,13 @@ namespace Xamarin_JuniorProject.ViewModels
 
         private string login;
         private string password;
-        private string name;
+        private string email;
+        private string confirmPassword;
 
-
-        public string Name
+        public string Email
         {
-            get { return name; }
-            set { SetProperty(ref name, value); }
+            get { return email; }
+            set { SetProperty(ref email, value); }
         }
 
         public string Login
@@ -29,28 +31,32 @@ namespace Xamarin_JuniorProject.ViewModels
             get { return login; }
             set { SetProperty(ref login, value); }
         }
-
         public string Password
         {
             get { return password; }
             set { SetProperty(ref password, value); }
         }
 
+        public string ConfirmPassword
+        {
+            get { return confirmPassword; }
+            set { SetProperty(ref confirmPassword, value); }
+        }
 
-
-        public RegistrationPageViewModel(INavigationService navigationService, IRepository<User> user)
-            : base(navigationService, user)
+        public RegistrationPageViewModel(INavigationService navigationService, IRepositoryService repositoryService, IAuthorizationService authorizationService)
+            : base(navigationService, repositoryService, authorizationService)
         {
             Title = "Login Page";
         }
 
         private async void PushTabbedPage()
         {
-
-            await NavigationService.NavigateAsync("/NavigationPage/TabbedMapPage");
-
+            var CurrentUser = new User() { Email = Email, Login = Login, Password = Password };
+            var CheckRegistration = await AuthorizationService.Register(CurrentUser);
+            if (CheckRegistration)
+                await NavigationService.NavigateAsync("/NavigationPage/TabbedMapPage");
 
         }
-       
+
     }
 }
