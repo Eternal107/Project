@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Xamarin_JuniorProject.Behaviors"
+             x:Class="Xamarin_JuniorProject.Views.RegistrationPage"
+             Title="{Binding Title}"
+             x:Name="this">
+    
+       
+            
+        
+        <StackLayout VerticalOptions="Center">
+        <StackLayout.Behaviors>
+            <behaviors:ValidationGroupBehavior x:Name="form" IsValid="{Binding BindingContext.IsValid, Source={x:Reference this}, Mode=OneWayToSource}"/>
+        </StackLayout.Behaviors>
+        
+        <Label Text="Enter your name"/>
+        <Entry x:Name = "LoginEntry" ReturnType="Next" Placeholder = "Login" Text="{Binding Login}">
+            <Entry.Behaviors>
+                <behaviors:ValidationBehavior Group="{x:Reference form}" 
+                                              PropertyName="Text">
+                    <behaviors:ValidationBehavior.Validators>
+                        <behaviors:RequiredValidator />
+                    </behaviors:ValidationBehavior.Validators>
+                </behaviors:ValidationBehavior>
+            </Entry.Behaviors>
+        </Entry>
+
+         <Label Text=" Enter your email"/>
+        <Entry x:Name = "emailEntry" ReturnType="Next" Placeholder = "Email" Text="{Binding Email}">
+            <Entry.Behaviors>
+                <behaviors:ValidationBehavior Group="{x:Reference form}" 
+                                              PropertyName="Text">
+                    <behaviors:ValidationBehavior.Validators>
+                        <behaviors:RequiredValidator />
+                        <behaviors:FormatValidator
+                            Message="Enter in email format" 
+                            Format="^[_A-z0-9-]+(.[a-z0-9-]+)@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$" />
+                    </behaviors:ValidationBehavior.Validators>
+                </behaviors:ValidationBehavior>
+            </Entry.Behaviors>
+        </Entry>
+        
+        <Label Text="Enter your password"/>
+        <Entry x:Name = "passwordEntry" ReturnType="Next" Placeholder = "Password"  Text="{Binding Password}">
+            <Entry.Behaviors>
+                <behaviors:ValidationBehavior Group="{x:Reference form}" 
+                                              PropertyName="Text">
+                    <behaviors:ValidationBehavior.Validators>
+                        <behaviors:RequiredValidator />
+                        <behaviors:FormatValidator
+                            Message="Password must be 10 digit" 
+                            Format="^[0-9]{10}$" />
+                    </behaviors:ValidationBehavior.Validators>
+                </behaviors:ValidationBehavior>
+            </Entry.Behaviors>
+        </Entry>
+
+        <Entry ReturnType="Done" Placeholder = "Confirm Password"  >
+            <Entry.Behaviors>
+                <behaviors:ValidationBehavior Group="{x:Reference form}" 
+                                              PropertyName="Text">
+                    <behaviors:ValidationBehavior.Validators>
+                       
+                       
+                        <behaviors:PasswordsEqualityValidator
+                            confirmPassword="{x:Reference passwordEntry}"/>
+                    </behaviors:ValidationBehavior.Validators>
+                </behaviors:ValidationBehavior>
+            </Entry.Behaviors>
+        </Entry>
+
+        <Button Text="Register" Command="{Binding ToTabbedPage}"
+		        FontSize="Large"
+		        HorizontalOptions="Center"
+		        />
+		    
+		    
+	
+        </StackLayout>
+        
+   
+</ContentPage>

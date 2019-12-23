@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<maps1:MyMenuContainerPage  x:TypeArguments="x1:MyPage"
+   
+                                 xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps1="clr-namespace:Xamarin_JuniorProject.Controls"
+             xmlns:x1="clr-namespace:Xamarin_JuniorProject.SlideUp"
+             x:Class="Xamarin_JuniorProject.Views.MyMapPage"
+             Title="{Binding Title}"
+                 ShowSlider="{Binding ShowSlider}"
+                 SliderBindableContext="{Binding SliderViewModel}">
+
+ 
+        <maps1:CustomMap  x:Name="Map" PinSource="{Binding Pins}" MyMapLongClicked="{Binding LongClicked}"
+                      MyPinClicked="{Binding PinClicked}" 
+                         
+                      InitialCameraUpdate="-23.68, -46.87, 13, 30, 60"
+                      VerticalOptions="FillAndExpand"
+                  />
+
+</maps1:MyMenuContainerPage>

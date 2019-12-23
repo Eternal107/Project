@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_JuniorProject.Views.TabbedMapPage"
+            xmlns:local="clr-namespace:Xamarin_JuniorProject.Views;assembly=Xamarin_JuniorProject"
+            xmlns:behaviors="clr-namespace:Xamarin_JuniorProject.Behaviors"
+            >
+
+    <TabbedPage.Behaviors>
+        <behaviors:TabbedPageNavigationBehavior/>
+    </TabbedPage.Behaviors>
+   
+    <TabbedPage.Children>
+        <local:MyMapPage BindingContext="{Binding MapPageViewModel}" />
+        <local:SavedPinsPage BindingContext="{Binding PinsPageViewModel}"/>
+    </TabbedPage.Children>
+</TabbedPage>
