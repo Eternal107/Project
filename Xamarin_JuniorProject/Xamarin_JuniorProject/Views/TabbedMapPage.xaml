@@ -11,7 +11,7 @@
     </TabbedPage.Behaviors>
    
     <TabbedPage.Children>
-        <local:MyMapPage BindingContext="{Binding MapPageViewModel}" />
-        <local:SavedPinsPage BindingContext="{Binding PinsPageViewModel}"/>
+        <local:MyMapPage />
+        <local:SavedPinsPage />
     </TabbedPage.Children>
 </TabbedPage>

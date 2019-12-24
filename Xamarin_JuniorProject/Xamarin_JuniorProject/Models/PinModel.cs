@@ -1,5 +1,6 @@
 ﻿using System;
 using SQLite;
+using Xamarin.Forms.GoogleMaps;
 
 namespace Xamarin_JuniorProject.Models
 {
@@ -13,5 +14,7 @@ namespace Xamarin_JuniorProject.Models
         public double Latitude { get; set; }
         public double Longtitude { get; set; }
         public bool IsFavorite { get; set; }
+
+        
     }
 }

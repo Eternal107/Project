@@ -8,10 +8,10 @@
     <PackageReference Include="Prism.Unity.Forms" Version="7.2.0.1422" />
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
     <PackageReference Include="Acr.UserDialogs" Version="7.0.35" />
-    <PackageReference Include="SlideOverKit" Version="2.1.6.2" />
     <PackageReference Include="Xamarin.Forms.GoogleMaps.Clustering" Version="1.1.0" />
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="3.2.0" />
+    <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.759" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,12 +19,13 @@
     <Folder Include="Services\" />
     <Folder Include="Views\" />
     <Folder Include="Controls\" />
-    <Folder Include="SlideUp\" />
     <Folder Include="Services\Repository\" />
     <Folder Include="Services\Authorization\" />
     <Folder Include="Behaviors\" />
     <Folder Include="Services\Pin\" />
     <Folder Include="Extentions\" />
+    <Folder Include="Views\ModalViews\" />
+    <Folder Include="ViewModels\ModalViewModels\" />
   </ItemGroup>
 
   <ItemGroup>

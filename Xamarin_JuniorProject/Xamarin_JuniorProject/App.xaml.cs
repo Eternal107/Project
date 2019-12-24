@@ -7,7 +7,9 @@ using Xamarin.Forms.Xaml;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Services.Repository;
 using Xamarin_JuniorProject.Services.Pin;
-
+using Xamarin_JuniorProject.Views.ModalViews;
+using Xamarin_JuniorProject.ViewModels.ModalViewModels;
+using Prism.Plugin.Popups;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xamarin_JuniorProject
@@ -52,12 +54,14 @@ namespace Xamarin_JuniorProject
             containerRegistry.RegisterInstance<IPinService>(Container.Resolve<PinService>());
             containerRegistry.RegisterForNavigation<NavigationPage>();
 
+            containerRegistry.RegisterPopupNavigationService();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<RegistrationPage, RegistrationPageViewModel>();
             containerRegistry.RegisterForNavigation<MyMapPage, MyMapPageViewModel>();
             containerRegistry.RegisterForNavigation<SavedPinsPage, SavePinsPageViewModel>();
             containerRegistry.RegisterForNavigation<AddPinPage, AddPinPageViewModel>();
-            containerRegistry.RegisterForNavigation<TabbedMapPage>();
+			containerRegistry.RegisterForNavigation<PinModalView, PinModalViewModel>();
+			containerRegistry.RegisterForNavigation<TabbedMapPage>();
         }
     }
 }

@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using Acr.UserDialogs;
 using Prism.Commands;
 using Prism.Navigation;
-using SlideOverKit;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin_JuniorProject.Extentions;
 using Xamarin_JuniorProject.Models;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Services.Pin;
 using Xamarin_JuniorProject.Services.Repository;
-using Xamarin_JuniorProject.SlideUp;
+
 
 namespace Xamarin_JuniorProject.ViewModels
 {
@@ -23,6 +23,13 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             get { return _showSlider; }
             set { SetProperty(ref _showSlider, value); }
+        }
+
+        private Action _hideSlider;
+        public Action HideSlider
+        {
+            get { return _hideSlider; }
+            set { SetProperty(ref _hideSlider, value); }
         }
 
         private SliderPageViewModel _sliderViewModel;
@@ -50,9 +57,8 @@ namespace Xamarin_JuniorProject.ViewModels
         }
 
 
-        private List<Pin> pins = new List<Pin>();
-
-        public List<Pin> Pins
+        private ObservableCollection<Pin> pins;
+        public ObservableCollection<Pin> Pins
         {
             get { return pins; }
             set { SetProperty(ref pins, value); }
@@ -64,6 +70,7 @@ namespace Xamarin_JuniorProject.ViewModels
             : base(navigationService, repository, authorizationService, pinService)
         {
             SliderViewModel = new SliderPageViewModel(navigationService, repository, authorizationService, pinService);
+            Pins = new ObservableCollection<Pin>();
             Title = "Map";
             LongClicked = OnLongclicked;
             PinClicked = OnPinClicked;
@@ -74,14 +81,12 @@ namespace Xamarin_JuniorProject.ViewModels
 
         private async void OnPinClicked(object sender, PinClickedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(e.Pin.Label))
-                SliderViewModel.NameText = e.Pin.Label;
 
-            else SliderViewModel.NameText = "Pin Name";
-
+            var p = new NavigationParameters();
+            p.Add("SelectedPin", e.Pin);
+            await NavigationService.NavigateAsync("PinModalView",p,useModalNavigation:true);
             
-            SliderViewModel.DescriptionText = (string)e.Pin.Tag;
-            ShowSlider?.Invoke();
+           
         }
 
 
@@ -91,13 +96,13 @@ namespace Xamarin_JuniorProject.ViewModels
             var PinModels = await PinService.GetPins(App.CurrentUserId);
             if (PinModels != null)
             {
-                List<Pin> temp = new List<Pin>();
+                
                 foreach (PinModel model in PinModels)
                 {
                     Pin newPin = new Pin() { Label = model.Name, Position = new Position(model.Latitude, model.Longtitude), Type = model.IsFavorite == true ? PinType.SavedPin : PinType.Place,Tag= model.Description };
-                    temp.Add(newPin);
+                    Pins.Add(newPin);
                 }
-                Pins = temp;
+                
             }
         }
 
@@ -110,20 +115,34 @@ namespace Xamarin_JuniorProject.ViewModels
             PromptResult result = await UserDialogs.Instance.PromptAsync(string.Format("{0}, {1}", lat, lng), "Add pin?", "Ok", "Cancel", "Name");
             if (result.Ok)
             {
-                List<Pin> temp = new List<Pin>();
-                foreach (var n in Pins)
-                    temp.Add(n);
-                temp.Add(new Pin() { Position = new Position(lat, lng), Type = PinType.Place, Label = result.Text,Tag= "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" });
-                await PinService.AddPin(temp.Last().ToPinModel((string)temp.Last().Tag));
-                Pins = temp;
+
+                Pins.Add(new Pin() { Position = new Position(lat, lng), Type = PinType.Place, Label = result.Text,Tag= "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" });
+                await PinService.AddPin(Pins.Last().ToPinModel((string)Pins.Last().Tag));
+               
             }
 
         }
 
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
+            
+            
             parameters.Add("PinList", Pins);
         }
 
+        public override void OnNavigatedTo(INavigationParameters parameters)
+        {
+          
+            if(parameters.ContainsKey("ChangedPin") && parameters.ContainsKey("InnitialPin"))
+            {
+                var innitialPin = parameters.GetValue<Pin>("InnitialPin");
+                var newPin = parameters.GetValue<Pin>("ChangedPin");
+
+                Pins.Remove(innitialPin);
+                Pins.Add(newPin);
+              
+               
+            }
+        }
     }
 }

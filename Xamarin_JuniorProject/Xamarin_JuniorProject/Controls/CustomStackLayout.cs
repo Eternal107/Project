@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using System.Linq;
 using Xamarin.Forms;
 
 namespace Xamarin_JuniorProject.Controls
@@ -8,15 +11,15 @@ namespace Xamarin_JuniorProject.Controls
     {
         public static readonly BindableProperty ItemsSourceProperty = BindableProperty.Create(
             nameof(ItemsSource),
-            typeof(List<CustomPinView>),
+            typeof(ObservableCollection<CustomPinView>),
             typeof(CustomStackLayout),
             null,
             propertyChanged: ItemAdded);
 
 
-        public List<CustomPinView> ItemsSource
+        public ObservableCollection<CustomPinView> ItemsSource
         {
-            get => (List<CustomPinView>)GetValue(ItemsSourceProperty);
+            get => (ObservableCollection<CustomPinView>)GetValue(ItemsSourceProperty);
             set => SetValue(ItemsSourceProperty, value);
         }
 
@@ -26,14 +29,36 @@ namespace Xamarin_JuniorProject.Controls
 
         private static void ItemAdded(BindableObject bindable, object oldValue, object newValue)
         {
-            var control = bindable as CustomStackLayout;
-            if (newValue != null)
+            if (bindable is CustomStackLayout castedMap)
             {
-                control.Children.Clear();
-                foreach (var n in (List<CustomPinView>)newValue)
-                    control.Children.Add(n);
-            }
+                if (oldValue is INotifyCollectionChanged castedOldCollection)
+                {
+                    castedOldCollection.CollectionChanged -= castedMap.OnPinsCollectionChanged;
+                }
 
+                if (newValue is INotifyCollectionChanged castedNewCollection)
+                {
+                    castedNewCollection.CollectionChanged += castedMap.OnPinsCollectionChanged;
+                }
+            }
+        }
+
+        private void OnPinsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            switch (e.Action)
+            {
+                case NotifyCollectionChangedAction.Add:
+                    foreach (var pin in e.NewItems.Cast<CustomPinView>())
+                        Children.Add(pin);
+                    break;
+                case NotifyCollectionChangedAction.Remove:
+                    foreach (var pin in e.OldItems.Cast<CustomPinView>())
+                        Children.Remove(pin);
+                    break;
+                case NotifyCollectionChangedAction.Reset:
+                    Children.Clear();
+                    break;
+            }
         }
     }
 }

@@ -53,7 +53,7 @@ namespace Xamarin_JuniorProject.ViewModels
         }
         private async void PushRegistrationPage()
         {
-            await NavigationService.NavigateAsync("NavigationPage/RegistrationPage");
+            await NavigationService.NavigateAsync("RegistrationPage");
         }
     }
 }

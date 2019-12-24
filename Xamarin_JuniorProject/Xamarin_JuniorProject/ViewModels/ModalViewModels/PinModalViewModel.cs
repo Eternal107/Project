@@ -1,17 +1,18 @@
 ﻿using Prism.Commands;
 using Prism.Navigation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Services.Pin;
 using Xamarin_JuniorProject.Services.Repository;
 
-namespace Xamarin_JuniorProject.ViewModels
+namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
 {
-    public class SliderPageViewModel : ViewModelBase
+    public class PinModalViewModel:ViewModelBase
     {
+        public PinModalViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService)
+            : base(navigationService, repository, authorizationService, pinService)
+        {
+        }
 
         private Pin _currentPin;
         public Pin CurrentPin
@@ -20,28 +21,26 @@ namespace Xamarin_JuniorProject.ViewModels
             set { SetProperty(ref _currentPin, value); }
         }
 
-       
+
 
         private DelegateCommand _addPinPage;
         public DelegateCommand AddPinPage =>
             _addPinPage ?? (_addPinPage = new DelegateCommand(ToAddPinPage));
 
-        public SliderPageViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService)
-            : base(navigationService, repository, authorizationService, pinService)
+
+        public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            
+            CurrentPin = parameters.GetValue<Pin>("SelectedPin");
         }
 
-
-
-        private async  void  ToAddPinPage()
+        private async void ToAddPinPage()
         {
             var p = new NavigationParameters();
-            p.Add("PinSettings",CurrentPin);
+            p.Add("PinSettings", CurrentPin);
 
-            CurrentPin = null;
-            await NavigationService.NavigateAsync("AddPinPage",p);
+            await NavigationService.NavigateAsync("AddPinPage", p);
 
         }
     }
 }
+

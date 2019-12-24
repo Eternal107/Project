@@ -1,13 +1,12 @@
 ﻿
 using System;
-using SlideOverKit;
 using Xamarin.Forms;
 using Xamarin_JuniorProject.Controls;
-using Xamarin_JuniorProject.SlideUp;
+
 
 namespace Xamarin_JuniorProject.Views
 {
-    public partial class MyMapPage : MyMenuContainerPage<MyPage>
+    public partial class MyMapPage : ContentPage
     {
         public MyMapPage()
         {

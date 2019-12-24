@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin.Forms.GoogleMaps.Clustering;
@@ -10,15 +14,15 @@ namespace Xamarin_JuniorProject.Controls
     {
         public static readonly BindableProperty PinSourceProperty = BindableProperty.Create(
             nameof(PinSource),
-            typeof(List<Pin>),
+            typeof(ObservableCollection<Pin>),
             typeof(CustomMap),
             null,
             propertyChanged: ItemAdded);
 
 
-        public List<Pin> PinSource
+        public ObservableCollection<Pin> PinSource
         {
-            get => (List<Pin>)GetValue(PinSourceProperty);
+            get => (ObservableCollection<Pin>)GetValue(PinSourceProperty);
             set => SetValue(PinSourceProperty, value);
         }
 
@@ -117,12 +121,36 @@ namespace Xamarin_JuniorProject.Controls
 
         private static void ItemAdded(BindableObject bindable, object oldValue, object newValue)
         {
-            var control = bindable as CustomMap;
-            if (newValue != null)
+            if (bindable is CustomMap castedMap)
             {
-                control.Pins.Clear();
-                foreach (var n in (List<Pin>)newValue)
-                    control.Pins.Add(n);
+                if (oldValue is INotifyCollectionChanged castedOldCollection)
+                {
+                    castedOldCollection.CollectionChanged -= castedMap.OnPinsCollectionChanged;
+                }
+
+                if (newValue is INotifyCollectionChanged castedNewCollection)
+                {
+                    castedNewCollection.CollectionChanged += castedMap.OnPinsCollectionChanged;
+                }
+            }
+        }
+
+        private async void OnPinsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            switch (e.Action)
+            {
+                case NotifyCollectionChangedAction.Add:
+                    foreach(var pin in e.NewItems.Cast<Pin>())
+                    Pins.Add(pin);
+                    break;
+                case NotifyCollectionChangedAction.Remove:
+                    foreach (var pin in e.OldItems.Cast<Pin>())
+                        Pins.Remove(pin);
+                    break;
+                case NotifyCollectionChangedAction.Reset:
+                    Pins.Clear();
+                    break;
+                    
             }
         }
 

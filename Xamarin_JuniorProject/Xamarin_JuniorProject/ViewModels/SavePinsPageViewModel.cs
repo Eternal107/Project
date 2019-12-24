@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using Prism.Commands;
 using Prism.Navigation;
 using Xamarin.Forms.GoogleMaps;
@@ -13,9 +14,9 @@ namespace Xamarin_JuniorProject.ViewModels
 {
     public class SavePinsPageViewModel : ViewModelBase
     {
-        private List<CustomPinView> pins=new List<CustomPinView>();
+        private ObservableCollection<CustomPinView> pins=new ObservableCollection<CustomPinView>();
 
-        public List<CustomPinView> Pins
+        public ObservableCollection<CustomPinView> Pins
         {
             get { return pins; }
             set { SetProperty(ref pins, value); }
@@ -27,21 +28,17 @@ namespace Xamarin_JuniorProject.ViewModels
             : base(navigationService, repository, authorizationService, pinService)
         {
             Title = "Saved Pins";
-
+            pins = new ObservableCollection<CustomPinView>();
         }
 
         private DelegateCommand _addPinPage;
         public DelegateCommand AddPinPage =>
             _addPinPage ?? (_addPinPage = new DelegateCommand(ToAddPinPage));
 
-        public override void OnNavigatedFrom(INavigationParameters parameters)
-        {
-
-        }
 
         private async void ToAddPinPage ()
         {
-            await NavigationService.NavigateAsync("NavigationPage/AddPinPage");
+            await NavigationService.NavigateAsync("AddPinPage");
         }
 
 
@@ -49,25 +46,24 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             if (parameters.ContainsKey("PinList"))
             {
-                var MapPins = parameters.GetValue<List<Pin>>("PinList");
+                var MapPins = parameters.GetValue<ObservableCollection<Pin>>("PinList");
                 if (MapPins != null)
                 {
-                    var Temp = new List<CustomPinView>();
-                    {
-                        foreach (var pin in MapPins)
-
-                            Temp.Add(new CustomPinView(pin.ToPinModel((string)pin.Tag)) {Tapped=ToSetPin });
-                    }
-                    Pins = Temp;
+                   foreach (var pin in MapPins)
+                     Pins.Add(new CustomPinView(pin.ToPinModel((string)pin.Tag)) {Tapped=ToSetPin });
                 }
             }
         }
 
         private async void ToSetPin(object o, EventArgs e)
         {
-            await NavigationService.NavigateAsync("NavigationPage/AddPinPage");
+            await NavigationService.NavigateAsync("AddPinPage");
         }
 
+        public override void OnNavigatedFrom(INavigationParameters parameters)
+        {
+            Pins.Clear();
+        }
     }
 }
 

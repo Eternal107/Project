@@ -4871,6 +4871,2903 @@ namespace Xamarin_JuniorProject.Droid
 			global::Prism.Resource.Styleable.View_paddingEnd = global::Xamarin_JuniorProject.Droid.Resource.Styleable.View_paddingEnd;
 			global::Prism.Resource.Styleable.View_paddingStart = global::Xamarin_JuniorProject.Droid.Resource.Styleable.View_paddingStart;
 			global::Prism.Resource.Styleable.View_theme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.View_theme;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_fade_in = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_fade_in;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_fade_out = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_fade_out;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_grow_fade_in_from_bottom = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_popup_enter = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_popup_enter;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_popup_exit = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_popup_exit;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_slide_in_bottom = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_slide_in_top = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_slide_in_top;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_slide_out_bottom = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_slide_out_top = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_slide_out_top;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_tooltip_enter = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_tooltip_enter;
+			global::Prism.Plugin.Popups.Resource.Animation.abc_tooltip_exit = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_tooltip_exit;
+			global::Prism.Plugin.Popups.Resource.Animation.design_bottom_sheet_slide_in = global::Xamarin_JuniorProject.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Prism.Plugin.Popups.Resource.Animation.design_bottom_sheet_slide_out = global::Xamarin_JuniorProject.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Prism.Plugin.Popups.Resource.Animation.design_snackbar_in = global::Xamarin_JuniorProject.Droid.Resource.Animation.design_snackbar_in;
+			global::Prism.Plugin.Popups.Resource.Animation.design_snackbar_out = global::Xamarin_JuniorProject.Droid.Resource.Animation.design_snackbar_out;
+			global::Prism.Plugin.Popups.Resource.Animation.EnterFromLeft = global::Xamarin_JuniorProject.Droid.Resource.Animation.EnterFromLeft;
+			global::Prism.Plugin.Popups.Resource.Animation.EnterFromRight = global::Xamarin_JuniorProject.Droid.Resource.Animation.EnterFromRight;
+			global::Prism.Plugin.Popups.Resource.Animation.ExitToLeft = global::Xamarin_JuniorProject.Droid.Resource.Animation.ExitToLeft;
+			global::Prism.Plugin.Popups.Resource.Animation.ExitToRight = global::Xamarin_JuniorProject.Droid.Resource.Animation.ExitToRight;
+			global::Prism.Plugin.Popups.Resource.Animator.design_appbar_state_list_animator = global::Xamarin_JuniorProject.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Prism.Plugin.Popups.Resource.Animator.design_fab_hide_motion_spec = global::Xamarin_JuniorProject.Droid.Resource.Animator.design_fab_hide_motion_spec;
+			global::Prism.Plugin.Popups.Resource.Animator.design_fab_show_motion_spec = global::Xamarin_JuniorProject.Droid.Resource.Animator.design_fab_show_motion_spec;
+			global::Prism.Plugin.Popups.Resource.Animator.mtrl_btn_state_list_anim = global::Xamarin_JuniorProject.Droid.Resource.Animator.mtrl_btn_state_list_anim;
+			global::Prism.Plugin.Popups.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::Xamarin_JuniorProject.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
+			global::Prism.Plugin.Popups.Resource.Animator.mtrl_chip_state_list_anim = global::Xamarin_JuniorProject.Droid.Resource.Animator.mtrl_chip_state_list_anim;
+			global::Prism.Plugin.Popups.Resource.Animator.mtrl_fab_hide_motion_spec = global::Xamarin_JuniorProject.Droid.Resource.Animator.mtrl_fab_hide_motion_spec;
+			global::Prism.Plugin.Popups.Resource.Animator.mtrl_fab_show_motion_spec = global::Xamarin_JuniorProject.Droid.Resource.Animator.mtrl_fab_show_motion_spec;
+			global::Prism.Plugin.Popups.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec = global::Xamarin_JuniorProject.Droid.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec;
+			global::Prism.Plugin.Popups.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec = global::Xamarin_JuniorProject.Droid.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionBarDivider = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionBarDivider;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionBarItemBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionBarPopupTheme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionBarSize = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionBarSize;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionBarSplitStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionBarStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionBarTabBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionBarTabStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionBarTabTextStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionBarTheme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionBarTheme;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionBarWidgetTheme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionDropDownStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionMenuTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionMenuTextColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModeBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModeBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModeCloseButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModeCloseDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModeCopyDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModeCutDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModeFindDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModePasteDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModePopupWindowStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModeSelectAllDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModeShareDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModeSplitBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModeStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModeStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionModeWebSearchDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionOverflowButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionOverflowMenuStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionProviderClass = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionProviderClass;
+			global::Prism.Plugin.Popups.Resource.Attribute.actionViewClass = global::Xamarin_JuniorProject.Droid.Resource.Attribute.actionViewClass;
+			global::Prism.Plugin.Popups.Resource.Attribute.activityChooserViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.alertDialogButtonGroupStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.alertDialogCenterButtons = global::Xamarin_JuniorProject.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Prism.Plugin.Popups.Resource.Attribute.alertDialogStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.alertDialogStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.alertDialogTheme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.alertDialogTheme;
+			global::Prism.Plugin.Popups.Resource.Attribute.allowStacking = global::Xamarin_JuniorProject.Droid.Resource.Attribute.allowStacking;
+			global::Prism.Plugin.Popups.Resource.Attribute.alpha = global::Xamarin_JuniorProject.Droid.Resource.Attribute.alpha;
+			global::Prism.Plugin.Popups.Resource.Attribute.alphabeticModifiers = global::Xamarin_JuniorProject.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Prism.Plugin.Popups.Resource.Attribute.arrowHeadLength = global::Xamarin_JuniorProject.Droid.Resource.Attribute.arrowHeadLength;
+			global::Prism.Plugin.Popups.Resource.Attribute.arrowShaftLength = global::Xamarin_JuniorProject.Droid.Resource.Attribute.arrowShaftLength;
+			global::Prism.Plugin.Popups.Resource.Attribute.autoCompleteTextViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.autoSizeMaxTextSize = global::Xamarin_JuniorProject.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Prism.Plugin.Popups.Resource.Attribute.autoSizeMinTextSize = global::Xamarin_JuniorProject.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Prism.Plugin.Popups.Resource.Attribute.autoSizePresetSizes = global::Xamarin_JuniorProject.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Prism.Plugin.Popups.Resource.Attribute.autoSizeStepGranularity = global::Xamarin_JuniorProject.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Prism.Plugin.Popups.Resource.Attribute.autoSizeTextType = global::Xamarin_JuniorProject.Droid.Resource.Attribute.autoSizeTextType;
+			global::Prism.Plugin.Popups.Resource.Attribute.background = global::Xamarin_JuniorProject.Droid.Resource.Attribute.background;
+			global::Prism.Plugin.Popups.Resource.Attribute.backgroundSplit = global::Xamarin_JuniorProject.Droid.Resource.Attribute.backgroundSplit;
+			global::Prism.Plugin.Popups.Resource.Attribute.backgroundStacked = global::Xamarin_JuniorProject.Droid.Resource.Attribute.backgroundStacked;
+			global::Prism.Plugin.Popups.Resource.Attribute.backgroundTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.backgroundTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.backgroundTintMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.backgroundTintMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.barLength = global::Xamarin_JuniorProject.Droid.Resource.Attribute.barLength;
+			global::Prism.Plugin.Popups.Resource.Attribute.behavior_autoHide = global::Xamarin_JuniorProject.Droid.Resource.Attribute.behavior_autoHide;
+			global::Prism.Plugin.Popups.Resource.Attribute.behavior_fitToContents = global::Xamarin_JuniorProject.Droid.Resource.Attribute.behavior_fitToContents;
+			global::Prism.Plugin.Popups.Resource.Attribute.behavior_hideable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.behavior_hideable;
+			global::Prism.Plugin.Popups.Resource.Attribute.behavior_overlapTop = global::Xamarin_JuniorProject.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Prism.Plugin.Popups.Resource.Attribute.behavior_peekHeight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Prism.Plugin.Popups.Resource.Attribute.behavior_skipCollapsed = global::Xamarin_JuniorProject.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Prism.Plugin.Popups.Resource.Attribute.borderlessButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.borderWidth = global::Xamarin_JuniorProject.Droid.Resource.Attribute.borderWidth;
+			global::Prism.Plugin.Popups.Resource.Attribute.bottomAppBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.bottomAppBarStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.bottomNavigationStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.bottomNavigationStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.bottomSheetDialogTheme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Prism.Plugin.Popups.Resource.Attribute.bottomSheetStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.boxBackgroundColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.boxBackgroundColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.boxBackgroundMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.boxBackgroundMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.boxCollapsedPaddingTop = global::Xamarin_JuniorProject.Droid.Resource.Attribute.boxCollapsedPaddingTop;
+			global::Prism.Plugin.Popups.Resource.Attribute.boxCornerRadiusBottomEnd = global::Xamarin_JuniorProject.Droid.Resource.Attribute.boxCornerRadiusBottomEnd;
+			global::Prism.Plugin.Popups.Resource.Attribute.boxCornerRadiusBottomStart = global::Xamarin_JuniorProject.Droid.Resource.Attribute.boxCornerRadiusBottomStart;
+			global::Prism.Plugin.Popups.Resource.Attribute.boxCornerRadiusTopEnd = global::Xamarin_JuniorProject.Droid.Resource.Attribute.boxCornerRadiusTopEnd;
+			global::Prism.Plugin.Popups.Resource.Attribute.boxCornerRadiusTopStart = global::Xamarin_JuniorProject.Droid.Resource.Attribute.boxCornerRadiusTopStart;
+			global::Prism.Plugin.Popups.Resource.Attribute.boxStrokeColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.boxStrokeColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.boxStrokeWidth = global::Xamarin_JuniorProject.Droid.Resource.Attribute.boxStrokeWidth;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonBarButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonBarNegativeButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonBarNeutralButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonBarPositiveButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonBarStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonGravity = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonGravity;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonIconDimen = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonIconDimen;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonPanelSideLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonStyleSmall = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.buttonTintMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.buttonTintMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.cardBackgroundColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.cardCornerRadius = global::Xamarin_JuniorProject.Droid.Resource.Attribute.cardCornerRadius;
+			global::Prism.Plugin.Popups.Resource.Attribute.cardElevation = global::Xamarin_JuniorProject.Droid.Resource.Attribute.cardElevation;
+			global::Prism.Plugin.Popups.Resource.Attribute.cardMaxElevation = global::Xamarin_JuniorProject.Droid.Resource.Attribute.cardMaxElevation;
+			global::Prism.Plugin.Popups.Resource.Attribute.cardPreventCornerOverlap = global::Xamarin_JuniorProject.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Prism.Plugin.Popups.Resource.Attribute.cardUseCompatPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.cardViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.cardViewStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.checkboxStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.checkboxStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.checkedChip = global::Xamarin_JuniorProject.Droid.Resource.Attribute.checkedChip;
+			global::Prism.Plugin.Popups.Resource.Attribute.checkedIcon = global::Xamarin_JuniorProject.Droid.Resource.Attribute.checkedIcon;
+			global::Prism.Plugin.Popups.Resource.Attribute.checkedIconEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.checkedIconEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.checkedIconVisible = global::Xamarin_JuniorProject.Droid.Resource.Attribute.checkedIconVisible;
+			global::Prism.Plugin.Popups.Resource.Attribute.checkedTextViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipBackgroundColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipBackgroundColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipCornerRadius = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipCornerRadius;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipEndPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipEndPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipGroupStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipGroupStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipIcon = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipIcon;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipIconEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipIconEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipIconSize = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipIconSize;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipIconTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipIconTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipIconVisible = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipIconVisible;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipMinHeight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipMinHeight;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipSpacing = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipSpacing;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipSpacingHorizontal = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipSpacingHorizontal;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipSpacingVertical = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipSpacingVertical;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipStandaloneStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipStandaloneStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipStartPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipStartPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipStrokeColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipStrokeColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipStrokeWidth = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipStrokeWidth;
+			global::Prism.Plugin.Popups.Resource.Attribute.chipStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.chipStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.closeIcon = global::Xamarin_JuniorProject.Droid.Resource.Attribute.closeIcon;
+			global::Prism.Plugin.Popups.Resource.Attribute.closeIconEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.closeIconEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.closeIconEndPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.closeIconEndPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.closeIconSize = global::Xamarin_JuniorProject.Droid.Resource.Attribute.closeIconSize;
+			global::Prism.Plugin.Popups.Resource.Attribute.closeIconStartPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.closeIconStartPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.closeIconTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.closeIconTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.closeIconVisible = global::Xamarin_JuniorProject.Droid.Resource.Attribute.closeIconVisible;
+			global::Prism.Plugin.Popups.Resource.Attribute.closeItemLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.closeItemLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.collapseContentDescription = global::Xamarin_JuniorProject.Droid.Resource.Attribute.collapseContentDescription;
+			global::Prism.Plugin.Popups.Resource.Attribute.collapsedTitleGravity = global::Xamarin_JuniorProject.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Prism.Plugin.Popups.Resource.Attribute.collapsedTitleTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.collapseIcon = global::Xamarin_JuniorProject.Droid.Resource.Attribute.collapseIcon;
+			global::Prism.Plugin.Popups.Resource.Attribute.color = global::Xamarin_JuniorProject.Droid.Resource.Attribute.color;
+			global::Prism.Plugin.Popups.Resource.Attribute.colorAccent = global::Xamarin_JuniorProject.Droid.Resource.Attribute.colorAccent;
+			global::Prism.Plugin.Popups.Resource.Attribute.colorBackgroundFloating = global::Xamarin_JuniorProject.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Prism.Plugin.Popups.Resource.Attribute.colorButtonNormal = global::Xamarin_JuniorProject.Droid.Resource.Attribute.colorButtonNormal;
+			global::Prism.Plugin.Popups.Resource.Attribute.colorControlActivated = global::Xamarin_JuniorProject.Droid.Resource.Attribute.colorControlActivated;
+			global::Prism.Plugin.Popups.Resource.Attribute.colorControlHighlight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.colorControlHighlight;
+			global::Prism.Plugin.Popups.Resource.Attribute.colorControlNormal = global::Xamarin_JuniorProject.Droid.Resource.Attribute.colorControlNormal;
+			global::Prism.Plugin.Popups.Resource.Attribute.colorError = global::Xamarin_JuniorProject.Droid.Resource.Attribute.colorError;
+			global::Prism.Plugin.Popups.Resource.Attribute.colorPrimary = global::Xamarin_JuniorProject.Droid.Resource.Attribute.colorPrimary;
+			global::Prism.Plugin.Popups.Resource.Attribute.colorPrimaryDark = global::Xamarin_JuniorProject.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Prism.Plugin.Popups.Resource.Attribute.colorSecondary = global::Xamarin_JuniorProject.Droid.Resource.Attribute.colorSecondary;
+			global::Prism.Plugin.Popups.Resource.Attribute.colorSwitchThumbNormal = global::Xamarin_JuniorProject.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Prism.Plugin.Popups.Resource.Attribute.commitIcon = global::Xamarin_JuniorProject.Droid.Resource.Attribute.commitIcon;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentDescription = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentDescription;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentInsetEnd = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentInsetEnd;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentInsetEndWithActions = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentInsetLeft = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentInsetLeft;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentInsetRight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentInsetRight;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentInsetStart = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentInsetStart;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentInsetStartWithNavigation = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentPaddingBottom = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentPaddingLeft = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentPaddingRight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentPaddingRight;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentPaddingTop = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentPaddingTop;
+			global::Prism.Plugin.Popups.Resource.Attribute.contentScrim = global::Xamarin_JuniorProject.Droid.Resource.Attribute.contentScrim;
+			global::Prism.Plugin.Popups.Resource.Attribute.controlBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.controlBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.coordinatorLayoutStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.cornerRadius = global::Xamarin_JuniorProject.Droid.Resource.Attribute.cornerRadius;
+			global::Prism.Plugin.Popups.Resource.Attribute.counterEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.counterEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.counterMaxLength = global::Xamarin_JuniorProject.Droid.Resource.Attribute.counterMaxLength;
+			global::Prism.Plugin.Popups.Resource.Attribute.counterOverflowTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.counterTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.counterTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.customNavigationLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.customNavigationLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.defaultQueryHint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.defaultQueryHint;
+			global::Prism.Plugin.Popups.Resource.Attribute.dialogCornerRadius = global::Xamarin_JuniorProject.Droid.Resource.Attribute.dialogCornerRadius;
+			global::Prism.Plugin.Popups.Resource.Attribute.dialogPreferredPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.dialogTheme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.dialogTheme;
+			global::Prism.Plugin.Popups.Resource.Attribute.displayOptions = global::Xamarin_JuniorProject.Droid.Resource.Attribute.displayOptions;
+			global::Prism.Plugin.Popups.Resource.Attribute.divider = global::Xamarin_JuniorProject.Droid.Resource.Attribute.divider;
+			global::Prism.Plugin.Popups.Resource.Attribute.dividerHorizontal = global::Xamarin_JuniorProject.Droid.Resource.Attribute.dividerHorizontal;
+			global::Prism.Plugin.Popups.Resource.Attribute.dividerPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.dividerPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.dividerVertical = global::Xamarin_JuniorProject.Droid.Resource.Attribute.dividerVertical;
+			global::Prism.Plugin.Popups.Resource.Attribute.drawableSize = global::Xamarin_JuniorProject.Droid.Resource.Attribute.drawableSize;
+			global::Prism.Plugin.Popups.Resource.Attribute.drawerArrowStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.dropdownListPreferredItemHeight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Prism.Plugin.Popups.Resource.Attribute.dropDownListViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.editTextBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.editTextBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.editTextColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.editTextColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.editTextStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.editTextStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.elevation = global::Xamarin_JuniorProject.Droid.Resource.Attribute.elevation;
+			global::Prism.Plugin.Popups.Resource.Attribute.enforceMaterialTheme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.enforceMaterialTheme;
+			global::Prism.Plugin.Popups.Resource.Attribute.enforceTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.enforceTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.errorEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.errorEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.errorTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.errorTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.expanded = global::Xamarin_JuniorProject.Droid.Resource.Attribute.expanded;
+			global::Prism.Plugin.Popups.Resource.Attribute.expandedTitleGravity = global::Xamarin_JuniorProject.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Prism.Plugin.Popups.Resource.Attribute.expandedTitleMargin = global::Xamarin_JuniorProject.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Prism.Plugin.Popups.Resource.Attribute.expandedTitleMarginBottom = global::Xamarin_JuniorProject.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Prism.Plugin.Popups.Resource.Attribute.expandedTitleMarginEnd = global::Xamarin_JuniorProject.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Prism.Plugin.Popups.Resource.Attribute.expandedTitleMarginStart = global::Xamarin_JuniorProject.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Prism.Plugin.Popups.Resource.Attribute.expandedTitleMarginTop = global::Xamarin_JuniorProject.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Prism.Plugin.Popups.Resource.Attribute.expandedTitleTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.externalRouteEnabledDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.fabAlignmentMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fabAlignmentMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.fabCradleMargin = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fabCradleMargin;
+			global::Prism.Plugin.Popups.Resource.Attribute.fabCradleRoundedCornerRadius = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fabCradleRoundedCornerRadius;
+			global::Prism.Plugin.Popups.Resource.Attribute.fabCradleVerticalOffset = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fabCradleVerticalOffset;
+			global::Prism.Plugin.Popups.Resource.Attribute.fabCustomSize = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fabCustomSize;
+			global::Prism.Plugin.Popups.Resource.Attribute.fabSize = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fabSize;
+			global::Prism.Plugin.Popups.Resource.Attribute.fastScrollEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fastScrollEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.fastScrollVerticalThumbDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.fastScrollVerticalTrackDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.firstBaselineToTopHeight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.firstBaselineToTopHeight;
+			global::Prism.Plugin.Popups.Resource.Attribute.floatingActionButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.floatingActionButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.font = global::Xamarin_JuniorProject.Droid.Resource.Attribute.font;
+			global::Prism.Plugin.Popups.Resource.Attribute.fontFamily = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fontFamily;
+			global::Prism.Plugin.Popups.Resource.Attribute.fontProviderAuthority = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Prism.Plugin.Popups.Resource.Attribute.fontProviderCerts = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fontProviderCerts;
+			global::Prism.Plugin.Popups.Resource.Attribute.fontProviderFetchStrategy = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Prism.Plugin.Popups.Resource.Attribute.fontProviderFetchTimeout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Prism.Plugin.Popups.Resource.Attribute.fontProviderPackage = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fontProviderPackage;
+			global::Prism.Plugin.Popups.Resource.Attribute.fontProviderQuery = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fontProviderQuery;
+			global::Prism.Plugin.Popups.Resource.Attribute.fontStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fontStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.fontVariationSettings = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fontVariationSettings;
+			global::Prism.Plugin.Popups.Resource.Attribute.fontWeight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.fontWeight;
+			global::Prism.Plugin.Popups.Resource.Attribute.foregroundInsidePadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.gapBetweenBars = global::Xamarin_JuniorProject.Droid.Resource.Attribute.gapBetweenBars;
+			global::Prism.Plugin.Popups.Resource.Attribute.goIcon = global::Xamarin_JuniorProject.Droid.Resource.Attribute.goIcon;
+			global::Prism.Plugin.Popups.Resource.Attribute.headerLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.headerLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.height = global::Xamarin_JuniorProject.Droid.Resource.Attribute.height;
+			global::Prism.Plugin.Popups.Resource.Attribute.helperText = global::Xamarin_JuniorProject.Droid.Resource.Attribute.helperText;
+			global::Prism.Plugin.Popups.Resource.Attribute.helperTextEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.helperTextEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.helperTextTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.helperTextTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.hideMotionSpec = global::Xamarin_JuniorProject.Droid.Resource.Attribute.hideMotionSpec;
+			global::Prism.Plugin.Popups.Resource.Attribute.hideOnContentScroll = global::Xamarin_JuniorProject.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Prism.Plugin.Popups.Resource.Attribute.hideOnScroll = global::Xamarin_JuniorProject.Droid.Resource.Attribute.hideOnScroll;
+			global::Prism.Plugin.Popups.Resource.Attribute.hintAnimationEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.hintEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.hintEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.hintTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.hintTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.homeAsUpIndicator = global::Xamarin_JuniorProject.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Prism.Plugin.Popups.Resource.Attribute.homeLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.homeLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.hoveredFocusedTranslationZ = global::Xamarin_JuniorProject.Droid.Resource.Attribute.hoveredFocusedTranslationZ;
+			global::Prism.Plugin.Popups.Resource.Attribute.icon = global::Xamarin_JuniorProject.Droid.Resource.Attribute.icon;
+			global::Prism.Plugin.Popups.Resource.Attribute.iconEndPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.iconEndPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.iconGravity = global::Xamarin_JuniorProject.Droid.Resource.Attribute.iconGravity;
+			global::Prism.Plugin.Popups.Resource.Attribute.iconifiedByDefault = global::Xamarin_JuniorProject.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Prism.Plugin.Popups.Resource.Attribute.iconPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.iconPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.iconSize = global::Xamarin_JuniorProject.Droid.Resource.Attribute.iconSize;
+			global::Prism.Plugin.Popups.Resource.Attribute.iconStartPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.iconStartPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.iconTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.iconTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.iconTintMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.iconTintMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.imageButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.imageButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.indeterminateProgressStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.initialActivityCount = global::Xamarin_JuniorProject.Droid.Resource.Attribute.initialActivityCount;
+			global::Prism.Plugin.Popups.Resource.Attribute.insetForeground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.insetForeground;
+			global::Prism.Plugin.Popups.Resource.Attribute.isLightTheme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.isLightTheme;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemHorizontalPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemHorizontalPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemHorizontalTranslationEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemHorizontalTranslationEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemIconPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemIconPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemIconSize = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemIconSize;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemIconTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemIconTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemSpacing = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemSpacing;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemTextAppearanceActive = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemTextAppearanceActive;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemTextAppearanceInactive = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemTextAppearanceInactive;
+			global::Prism.Plugin.Popups.Resource.Attribute.itemTextColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.itemTextColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.keylines = global::Xamarin_JuniorProject.Droid.Resource.Attribute.keylines;
+			global::Prism.Plugin.Popups.Resource.Attribute.labelVisibilityMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.labelVisibilityMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.lastBaselineToBottomHeight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.lastBaselineToBottomHeight;
+			global::Prism.Plugin.Popups.Resource.Attribute.layout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layout;
+			global::Prism.Plugin.Popups.Resource.Attribute.layoutManager = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layoutManager;
+			global::Prism.Plugin.Popups.Resource.Attribute.layout_anchor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layout_anchor;
+			global::Prism.Plugin.Popups.Resource.Attribute.layout_anchorGravity = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Prism.Plugin.Popups.Resource.Attribute.layout_behavior = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layout_behavior;
+			global::Prism.Plugin.Popups.Resource.Attribute.layout_collapseMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layout_collapseMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.layout_collapseParallaxMultiplier = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Prism.Plugin.Popups.Resource.Attribute.layout_dodgeInsetEdges = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Prism.Plugin.Popups.Resource.Attribute.layout_insetEdge = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layout_insetEdge;
+			global::Prism.Plugin.Popups.Resource.Attribute.layout_keyline = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layout_keyline;
+			global::Prism.Plugin.Popups.Resource.Attribute.layout_scrollFlags = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Prism.Plugin.Popups.Resource.Attribute.layout_scrollInterpolator = global::Xamarin_JuniorProject.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Prism.Plugin.Popups.Resource.Attribute.liftOnScroll = global::Xamarin_JuniorProject.Droid.Resource.Attribute.liftOnScroll;
+			global::Prism.Plugin.Popups.Resource.Attribute.lineHeight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.lineHeight;
+			global::Prism.Plugin.Popups.Resource.Attribute.lineSpacing = global::Xamarin_JuniorProject.Droid.Resource.Attribute.lineSpacing;
+			global::Prism.Plugin.Popups.Resource.Attribute.listChoiceBackgroundIndicator = global::Xamarin_JuniorProject.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Prism.Plugin.Popups.Resource.Attribute.listDividerAlertDialog = global::Xamarin_JuniorProject.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Prism.Plugin.Popups.Resource.Attribute.listItemLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.listItemLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.listLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.listLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.listMenuViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.listPopupWindowStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.listPreferredItemHeight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Prism.Plugin.Popups.Resource.Attribute.listPreferredItemHeightLarge = global::Xamarin_JuniorProject.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Prism.Plugin.Popups.Resource.Attribute.listPreferredItemHeightSmall = global::Xamarin_JuniorProject.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Prism.Plugin.Popups.Resource.Attribute.listPreferredItemPaddingLeft = global::Xamarin_JuniorProject.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Prism.Plugin.Popups.Resource.Attribute.listPreferredItemPaddingRight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Prism.Plugin.Popups.Resource.Attribute.logo = global::Xamarin_JuniorProject.Droid.Resource.Attribute.logo;
+			global::Prism.Plugin.Popups.Resource.Attribute.logoDescription = global::Xamarin_JuniorProject.Droid.Resource.Attribute.logoDescription;
+			global::Prism.Plugin.Popups.Resource.Attribute.materialButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.materialButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.materialCardViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.materialCardViewStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.maxActionInlineWidth = global::Xamarin_JuniorProject.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Prism.Plugin.Popups.Resource.Attribute.maxButtonHeight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.maxButtonHeight;
+			global::Prism.Plugin.Popups.Resource.Attribute.maxImageSize = global::Xamarin_JuniorProject.Droid.Resource.Attribute.maxImageSize;
+			global::Prism.Plugin.Popups.Resource.Attribute.measureWithLargestChild = global::Xamarin_JuniorProject.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRouteAudioTrackDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRouteButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRouteButtonTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRouteButtonTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRouteCloseDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRouteDefaultIconDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRoutePauseDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRoutePlayDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRouteStopDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRouteStopDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRouteTheme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRouteTheme;
+			global::Prism.Plugin.Popups.Resource.Attribute.mediaRouteTvIconDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.menu = global::Xamarin_JuniorProject.Droid.Resource.Attribute.menu;
+			global::Prism.Plugin.Popups.Resource.Attribute.multiChoiceItemLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.navigationContentDescription = global::Xamarin_JuniorProject.Droid.Resource.Attribute.navigationContentDescription;
+			global::Prism.Plugin.Popups.Resource.Attribute.navigationIcon = global::Xamarin_JuniorProject.Droid.Resource.Attribute.navigationIcon;
+			global::Prism.Plugin.Popups.Resource.Attribute.navigationMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.navigationMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.navigationViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.navigationViewStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.numericModifiers = global::Xamarin_JuniorProject.Droid.Resource.Attribute.numericModifiers;
+			global::Prism.Plugin.Popups.Resource.Attribute.overlapAnchor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.overlapAnchor;
+			global::Prism.Plugin.Popups.Resource.Attribute.paddingBottomNoButtons = global::Xamarin_JuniorProject.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Prism.Plugin.Popups.Resource.Attribute.paddingEnd = global::Xamarin_JuniorProject.Droid.Resource.Attribute.paddingEnd;
+			global::Prism.Plugin.Popups.Resource.Attribute.paddingStart = global::Xamarin_JuniorProject.Droid.Resource.Attribute.paddingStart;
+			global::Prism.Plugin.Popups.Resource.Attribute.paddingTopNoTitle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Prism.Plugin.Popups.Resource.Attribute.panelBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.panelBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.panelMenuListTheme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Prism.Plugin.Popups.Resource.Attribute.panelMenuListWidth = global::Xamarin_JuniorProject.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Prism.Plugin.Popups.Resource.Attribute.passwordToggleContentDescription = global::Xamarin_JuniorProject.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Prism.Plugin.Popups.Resource.Attribute.passwordToggleDrawable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Prism.Plugin.Popups.Resource.Attribute.passwordToggleEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.passwordToggleTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.passwordToggleTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.passwordToggleTintMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.popupMenuStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.popupMenuStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.popupTheme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.popupTheme;
+			global::Prism.Plugin.Popups.Resource.Attribute.popupWindowStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.popupWindowStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.preserveIconSpacing = global::Xamarin_JuniorProject.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Prism.Plugin.Popups.Resource.Attribute.pressedTranslationZ = global::Xamarin_JuniorProject.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Prism.Plugin.Popups.Resource.Attribute.progressBarPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.progressBarPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.progressBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.progressBarStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.queryBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.queryBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.queryHint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.queryHint;
+			global::Prism.Plugin.Popups.Resource.Attribute.radioButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.radioButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.ratingBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.ratingBarStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.ratingBarStyleIndicator = global::Xamarin_JuniorProject.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Prism.Plugin.Popups.Resource.Attribute.ratingBarStyleSmall = global::Xamarin_JuniorProject.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Prism.Plugin.Popups.Resource.Attribute.reverseLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.reverseLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.rippleColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.rippleColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.scrimAnimationDuration = global::Xamarin_JuniorProject.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Prism.Plugin.Popups.Resource.Attribute.scrimBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.scrimBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.scrimVisibleHeightTrigger = global::Xamarin_JuniorProject.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Prism.Plugin.Popups.Resource.Attribute.searchHintIcon = global::Xamarin_JuniorProject.Droid.Resource.Attribute.searchHintIcon;
+			global::Prism.Plugin.Popups.Resource.Attribute.searchIcon = global::Xamarin_JuniorProject.Droid.Resource.Attribute.searchIcon;
+			global::Prism.Plugin.Popups.Resource.Attribute.searchViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.searchViewStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.seekBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.seekBarStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.selectableItemBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.selectableItemBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.selectableItemBackgroundBorderless = global::Xamarin_JuniorProject.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Prism.Plugin.Popups.Resource.Attribute.showAsAction = global::Xamarin_JuniorProject.Droid.Resource.Attribute.showAsAction;
+			global::Prism.Plugin.Popups.Resource.Attribute.showDividers = global::Xamarin_JuniorProject.Droid.Resource.Attribute.showDividers;
+			global::Prism.Plugin.Popups.Resource.Attribute.showMotionSpec = global::Xamarin_JuniorProject.Droid.Resource.Attribute.showMotionSpec;
+			global::Prism.Plugin.Popups.Resource.Attribute.showText = global::Xamarin_JuniorProject.Droid.Resource.Attribute.showText;
+			global::Prism.Plugin.Popups.Resource.Attribute.showTitle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.showTitle;
+			global::Prism.Plugin.Popups.Resource.Attribute.singleChoiceItemLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.singleLine = global::Xamarin_JuniorProject.Droid.Resource.Attribute.singleLine;
+			global::Prism.Plugin.Popups.Resource.Attribute.singleSelection = global::Xamarin_JuniorProject.Droid.Resource.Attribute.singleSelection;
+			global::Prism.Plugin.Popups.Resource.Attribute.snackbarButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.snackbarButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.snackbarStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.snackbarStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.spanCount = global::Xamarin_JuniorProject.Droid.Resource.Attribute.spanCount;
+			global::Prism.Plugin.Popups.Resource.Attribute.spinBars = global::Xamarin_JuniorProject.Droid.Resource.Attribute.spinBars;
+			global::Prism.Plugin.Popups.Resource.Attribute.spinnerDropDownItemStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.spinnerStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.spinnerStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.splitTrack = global::Xamarin_JuniorProject.Droid.Resource.Attribute.splitTrack;
+			global::Prism.Plugin.Popups.Resource.Attribute.srcCompat = global::Xamarin_JuniorProject.Droid.Resource.Attribute.srcCompat;
+			global::Prism.Plugin.Popups.Resource.Attribute.stackFromEnd = global::Xamarin_JuniorProject.Droid.Resource.Attribute.stackFromEnd;
+			global::Prism.Plugin.Popups.Resource.Attribute.state_above_anchor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.state_above_anchor;
+			global::Prism.Plugin.Popups.Resource.Attribute.state_collapsed = global::Xamarin_JuniorProject.Droid.Resource.Attribute.state_collapsed;
+			global::Prism.Plugin.Popups.Resource.Attribute.state_collapsible = global::Xamarin_JuniorProject.Droid.Resource.Attribute.state_collapsible;
+			global::Prism.Plugin.Popups.Resource.Attribute.state_liftable = global::Xamarin_JuniorProject.Droid.Resource.Attribute.state_liftable;
+			global::Prism.Plugin.Popups.Resource.Attribute.state_lifted = global::Xamarin_JuniorProject.Droid.Resource.Attribute.state_lifted;
+			global::Prism.Plugin.Popups.Resource.Attribute.statusBarBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.statusBarBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.statusBarScrim = global::Xamarin_JuniorProject.Droid.Resource.Attribute.statusBarScrim;
+			global::Prism.Plugin.Popups.Resource.Attribute.strokeColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.strokeColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.strokeWidth = global::Xamarin_JuniorProject.Droid.Resource.Attribute.strokeWidth;
+			global::Prism.Plugin.Popups.Resource.Attribute.subMenuArrow = global::Xamarin_JuniorProject.Droid.Resource.Attribute.subMenuArrow;
+			global::Prism.Plugin.Popups.Resource.Attribute.submitBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.submitBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.subtitle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.subtitle;
+			global::Prism.Plugin.Popups.Resource.Attribute.subtitleTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.subtitleTextColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.subtitleTextColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.subtitleTextStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.suggestionRowLayout = global::Xamarin_JuniorProject.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Prism.Plugin.Popups.Resource.Attribute.switchMinWidth = global::Xamarin_JuniorProject.Droid.Resource.Attribute.switchMinWidth;
+			global::Prism.Plugin.Popups.Resource.Attribute.switchPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.switchPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.switchStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.switchStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.switchTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.switchTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabContentStart = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabContentStart;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabGravity = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabGravity;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabIconTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabIconTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabIconTintMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabIconTintMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabIndicator = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabIndicator;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabIndicatorAnimationDuration = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabIndicatorAnimationDuration;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabIndicatorColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabIndicatorFullWidth = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabIndicatorFullWidth;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabIndicatorGravity = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabIndicatorGravity;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabIndicatorHeight = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabInlineLabel = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabInlineLabel;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabMaxWidth = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabMaxWidth;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabMinWidth = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabMinWidth;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabPaddingBottom = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabPaddingEnd = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabPaddingStart = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabPaddingStart;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabPaddingTop = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabPaddingTop;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabRippleColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabRippleColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabSelectedTextColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabTextColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabTextColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.tabUnboundedRipple = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tabUnboundedRipple;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAllCaps = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAllCaps;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceBody1 = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceBody1;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceBody2 = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceBody2;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceButton = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceButton;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceCaption = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceCaption;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceHeadline1 = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceHeadline1;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceHeadline2 = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceHeadline2;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceHeadline3 = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceHeadline3;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceHeadline4 = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceHeadline4;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceHeadline5 = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceHeadline5;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceHeadline6 = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceHeadline6;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceLargePopupMenu = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceListItem = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceListItemSecondary = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceListItemSmall = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceOverline = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceOverline;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearancePopupMenuHeader = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceSearchResultTitle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceSmallPopupMenu = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceSubtitle1 = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceSubtitle1;
+			global::Prism.Plugin.Popups.Resource.Attribute.textAppearanceSubtitle2 = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textAppearanceSubtitle2;
+			global::Prism.Plugin.Popups.Resource.Attribute.textColorAlertDialogListItem = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Prism.Plugin.Popups.Resource.Attribute.textColorSearchUrl = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Prism.Plugin.Popups.Resource.Attribute.textEndPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textEndPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.textInputStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textInputStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.textStartPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.textStartPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.theme = global::Xamarin_JuniorProject.Droid.Resource.Attribute.theme;
+			global::Prism.Plugin.Popups.Resource.Attribute.thickness = global::Xamarin_JuniorProject.Droid.Resource.Attribute.thickness;
+			global::Prism.Plugin.Popups.Resource.Attribute.thumbTextPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.thumbTextPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.thumbTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.thumbTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.thumbTintMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.thumbTintMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.tickMark = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tickMark;
+			global::Prism.Plugin.Popups.Resource.Attribute.tickMarkTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tickMarkTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.tickMarkTintMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.tint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tint;
+			global::Prism.Plugin.Popups.Resource.Attribute.tintMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tintMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.title = global::Xamarin_JuniorProject.Droid.Resource.Attribute.title;
+			global::Prism.Plugin.Popups.Resource.Attribute.titleEnabled = global::Xamarin_JuniorProject.Droid.Resource.Attribute.titleEnabled;
+			global::Prism.Plugin.Popups.Resource.Attribute.titleMargin = global::Xamarin_JuniorProject.Droid.Resource.Attribute.titleMargin;
+			global::Prism.Plugin.Popups.Resource.Attribute.titleMarginBottom = global::Xamarin_JuniorProject.Droid.Resource.Attribute.titleMarginBottom;
+			global::Prism.Plugin.Popups.Resource.Attribute.titleMarginEnd = global::Xamarin_JuniorProject.Droid.Resource.Attribute.titleMarginEnd;
+			global::Prism.Plugin.Popups.Resource.Attribute.titleMargins = global::Xamarin_JuniorProject.Droid.Resource.Attribute.titleMargins;
+			global::Prism.Plugin.Popups.Resource.Attribute.titleMarginStart = global::Xamarin_JuniorProject.Droid.Resource.Attribute.titleMarginStart;
+			global::Prism.Plugin.Popups.Resource.Attribute.titleMarginTop = global::Xamarin_JuniorProject.Droid.Resource.Attribute.titleMarginTop;
+			global::Prism.Plugin.Popups.Resource.Attribute.titleTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Attribute.titleTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Attribute.titleTextColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.titleTextColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.titleTextStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.titleTextStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.toolbarId = global::Xamarin_JuniorProject.Droid.Resource.Attribute.toolbarId;
+			global::Prism.Plugin.Popups.Resource.Attribute.toolbarNavigationButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.toolbarStyle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.toolbarStyle;
+			global::Prism.Plugin.Popups.Resource.Attribute.tooltipForegroundColor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Prism.Plugin.Popups.Resource.Attribute.tooltipFrameBackground = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Prism.Plugin.Popups.Resource.Attribute.tooltipText = global::Xamarin_JuniorProject.Droid.Resource.Attribute.tooltipText;
+			global::Prism.Plugin.Popups.Resource.Attribute.track = global::Xamarin_JuniorProject.Droid.Resource.Attribute.track;
+			global::Prism.Plugin.Popups.Resource.Attribute.trackTint = global::Xamarin_JuniorProject.Droid.Resource.Attribute.trackTint;
+			global::Prism.Plugin.Popups.Resource.Attribute.trackTintMode = global::Xamarin_JuniorProject.Droid.Resource.Attribute.trackTintMode;
+			global::Prism.Plugin.Popups.Resource.Attribute.ttcIndex = global::Xamarin_JuniorProject.Droid.Resource.Attribute.ttcIndex;
+			global::Prism.Plugin.Popups.Resource.Attribute.useCompatPadding = global::Xamarin_JuniorProject.Droid.Resource.Attribute.useCompatPadding;
+			global::Prism.Plugin.Popups.Resource.Attribute.viewInflaterClass = global::Xamarin_JuniorProject.Droid.Resource.Attribute.viewInflaterClass;
+			global::Prism.Plugin.Popups.Resource.Attribute.voiceIcon = global::Xamarin_JuniorProject.Droid.Resource.Attribute.voiceIcon;
+			global::Prism.Plugin.Popups.Resource.Attribute.windowActionBar = global::Xamarin_JuniorProject.Droid.Resource.Attribute.windowActionBar;
+			global::Prism.Plugin.Popups.Resource.Attribute.windowActionBarOverlay = global::Xamarin_JuniorProject.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Prism.Plugin.Popups.Resource.Attribute.windowActionModeOverlay = global::Xamarin_JuniorProject.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Prism.Plugin.Popups.Resource.Attribute.windowFixedHeightMajor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Prism.Plugin.Popups.Resource.Attribute.windowFixedHeightMinor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Prism.Plugin.Popups.Resource.Attribute.windowFixedWidthMajor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Prism.Plugin.Popups.Resource.Attribute.windowFixedWidthMinor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Prism.Plugin.Popups.Resource.Attribute.windowMinWidthMajor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Prism.Plugin.Popups.Resource.Attribute.windowMinWidthMinor = global::Xamarin_JuniorProject.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Prism.Plugin.Popups.Resource.Attribute.windowNoTitle = global::Xamarin_JuniorProject.Droid.Resource.Attribute.windowNoTitle;
+			global::Prism.Plugin.Popups.Resource.Boolean.abc_action_bar_embed_tabs = global::Xamarin_JuniorProject.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Prism.Plugin.Popups.Resource.Boolean.abc_allow_stacked_button_bar = global::Xamarin_JuniorProject.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Prism.Plugin.Popups.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Xamarin_JuniorProject.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Prism.Plugin.Popups.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::Xamarin_JuniorProject.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
+			global::Prism.Plugin.Popups.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.abc_background_cache_hint_selector_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.abc_btn_colored_borderless_text_material = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Prism.Plugin.Popups.Resource.Color.abc_btn_colored_text_material = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Prism.Plugin.Popups.Resource.Color.abc_color_highlight_material = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_color_highlight_material;
+			global::Prism.Plugin.Popups.Resource.Color.abc_hint_foreground_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.abc_hint_foreground_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.abc_input_method_navigation_guard = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Prism.Plugin.Popups.Resource.Color.abc_primary_text_disable_only_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.abc_primary_text_disable_only_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.abc_primary_text_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.abc_primary_text_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.abc_search_url_text = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_search_url_text;
+			global::Prism.Plugin.Popups.Resource.Color.abc_search_url_text_normal = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Prism.Plugin.Popups.Resource.Color.abc_search_url_text_pressed = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Prism.Plugin.Popups.Resource.Color.abc_search_url_text_selected = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Prism.Plugin.Popups.Resource.Color.abc_secondary_text_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.abc_secondary_text_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.abc_tint_btn_checkable = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Prism.Plugin.Popups.Resource.Color.abc_tint_default = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_tint_default;
+			global::Prism.Plugin.Popups.Resource.Color.abc_tint_edittext = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_tint_edittext;
+			global::Prism.Plugin.Popups.Resource.Color.abc_tint_seek_thumb = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Prism.Plugin.Popups.Resource.Color.abc_tint_spinner = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_tint_spinner;
+			global::Prism.Plugin.Popups.Resource.Color.abc_tint_switch_track = global::Xamarin_JuniorProject.Droid.Resource.Color.abc_tint_switch_track;
+			global::Prism.Plugin.Popups.Resource.Color.accent_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.accent_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.accent_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.accent_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.background_floating_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.background_floating_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.background_floating_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.background_floating_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.background_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.background_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.background_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.background_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.bright_foreground_disabled_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.bright_foreground_disabled_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.bright_foreground_inverse_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.bright_foreground_inverse_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.bright_foreground_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.bright_foreground_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.bright_foreground_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.browser_actions_bg_grey = global::Xamarin_JuniorProject.Droid.Resource.Color.browser_actions_bg_grey;
+			global::Prism.Plugin.Popups.Resource.Color.browser_actions_divider_color = global::Xamarin_JuniorProject.Droid.Resource.Color.browser_actions_divider_color;
+			global::Prism.Plugin.Popups.Resource.Color.browser_actions_text_color = global::Xamarin_JuniorProject.Droid.Resource.Color.browser_actions_text_color;
+			global::Prism.Plugin.Popups.Resource.Color.browser_actions_title_color = global::Xamarin_JuniorProject.Droid.Resource.Color.browser_actions_title_color;
+			global::Prism.Plugin.Popups.Resource.Color.button_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.button_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.button_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.button_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.cardview_dark_background = global::Xamarin_JuniorProject.Droid.Resource.Color.cardview_dark_background;
+			global::Prism.Plugin.Popups.Resource.Color.cardview_light_background = global::Xamarin_JuniorProject.Droid.Resource.Color.cardview_light_background;
+			global::Prism.Plugin.Popups.Resource.Color.cardview_shadow_end_color = global::Xamarin_JuniorProject.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Prism.Plugin.Popups.Resource.Color.cardview_shadow_start_color = global::Xamarin_JuniorProject.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Prism.Plugin.Popups.Resource.Color.design_bottom_navigation_shadow_color = global::Xamarin_JuniorProject.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Prism.Plugin.Popups.Resource.Color.design_default_color_primary = global::Xamarin_JuniorProject.Droid.Resource.Color.design_default_color_primary;
+			global::Prism.Plugin.Popups.Resource.Color.design_default_color_primary_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.design_default_color_primary_dark;
+			global::Prism.Plugin.Popups.Resource.Color.design_error = global::Xamarin_JuniorProject.Droid.Resource.Color.design_error;
+			global::Prism.Plugin.Popups.Resource.Color.design_fab_shadow_end_color = global::Xamarin_JuniorProject.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Prism.Plugin.Popups.Resource.Color.design_fab_shadow_mid_color = global::Xamarin_JuniorProject.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Prism.Plugin.Popups.Resource.Color.design_fab_shadow_start_color = global::Xamarin_JuniorProject.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Prism.Plugin.Popups.Resource.Color.design_fab_stroke_end_inner_color = global::Xamarin_JuniorProject.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Prism.Plugin.Popups.Resource.Color.design_fab_stroke_end_outer_color = global::Xamarin_JuniorProject.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Prism.Plugin.Popups.Resource.Color.design_fab_stroke_top_inner_color = global::Xamarin_JuniorProject.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Prism.Plugin.Popups.Resource.Color.design_fab_stroke_top_outer_color = global::Xamarin_JuniorProject.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Prism.Plugin.Popups.Resource.Color.design_snackbar_background_color = global::Xamarin_JuniorProject.Droid.Resource.Color.design_snackbar_background_color;
+			global::Prism.Plugin.Popups.Resource.Color.design_tint_password_toggle = global::Xamarin_JuniorProject.Droid.Resource.Color.design_tint_password_toggle;
+			global::Prism.Plugin.Popups.Resource.Color.dim_foreground_disabled_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.dim_foreground_disabled_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.dim_foreground_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.dim_foreground_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.dim_foreground_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.error_color_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.error_color_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.error_color_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.error_color_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.foreground_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.foreground_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.foreground_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.foreground_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.highlighted_text_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.highlighted_text_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.highlighted_text_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.material_blue_grey_800 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_blue_grey_800;
+			global::Prism.Plugin.Popups.Resource.Color.material_blue_grey_900 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_blue_grey_900;
+			global::Prism.Plugin.Popups.Resource.Color.material_blue_grey_950 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_blue_grey_950;
+			global::Prism.Plugin.Popups.Resource.Color.material_deep_teal_200 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_deep_teal_200;
+			global::Prism.Plugin.Popups.Resource.Color.material_deep_teal_500 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_deep_teal_500;
+			global::Prism.Plugin.Popups.Resource.Color.material_grey_100 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_grey_100;
+			global::Prism.Plugin.Popups.Resource.Color.material_grey_300 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_grey_300;
+			global::Prism.Plugin.Popups.Resource.Color.material_grey_50 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_grey_50;
+			global::Prism.Plugin.Popups.Resource.Color.material_grey_600 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_grey_600;
+			global::Prism.Plugin.Popups.Resource.Color.material_grey_800 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_grey_800;
+			global::Prism.Plugin.Popups.Resource.Color.material_grey_850 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_grey_850;
+			global::Prism.Plugin.Popups.Resource.Color.material_grey_900 = global::Xamarin_JuniorProject.Droid.Resource.Color.material_grey_900;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_bottom_nav_item_tint = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_btn_bg_color_disabled = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_btn_bg_color_disabled;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_btn_bg_color_selector = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_btn_bg_color_selector;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_btn_ripple_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_btn_ripple_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_btn_stroke_color_selector = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_btn_text_btn_ripple_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_btn_text_btn_ripple_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_btn_text_color_disabled = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_btn_text_color_disabled;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_btn_text_color_selector = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_btn_text_color_selector;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_btn_transparent_bg_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_btn_transparent_bg_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_chip_background_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_chip_background_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_chip_close_icon_tint = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_chip_close_icon_tint;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_chip_ripple_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_chip_ripple_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_chip_text_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_chip_text_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_fab_ripple_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_fab_ripple_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_scrim_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_scrim_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_tabs_colored_ripple_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_tabs_colored_ripple_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_tabs_icon_color_selector = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_tabs_icon_color_selector;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_tabs_ripple_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_tabs_ripple_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_textinput_default_box_stroke_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_textinput_disabled_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_textinput_disabled_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::Prism.Plugin.Popups.Resource.Color.mtrl_text_btn_text_color_selector = global::Xamarin_JuniorProject.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
+			global::Prism.Plugin.Popups.Resource.Color.notification_action_color_filter = global::Xamarin_JuniorProject.Droid.Resource.Color.notification_action_color_filter;
+			global::Prism.Plugin.Popups.Resource.Color.notification_icon_bg_color = global::Xamarin_JuniorProject.Droid.Resource.Color.notification_icon_bg_color;
+			global::Prism.Plugin.Popups.Resource.Color.notification_material_background_media_default_color = global::Xamarin_JuniorProject.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Prism.Plugin.Popups.Resource.Color.primary_dark_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.primary_dark_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.primary_dark_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.primary_dark_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.primary_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.primary_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.primary_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.primary_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.primary_text_default_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.primary_text_default_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.primary_text_default_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.primary_text_disabled_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.primary_text_disabled_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.ripple_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.ripple_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.ripple_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.ripple_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.secondary_text_default_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.secondary_text_default_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.secondary_text_disabled_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.secondary_text_disabled_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.switch_thumb_disabled_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.switch_thumb_disabled_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.switch_thumb_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.switch_thumb_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.switch_thumb_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.switch_thumb_normal_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Prism.Plugin.Popups.Resource.Color.switch_thumb_normal_material_light = global::Xamarin_JuniorProject.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Prism.Plugin.Popups.Resource.Color.tooltip_background_dark = global::Xamarin_JuniorProject.Droid.Resource.Color.tooltip_background_dark;
+			global::Prism.Plugin.Popups.Resource.Color.tooltip_background_light = global::Xamarin_JuniorProject.Droid.Resource.Color.tooltip_background_light;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_content_inset_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_default_height_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_elevation_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_stacked_max_height = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_button_min_height_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_button_min_width_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_alert_dialog_button_dimen = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_alert_dialog_button_dimen;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_button_inset_horizontal_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_button_inset_vertical_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_button_padding_horizontal_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_button_padding_vertical_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_config_prefDialogWidth = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_control_corner_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_control_inset_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_control_padding_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_corner_radius_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_corner_radius_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_fixed_height_major = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_fixed_height_minor = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_fixed_width_major = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_fixed_width_minor = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_min_width_major = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_min_width_minor = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_padding_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_padding_top_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dialog_title_divider_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_disabled_alpha_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_disabled_alpha_material_light = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dropdownitem_icon_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_edit_text_inset_top_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_floating_window_z = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_panel_menu_list_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_progress_bar_height_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_search_view_preferred_height = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_search_view_preferred_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_seekbar_track_background_height_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_select_dialog_padding_start_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_switch_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_switch_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_body_1_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_body_2_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_button_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_caption_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_display_1_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_display_2_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_display_3_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_display_4_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_headline_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_large_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_medium_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_menu_header_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_menu_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_small_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_subhead_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_title_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.abc_text_size_title_material_toolbar = global::Xamarin_JuniorProject.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Prism.Plugin.Popups.Resource.Dimension.browser_actions_context_menu_max_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.browser_actions_context_menu_min_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.cardview_compat_inset_shadow = global::Xamarin_JuniorProject.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Prism.Plugin.Popups.Resource.Dimension.cardview_default_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.cardview_default_radius = global::Xamarin_JuniorProject.Droid.Resource.Dimension.cardview_default_radius;
+			global::Prism.Plugin.Popups.Resource.Dimension.compat_button_inset_horizontal_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.compat_button_inset_vertical_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.compat_button_padding_horizontal_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.compat_button_padding_vertical_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.compat_control_corner_material = global::Xamarin_JuniorProject.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Prism.Plugin.Popups.Resource.Dimension.compat_notification_large_icon_max_height = global::Xamarin_JuniorProject.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Prism.Plugin.Popups.Resource.Dimension.compat_notification_large_icon_max_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_appbar_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_navigation_active_text_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_navigation_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_navigation_height = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_navigation_icon_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_navigation_icon_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_navigation_item_max_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_navigation_item_min_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_navigation_margin = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_navigation_shadow_height = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_navigation_text_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_sheet_modal_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_bottom_sheet_peek_height_min = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_fab_border_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_fab_border_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_fab_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_fab_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_fab_image_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_fab_image_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_fab_size_mini = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_fab_size_normal = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_fab_translation_z_hovered_focused = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_fab_translation_z_hovered_focused;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_fab_translation_z_pressed = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_navigation_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_navigation_icon_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_navigation_icon_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_navigation_item_horizontal_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_navigation_item_horizontal_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_navigation_item_icon_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_navigation_item_icon_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_navigation_max_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_navigation_padding_bottom = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_navigation_separator_vertical_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_snackbar_action_inline_max_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_snackbar_background_corner_radius = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_snackbar_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_snackbar_max_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_snackbar_min_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_snackbar_padding_horizontal = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_snackbar_padding_vertical = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_snackbar_text_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_tab_max_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_tab_max_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_tab_scrollable_min_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_tab_text_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_tab_text_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_tab_text_size_2line = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Prism.Plugin.Popups.Resource.Dimension.design_textinput_caption_translate_y = global::Xamarin_JuniorProject.Droid.Resource.Dimension.design_textinput_caption_translate_y;
+			global::Prism.Plugin.Popups.Resource.Dimension.disabled_alpha_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Prism.Plugin.Popups.Resource.Dimension.disabled_alpha_material_light = global::Xamarin_JuniorProject.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Prism.Plugin.Popups.Resource.Dimension.fastscroll_default_thickness = global::Xamarin_JuniorProject.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::Prism.Plugin.Popups.Resource.Dimension.fastscroll_margin = global::Xamarin_JuniorProject.Droid.Resource.Dimension.fastscroll_margin;
+			global::Prism.Plugin.Popups.Resource.Dimension.fastscroll_minimum_range = global::Xamarin_JuniorProject.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::Prism.Plugin.Popups.Resource.Dimension.highlight_alpha_material_colored = global::Xamarin_JuniorProject.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Prism.Plugin.Popups.Resource.Dimension.highlight_alpha_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Prism.Plugin.Popups.Resource.Dimension.highlight_alpha_material_light = global::Xamarin_JuniorProject.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Prism.Plugin.Popups.Resource.Dimension.hint_alpha_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Prism.Plugin.Popups.Resource.Dimension.hint_alpha_material_light = global::Xamarin_JuniorProject.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Prism.Plugin.Popups.Resource.Dimension.hint_pressed_alpha_material_dark = global::Xamarin_JuniorProject.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Prism.Plugin.Popups.Resource.Dimension.hint_pressed_alpha_material_light = global::Xamarin_JuniorProject.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Prism.Plugin.Popups.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Xamarin_JuniorProject.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Prism.Plugin.Popups.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Xamarin_JuniorProject.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Prism.Plugin.Popups.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Xamarin_JuniorProject.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Prism.Plugin.Popups.Resource.Dimension.mr_controller_volume_group_list_item_height = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::Prism.Plugin.Popups.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.mr_controller_volume_group_list_max_height = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::Prism.Plugin.Popups.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::Prism.Plugin.Popups.Resource.Dimension.mr_dialog_fixed_width_major = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::Prism.Plugin.Popups.Resource.Dimension.mr_dialog_fixed_width_minor = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_bottomappbar_height = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_bottomappbar_height;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_corner_radius = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_corner_radius;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_disabled_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_disabled_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_disabled_z = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_disabled_z;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_focused_z = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_focused_z;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_hovered_z = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_hovered_z;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_icon_btn_padding_left = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_icon_btn_padding_left;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_icon_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_icon_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_inset = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_inset;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_letter_spacing = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_letter_spacing;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_padding_bottom = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_padding_bottom;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_padding_left = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_padding_left;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_padding_right = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_padding_right;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_padding_top = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_padding_top;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_pressed_z = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_pressed_z;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_stroke_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_stroke_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_text_btn_icon_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_text_btn_icon_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_text_btn_padding_left = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_left;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_text_btn_padding_right = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_right;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_text_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_text_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_btn_z = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_btn_z;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_card_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_card_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_card_spacing = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_card_spacing;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_chip_pressed_translation_z = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_chip_pressed_translation_z;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_chip_text_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_chip_text_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_fab_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_fab_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_fab_translation_z_hovered_focused = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_fab_translation_z_hovered_focused;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_fab_translation_z_pressed = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_fab_translation_z_pressed;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_navigation_elevation = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_navigation_elevation;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_navigation_item_horizontal_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_navigation_item_horizontal_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_navigation_item_icon_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_snackbar_margin = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_snackbar_margin;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_textinput_box_bottom_offset = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_textinput_box_bottom_offset;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_textinput_box_padding_end = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_textinput_box_padding_end;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.mtrl_toolbar_default_height = global::Xamarin_JuniorProject.Droid.Resource.Dimension.mtrl_toolbar_default_height;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_action_icon_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_action_text_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_action_text_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_big_circle_margin = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_content_margin_start = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_large_icon_height = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_large_icon_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_main_column_padding_top = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_media_narrow_margin = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_right_icon_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_right_side_padding_top = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_small_icon_background_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_small_icon_size_as_large = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_subtext_size = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_subtext_size;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_top_pad = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_top_pad;
+			global::Prism.Plugin.Popups.Resource.Dimension.notification_top_pad_large_text = global::Xamarin_JuniorProject.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Prism.Plugin.Popups.Resource.Dimension.subtitle_corner_radius = global::Xamarin_JuniorProject.Droid.Resource.Dimension.subtitle_corner_radius;
+			global::Prism.Plugin.Popups.Resource.Dimension.subtitle_outline_width = global::Xamarin_JuniorProject.Droid.Resource.Dimension.subtitle_outline_width;
+			global::Prism.Plugin.Popups.Resource.Dimension.subtitle_shadow_offset = global::Xamarin_JuniorProject.Droid.Resource.Dimension.subtitle_shadow_offset;
+			global::Prism.Plugin.Popups.Resource.Dimension.subtitle_shadow_radius = global::Xamarin_JuniorProject.Droid.Resource.Dimension.subtitle_shadow_radius;
+			global::Prism.Plugin.Popups.Resource.Dimension.tooltip_corner_radius = global::Xamarin_JuniorProject.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Prism.Plugin.Popups.Resource.Dimension.tooltip_horizontal_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.tooltip_margin = global::Xamarin_JuniorProject.Droid.Resource.Dimension.tooltip_margin;
+			global::Prism.Plugin.Popups.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::Xamarin_JuniorProject.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Prism.Plugin.Popups.Resource.Dimension.tooltip_precise_anchor_threshold = global::Xamarin_JuniorProject.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Prism.Plugin.Popups.Resource.Dimension.tooltip_vertical_padding = global::Xamarin_JuniorProject.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Prism.Plugin.Popups.Resource.Dimension.tooltip_y_offset_non_touch = global::Xamarin_JuniorProject.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Prism.Plugin.Popups.Resource.Dimension.tooltip_y_offset_touch = global::Xamarin_JuniorProject.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_action_bar_item_background_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_btn_borderless_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_btn_check_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_btn_colored_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_btn_default_mtrl_shape = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_btn_radio_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_cab_background_internal_bg = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_cab_background_top_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_control_background_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_control_background_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_dialog_material_background = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_edit_text_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_ab_back_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_clear_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_go_search_api_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_menu_overflow_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_search_api_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_star_black_16dp = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_star_black_36dp = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_star_black_48dp = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_star_half_black_16dp = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_star_half_black_36dp = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_star_half_black_48dp = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ic_voice_search_api_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_item_background_holo_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_item_background_holo_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_divider_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_divider_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_focused_holo = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_longpressed_holo = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_pressed_holo_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_pressed_holo_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_selector_holo_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_list_selector_holo_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_popup_background_mtrl_mult = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ratingbar_indicator_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ratingbar_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_ratingbar_small_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_seekbar_thumb_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_seekbar_tick_mark_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_seekbar_track_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_spinner_textfield_background_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_switch_thumb_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_tab_indicator_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_textfield_search_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_text_cursor_material = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.abc_vector_test = global::Xamarin_JuniorProject.Droid.Resource.Drawable.abc_vector_test;
+			global::Prism.Plugin.Popups.Resource.Drawable.avd_hide_password = global::Xamarin_JuniorProject.Droid.Resource.Drawable.avd_hide_password;
+			global::Prism.Plugin.Popups.Resource.Drawable.avd_show_password = global::Xamarin_JuniorProject.Droid.Resource.Drawable.avd_show_password;
+			global::Prism.Plugin.Popups.Resource.Drawable.design_bottom_navigation_item_background = global::Xamarin_JuniorProject.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Prism.Plugin.Popups.Resource.Drawable.design_fab_background = global::Xamarin_JuniorProject.Droid.Resource.Drawable.design_fab_background;
+			global::Prism.Plugin.Popups.Resource.Drawable.design_ic_visibility = global::Xamarin_JuniorProject.Droid.Resource.Drawable.design_ic_visibility;
+			global::Prism.Plugin.Popups.Resource.Drawable.design_ic_visibility_off = global::Xamarin_JuniorProject.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Prism.Plugin.Popups.Resource.Drawable.design_password_eye = global::Xamarin_JuniorProject.Droid.Resource.Drawable.design_password_eye;
+			global::Prism.Plugin.Popups.Resource.Drawable.design_snackbar_background = global::Xamarin_JuniorProject.Droid.Resource.Drawable.design_snackbar_background;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_audiotrack_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_audiotrack_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_audiotrack_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_dialog_close_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_dialog_close_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_dialog_close_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_dialog_close_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_00 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_00;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_01 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_01;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_02 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_02;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_03 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_03;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_04 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_04;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_05 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_05;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_06 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_06;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_07 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_07;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_08 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_08;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_09 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_09;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_10 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_10;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_11 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_11;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_12 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_12;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_13 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_13;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_14 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_14;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_collapse_15 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_collapse_15;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_00 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_00;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_01 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_01;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_02 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_02;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_03 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_03;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_04 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_04;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_05 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_05;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_06 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_06;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_07 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_07;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_08 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_08;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_09 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_09;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_10 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_10;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_11 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_11;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_12 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_12;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_13 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_13;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_14 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_14;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_group_expand_15 = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_group_expand_15;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_media_pause_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_media_pause_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_media_pause_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_media_pause_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_media_play_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_media_play_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_media_play_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_media_play_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_media_stop_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_media_stop_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_media_stop_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_media_stop_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_00_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_00_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_01_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_01_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_02_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_02_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_03_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_03_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_04_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_04_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_05_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_05_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_06_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_06_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_07_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_07_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_08_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_08_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_09_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_09_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_10_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_10_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_11_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_11_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_12_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_12_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_13_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_13_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_14_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_14_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_15_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_15_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_16_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_16_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_17_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_17_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_18_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_18_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_19_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_19_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_20_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_20_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_21_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_21_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_22_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_22_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_23_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_23_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_23_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_23_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_24_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_24_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_24_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_24_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_25_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_25_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_25_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_25_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_26_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_26_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_26_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_26_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_27_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_27_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_27_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_27_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_28_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_28_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_28_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_28_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_29_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_29_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_29_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_29_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_30_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_30_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connected_30_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connected_30_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_00_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_00_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_01_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_01_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_02_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_02_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_03_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_03_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_04_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_04_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_05_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_05_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_06_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_06_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_07_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_07_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_08_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_08_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_09_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_09_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_10_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_10_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_11_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_11_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_12_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_12_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_13_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_13_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_14_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_14_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_15_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_15_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_16_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_16_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_17_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_17_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_18_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_18_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_19_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_19_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_20_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_20_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_21_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_21_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_22_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_22_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_23_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_23_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_23_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_23_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_24_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_24_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_24_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_24_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_25_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_25_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_25_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_25_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_26_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_26_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_26_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_26_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_27_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_27_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_27_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_27_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_28_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_28_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_28_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_28_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_29_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_29_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_29_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_29_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_30_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_30_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_connecting_30_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_connecting_30_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_disabled_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_disabled_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_disabled_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_disconnected_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_disconnected_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mr_button_grey = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mtrl_chip_checked_black = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mtrl_chip_checked_circle = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_mtrl_chip_close_circle = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_vol_type_speaker_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_vol_type_speaker_group_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_vol_type_speaker_group_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_vol_type_speaker_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_vol_type_speaker_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_vol_type_tv_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_vol_type_tv_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.ic_vol_type_tv_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.ic_vol_type_tv_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_button_connected_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_button_connected_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_button_connected_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_button_connected_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_button_connecting_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_button_connecting_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_button_connecting_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_button_connecting_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_button_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_button_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_button_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_button_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_dialog_close_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_dialog_close_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_dialog_close_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_dialog_close_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_dialog_material_background_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_dialog_material_background_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_group_collapse = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_group_collapse;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_group_expand = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_group_expand;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_media_pause_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_media_pause_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_media_pause_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_media_pause_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_media_play_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_media_play_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_media_play_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_media_play_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_media_stop_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_media_stop_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_media_stop_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_media_stop_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_vol_type_audiotrack_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.mr_vol_type_audiotrack_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::Prism.Plugin.Popups.Resource.Drawable.mtrl_snackbar_background = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mtrl_snackbar_background;
+			global::Prism.Plugin.Popups.Resource.Drawable.mtrl_tabs_default_indicator = global::Xamarin_JuniorProject.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
+			global::Prism.Plugin.Popups.Resource.Drawable.navigation_empty_icon = global::Xamarin_JuniorProject.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Prism.Plugin.Popups.Resource.Drawable.notification_action_background = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notification_action_background;
+			global::Prism.Plugin.Popups.Resource.Drawable.notification_bg = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notification_bg;
+			global::Prism.Plugin.Popups.Resource.Drawable.notification_bg_low = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notification_bg_low;
+			global::Prism.Plugin.Popups.Resource.Drawable.notification_bg_low_normal = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Prism.Plugin.Popups.Resource.Drawable.notification_bg_low_pressed = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Prism.Plugin.Popups.Resource.Drawable.notification_bg_normal = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notification_bg_normal;
+			global::Prism.Plugin.Popups.Resource.Drawable.notification_bg_normal_pressed = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Prism.Plugin.Popups.Resource.Drawable.notification_icon_background = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notification_icon_background;
+			global::Prism.Plugin.Popups.Resource.Drawable.notification_template_icon_bg = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Prism.Plugin.Popups.Resource.Drawable.notification_template_icon_low_bg = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Prism.Plugin.Popups.Resource.Drawable.notification_tile_bg = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notification_tile_bg;
+			global::Prism.Plugin.Popups.Resource.Drawable.notify_panel_notification_icon_bg = global::Xamarin_JuniorProject.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Prism.Plugin.Popups.Resource.Drawable.tooltip_frame_dark = global::Xamarin_JuniorProject.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Prism.Plugin.Popups.Resource.Drawable.tooltip_frame_light = global::Xamarin_JuniorProject.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Prism.Plugin.Popups.Resource.Id.action0 = global::Xamarin_JuniorProject.Droid.Resource.Id.action0;
+			global::Prism.Plugin.Popups.Resource.Id.actions = global::Xamarin_JuniorProject.Droid.Resource.Id.actions;
+			global::Prism.Plugin.Popups.Resource.Id.action_bar = global::Xamarin_JuniorProject.Droid.Resource.Id.action_bar;
+			global::Prism.Plugin.Popups.Resource.Id.action_bar_activity_content = global::Xamarin_JuniorProject.Droid.Resource.Id.action_bar_activity_content;
+			global::Prism.Plugin.Popups.Resource.Id.action_bar_container = global::Xamarin_JuniorProject.Droid.Resource.Id.action_bar_container;
+			global::Prism.Plugin.Popups.Resource.Id.action_bar_root = global::Xamarin_JuniorProject.Droid.Resource.Id.action_bar_root;
+			global::Prism.Plugin.Popups.Resource.Id.action_bar_spinner = global::Xamarin_JuniorProject.Droid.Resource.Id.action_bar_spinner;
+			global::Prism.Plugin.Popups.Resource.Id.action_bar_subtitle = global::Xamarin_JuniorProject.Droid.Resource.Id.action_bar_subtitle;
+			global::Prism.Plugin.Popups.Resource.Id.action_bar_title = global::Xamarin_JuniorProject.Droid.Resource.Id.action_bar_title;
+			global::Prism.Plugin.Popups.Resource.Id.action_container = global::Xamarin_JuniorProject.Droid.Resource.Id.action_container;
+			global::Prism.Plugin.Popups.Resource.Id.action_context_bar = global::Xamarin_JuniorProject.Droid.Resource.Id.action_context_bar;
+			global::Prism.Plugin.Popups.Resource.Id.action_divider = global::Xamarin_JuniorProject.Droid.Resource.Id.action_divider;
+			global::Prism.Plugin.Popups.Resource.Id.action_image = global::Xamarin_JuniorProject.Droid.Resource.Id.action_image;
+			global::Prism.Plugin.Popups.Resource.Id.action_menu_divider = global::Xamarin_JuniorProject.Droid.Resource.Id.action_menu_divider;
+			global::Prism.Plugin.Popups.Resource.Id.action_menu_presenter = global::Xamarin_JuniorProject.Droid.Resource.Id.action_menu_presenter;
+			global::Prism.Plugin.Popups.Resource.Id.action_mode_bar = global::Xamarin_JuniorProject.Droid.Resource.Id.action_mode_bar;
+			global::Prism.Plugin.Popups.Resource.Id.action_mode_bar_stub = global::Xamarin_JuniorProject.Droid.Resource.Id.action_mode_bar_stub;
+			global::Prism.Plugin.Popups.Resource.Id.action_mode_close_button = global::Xamarin_JuniorProject.Droid.Resource.Id.action_mode_close_button;
+			global::Prism.Plugin.Popups.Resource.Id.action_text = global::Xamarin_JuniorProject.Droid.Resource.Id.action_text;
+			global::Prism.Plugin.Popups.Resource.Id.activity_chooser_view_content = global::Xamarin_JuniorProject.Droid.Resource.Id.activity_chooser_view_content;
+			global::Prism.Plugin.Popups.Resource.Id.add = global::Xamarin_JuniorProject.Droid.Resource.Id.add;
+			global::Prism.Plugin.Popups.Resource.Id.alertTitle = global::Xamarin_JuniorProject.Droid.Resource.Id.alertTitle;
+			global::Prism.Plugin.Popups.Resource.Id.all = global::Xamarin_JuniorProject.Droid.Resource.Id.all;
+			global::Prism.Plugin.Popups.Resource.Id.ALT = global::Xamarin_JuniorProject.Droid.Resource.Id.ALT;
+			global::Prism.Plugin.Popups.Resource.Id.always = global::Xamarin_JuniorProject.Droid.Resource.Id.always;
+			global::Prism.Plugin.Popups.Resource.Id.async = global::Xamarin_JuniorProject.Droid.Resource.Id.async;
+			global::Prism.Plugin.Popups.Resource.Id.auto = global::Xamarin_JuniorProject.Droid.Resource.Id.auto;
+			global::Prism.Plugin.Popups.Resource.Id.beginning = global::Xamarin_JuniorProject.Droid.Resource.Id.beginning;
+			global::Prism.Plugin.Popups.Resource.Id.blocking = global::Xamarin_JuniorProject.Droid.Resource.Id.blocking;
+			global::Prism.Plugin.Popups.Resource.Id.bottom = global::Xamarin_JuniorProject.Droid.Resource.Id.bottom;
+			global::Prism.Plugin.Popups.Resource.Id.bottomtab_navarea = global::Xamarin_JuniorProject.Droid.Resource.Id.bottomtab_navarea;
+			global::Prism.Plugin.Popups.Resource.Id.bottomtab_tabbar = global::Xamarin_JuniorProject.Droid.Resource.Id.bottomtab_tabbar;
+			global::Prism.Plugin.Popups.Resource.Id.browser_actions_header_text = global::Xamarin_JuniorProject.Droid.Resource.Id.browser_actions_header_text;
+			global::Prism.Plugin.Popups.Resource.Id.browser_actions_menu_items = global::Xamarin_JuniorProject.Droid.Resource.Id.browser_actions_menu_items;
+			global::Prism.Plugin.Popups.Resource.Id.browser_actions_menu_item_icon = global::Xamarin_JuniorProject.Droid.Resource.Id.browser_actions_menu_item_icon;
+			global::Prism.Plugin.Popups.Resource.Id.browser_actions_menu_item_text = global::Xamarin_JuniorProject.Droid.Resource.Id.browser_actions_menu_item_text;
+			global::Prism.Plugin.Popups.Resource.Id.browser_actions_menu_view = global::Xamarin_JuniorProject.Droid.Resource.Id.browser_actions_menu_view;
+			global::Prism.Plugin.Popups.Resource.Id.buttonPanel = global::Xamarin_JuniorProject.Droid.Resource.Id.buttonPanel;
+			global::Prism.Plugin.Popups.Resource.Id.cancel_action = global::Xamarin_JuniorProject.Droid.Resource.Id.cancel_action;
+			global::Prism.Plugin.Popups.Resource.Id.center = global::Xamarin_JuniorProject.Droid.Resource.Id.center;
+			global::Prism.Plugin.Popups.Resource.Id.center_horizontal = global::Xamarin_JuniorProject.Droid.Resource.Id.center_horizontal;
+			global::Prism.Plugin.Popups.Resource.Id.center_vertical = global::Xamarin_JuniorProject.Droid.Resource.Id.center_vertical;
+			global::Prism.Plugin.Popups.Resource.Id.checkbox = global::Xamarin_JuniorProject.Droid.Resource.Id.checkbox;
+			global::Prism.Plugin.Popups.Resource.Id.chronometer = global::Xamarin_JuniorProject.Droid.Resource.Id.chronometer;
+			global::Prism.Plugin.Popups.Resource.Id.clip_horizontal = global::Xamarin_JuniorProject.Droid.Resource.Id.clip_horizontal;
+			global::Prism.Plugin.Popups.Resource.Id.clip_vertical = global::Xamarin_JuniorProject.Droid.Resource.Id.clip_vertical;
+			global::Prism.Plugin.Popups.Resource.Id.collapseActionView = global::Xamarin_JuniorProject.Droid.Resource.Id.collapseActionView;
+			global::Prism.Plugin.Popups.Resource.Id.container = global::Xamarin_JuniorProject.Droid.Resource.Id.container;
+			global::Prism.Plugin.Popups.Resource.Id.content = global::Xamarin_JuniorProject.Droid.Resource.Id.content;
+			global::Prism.Plugin.Popups.Resource.Id.contentPanel = global::Xamarin_JuniorProject.Droid.Resource.Id.contentPanel;
+			global::Prism.Plugin.Popups.Resource.Id.coordinator = global::Xamarin_JuniorProject.Droid.Resource.Id.coordinator;
+			global::Prism.Plugin.Popups.Resource.Id.CTRL = global::Xamarin_JuniorProject.Droid.Resource.Id.CTRL;
+			global::Prism.Plugin.Popups.Resource.Id.custom = global::Xamarin_JuniorProject.Droid.Resource.Id.custom;
+			global::Prism.Plugin.Popups.Resource.Id.customPanel = global::Xamarin_JuniorProject.Droid.Resource.Id.customPanel;
+			global::Prism.Plugin.Popups.Resource.Id.decor_content_parent = global::Xamarin_JuniorProject.Droid.Resource.Id.decor_content_parent;
+			global::Prism.Plugin.Popups.Resource.Id.default_activity_button = global::Xamarin_JuniorProject.Droid.Resource.Id.default_activity_button;
+			global::Prism.Plugin.Popups.Resource.Id.design_bottom_sheet = global::Xamarin_JuniorProject.Droid.Resource.Id.design_bottom_sheet;
+			global::Prism.Plugin.Popups.Resource.Id.design_menu_item_action_area = global::Xamarin_JuniorProject.Droid.Resource.Id.design_menu_item_action_area;
+			global::Prism.Plugin.Popups.Resource.Id.design_menu_item_action_area_stub = global::Xamarin_JuniorProject.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Prism.Plugin.Popups.Resource.Id.design_menu_item_text = global::Xamarin_JuniorProject.Droid.Resource.Id.design_menu_item_text;
+			global::Prism.Plugin.Popups.Resource.Id.design_navigation_view = global::Xamarin_JuniorProject.Droid.Resource.Id.design_navigation_view;
+			global::Prism.Plugin.Popups.Resource.Id.disableHome = global::Xamarin_JuniorProject.Droid.Resource.Id.disableHome;
+			global::Prism.Plugin.Popups.Resource.Id.edit_query = global::Xamarin_JuniorProject.Droid.Resource.Id.edit_query;
+			global::Prism.Plugin.Popups.Resource.Id.end = global::Xamarin_JuniorProject.Droid.Resource.Id.end;
+			global::Prism.Plugin.Popups.Resource.Id.end_padder = global::Xamarin_JuniorProject.Droid.Resource.Id.end_padder;
+			global::Prism.Plugin.Popups.Resource.Id.enterAlways = global::Xamarin_JuniorProject.Droid.Resource.Id.enterAlways;
+			global::Prism.Plugin.Popups.Resource.Id.enterAlwaysCollapsed = global::Xamarin_JuniorProject.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Prism.Plugin.Popups.Resource.Id.exitUntilCollapsed = global::Xamarin_JuniorProject.Droid.Resource.Id.exitUntilCollapsed;
+			global::Prism.Plugin.Popups.Resource.Id.expanded_menu = global::Xamarin_JuniorProject.Droid.Resource.Id.expanded_menu;
+			global::Prism.Plugin.Popups.Resource.Id.expand_activities_button = global::Xamarin_JuniorProject.Droid.Resource.Id.expand_activities_button;
+			global::Prism.Plugin.Popups.Resource.Id.fill = global::Xamarin_JuniorProject.Droid.Resource.Id.fill;
+			global::Prism.Plugin.Popups.Resource.Id.filled = global::Xamarin_JuniorProject.Droid.Resource.Id.filled;
+			global::Prism.Plugin.Popups.Resource.Id.fill_horizontal = global::Xamarin_JuniorProject.Droid.Resource.Id.fill_horizontal;
+			global::Prism.Plugin.Popups.Resource.Id.fill_vertical = global::Xamarin_JuniorProject.Droid.Resource.Id.fill_vertical;
+			global::Prism.Plugin.Popups.Resource.Id.@fixed = global::Xamarin_JuniorProject.Droid.Resource.Id.@fixed;
+			global::Prism.Plugin.Popups.Resource.Id.flyoutcontent_appbar = global::Xamarin_JuniorProject.Droid.Resource.Id.flyoutcontent_appbar;
+			global::Prism.Plugin.Popups.Resource.Id.flyoutcontent_recycler = global::Xamarin_JuniorProject.Droid.Resource.Id.flyoutcontent_recycler;
+			global::Prism.Plugin.Popups.Resource.Id.forever = global::Xamarin_JuniorProject.Droid.Resource.Id.forever;
+			global::Prism.Plugin.Popups.Resource.Id.FUNCTION = global::Xamarin_JuniorProject.Droid.Resource.Id.FUNCTION;
+			global::Prism.Plugin.Popups.Resource.Id.ghost_view = global::Xamarin_JuniorProject.Droid.Resource.Id.ghost_view;
+			global::Prism.Plugin.Popups.Resource.Id.group_divider = global::Xamarin_JuniorProject.Droid.Resource.Id.group_divider;
+			global::Prism.Plugin.Popups.Resource.Id.home = global::Xamarin_JuniorProject.Droid.Resource.Id.home;
+			global::Prism.Plugin.Popups.Resource.Id.homeAsUp = global::Xamarin_JuniorProject.Droid.Resource.Id.homeAsUp;
+			global::Prism.Plugin.Popups.Resource.Id.icon = global::Xamarin_JuniorProject.Droid.Resource.Id.icon;
+			global::Prism.Plugin.Popups.Resource.Id.icon_group = global::Xamarin_JuniorProject.Droid.Resource.Id.icon_group;
+			global::Prism.Plugin.Popups.Resource.Id.ifRoom = global::Xamarin_JuniorProject.Droid.Resource.Id.ifRoom;
+			global::Prism.Plugin.Popups.Resource.Id.image = global::Xamarin_JuniorProject.Droid.Resource.Id.image;
+			global::Prism.Plugin.Popups.Resource.Id.info = global::Xamarin_JuniorProject.Droid.Resource.Id.info;
+			global::Prism.Plugin.Popups.Resource.Id.italic = global::Xamarin_JuniorProject.Droid.Resource.Id.italic;
+			global::Prism.Plugin.Popups.Resource.Id.item_touch_helper_previous_elevation = global::Xamarin_JuniorProject.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Prism.Plugin.Popups.Resource.Id.labeled = global::Xamarin_JuniorProject.Droid.Resource.Id.labeled;
+			global::Prism.Plugin.Popups.Resource.Id.largeLabel = global::Xamarin_JuniorProject.Droid.Resource.Id.largeLabel;
+			global::Prism.Plugin.Popups.Resource.Id.left = global::Xamarin_JuniorProject.Droid.Resource.Id.left;
+			global::Prism.Plugin.Popups.Resource.Id.line1 = global::Xamarin_JuniorProject.Droid.Resource.Id.line1;
+			global::Prism.Plugin.Popups.Resource.Id.line3 = global::Xamarin_JuniorProject.Droid.Resource.Id.line3;
+			global::Prism.Plugin.Popups.Resource.Id.listMode = global::Xamarin_JuniorProject.Droid.Resource.Id.listMode;
+			global::Prism.Plugin.Popups.Resource.Id.list_item = global::Xamarin_JuniorProject.Droid.Resource.Id.list_item;
+			global::Prism.Plugin.Popups.Resource.Id.main_appbar = global::Xamarin_JuniorProject.Droid.Resource.Id.main_appbar;
+			global::Prism.Plugin.Popups.Resource.Id.main_tablayout = global::Xamarin_JuniorProject.Droid.Resource.Id.main_tablayout;
+			global::Prism.Plugin.Popups.Resource.Id.main_toolbar = global::Xamarin_JuniorProject.Droid.Resource.Id.main_toolbar;
+			global::Prism.Plugin.Popups.Resource.Id.masked = global::Xamarin_JuniorProject.Droid.Resource.Id.masked;
+			global::Prism.Plugin.Popups.Resource.Id.media_actions = global::Xamarin_JuniorProject.Droid.Resource.Id.media_actions;
+			global::Prism.Plugin.Popups.Resource.Id.message = global::Xamarin_JuniorProject.Droid.Resource.Id.message;
+			global::Prism.Plugin.Popups.Resource.Id.META = global::Xamarin_JuniorProject.Droid.Resource.Id.META;
+			global::Prism.Plugin.Popups.Resource.Id.middle = global::Xamarin_JuniorProject.Droid.Resource.Id.middle;
+			global::Prism.Plugin.Popups.Resource.Id.mini = global::Xamarin_JuniorProject.Droid.Resource.Id.mini;
+			global::Prism.Plugin.Popups.Resource.Id.mr_art = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_art;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_checkbox = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_checkbox;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_close_button = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_close_button;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_group_icon = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_group_icon;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_group_name = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_group_name;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_list = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_list;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_meta = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_meta;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_meta_art = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_meta_art;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_meta_subtitle = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_meta_subtitle;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_meta_title = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_meta_title;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_route_icon = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_route_icon;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_route_name = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_route_name;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_stop_button = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_stop_button;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_volume_layout = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_volume_layout;
+			global::Prism.Plugin.Popups.Resource.Id.mr_cast_volume_slider = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_cast_volume_slider;
+			global::Prism.Plugin.Popups.Resource.Id.mr_chooser_list = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_chooser_list;
+			global::Prism.Plugin.Popups.Resource.Id.mr_chooser_route_desc = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_chooser_route_desc;
+			global::Prism.Plugin.Popups.Resource.Id.mr_chooser_route_icon = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_chooser_route_icon;
+			global::Prism.Plugin.Popups.Resource.Id.mr_chooser_route_name = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_chooser_route_name;
+			global::Prism.Plugin.Popups.Resource.Id.mr_chooser_title = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_chooser_title;
+			global::Prism.Plugin.Popups.Resource.Id.mr_close = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_close;
+			global::Prism.Plugin.Popups.Resource.Id.mr_control_divider = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_control_divider;
+			global::Prism.Plugin.Popups.Resource.Id.mr_control_playback_ctrl = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_control_playback_ctrl;
+			global::Prism.Plugin.Popups.Resource.Id.mr_control_subtitle = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_control_subtitle;
+			global::Prism.Plugin.Popups.Resource.Id.mr_control_title = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_control_title;
+			global::Prism.Plugin.Popups.Resource.Id.mr_control_title_container = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_control_title_container;
+			global::Prism.Plugin.Popups.Resource.Id.mr_custom_control = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_custom_control;
+			global::Prism.Plugin.Popups.Resource.Id.mr_default_control = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_default_control;
+			global::Prism.Plugin.Popups.Resource.Id.mr_dialog_area = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_dialog_area;
+			global::Prism.Plugin.Popups.Resource.Id.mr_dialog_header_name = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_dialog_header_name;
+			global::Prism.Plugin.Popups.Resource.Id.mr_expandable_area = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_expandable_area;
+			global::Prism.Plugin.Popups.Resource.Id.mr_group_expand_collapse = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_group_expand_collapse;
+			global::Prism.Plugin.Popups.Resource.Id.mr_group_volume_route_name = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_group_volume_route_name;
+			global::Prism.Plugin.Popups.Resource.Id.mr_group_volume_slider = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_group_volume_slider;
+			global::Prism.Plugin.Popups.Resource.Id.mr_media_main_control = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_media_main_control;
+			global::Prism.Plugin.Popups.Resource.Id.mr_name = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_name;
+			global::Prism.Plugin.Popups.Resource.Id.mr_picker_close_button = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_picker_close_button;
+			global::Prism.Plugin.Popups.Resource.Id.mr_picker_list = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_picker_list;
+			global::Prism.Plugin.Popups.Resource.Id.mr_picker_route_icon = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_picker_route_icon;
+			global::Prism.Plugin.Popups.Resource.Id.mr_picker_route_name = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_picker_route_name;
+			global::Prism.Plugin.Popups.Resource.Id.mr_playback_control = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_playback_control;
+			global::Prism.Plugin.Popups.Resource.Id.mr_title_bar = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_title_bar;
+			global::Prism.Plugin.Popups.Resource.Id.mr_volume_control = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_volume_control;
+			global::Prism.Plugin.Popups.Resource.Id.mr_volume_group_list = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_volume_group_list;
+			global::Prism.Plugin.Popups.Resource.Id.mr_volume_item_icon = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_volume_item_icon;
+			global::Prism.Plugin.Popups.Resource.Id.mr_volume_slider = global::Xamarin_JuniorProject.Droid.Resource.Id.mr_volume_slider;
+			global::Prism.Plugin.Popups.Resource.Id.mtrl_child_content_container = global::Xamarin_JuniorProject.Droid.Resource.Id.mtrl_child_content_container;
+			global::Prism.Plugin.Popups.Resource.Id.mtrl_internal_children_alpha_tag = global::Xamarin_JuniorProject.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
+			global::Prism.Plugin.Popups.Resource.Id.multiply = global::Xamarin_JuniorProject.Droid.Resource.Id.multiply;
+			global::Prism.Plugin.Popups.Resource.Id.navigation_header_container = global::Xamarin_JuniorProject.Droid.Resource.Id.navigation_header_container;
+			global::Prism.Plugin.Popups.Resource.Id.never = global::Xamarin_JuniorProject.Droid.Resource.Id.never;
+			global::Prism.Plugin.Popups.Resource.Id.none = global::Xamarin_JuniorProject.Droid.Resource.Id.none;
+			global::Prism.Plugin.Popups.Resource.Id.normal = global::Xamarin_JuniorProject.Droid.Resource.Id.normal;
+			global::Prism.Plugin.Popups.Resource.Id.notification_background = global::Xamarin_JuniorProject.Droid.Resource.Id.notification_background;
+			global::Prism.Plugin.Popups.Resource.Id.notification_main_column = global::Xamarin_JuniorProject.Droid.Resource.Id.notification_main_column;
+			global::Prism.Plugin.Popups.Resource.Id.notification_main_column_container = global::Xamarin_JuniorProject.Droid.Resource.Id.notification_main_column_container;
+			global::Prism.Plugin.Popups.Resource.Id.outline = global::Xamarin_JuniorProject.Droid.Resource.Id.outline;
+			global::Prism.Plugin.Popups.Resource.Id.parallax = global::Xamarin_JuniorProject.Droid.Resource.Id.parallax;
+			global::Prism.Plugin.Popups.Resource.Id.parentPanel = global::Xamarin_JuniorProject.Droid.Resource.Id.parentPanel;
+			global::Prism.Plugin.Popups.Resource.Id.parent_matrix = global::Xamarin_JuniorProject.Droid.Resource.Id.parent_matrix;
+			global::Prism.Plugin.Popups.Resource.Id.pin = global::Xamarin_JuniorProject.Droid.Resource.Id.pin;
+			global::Prism.Plugin.Popups.Resource.Id.progress_circular = global::Xamarin_JuniorProject.Droid.Resource.Id.progress_circular;
+			global::Prism.Plugin.Popups.Resource.Id.progress_horizontal = global::Xamarin_JuniorProject.Droid.Resource.Id.progress_horizontal;
+			global::Prism.Plugin.Popups.Resource.Id.radio = global::Xamarin_JuniorProject.Droid.Resource.Id.radio;
+			global::Prism.Plugin.Popups.Resource.Id.right = global::Xamarin_JuniorProject.Droid.Resource.Id.right;
+			global::Prism.Plugin.Popups.Resource.Id.right_icon = global::Xamarin_JuniorProject.Droid.Resource.Id.right_icon;
+			global::Prism.Plugin.Popups.Resource.Id.right_side = global::Xamarin_JuniorProject.Droid.Resource.Id.right_side;
+			global::Prism.Plugin.Popups.Resource.Id.save_image_matrix = global::Xamarin_JuniorProject.Droid.Resource.Id.save_image_matrix;
+			global::Prism.Plugin.Popups.Resource.Id.save_non_transition_alpha = global::Xamarin_JuniorProject.Droid.Resource.Id.save_non_transition_alpha;
+			global::Prism.Plugin.Popups.Resource.Id.save_scale_type = global::Xamarin_JuniorProject.Droid.Resource.Id.save_scale_type;
+			global::Prism.Plugin.Popups.Resource.Id.screen = global::Xamarin_JuniorProject.Droid.Resource.Id.screen;
+			global::Prism.Plugin.Popups.Resource.Id.scroll = global::Xamarin_JuniorProject.Droid.Resource.Id.scroll;
+			global::Prism.Plugin.Popups.Resource.Id.scrollable = global::Xamarin_JuniorProject.Droid.Resource.Id.scrollable;
+			global::Prism.Plugin.Popups.Resource.Id.scrollIndicatorDown = global::Xamarin_JuniorProject.Droid.Resource.Id.scrollIndicatorDown;
+			global::Prism.Plugin.Popups.Resource.Id.scrollIndicatorUp = global::Xamarin_JuniorProject.Droid.Resource.Id.scrollIndicatorUp;
+			global::Prism.Plugin.Popups.Resource.Id.scrollView = global::Xamarin_JuniorProject.Droid.Resource.Id.scrollView;
+			global::Prism.Plugin.Popups.Resource.Id.search_badge = global::Xamarin_JuniorProject.Droid.Resource.Id.search_badge;
+			global::Prism.Plugin.Popups.Resource.Id.search_bar = global::Xamarin_JuniorProject.Droid.Resource.Id.search_bar;
+			global::Prism.Plugin.Popups.Resource.Id.search_button = global::Xamarin_JuniorProject.Droid.Resource.Id.search_button;
+			global::Prism.Plugin.Popups.Resource.Id.search_close_btn = global::Xamarin_JuniorProject.Droid.Resource.Id.search_close_btn;
+			global::Prism.Plugin.Popups.Resource.Id.search_edit_frame = global::Xamarin_JuniorProject.Droid.Resource.Id.search_edit_frame;
+			global::Prism.Plugin.Popups.Resource.Id.search_go_btn = global::Xamarin_JuniorProject.Droid.Resource.Id.search_go_btn;
+			global::Prism.Plugin.Popups.Resource.Id.search_mag_icon = global::Xamarin_JuniorProject.Droid.Resource.Id.search_mag_icon;
+			global::Prism.Plugin.Popups.Resource.Id.search_plate = global::Xamarin_JuniorProject.Droid.Resource.Id.search_plate;
+			global::Prism.Plugin.Popups.Resource.Id.search_src_text = global::Xamarin_JuniorProject.Droid.Resource.Id.search_src_text;
+			global::Prism.Plugin.Popups.Resource.Id.search_voice_btn = global::Xamarin_JuniorProject.Droid.Resource.Id.search_voice_btn;
+			global::Prism.Plugin.Popups.Resource.Id.selected = global::Xamarin_JuniorProject.Droid.Resource.Id.selected;
+			global::Prism.Plugin.Popups.Resource.Id.select_dialog_listview = global::Xamarin_JuniorProject.Droid.Resource.Id.select_dialog_listview;
+			global::Prism.Plugin.Popups.Resource.Id.shellcontent_appbar = global::Xamarin_JuniorProject.Droid.Resource.Id.shellcontent_appbar;
+			global::Prism.Plugin.Popups.Resource.Id.shellcontent_toolbar = global::Xamarin_JuniorProject.Droid.Resource.Id.shellcontent_toolbar;
+			global::Prism.Plugin.Popups.Resource.Id.SHIFT = global::Xamarin_JuniorProject.Droid.Resource.Id.SHIFT;
+			global::Prism.Plugin.Popups.Resource.Id.shortcut = global::Xamarin_JuniorProject.Droid.Resource.Id.shortcut;
+			global::Prism.Plugin.Popups.Resource.Id.showCustom = global::Xamarin_JuniorProject.Droid.Resource.Id.showCustom;
+			global::Prism.Plugin.Popups.Resource.Id.showHome = global::Xamarin_JuniorProject.Droid.Resource.Id.showHome;
+			global::Prism.Plugin.Popups.Resource.Id.showTitle = global::Xamarin_JuniorProject.Droid.Resource.Id.showTitle;
+			global::Prism.Plugin.Popups.Resource.Id.smallLabel = global::Xamarin_JuniorProject.Droid.Resource.Id.smallLabel;
+			global::Prism.Plugin.Popups.Resource.Id.snackbar_action = global::Xamarin_JuniorProject.Droid.Resource.Id.snackbar_action;
+			global::Prism.Plugin.Popups.Resource.Id.snackbar_text = global::Xamarin_JuniorProject.Droid.Resource.Id.snackbar_text;
+			global::Prism.Plugin.Popups.Resource.Id.snap = global::Xamarin_JuniorProject.Droid.Resource.Id.snap;
+			global::Prism.Plugin.Popups.Resource.Id.snapMargins = global::Xamarin_JuniorProject.Droid.Resource.Id.snapMargins;
+			global::Prism.Plugin.Popups.Resource.Id.spacer = global::Xamarin_JuniorProject.Droid.Resource.Id.spacer;
+			global::Prism.Plugin.Popups.Resource.Id.split_action_bar = global::Xamarin_JuniorProject.Droid.Resource.Id.split_action_bar;
+			global::Prism.Plugin.Popups.Resource.Id.src_atop = global::Xamarin_JuniorProject.Droid.Resource.Id.src_atop;
+			global::Prism.Plugin.Popups.Resource.Id.src_in = global::Xamarin_JuniorProject.Droid.Resource.Id.src_in;
+			global::Prism.Plugin.Popups.Resource.Id.src_over = global::Xamarin_JuniorProject.Droid.Resource.Id.src_over;
+			global::Prism.Plugin.Popups.Resource.Id.start = global::Xamarin_JuniorProject.Droid.Resource.Id.start;
+			global::Prism.Plugin.Popups.Resource.Id.status_bar_latest_event_content = global::Xamarin_JuniorProject.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Prism.Plugin.Popups.Resource.Id.stretch = global::Xamarin_JuniorProject.Droid.Resource.Id.stretch;
+			global::Prism.Plugin.Popups.Resource.Id.submenuarrow = global::Xamarin_JuniorProject.Droid.Resource.Id.submenuarrow;
+			global::Prism.Plugin.Popups.Resource.Id.submit_area = global::Xamarin_JuniorProject.Droid.Resource.Id.submit_area;
+			global::Prism.Plugin.Popups.Resource.Id.SYM = global::Xamarin_JuniorProject.Droid.Resource.Id.SYM;
+			global::Prism.Plugin.Popups.Resource.Id.tabMode = global::Xamarin_JuniorProject.Droid.Resource.Id.tabMode;
+			global::Prism.Plugin.Popups.Resource.Id.tag_transition_group = global::Xamarin_JuniorProject.Droid.Resource.Id.tag_transition_group;
+			global::Prism.Plugin.Popups.Resource.Id.tag_unhandled_key_event_manager = global::Xamarin_JuniorProject.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Prism.Plugin.Popups.Resource.Id.tag_unhandled_key_listeners = global::Xamarin_JuniorProject.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::Prism.Plugin.Popups.Resource.Id.text = global::Xamarin_JuniorProject.Droid.Resource.Id.text;
+			global::Prism.Plugin.Popups.Resource.Id.text2 = global::Xamarin_JuniorProject.Droid.Resource.Id.text2;
+			global::Prism.Plugin.Popups.Resource.Id.textinput_counter = global::Xamarin_JuniorProject.Droid.Resource.Id.textinput_counter;
+			global::Prism.Plugin.Popups.Resource.Id.textinput_error = global::Xamarin_JuniorProject.Droid.Resource.Id.textinput_error;
+			global::Prism.Plugin.Popups.Resource.Id.textinput_helper_text = global::Xamarin_JuniorProject.Droid.Resource.Id.textinput_helper_text;
+			global::Prism.Plugin.Popups.Resource.Id.textSpacerNoButtons = global::Xamarin_JuniorProject.Droid.Resource.Id.textSpacerNoButtons;
+			global::Prism.Plugin.Popups.Resource.Id.textSpacerNoTitle = global::Xamarin_JuniorProject.Droid.Resource.Id.textSpacerNoTitle;
+			global::Prism.Plugin.Popups.Resource.Id.textStart = global::Xamarin_JuniorProject.Droid.Resource.Id.textStart;
+			global::Prism.Plugin.Popups.Resource.Id.text_input_password_toggle = global::Xamarin_JuniorProject.Droid.Resource.Id.text_input_password_toggle;
+			global::Prism.Plugin.Popups.Resource.Id.time = global::Xamarin_JuniorProject.Droid.Resource.Id.time;
+			global::Prism.Plugin.Popups.Resource.Id.title = global::Xamarin_JuniorProject.Droid.Resource.Id.title;
+			global::Prism.Plugin.Popups.Resource.Id.titleDividerNoCustom = global::Xamarin_JuniorProject.Droid.Resource.Id.titleDividerNoCustom;
+			global::Prism.Plugin.Popups.Resource.Id.title_template = global::Xamarin_JuniorProject.Droid.Resource.Id.title_template;
+			global::Prism.Plugin.Popups.Resource.Id.top = global::Xamarin_JuniorProject.Droid.Resource.Id.top;
+			global::Prism.Plugin.Popups.Resource.Id.topPanel = global::Xamarin_JuniorProject.Droid.Resource.Id.topPanel;
+			global::Prism.Plugin.Popups.Resource.Id.touch_outside = global::Xamarin_JuniorProject.Droid.Resource.Id.touch_outside;
+			global::Prism.Plugin.Popups.Resource.Id.transition_current_scene = global::Xamarin_JuniorProject.Droid.Resource.Id.transition_current_scene;
+			global::Prism.Plugin.Popups.Resource.Id.transition_layout_save = global::Xamarin_JuniorProject.Droid.Resource.Id.transition_layout_save;
+			global::Prism.Plugin.Popups.Resource.Id.transition_position = global::Xamarin_JuniorProject.Droid.Resource.Id.transition_position;
+			global::Prism.Plugin.Popups.Resource.Id.transition_scene_layoutid_cache = global::Xamarin_JuniorProject.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Prism.Plugin.Popups.Resource.Id.transition_transform = global::Xamarin_JuniorProject.Droid.Resource.Id.transition_transform;
+			global::Prism.Plugin.Popups.Resource.Id.uniform = global::Xamarin_JuniorProject.Droid.Resource.Id.uniform;
+			global::Prism.Plugin.Popups.Resource.Id.unlabeled = global::Xamarin_JuniorProject.Droid.Resource.Id.unlabeled;
+			global::Prism.Plugin.Popups.Resource.Id.up = global::Xamarin_JuniorProject.Droid.Resource.Id.up;
+			global::Prism.Plugin.Popups.Resource.Id.useLogo = global::Xamarin_JuniorProject.Droid.Resource.Id.useLogo;
+			global::Prism.Plugin.Popups.Resource.Id.view_offset_helper = global::Xamarin_JuniorProject.Droid.Resource.Id.view_offset_helper;
+			global::Prism.Plugin.Popups.Resource.Id.visible = global::Xamarin_JuniorProject.Droid.Resource.Id.visible;
+			global::Prism.Plugin.Popups.Resource.Id.volume_item_container = global::Xamarin_JuniorProject.Droid.Resource.Id.volume_item_container;
+			global::Prism.Plugin.Popups.Resource.Id.withText = global::Xamarin_JuniorProject.Droid.Resource.Id.withText;
+			global::Prism.Plugin.Popups.Resource.Id.wrap_content = global::Xamarin_JuniorProject.Droid.Resource.Id.wrap_content;
+			global::Prism.Plugin.Popups.Resource.Integer.abc_config_activityDefaultDur = global::Xamarin_JuniorProject.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Prism.Plugin.Popups.Resource.Integer.abc_config_activityShortDur = global::Xamarin_JuniorProject.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Prism.Plugin.Popups.Resource.Integer.app_bar_elevation_anim_duration = global::Xamarin_JuniorProject.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Prism.Plugin.Popups.Resource.Integer.bottom_sheet_slide_duration = global::Xamarin_JuniorProject.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Prism.Plugin.Popups.Resource.Integer.cancel_button_image_alpha = global::Xamarin_JuniorProject.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Prism.Plugin.Popups.Resource.Integer.config_tooltipAnimTime = global::Xamarin_JuniorProject.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Prism.Plugin.Popups.Resource.Integer.design_snackbar_text_max_lines = global::Xamarin_JuniorProject.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Prism.Plugin.Popups.Resource.Integer.design_tab_indicator_anim_duration_ms = global::Xamarin_JuniorProject.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
+			global::Prism.Plugin.Popups.Resource.Integer.hide_password_duration = global::Xamarin_JuniorProject.Droid.Resource.Integer.hide_password_duration;
+			global::Prism.Plugin.Popups.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::Xamarin_JuniorProject.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::Prism.Plugin.Popups.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::Xamarin_JuniorProject.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::Prism.Plugin.Popups.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::Xamarin_JuniorProject.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::Prism.Plugin.Popups.Resource.Integer.mr_update_routes_delay_ms = global::Xamarin_JuniorProject.Droid.Resource.Integer.mr_update_routes_delay_ms;
+			global::Prism.Plugin.Popups.Resource.Integer.mtrl_btn_anim_delay_ms = global::Xamarin_JuniorProject.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
+			global::Prism.Plugin.Popups.Resource.Integer.mtrl_btn_anim_duration_ms = global::Xamarin_JuniorProject.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
+			global::Prism.Plugin.Popups.Resource.Integer.mtrl_chip_anim_duration = global::Xamarin_JuniorProject.Droid.Resource.Integer.mtrl_chip_anim_duration;
+			global::Prism.Plugin.Popups.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::Xamarin_JuniorProject.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
+			global::Prism.Plugin.Popups.Resource.Integer.show_password_duration = global::Xamarin_JuniorProject.Droid.Resource.Integer.show_password_duration;
+			global::Prism.Plugin.Popups.Resource.Integer.status_bar_notification_info_maxnum = global::Xamarin_JuniorProject.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Prism.Plugin.Popups.Resource.Interpolator.mr_fast_out_slow_in = global::Xamarin_JuniorProject.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::Prism.Plugin.Popups.Resource.Interpolator.mr_linear_out_slow_in = global::Xamarin_JuniorProject.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::Prism.Plugin.Popups.Resource.Interpolator.mtrl_fast_out_linear_in = global::Xamarin_JuniorProject.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
+			global::Prism.Plugin.Popups.Resource.Interpolator.mtrl_fast_out_slow_in = global::Xamarin_JuniorProject.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
+			global::Prism.Plugin.Popups.Resource.Interpolator.mtrl_linear = global::Xamarin_JuniorProject.Droid.Resource.Interpolator.mtrl_linear;
+			global::Prism.Plugin.Popups.Resource.Interpolator.mtrl_linear_out_slow_in = global::Xamarin_JuniorProject.Droid.Resource.Interpolator.mtrl_linear_out_slow_in;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_action_bar_title_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_action_bar_up_container = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_action_menu_item_layout = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_action_menu_layout = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_action_mode_bar = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_action_mode_close_item_material = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_activity_chooser_view = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_activity_chooser_view_list_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_alert_dialog_button_bar_material = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_alert_dialog_material = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_alert_dialog_title_material = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_cascading_menu_item_layout = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_cascading_menu_item_layout;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_dialog_title_material = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_expanded_menu_layout = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_list_menu_item_checkbox = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_list_menu_item_icon = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_list_menu_item_layout = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_list_menu_item_radio = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_popup_menu_header_item_layout = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_popup_menu_item_layout = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_screen_content_include = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_screen_content_include;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_screen_simple = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_screen_simple;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_screen_toolbar = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_search_view = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_search_view;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_select_dialog_material = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Prism.Plugin.Popups.Resource.Layout.abc_tooltip = global::Xamarin_JuniorProject.Droid.Resource.Layout.abc_tooltip;
+			global::Prism.Plugin.Popups.Resource.Layout.BottomTabLayout = global::Xamarin_JuniorProject.Droid.Resource.Layout.BottomTabLayout;
+			global::Prism.Plugin.Popups.Resource.Layout.browser_actions_context_menu_page = global::Xamarin_JuniorProject.Droid.Resource.Layout.browser_actions_context_menu_page;
+			global::Prism.Plugin.Popups.Resource.Layout.browser_actions_context_menu_row = global::Xamarin_JuniorProject.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::Prism.Plugin.Popups.Resource.Layout.design_bottom_navigation_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Prism.Plugin.Popups.Resource.Layout.design_bottom_sheet_dialog = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Prism.Plugin.Popups.Resource.Layout.design_layout_snackbar = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_layout_snackbar;
+			global::Prism.Plugin.Popups.Resource.Layout.design_layout_snackbar_include = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Prism.Plugin.Popups.Resource.Layout.design_layout_tab_icon = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Prism.Plugin.Popups.Resource.Layout.design_layout_tab_text = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_layout_tab_text;
+			global::Prism.Plugin.Popups.Resource.Layout.design_menu_item_action_area = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Prism.Plugin.Popups.Resource.Layout.design_navigation_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_navigation_item;
+			global::Prism.Plugin.Popups.Resource.Layout.design_navigation_item_header = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_navigation_item_header;
+			global::Prism.Plugin.Popups.Resource.Layout.design_navigation_item_separator = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Prism.Plugin.Popups.Resource.Layout.design_navigation_item_subheader = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Prism.Plugin.Popups.Resource.Layout.design_navigation_menu = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_navigation_menu;
+			global::Prism.Plugin.Popups.Resource.Layout.design_navigation_menu_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Prism.Plugin.Popups.Resource.Layout.design_text_input_password_icon = global::Xamarin_JuniorProject.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Prism.Plugin.Popups.Resource.Layout.FlyoutContent = global::Xamarin_JuniorProject.Droid.Resource.Layout.FlyoutContent;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_cast_dialog = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_cast_dialog;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_cast_group_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_cast_group_item;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_cast_group_volume_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_cast_group_volume_item;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_cast_media_metadata = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_cast_media_metadata;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_cast_route_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_cast_route_item;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_chooser_dialog = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_chooser_dialog;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_chooser_list_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_chooser_list_item;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_controller_material_dialog_b = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_controller_volume_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_controller_volume_item;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_dialog_header_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_dialog_header_item;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_picker_dialog = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_picker_dialog;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_picker_route_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_picker_route_item;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_playback_control = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_playback_control;
+			global::Prism.Plugin.Popups.Resource.Layout.mr_volume_control = global::Xamarin_JuniorProject.Droid.Resource.Layout.mr_volume_control;
+			global::Prism.Plugin.Popups.Resource.Layout.mtrl_layout_snackbar = global::Xamarin_JuniorProject.Droid.Resource.Layout.mtrl_layout_snackbar;
+			global::Prism.Plugin.Popups.Resource.Layout.mtrl_layout_snackbar_include = global::Xamarin_JuniorProject.Droid.Resource.Layout.mtrl_layout_snackbar_include;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_action = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_action;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_action_tombstone = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_action_tombstone;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_media_action = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_media_action;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_media_cancel_action = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_template_big_media = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_template_big_media;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_template_big_media_custom = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_template_big_media_narrow = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_template_big_media_narrow_custom = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_template_custom_big = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_template_custom_big;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_template_icon_group = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_template_icon_group;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_template_lines_media = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_template_lines_media;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_template_media = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_template_media;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_template_media_custom = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_template_media_custom;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_template_part_chronometer = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Prism.Plugin.Popups.Resource.Layout.notification_template_part_time = global::Xamarin_JuniorProject.Droid.Resource.Layout.notification_template_part_time;
+			global::Prism.Plugin.Popups.Resource.Layout.RootLayout = global::Xamarin_JuniorProject.Droid.Resource.Layout.RootLayout;
+			global::Prism.Plugin.Popups.Resource.Layout.select_dialog_item_material = global::Xamarin_JuniorProject.Droid.Resource.Layout.select_dialog_item_material;
+			global::Prism.Plugin.Popups.Resource.Layout.select_dialog_multichoice_material = global::Xamarin_JuniorProject.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Prism.Plugin.Popups.Resource.Layout.select_dialog_singlechoice_material = global::Xamarin_JuniorProject.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Prism.Plugin.Popups.Resource.Layout.ShellContent = global::Xamarin_JuniorProject.Droid.Resource.Layout.ShellContent;
+			global::Prism.Plugin.Popups.Resource.Layout.support_simple_spinner_dropdown_item = global::Xamarin_JuniorProject.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Prism.Plugin.Popups.Resource.String.abc_action_bar_home_description = global::Xamarin_JuniorProject.Droid.Resource.String.abc_action_bar_home_description;
+			global::Prism.Plugin.Popups.Resource.String.abc_action_bar_up_description = global::Xamarin_JuniorProject.Droid.Resource.String.abc_action_bar_up_description;
+			global::Prism.Plugin.Popups.Resource.String.abc_action_menu_overflow_description = global::Xamarin_JuniorProject.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Prism.Plugin.Popups.Resource.String.abc_action_mode_done = global::Xamarin_JuniorProject.Droid.Resource.String.abc_action_mode_done;
+			global::Prism.Plugin.Popups.Resource.String.abc_activitychooserview_choose_application = global::Xamarin_JuniorProject.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Prism.Plugin.Popups.Resource.String.abc_activity_chooser_view_see_all = global::Xamarin_JuniorProject.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Prism.Plugin.Popups.Resource.String.abc_capital_off = global::Xamarin_JuniorProject.Droid.Resource.String.abc_capital_off;
+			global::Prism.Plugin.Popups.Resource.String.abc_capital_on = global::Xamarin_JuniorProject.Droid.Resource.String.abc_capital_on;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_body_1_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_body_2_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_button_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_button_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_caption_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_caption_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_display_1_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_display_2_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_display_3_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_display_4_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_headline_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_headline_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_menu_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_menu_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_subhead_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_font_family_title_material = global::Xamarin_JuniorProject.Droid.Resource.String.abc_font_family_title_material;
+			global::Prism.Plugin.Popups.Resource.String.abc_menu_alt_shortcut_label = global::Xamarin_JuniorProject.Droid.Resource.String.abc_menu_alt_shortcut_label;
+			global::Prism.Plugin.Popups.Resource.String.abc_menu_ctrl_shortcut_label = global::Xamarin_JuniorProject.Droid.Resource.String.abc_menu_ctrl_shortcut_label;
+			global::Prism.Plugin.Popups.Resource.String.abc_menu_delete_shortcut_label = global::Xamarin_JuniorProject.Droid.Resource.String.abc_menu_delete_shortcut_label;
+			global::Prism.Plugin.Popups.Resource.String.abc_menu_enter_shortcut_label = global::Xamarin_JuniorProject.Droid.Resource.String.abc_menu_enter_shortcut_label;
+			global::Prism.Plugin.Popups.Resource.String.abc_menu_function_shortcut_label = global::Xamarin_JuniorProject.Droid.Resource.String.abc_menu_function_shortcut_label;
+			global::Prism.Plugin.Popups.Resource.String.abc_menu_meta_shortcut_label = global::Xamarin_JuniorProject.Droid.Resource.String.abc_menu_meta_shortcut_label;
+			global::Prism.Plugin.Popups.Resource.String.abc_menu_shift_shortcut_label = global::Xamarin_JuniorProject.Droid.Resource.String.abc_menu_shift_shortcut_label;
+			global::Prism.Plugin.Popups.Resource.String.abc_menu_space_shortcut_label = global::Xamarin_JuniorProject.Droid.Resource.String.abc_menu_space_shortcut_label;
+			global::Prism.Plugin.Popups.Resource.String.abc_menu_sym_shortcut_label = global::Xamarin_JuniorProject.Droid.Resource.String.abc_menu_sym_shortcut_label;
+			global::Prism.Plugin.Popups.Resource.String.abc_prepend_shortcut_label = global::Xamarin_JuniorProject.Droid.Resource.String.abc_prepend_shortcut_label;
+			global::Prism.Plugin.Popups.Resource.String.abc_searchview_description_clear = global::Xamarin_JuniorProject.Droid.Resource.String.abc_searchview_description_clear;
+			global::Prism.Plugin.Popups.Resource.String.abc_searchview_description_query = global::Xamarin_JuniorProject.Droid.Resource.String.abc_searchview_description_query;
+			global::Prism.Plugin.Popups.Resource.String.abc_searchview_description_search = global::Xamarin_JuniorProject.Droid.Resource.String.abc_searchview_description_search;
+			global::Prism.Plugin.Popups.Resource.String.abc_searchview_description_submit = global::Xamarin_JuniorProject.Droid.Resource.String.abc_searchview_description_submit;
+			global::Prism.Plugin.Popups.Resource.String.abc_searchview_description_voice = global::Xamarin_JuniorProject.Droid.Resource.String.abc_searchview_description_voice;
+			global::Prism.Plugin.Popups.Resource.String.abc_search_hint = global::Xamarin_JuniorProject.Droid.Resource.String.abc_search_hint;
+			global::Prism.Plugin.Popups.Resource.String.abc_shareactionprovider_share_with = global::Xamarin_JuniorProject.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Prism.Plugin.Popups.Resource.String.abc_shareactionprovider_share_with_application = global::Xamarin_JuniorProject.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Prism.Plugin.Popups.Resource.String.abc_toolbar_collapse_description = global::Xamarin_JuniorProject.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Prism.Plugin.Popups.Resource.String.appbar_scrolling_view_behavior = global::Xamarin_JuniorProject.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Prism.Plugin.Popups.Resource.String.bottom_sheet_behavior = global::Xamarin_JuniorProject.Droid.Resource.String.bottom_sheet_behavior;
+			global::Prism.Plugin.Popups.Resource.String.character_counter_content_description = global::Xamarin_JuniorProject.Droid.Resource.String.character_counter_content_description;
+			global::Prism.Plugin.Popups.Resource.String.character_counter_pattern = global::Xamarin_JuniorProject.Droid.Resource.String.character_counter_pattern;
+			global::Prism.Plugin.Popups.Resource.String.fab_transformation_scrim_behavior = global::Xamarin_JuniorProject.Droid.Resource.String.fab_transformation_scrim_behavior;
+			global::Prism.Plugin.Popups.Resource.String.fab_transformation_sheet_behavior = global::Xamarin_JuniorProject.Droid.Resource.String.fab_transformation_sheet_behavior;
+			global::Prism.Plugin.Popups.Resource.String.hide_bottom_view_on_scroll_behavior = global::Xamarin_JuniorProject.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
+			global::Prism.Plugin.Popups.Resource.String.mr_button_content_description = global::Xamarin_JuniorProject.Droid.Resource.String.mr_button_content_description;
+			global::Prism.Plugin.Popups.Resource.String.mr_cast_button_connected = global::Xamarin_JuniorProject.Droid.Resource.String.mr_cast_button_connected;
+			global::Prism.Plugin.Popups.Resource.String.mr_cast_button_connecting = global::Xamarin_JuniorProject.Droid.Resource.String.mr_cast_button_connecting;
+			global::Prism.Plugin.Popups.Resource.String.mr_cast_button_disconnected = global::Xamarin_JuniorProject.Droid.Resource.String.mr_cast_button_disconnected;
+			global::Prism.Plugin.Popups.Resource.String.mr_cast_dialog_title_view_placeholder = global::Xamarin_JuniorProject.Droid.Resource.String.mr_cast_dialog_title_view_placeholder;
+			global::Prism.Plugin.Popups.Resource.String.mr_chooser_searching = global::Xamarin_JuniorProject.Droid.Resource.String.mr_chooser_searching;
+			global::Prism.Plugin.Popups.Resource.String.mr_chooser_title = global::Xamarin_JuniorProject.Droid.Resource.String.mr_chooser_title;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_album_art = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_album_art;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_casting_screen = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_casting_screen;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_close_description = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_close_description;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_collapse_group = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_collapse_group;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_disconnect = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_disconnect;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_expand_group = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_expand_group;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_no_info_available = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_no_info_available;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_no_media_selected = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_no_media_selected;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_pause = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_pause;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_play = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_play;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_stop = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_stop;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_stop_casting = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_stop_casting;
+			global::Prism.Plugin.Popups.Resource.String.mr_controller_volume_slider = global::Xamarin_JuniorProject.Droid.Resource.String.mr_controller_volume_slider;
+			global::Prism.Plugin.Popups.Resource.String.mr_dialog_device_header = global::Xamarin_JuniorProject.Droid.Resource.String.mr_dialog_device_header;
+			global::Prism.Plugin.Popups.Resource.String.mr_dialog_route_header = global::Xamarin_JuniorProject.Droid.Resource.String.mr_dialog_route_header;
+			global::Prism.Plugin.Popups.Resource.String.mr_system_route_name = global::Xamarin_JuniorProject.Droid.Resource.String.mr_system_route_name;
+			global::Prism.Plugin.Popups.Resource.String.mr_user_route_category_name = global::Xamarin_JuniorProject.Droid.Resource.String.mr_user_route_category_name;
+			global::Prism.Plugin.Popups.Resource.String.mtrl_chip_close_icon_content_description = global::Xamarin_JuniorProject.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Prism.Plugin.Popups.Resource.String.password_toggle_content_description = global::Xamarin_JuniorProject.Droid.Resource.String.password_toggle_content_description;
+			global::Prism.Plugin.Popups.Resource.String.path_password_eye = global::Xamarin_JuniorProject.Droid.Resource.String.path_password_eye;
+			global::Prism.Plugin.Popups.Resource.String.path_password_eye_mask_strike_through = global::Xamarin_JuniorProject.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Prism.Plugin.Popups.Resource.String.path_password_eye_mask_visible = global::Xamarin_JuniorProject.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Prism.Plugin.Popups.Resource.String.path_password_strike_through = global::Xamarin_JuniorProject.Droid.Resource.String.path_password_strike_through;
+			global::Prism.Plugin.Popups.Resource.String.search_menu_title = global::Xamarin_JuniorProject.Droid.Resource.String.search_menu_title;
+			global::Prism.Plugin.Popups.Resource.String.status_bar_notification_info_overflow = global::Xamarin_JuniorProject.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Prism.Plugin.Popups.Resource.Style.AlertDialog_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.AlertDialog_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Animation_AppCompat_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Animation_AppCompat_DropDownUp = global::Xamarin_JuniorProject.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Prism.Plugin.Popups.Resource.Style.Animation_AppCompat_Tooltip = global::Xamarin_JuniorProject.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Prism.Plugin.Popups.Resource.Style.Animation_Design_BottomSheetDialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_AlertDialog_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Animation_AppCompat_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Animation_AppCompat_Tooltip = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Prism.Plugin.Popups.Resource.Style.Base_CardView = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_CardView;
+			global::Prism.Plugin.Popups.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Prism.Plugin.Popups.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Prism.Plugin.Popups.Resource.Style.Base_ThemeOverlay_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Prism.Plugin.Popups.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V14_Theme_MaterialComponents = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V14_Theme_MaterialComponents_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V21_Theme_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V22_Theme_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V23_Theme_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V26_Theme_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V26_Theme_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V28_Theme_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V28_Theme_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V28_Theme_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V7_Theme_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Prism.Plugin.Popups.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Button = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_EditText = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ListView = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_SearchView = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Spinner = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_Design_TabLayout = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_MaterialComponents_Chip = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_MaterialComponents_Chip;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
+			global::Prism.Plugin.Popups.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::Xamarin_JuniorProject.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
+			global::Prism.Plugin.Popups.Resource.Style.CardView = global::Xamarin_JuniorProject.Droid.Resource.Style.CardView;
+			global::Prism.Plugin.Popups.Resource.Style.CardView_Dark = global::Xamarin_JuniorProject.Droid.Resource.Style.CardView_Dark;
+			global::Prism.Plugin.Popups.Resource.Style.CardView_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.CardView_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_MaterialComponents = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_MaterialComponents;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_MaterialComponents_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_MaterialComponents_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_MaterialComponents_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_MaterialComponents_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_MaterialComponents_Light_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_MaterialComponents_Light_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_V21_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_V21_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_V25_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_V25_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Prism.Plugin.Popups.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Prism.Plugin.Popups.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Prism.Plugin.Popups.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Xamarin_JuniorProject.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Body1 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Body2 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Button = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Caption = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Display1 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Display2 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Display3 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Display4 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Headline = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Large = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Medium = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Menu = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Small = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Subhead = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Tooltip = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Compat_Notification = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Compat_Notification_Info = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Compat_Notification_Media = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Compat_Notification_Time = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Compat_Notification_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Design_Counter = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Design_Error = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Design_HelperText = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Design_HelperText;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Design_Hint = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Design_Tab = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Body1 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Body1;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Body2 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Body2;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Button = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Button;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Caption = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Caption;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Chip = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Chip;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Headline1 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline1;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Headline2 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline2;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Headline3 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline3;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Headline4 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline4;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Headline5 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline5;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Headline6 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline6;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Overline = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MaterialComponents_Tab = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_MediaRouter_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Prism.Plugin.Popups.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Xamarin_JuniorProject.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents_Dark = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
+			global::Prism.Plugin.Popups.Resource.Style.ThemeOverlay_MediaRouter_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_CompactMenu = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_DayNight = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_Light_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_AppCompat_NoActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_Design = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_Design;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_Design_BottomSheetDialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_Design_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_Design_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_Design_Light_NoActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_Design_NoActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Bridge = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_CompactMenu = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_NoActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MediaRouter = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MediaRouter;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MediaRouter_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MediaRouter_LightControlPanel = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::Prism.Plugin.Popups.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Xamarin_JuniorProject.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ActionButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ActionMode = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Button = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ButtonBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Button_Borderless = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Button_Colored = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Button_Small = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_EditText = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ImageButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_SearchView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ListMenuView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ListView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ListView_Menu = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_PopupMenu = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_PopupWindow = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ProgressBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_RatingBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_SearchView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_SeekBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Spinner = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Toolbar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Compat_NotificationActionContainer = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Compat_NotificationActionText = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Design_AppBarLayout = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Design_BottomNavigationView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Design_BottomSheet_Modal = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Design_CollapsingToolbar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Design_FloatingActionButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Design_NavigationView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Design_Snackbar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Design_TabLayout = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Design_TextInputLayout = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_BottomAppBar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_BottomNavigationView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Button = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Button;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Button_Icon = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Button_Icon;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Button_TextButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_CardView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_ChipGroup = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Chip_Action = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_NavigationView = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Snackbar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_TabLayout = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_TabLayout;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_TabLayout_Colored = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_Colored;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MaterialComponents_Toolbar = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::Prism.Plugin.Popups.Resource.Style.Widget_Support_CoordinatorLayout = global::Xamarin_JuniorProject.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBarLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBarLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_background = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_background;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_backgroundSplit = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_backgroundStacked = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_contentInsetEnd = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_contentInsetLeft = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_contentInsetRight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_contentInsetStart = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_customNavigationLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_displayOptions = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_divider = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_divider;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_elevation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_height = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_height;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_hideOnContentScroll = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_homeLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_icon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_icon;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_itemPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_logo = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_logo;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_navigationMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_popupTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_progressBarPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_progressBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_subtitle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_subtitleTextStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_title = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_title;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionBar_titleTextStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionMenuItemView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionMenuView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionMenuView;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionMode_background = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionMode_background;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionMode_backgroundSplit = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionMode_closeItemLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionMode_height = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionMode_height;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionMode_subtitleTextStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActionMode_titleTextStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActivityChooserView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActivityChooserView;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Prism.Plugin.Popups.Resource.Styleable.AlertDialog = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AlertDialog;
+			global::Prism.Plugin.Popups.Resource.Styleable.AlertDialog_android_layout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Prism.Plugin.Popups.Resource.Styleable.AlertDialog_buttonIconDimen = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AlertDialog_buttonIconDimen;
+			global::Prism.Plugin.Popups.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.AlertDialog_listItemLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.AlertDialog_listLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.AlertDialog_showTitle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableCompat = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableCompat;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableItem = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableItem;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableTransition = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableTransition;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
+			global::Prism.Plugin.Popups.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayoutStates = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayoutStates_state_liftable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayoutStates_state_lifted = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayout_android_background = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayout_elevation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayout_expanded = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayout_Layout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppBarLayout_liftOnScroll = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatImageView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatImageView;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatImageView_android_src = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatImageView_srcCompat = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatImageView_tint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatImageView_tintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatSeekBar = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatSeekBar_tickMark = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextHelper = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView_fontFamily = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView_lineHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTextView_textAllCaps = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionBarSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_buttonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_colorAccent = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_colorError = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_colorPrimary = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_controlBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_dialogTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_dividerVertical = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_editTextBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_editTextColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_editTextStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_panelBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_switchStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_viewInflaterClass;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_windowActionBar = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Prism.Plugin.Popups.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomAppBar = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomAppBar;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomAppBar_backgroundTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomAppBar_backgroundTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomAppBar_fabAlignmentMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomAppBar_fabAlignmentMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomAppBar_fabCradleMargin = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomAppBar_fabCradleMargin;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomAppBar_hideOnScroll = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomAppBar_hideOnScroll;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomNavigationView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomNavigationView;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomNavigationView_elevation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomNavigationView_itemBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomNavigationView_itemIconSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomNavigationView_itemIconSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomNavigationView_itemIconTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomNavigationView_itemTextColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomNavigationView_labelVisibilityMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomNavigationView_labelVisibilityMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomNavigationView_menu = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomSheetBehavior_Layout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::Xamarin_JuniorProject.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Prism.Plugin.Popups.Resource.Styleable.ButtonBarLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.ButtonBarLayout_allowStacking = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_android_minHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_android_minWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_cardBackgroundColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_cardCornerRadius = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_cardElevation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_cardMaxElevation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_cardPreventCornerOverlap = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_cardUseCompatPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_contentPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_contentPaddingBottom = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_contentPaddingLeft = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_contentPaddingRight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Prism.Plugin.Popups.Resource.Styleable.CardView_contentPaddingTop = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip;
+			global::Prism.Plugin.Popups.Resource.Styleable.ChipGroup = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ChipGroup;
+			global::Prism.Plugin.Popups.Resource.Styleable.ChipGroup_checkedChip = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::Prism.Plugin.Popups.Resource.Styleable.ChipGroup_chipSpacing = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::Prism.Plugin.Popups.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::Prism.Plugin.Popups.Resource.Styleable.ChipGroup_chipSpacingVertical = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::Prism.Plugin.Popups.Resource.Styleable.ChipGroup_singleLine = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::Prism.Plugin.Popups.Resource.Styleable.ChipGroup_singleSelection = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ChipGroup_singleSelection;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_android_checkable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_android_checkable;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_android_ellipsize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_android_ellipsize;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_android_maxWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_android_maxWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_android_text = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_android_text;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_android_textAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_android_textAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_checkedIcon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_checkedIcon;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_checkedIconEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_checkedIconEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_checkedIconVisible = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_checkedIconVisible;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipBackgroundColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipBackgroundColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipCornerRadius = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipCornerRadius;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipEndPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipEndPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipIcon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipIcon;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipIconEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipIconEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipIconSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipIconSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipIconTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipIconTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipIconVisible = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipIconVisible;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipMinHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipMinHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipStartPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipStartPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipStrokeColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipStrokeColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_chipStrokeWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_chipStrokeWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_closeIcon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_closeIcon;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_closeIconEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_closeIconEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_closeIconEndPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_closeIconEndPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_closeIconSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_closeIconSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_closeIconStartPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_closeIconStartPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_closeIconTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_closeIconTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_closeIconVisible = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_closeIconVisible;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_hideMotionSpec = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_hideMotionSpec;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_iconEndPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_iconEndPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_iconStartPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_iconStartPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_rippleColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_rippleColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_showMotionSpec = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_showMotionSpec;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_textEndPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_textEndPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.Chip_textStartPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Chip_textStartPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_title = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Prism.Plugin.Popups.Resource.Styleable.ColorStateListItem = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ColorStateListItem;
+			global::Prism.Plugin.Popups.Resource.Styleable.ColorStateListItem_alpha = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Prism.Plugin.Popups.Resource.Styleable.ColorStateListItem_android_alpha = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Prism.Plugin.Popups.Resource.Styleable.ColorStateListItem_android_color = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Prism.Plugin.Popups.Resource.Styleable.CompoundButton = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CompoundButton;
+			global::Prism.Plugin.Popups.Resource.Styleable.CompoundButton_android_button = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Prism.Plugin.Popups.Resource.Styleable.CompoundButton_buttonTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.CompoundButton_buttonTintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.CoordinatorLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.CoordinatorLayout_keylines = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Prism.Plugin.Popups.Resource.Styleable.CoordinatorLayout_Layout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Prism.Plugin.Popups.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Prism.Plugin.Popups.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Prism.Plugin.Popups.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Prism.Plugin.Popups.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Prism.Plugin.Popups.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Prism.Plugin.Popups.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.DesignTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DesignTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.DrawerArrowToggle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Prism.Plugin.Popups.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Prism.Plugin.Popups.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Prism.Plugin.Popups.Resource.Styleable.DrawerArrowToggle_barLength = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Prism.Plugin.Popups.Resource.Styleable.DrawerArrowToggle_color = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Prism.Plugin.Popups.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Prism.Plugin.Popups.Resource.Styleable.DrawerArrowToggle_spinBars = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Prism.Plugin.Popups.Resource.Styleable.DrawerArrowToggle_thickness = global::Xamarin_JuniorProject.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_backgroundTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_borderWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_elevation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_fabCustomSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_fabSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_hideMotionSpec = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_hideMotionSpec;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_maxImageSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_maxImageSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_rippleColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_showMotionSpec = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
+			global::Prism.Plugin.Popups.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.FlowLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FlowLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.FlowLayout_itemSpacing = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FlowLayout_itemSpacing;
+			global::Prism.Plugin.Popups.Resource.Styleable.FlowLayout_lineSpacing = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FlowLayout_lineSpacing;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamily = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamily;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamilyFont = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamilyFont;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamilyFont_android_font = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamilyFont_android_fontWeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamilyFont_font = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamilyFont_fontStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamilyFont_fontWeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamilyFont_ttcIndex = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamily_fontProviderAuthority = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamily_fontProviderCerts = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamily_fontProviderPackage = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Prism.Plugin.Popups.Resource.Styleable.FontFamily_fontProviderQuery = global::Xamarin_JuniorProject.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Prism.Plugin.Popups.Resource.Styleable.ForegroundLinearLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Prism.Plugin.Popups.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColorItem = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColorItem;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColorItem_android_color = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColorItem_android_offset = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_centerColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_centerX = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_centerY = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_endColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_endX = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_endY = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_gradientRadius = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_startColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_startX = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_startY = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_tileMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.GradientColor_android_type = global::Xamarin_JuniorProject.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_divider = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_Layout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Prism.Plugin.Popups.Resource.Styleable.LinearLayoutCompat_showDividers = global::Xamarin_JuniorProject.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Prism.Plugin.Popups.Resource.Styleable.ListPopupWindow = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ListPopupWindow;
+			global::Prism.Plugin.Popups.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Prism.Plugin.Popups.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_android_insetBottom = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_android_insetBottom;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_android_insetLeft = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_android_insetLeft;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_android_insetRight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_android_insetRight;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_android_insetTop = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_android_insetTop;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_backgroundTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_backgroundTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_backgroundTintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_backgroundTintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_cornerRadius = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_cornerRadius;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_icon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_icon;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_iconGravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_iconGravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_iconPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_iconPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_iconSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_iconSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_iconTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_iconTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_iconTintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_iconTintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_rippleColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_rippleColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_strokeColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_strokeColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialButton_strokeWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialButton_strokeWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialCardView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialCardView;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialCardView_strokeColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialCardView_strokeColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialCardView_strokeWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialCardView_strokeWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_chipStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_chipStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_colorAccent = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_colorAccent;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_colorPrimary = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimary;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_colorSecondary = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_colorSecondary;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_editTextStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_editTextStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_scrimBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_scrimBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_tabStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_tabStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1 = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2 = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1 = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2 = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3 = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4 = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5 = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6 = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1 = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2 = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2;
+			global::Prism.Plugin.Popups.Resource.Styleable.MaterialComponentsTheme_textInputStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MediaRouteButton = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MediaRouteButton;
+			global::Prism.Plugin.Popups.Resource.Styleable.MediaRouteButton_android_minHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.MediaRouteButton_android_minWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuGroup = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuGroup;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuGroup_android_enabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuGroup_android_id = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuGroup_android_menuCategory = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuGroup_android_orderInCategory = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuGroup_android_visible = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_actionLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_actionProviderClass = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_actionViewClass = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_alphabeticModifiers = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_checkable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_checked = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_enabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_icon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_id = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_menuCategory = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_numericShortcut = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_onClick = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_orderInCategory = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_title = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_titleCondensed = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_android_visible = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_contentDescription = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_iconTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_iconTintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_numericModifiers = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_showAsAction = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuItem_tooltipText = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuView;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuView_android_headerBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuView_android_horizontalDivider = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuView_android_itemBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuView_android_itemTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuView_android_verticalDivider = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuView_preserveIconSpacing = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Prism.Plugin.Popups.Resource.Styleable.MenuView_subMenuArrow = global::Xamarin_JuniorProject.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_android_background = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_android_maxWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_elevation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_headerLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_itemBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_itemHorizontalPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_itemHorizontalPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_itemIconPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_itemIconPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_itemIconTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_itemTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_itemTextColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.NavigationView_menu = global::Xamarin_JuniorProject.Droid.Resource.Styleable.NavigationView_menu;
+			global::Prism.Plugin.Popups.Resource.Styleable.PopupWindow = global::Xamarin_JuniorProject.Droid.Resource.Styleable.PopupWindow;
+			global::Prism.Plugin.Popups.Resource.Styleable.PopupWindowBackgroundState = global::Xamarin_JuniorProject.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Prism.Plugin.Popups.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Prism.Plugin.Popups.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.PopupWindow_android_popupBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.PopupWindow_overlapAnchor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecycleListView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecycleListView;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView_android_descendantFocusability = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView_android_orientation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView_fastScrollEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView_layoutManager = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView_reverseLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView_spanCount = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Prism.Plugin.Popups.Resource.Styleable.RecyclerView_stackFromEnd = global::Xamarin_JuniorProject.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Prism.Plugin.Popups.Resource.Styleable.ScrimInsetsFrameLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Prism.Plugin.Popups.Resource.Styleable.ScrollingViewBehavior_Layout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Prism.Plugin.Popups.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_android_focusable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_android_imeOptions = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_android_inputType = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_android_maxWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_closeIcon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_commitIcon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_defaultQueryHint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_goIcon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_iconifiedByDefault = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_layout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_layout;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_queryBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_queryHint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_searchHintIcon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_searchIcon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_submitBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_suggestionRowLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.SearchView_voiceIcon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Prism.Plugin.Popups.Resource.Styleable.Snackbar = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Snackbar;
+			global::Prism.Plugin.Popups.Resource.Styleable.SnackbarLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SnackbarLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.SnackbarLayout_elevation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Prism.Plugin.Popups.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.Snackbar_snackbarButtonStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.Snackbar_snackbarStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Snackbar_snackbarStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.Spinner = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Spinner;
+			global::Prism.Plugin.Popups.Resource.Styleable.Spinner_android_dropDownWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.Spinner_android_entries = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Prism.Plugin.Popups.Resource.Styleable.Spinner_android_popupBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.Spinner_android_prompt = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Prism.Plugin.Popups.Resource.Styleable.Spinner_popupTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.StateListDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.StateListDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.StateListDrawableItem = global::Xamarin_JuniorProject.Droid.Resource.Styleable.StateListDrawableItem;
+			global::Prism.Plugin.Popups.Resource.Styleable.StateListDrawableItem_android_drawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.StateListDrawable_android_constantSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.StateListDrawable_android_dither = global::Xamarin_JuniorProject.Droid.Resource.Styleable.StateListDrawable_android_dither;
+			global::Prism.Plugin.Popups.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::Xamarin_JuniorProject.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
+			global::Prism.Plugin.Popups.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::Xamarin_JuniorProject.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
+			global::Prism.Plugin.Popups.Resource.Styleable.StateListDrawable_android_variablePadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.StateListDrawable_android_visible = global::Xamarin_JuniorProject.Droid.Resource.Styleable.StateListDrawable_android_visible;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_android_textOff = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_android_textOn = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_android_thumb = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_showText = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_splitTrack = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_switchMinWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_switchPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_thumbTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_thumbTintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_track = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_trackTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.SwitchCompat_trackTintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabItem = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabItem;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabItem_android_icon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabItem_android_layout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabItem_android_text = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabItem_android_text;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabBackground = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabContentStart = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabGravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabIconTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabIconTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabIconTintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabIconTintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabIndicator = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabIndicator;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabIndicatorColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabIndicatorFullWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabIndicatorFullWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabIndicatorGravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabIndicatorGravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabInlineLabel = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabInlineLabel;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabMaxWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabMinWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabPadding = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabPaddingBottom = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabPaddingEnd = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabPaddingStart = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabPaddingTop = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabRippleColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabRippleColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabTextColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.TabLayout_tabUnboundedRipple = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TabLayout_tabUnboundedRipple;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_android_fontFamily = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_android_shadowColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_android_shadowDx = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_android_shadowDy = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_android_shadowRadius = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_android_textColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_android_textColorHint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_android_textColorLink = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_android_textSize = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_android_textStyle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_android_typeface = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_fontFamily = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextAppearance_textAllCaps = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_android_hint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_android_textColorHint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_boxBackgroundMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_boxBackgroundMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_boxStrokeColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_boxStrokeColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_boxStrokeWidth = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidth;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_counterEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_counterMaxLength = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_counterTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_errorEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_helperText = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_helperText;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_helperTextEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_helperTextEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_helperTextTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_helperTextTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_hintEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_passwordToggleTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.ThemeEnforcement = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ThemeEnforcement;
+			global::Prism.Plugin.Popups.Resource.Styleable.ThemeEnforcement_android_textAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ThemeEnforcement_android_textAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.ThemeEnforcement_enforceTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ThemeEnforcement_enforceTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_android_gravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_android_minHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_buttonGravity = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_collapseContentDescription = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_collapseIcon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_contentInsetEnd = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_contentInsetLeft = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_contentInsetRight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_contentInsetStart = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_logo = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_logo;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_logoDescription = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_maxButtonHeight = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_navigationContentDescription = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_navigationIcon = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_popupTheme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_subtitle = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_subtitleTextColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_title = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_title;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_titleMargin = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_titleMarginBottom = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_titleMarginEnd = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_titleMargins = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_titleMarginStart = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_titleMarginTop = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_titleTextAppearance = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Prism.Plugin.Popups.Resource.Styleable.Toolbar_titleTextColor = global::Xamarin_JuniorProject.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Prism.Plugin.Popups.Resource.Styleable.View = global::Xamarin_JuniorProject.Droid.Resource.Styleable.View;
+			global::Prism.Plugin.Popups.Resource.Styleable.ViewBackgroundHelper = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Prism.Plugin.Popups.Resource.Styleable.ViewBackgroundHelper_android_background = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Prism.Plugin.Popups.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Prism.Plugin.Popups.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Prism.Plugin.Popups.Resource.Styleable.ViewStubCompat = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ViewStubCompat;
+			global::Prism.Plugin.Popups.Resource.Styleable.ViewStubCompat_android_id = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Prism.Plugin.Popups.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Prism.Plugin.Popups.Resource.Styleable.ViewStubCompat_android_layout = global::Xamarin_JuniorProject.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Prism.Plugin.Popups.Resource.Styleable.View_android_focusable = global::Xamarin_JuniorProject.Droid.Resource.Styleable.View_android_focusable;
+			global::Prism.Plugin.Popups.Resource.Styleable.View_android_theme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.View_android_theme;
+			global::Prism.Plugin.Popups.Resource.Styleable.View_paddingEnd = global::Xamarin_JuniorProject.Droid.Resource.Styleable.View_paddingEnd;
+			global::Prism.Plugin.Popups.Resource.Styleable.View_paddingStart = global::Xamarin_JuniorProject.Droid.Resource.Styleable.View_paddingStart;
+			global::Prism.Plugin.Popups.Resource.Styleable.View_theme = global::Xamarin_JuniorProject.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::Xamarin_JuniorProject.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -6378,7 +9275,6 @@ namespace Xamarin_JuniorProject.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView = global::Xamarin_JuniorProject.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Dark = global::Xamarin_JuniorProject.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.CardView_Light;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.NestedScrollBarStyle = global::Xamarin_JuniorProject.Droid.Resource.Style.NestedScrollBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat_Light = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_AppCompat_Light;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_MaterialComponents = global::Xamarin_JuniorProject.Droid.Resource.Style.Platform_MaterialComponents;
@@ -12970,14 +15866,14 @@ namespace Xamarin_JuniorProject.Droid
 			// aapt resource value: 0x7F0F0001
 			public const int AlertDialog_AppCompat_Light = 2131689473;
 			
+			// aapt resource value: 0x7F0F0202
+			public const int amu_Bubble_TextAppearance_Dark = 2131689986;
+			
 			// aapt resource value: 0x7F0F0203
-			public const int amu_Bubble_TextAppearance_Dark = 2131689987;
+			public const int amu_Bubble_TextAppearance_Light = 2131689987;
 			
 			// aapt resource value: 0x7F0F0204
-			public const int amu_Bubble_TextAppearance_Light = 2131689988;
-			
-			// aapt resource value: 0x7F0F0205
-			public const int amu_ClusterIcon_TextAppearance = 2131689989;
+			public const int amu_ClusterIcon_TextAppearance = 2131689988;
 			
 			// aapt resource value: 0x7F0F0002
 			public const int Animation_AppCompat_Dialog = 2131689474;
@@ -13567,8 +16463,8 @@ namespace Xamarin_JuniorProject.Droid
 			// aapt resource value: 0x7F0F00C5
 			public const int CardView_Light = 2131689669;
 			
-			// aapt resource value: 0x7F0F0206
-			public const int collectionViewStyle = 2131689990;
+			// aapt resource value: 0x7F0F0205
+			public const int collectionViewStyle = 2131689989;
 			
 			// aapt resource value: 0x7F0F00C6
 			public const int MainTheme = 2131689670;
@@ -13577,949 +16473,946 @@ namespace Xamarin_JuniorProject.Droid
 			public const int MainTheme_Base = 2131689671;
 			
 			// aapt resource value: 0x7F0F00C8
-			public const int NestedScrollBarStyle = 2131689672;
+			public const int Platform_AppCompat = 2131689672;
 			
 			// aapt resource value: 0x7F0F00C9
-			public const int Platform_AppCompat = 2131689673;
+			public const int Platform_AppCompat_Light = 2131689673;
 			
 			// aapt resource value: 0x7F0F00CA
-			public const int Platform_AppCompat_Light = 2131689674;
+			public const int Platform_MaterialComponents = 2131689674;
 			
 			// aapt resource value: 0x7F0F00CB
-			public const int Platform_MaterialComponents = 2131689675;
+			public const int Platform_MaterialComponents_Dialog = 2131689675;
 			
 			// aapt resource value: 0x7F0F00CC
-			public const int Platform_MaterialComponents_Dialog = 2131689676;
+			public const int Platform_MaterialComponents_Light = 2131689676;
 			
 			// aapt resource value: 0x7F0F00CD
-			public const int Platform_MaterialComponents_Light = 2131689677;
+			public const int Platform_MaterialComponents_Light_Dialog = 2131689677;
 			
 			// aapt resource value: 0x7F0F00CE
-			public const int Platform_MaterialComponents_Light_Dialog = 2131689678;
+			public const int Platform_ThemeOverlay_AppCompat = 2131689678;
 			
 			// aapt resource value: 0x7F0F00CF
-			public const int Platform_ThemeOverlay_AppCompat = 2131689679;
+			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131689679;
 			
 			// aapt resource value: 0x7F0F00D0
-			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131689680;
+			public const int Platform_ThemeOverlay_AppCompat_Light = 2131689680;
 			
 			// aapt resource value: 0x7F0F00D1
-			public const int Platform_ThemeOverlay_AppCompat_Light = 2131689681;
+			public const int Platform_V21_AppCompat = 2131689681;
 			
 			// aapt resource value: 0x7F0F00D2
-			public const int Platform_V21_AppCompat = 2131689682;
+			public const int Platform_V21_AppCompat_Light = 2131689682;
 			
 			// aapt resource value: 0x7F0F00D3
-			public const int Platform_V21_AppCompat_Light = 2131689683;
+			public const int Platform_V25_AppCompat = 2131689683;
 			
 			// aapt resource value: 0x7F0F00D4
-			public const int Platform_V25_AppCompat = 2131689684;
+			public const int Platform_V25_AppCompat_Light = 2131689684;
 			
 			// aapt resource value: 0x7F0F00D5
-			public const int Platform_V25_AppCompat_Light = 2131689685;
+			public const int Platform_Widget_AppCompat_Spinner = 2131689685;
 			
 			// aapt resource value: 0x7F0F00D6
-			public const int Platform_Widget_AppCompat_Spinner = 2131689686;
+			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131689686;
 			
 			// aapt resource value: 0x7F0F00D7
-			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131689687;
+			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131689687;
 			
 			// aapt resource value: 0x7F0F00D8
-			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131689688;
+			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131689688;
 			
 			// aapt resource value: 0x7F0F00D9
-			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131689689;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131689689;
 			
 			// aapt resource value: 0x7F0F00DA
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131689690;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131689690;
 			
 			// aapt resource value: 0x7F0F00DB
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131689691;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = 2131689691;
 			
 			// aapt resource value: 0x7F0F00DC
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = 2131689692;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = 2131689692;
 			
 			// aapt resource value: 0x7F0F00DD
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = 2131689693;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131689693;
 			
 			// aapt resource value: 0x7F0F00DE
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131689694;
-			
-			// aapt resource value: 0x7F0F00DF
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 2131689695;
-			
-			// aapt resource value: 0x7F0F00E5
-			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131689701;
-			
-			// aapt resource value: 0x7F0F00E0
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131689696;
-			
-			// aapt resource value: 0x7F0F00E1
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131689697;
-			
-			// aapt resource value: 0x7F0F00E2
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131689698;
-			
-			// aapt resource value: 0x7F0F00E3
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131689699;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 2131689694;
 			
 			// aapt resource value: 0x7F0F00E4
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131689700;
+			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131689700;
+			
+			// aapt resource value: 0x7F0F00DF
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131689695;
+			
+			// aapt resource value: 0x7F0F00E0
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131689696;
+			
+			// aapt resource value: 0x7F0F00E1
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131689697;
+			
+			// aapt resource value: 0x7F0F00E2
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131689698;
+			
+			// aapt resource value: 0x7F0F00E3
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131689699;
+			
+			// aapt resource value: 0x7F0F00E5
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131689701;
 			
 			// aapt resource value: 0x7F0F00E6
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131689702;
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131689702;
 			
 			// aapt resource value: 0x7F0F00E7
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131689703;
+			public const int TextAppearance_AppCompat = 2131689703;
 			
 			// aapt resource value: 0x7F0F00E8
-			public const int TextAppearance_AppCompat = 2131689704;
+			public const int TextAppearance_AppCompat_Body1 = 2131689704;
 			
 			// aapt resource value: 0x7F0F00E9
-			public const int TextAppearance_AppCompat_Body1 = 2131689705;
+			public const int TextAppearance_AppCompat_Body2 = 2131689705;
 			
 			// aapt resource value: 0x7F0F00EA
-			public const int TextAppearance_AppCompat_Body2 = 2131689706;
+			public const int TextAppearance_AppCompat_Button = 2131689706;
 			
 			// aapt resource value: 0x7F0F00EB
-			public const int TextAppearance_AppCompat_Button = 2131689707;
+			public const int TextAppearance_AppCompat_Caption = 2131689707;
 			
 			// aapt resource value: 0x7F0F00EC
-			public const int TextAppearance_AppCompat_Caption = 2131689708;
+			public const int TextAppearance_AppCompat_Display1 = 2131689708;
 			
 			// aapt resource value: 0x7F0F00ED
-			public const int TextAppearance_AppCompat_Display1 = 2131689709;
+			public const int TextAppearance_AppCompat_Display2 = 2131689709;
 			
 			// aapt resource value: 0x7F0F00EE
-			public const int TextAppearance_AppCompat_Display2 = 2131689710;
+			public const int TextAppearance_AppCompat_Display3 = 2131689710;
 			
 			// aapt resource value: 0x7F0F00EF
-			public const int TextAppearance_AppCompat_Display3 = 2131689711;
+			public const int TextAppearance_AppCompat_Display4 = 2131689711;
 			
 			// aapt resource value: 0x7F0F00F0
-			public const int TextAppearance_AppCompat_Display4 = 2131689712;
+			public const int TextAppearance_AppCompat_Headline = 2131689712;
 			
 			// aapt resource value: 0x7F0F00F1
-			public const int TextAppearance_AppCompat_Headline = 2131689713;
+			public const int TextAppearance_AppCompat_Inverse = 2131689713;
 			
 			// aapt resource value: 0x7F0F00F2
-			public const int TextAppearance_AppCompat_Inverse = 2131689714;
+			public const int TextAppearance_AppCompat_Large = 2131689714;
 			
 			// aapt resource value: 0x7F0F00F3
-			public const int TextAppearance_AppCompat_Large = 2131689715;
+			public const int TextAppearance_AppCompat_Large_Inverse = 2131689715;
 			
 			// aapt resource value: 0x7F0F00F4
-			public const int TextAppearance_AppCompat_Large_Inverse = 2131689716;
+			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131689716;
 			
 			// aapt resource value: 0x7F0F00F5
-			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131689717;
+			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131689717;
 			
 			// aapt resource value: 0x7F0F00F6
-			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131689718;
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131689718;
 			
 			// aapt resource value: 0x7F0F00F7
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131689719;
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131689719;
 			
 			// aapt resource value: 0x7F0F00F8
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131689720;
+			public const int TextAppearance_AppCompat_Medium = 2131689720;
 			
 			// aapt resource value: 0x7F0F00F9
-			public const int TextAppearance_AppCompat_Medium = 2131689721;
+			public const int TextAppearance_AppCompat_Medium_Inverse = 2131689721;
 			
 			// aapt resource value: 0x7F0F00FA
-			public const int TextAppearance_AppCompat_Medium_Inverse = 2131689722;
+			public const int TextAppearance_AppCompat_Menu = 2131689722;
 			
 			// aapt resource value: 0x7F0F00FB
-			public const int TextAppearance_AppCompat_Menu = 2131689723;
+			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131689723;
 			
 			// aapt resource value: 0x7F0F00FC
-			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131689724;
+			public const int TextAppearance_AppCompat_SearchResult_Title = 2131689724;
 			
 			// aapt resource value: 0x7F0F00FD
-			public const int TextAppearance_AppCompat_SearchResult_Title = 2131689725;
+			public const int TextAppearance_AppCompat_Small = 2131689725;
 			
 			// aapt resource value: 0x7F0F00FE
-			public const int TextAppearance_AppCompat_Small = 2131689726;
+			public const int TextAppearance_AppCompat_Small_Inverse = 2131689726;
 			
 			// aapt resource value: 0x7F0F00FF
-			public const int TextAppearance_AppCompat_Small_Inverse = 2131689727;
+			public const int TextAppearance_AppCompat_Subhead = 2131689727;
 			
 			// aapt resource value: 0x7F0F0100
-			public const int TextAppearance_AppCompat_Subhead = 2131689728;
+			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131689728;
 			
 			// aapt resource value: 0x7F0F0101
-			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131689729;
+			public const int TextAppearance_AppCompat_Title = 2131689729;
 			
 			// aapt resource value: 0x7F0F0102
-			public const int TextAppearance_AppCompat_Title = 2131689730;
+			public const int TextAppearance_AppCompat_Title_Inverse = 2131689730;
 			
 			// aapt resource value: 0x7F0F0103
-			public const int TextAppearance_AppCompat_Title_Inverse = 2131689731;
+			public const int TextAppearance_AppCompat_Tooltip = 2131689731;
 			
 			// aapt resource value: 0x7F0F0104
-			public const int TextAppearance_AppCompat_Tooltip = 2131689732;
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131689732;
 			
 			// aapt resource value: 0x7F0F0105
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131689733;
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131689733;
 			
 			// aapt resource value: 0x7F0F0106
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131689734;
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131689734;
 			
 			// aapt resource value: 0x7F0F0107
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131689735;
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131689735;
 			
 			// aapt resource value: 0x7F0F0108
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131689736;
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131689736;
 			
 			// aapt resource value: 0x7F0F0109
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131689737;
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131689737;
 			
 			// aapt resource value: 0x7F0F010A
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131689738;
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131689738;
 			
 			// aapt resource value: 0x7F0F010B
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131689739;
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131689739;
 			
 			// aapt resource value: 0x7F0F010C
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131689740;
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131689740;
 			
 			// aapt resource value: 0x7F0F010D
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131689741;
+			public const int TextAppearance_AppCompat_Widget_Button = 2131689741;
 			
 			// aapt resource value: 0x7F0F010E
-			public const int TextAppearance_AppCompat_Widget_Button = 2131689742;
+			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131689742;
 			
 			// aapt resource value: 0x7F0F010F
-			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131689743;
+			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131689743;
 			
 			// aapt resource value: 0x7F0F0110
-			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131689744;
+			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131689744;
 			
 			// aapt resource value: 0x7F0F0111
-			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131689745;
+			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131689745;
 			
 			// aapt resource value: 0x7F0F0112
-			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131689746;
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131689746;
 			
 			// aapt resource value: 0x7F0F0113
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131689747;
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131689747;
 			
 			// aapt resource value: 0x7F0F0114
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131689748;
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131689748;
 			
 			// aapt resource value: 0x7F0F0115
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131689749;
+			public const int TextAppearance_AppCompat_Widget_Switch = 2131689749;
 			
 			// aapt resource value: 0x7F0F0116
-			public const int TextAppearance_AppCompat_Widget_Switch = 2131689750;
+			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131689750;
 			
 			// aapt resource value: 0x7F0F0117
-			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131689751;
+			public const int TextAppearance_Compat_Notification = 2131689751;
 			
 			// aapt resource value: 0x7F0F0118
-			public const int TextAppearance_Compat_Notification = 2131689752;
+			public const int TextAppearance_Compat_Notification_Info = 2131689752;
 			
 			// aapt resource value: 0x7F0F0119
-			public const int TextAppearance_Compat_Notification_Info = 2131689753;
+			public const int TextAppearance_Compat_Notification_Info_Media = 2131689753;
 			
 			// aapt resource value: 0x7F0F011A
-			public const int TextAppearance_Compat_Notification_Info_Media = 2131689754;
+			public const int TextAppearance_Compat_Notification_Line2 = 2131689754;
 			
 			// aapt resource value: 0x7F0F011B
-			public const int TextAppearance_Compat_Notification_Line2 = 2131689755;
+			public const int TextAppearance_Compat_Notification_Line2_Media = 2131689755;
 			
 			// aapt resource value: 0x7F0F011C
-			public const int TextAppearance_Compat_Notification_Line2_Media = 2131689756;
+			public const int TextAppearance_Compat_Notification_Media = 2131689756;
 			
 			// aapt resource value: 0x7F0F011D
-			public const int TextAppearance_Compat_Notification_Media = 2131689757;
+			public const int TextAppearance_Compat_Notification_Time = 2131689757;
 			
 			// aapt resource value: 0x7F0F011E
-			public const int TextAppearance_Compat_Notification_Time = 2131689758;
+			public const int TextAppearance_Compat_Notification_Time_Media = 2131689758;
 			
 			// aapt resource value: 0x7F0F011F
-			public const int TextAppearance_Compat_Notification_Time_Media = 2131689759;
+			public const int TextAppearance_Compat_Notification_Title = 2131689759;
 			
 			// aapt resource value: 0x7F0F0120
-			public const int TextAppearance_Compat_Notification_Title = 2131689760;
+			public const int TextAppearance_Compat_Notification_Title_Media = 2131689760;
 			
 			// aapt resource value: 0x7F0F0121
-			public const int TextAppearance_Compat_Notification_Title_Media = 2131689761;
+			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131689761;
 			
 			// aapt resource value: 0x7F0F0122
-			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131689762;
+			public const int TextAppearance_Design_Counter = 2131689762;
 			
 			// aapt resource value: 0x7F0F0123
-			public const int TextAppearance_Design_Counter = 2131689763;
+			public const int TextAppearance_Design_Counter_Overflow = 2131689763;
 			
 			// aapt resource value: 0x7F0F0124
-			public const int TextAppearance_Design_Counter_Overflow = 2131689764;
+			public const int TextAppearance_Design_Error = 2131689764;
 			
 			// aapt resource value: 0x7F0F0125
-			public const int TextAppearance_Design_Error = 2131689765;
+			public const int TextAppearance_Design_HelperText = 2131689765;
 			
 			// aapt resource value: 0x7F0F0126
-			public const int TextAppearance_Design_HelperText = 2131689766;
+			public const int TextAppearance_Design_Hint = 2131689766;
 			
 			// aapt resource value: 0x7F0F0127
-			public const int TextAppearance_Design_Hint = 2131689767;
+			public const int TextAppearance_Design_Snackbar_Message = 2131689767;
 			
 			// aapt resource value: 0x7F0F0128
-			public const int TextAppearance_Design_Snackbar_Message = 2131689768;
+			public const int TextAppearance_Design_Tab = 2131689768;
 			
 			// aapt resource value: 0x7F0F0129
-			public const int TextAppearance_Design_Tab = 2131689769;
+			public const int TextAppearance_MaterialComponents_Body1 = 2131689769;
 			
 			// aapt resource value: 0x7F0F012A
-			public const int TextAppearance_MaterialComponents_Body1 = 2131689770;
+			public const int TextAppearance_MaterialComponents_Body2 = 2131689770;
 			
 			// aapt resource value: 0x7F0F012B
-			public const int TextAppearance_MaterialComponents_Body2 = 2131689771;
+			public const int TextAppearance_MaterialComponents_Button = 2131689771;
 			
 			// aapt resource value: 0x7F0F012C
-			public const int TextAppearance_MaterialComponents_Button = 2131689772;
+			public const int TextAppearance_MaterialComponents_Caption = 2131689772;
 			
 			// aapt resource value: 0x7F0F012D
-			public const int TextAppearance_MaterialComponents_Caption = 2131689773;
+			public const int TextAppearance_MaterialComponents_Chip = 2131689773;
 			
 			// aapt resource value: 0x7F0F012E
-			public const int TextAppearance_MaterialComponents_Chip = 2131689774;
+			public const int TextAppearance_MaterialComponents_Headline1 = 2131689774;
 			
 			// aapt resource value: 0x7F0F012F
-			public const int TextAppearance_MaterialComponents_Headline1 = 2131689775;
+			public const int TextAppearance_MaterialComponents_Headline2 = 2131689775;
 			
 			// aapt resource value: 0x7F0F0130
-			public const int TextAppearance_MaterialComponents_Headline2 = 2131689776;
+			public const int TextAppearance_MaterialComponents_Headline3 = 2131689776;
 			
 			// aapt resource value: 0x7F0F0131
-			public const int TextAppearance_MaterialComponents_Headline3 = 2131689777;
+			public const int TextAppearance_MaterialComponents_Headline4 = 2131689777;
 			
 			// aapt resource value: 0x7F0F0132
-			public const int TextAppearance_MaterialComponents_Headline4 = 2131689778;
+			public const int TextAppearance_MaterialComponents_Headline5 = 2131689778;
 			
 			// aapt resource value: 0x7F0F0133
-			public const int TextAppearance_MaterialComponents_Headline5 = 2131689779;
+			public const int TextAppearance_MaterialComponents_Headline6 = 2131689779;
 			
 			// aapt resource value: 0x7F0F0134
-			public const int TextAppearance_MaterialComponents_Headline6 = 2131689780;
+			public const int TextAppearance_MaterialComponents_Overline = 2131689780;
 			
 			// aapt resource value: 0x7F0F0135
-			public const int TextAppearance_MaterialComponents_Overline = 2131689781;
+			public const int TextAppearance_MaterialComponents_Subtitle1 = 2131689781;
 			
 			// aapt resource value: 0x7F0F0136
-			public const int TextAppearance_MaterialComponents_Subtitle1 = 2131689782;
+			public const int TextAppearance_MaterialComponents_Subtitle2 = 2131689782;
 			
 			// aapt resource value: 0x7F0F0137
-			public const int TextAppearance_MaterialComponents_Subtitle2 = 2131689783;
+			public const int TextAppearance_MaterialComponents_Tab = 2131689783;
 			
 			// aapt resource value: 0x7F0F0138
-			public const int TextAppearance_MaterialComponents_Tab = 2131689784;
+			public const int TextAppearance_MediaRouter_PrimaryText = 2131689784;
 			
 			// aapt resource value: 0x7F0F0139
-			public const int TextAppearance_MediaRouter_PrimaryText = 2131689785;
+			public const int TextAppearance_MediaRouter_SecondaryText = 2131689785;
 			
 			// aapt resource value: 0x7F0F013A
-			public const int TextAppearance_MediaRouter_SecondaryText = 2131689786;
+			public const int TextAppearance_MediaRouter_Title = 2131689786;
 			
 			// aapt resource value: 0x7F0F013B
-			public const int TextAppearance_MediaRouter_Title = 2131689787;
+			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131689787;
 			
 			// aapt resource value: 0x7F0F013C
-			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131689788;
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131689788;
 			
 			// aapt resource value: 0x7F0F013D
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131689789;
-			
-			// aapt resource value: 0x7F0F013E
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131689790;
-			
-			// aapt resource value: 0x7F0F0173
-			public const int ThemeOverlay_AppCompat = 2131689843;
-			
-			// aapt resource value: 0x7F0F0174
-			public const int ThemeOverlay_AppCompat_ActionBar = 2131689844;
-			
-			// aapt resource value: 0x7F0F0175
-			public const int ThemeOverlay_AppCompat_Dark = 2131689845;
-			
-			// aapt resource value: 0x7F0F0176
-			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131689846;
-			
-			// aapt resource value: 0x7F0F0177
-			public const int ThemeOverlay_AppCompat_Dialog = 2131689847;
-			
-			// aapt resource value: 0x7F0F0178
-			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131689848;
-			
-			// aapt resource value: 0x7F0F0179
-			public const int ThemeOverlay_AppCompat_Light = 2131689849;
-			
-			// aapt resource value: 0x7F0F017A
-			public const int ThemeOverlay_MaterialComponents = 2131689850;
-			
-			// aapt resource value: 0x7F0F017B
-			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131689851;
-			
-			// aapt resource value: 0x7F0F017C
-			public const int ThemeOverlay_MaterialComponents_Dark = 2131689852;
-			
-			// aapt resource value: 0x7F0F017D
-			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131689853;
-			
-			// aapt resource value: 0x7F0F017E
-			public const int ThemeOverlay_MaterialComponents_Dialog = 2131689854;
-			
-			// aapt resource value: 0x7F0F017F
-			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131689855;
-			
-			// aapt resource value: 0x7F0F0180
-			public const int ThemeOverlay_MaterialComponents_Light = 2131689856;
-			
-			// aapt resource value: 0x7F0F0181
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131689857;
-			
-			// aapt resource value: 0x7F0F0182
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131689858;
-			
-			// aapt resource value: 0x7F0F0183
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131689859;
-			
-			// aapt resource value: 0x7F0F0184
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131689860;
-			
-			// aapt resource value: 0x7F0F0185
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131689861;
-			
-			// aapt resource value: 0x7F0F0186
-			public const int ThemeOverlay_MediaRouter_Dark = 2131689862;
-			
-			// aapt resource value: 0x7F0F0187
-			public const int ThemeOverlay_MediaRouter_Light = 2131689863;
-			
-			// aapt resource value: 0x7F0F013F
-			public const int Theme_AppCompat = 2131689791;
-			
-			// aapt resource value: 0x7F0F0140
-			public const int Theme_AppCompat_CompactMenu = 2131689792;
-			
-			// aapt resource value: 0x7F0F0141
-			public const int Theme_AppCompat_DayNight = 2131689793;
-			
-			// aapt resource value: 0x7F0F0142
-			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131689794;
-			
-			// aapt resource value: 0x7F0F0143
-			public const int Theme_AppCompat_DayNight_Dialog = 2131689795;
-			
-			// aapt resource value: 0x7F0F0146
-			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131689798;
-			
-			// aapt resource value: 0x7F0F0144
-			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131689796;
-			
-			// aapt resource value: 0x7F0F0145
-			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131689797;
-			
-			// aapt resource value: 0x7F0F0147
-			public const int Theme_AppCompat_DayNight_NoActionBar = 2131689799;
-			
-			// aapt resource value: 0x7F0F0148
-			public const int Theme_AppCompat_Dialog = 2131689800;
-			
-			// aapt resource value: 0x7F0F014B
-			public const int Theme_AppCompat_DialogWhenLarge = 2131689803;
-			
-			// aapt resource value: 0x7F0F0149
-			public const int Theme_AppCompat_Dialog_Alert = 2131689801;
-			
-			// aapt resource value: 0x7F0F014A
-			public const int Theme_AppCompat_Dialog_MinWidth = 2131689802;
-			
-			// aapt resource value: 0x7F0F014C
-			public const int Theme_AppCompat_Light = 2131689804;
-			
-			// aapt resource value: 0x7F0F014D
-			public const int Theme_AppCompat_Light_DarkActionBar = 2131689805;
-			
-			// aapt resource value: 0x7F0F014E
-			public const int Theme_AppCompat_Light_Dialog = 2131689806;
-			
-			// aapt resource value: 0x7F0F0151
-			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131689809;
-			
-			// aapt resource value: 0x7F0F014F
-			public const int Theme_AppCompat_Light_Dialog_Alert = 2131689807;
-			
-			// aapt resource value: 0x7F0F0150
-			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131689808;
-			
-			// aapt resource value: 0x7F0F0152
-			public const int Theme_AppCompat_Light_NoActionBar = 2131689810;
-			
-			// aapt resource value: 0x7F0F0153
-			public const int Theme_AppCompat_NoActionBar = 2131689811;
-			
-			// aapt resource value: 0x7F0F0154
-			public const int Theme_Design = 2131689812;
-			
-			// aapt resource value: 0x7F0F0155
-			public const int Theme_Design_BottomSheetDialog = 2131689813;
-			
-			// aapt resource value: 0x7F0F0156
-			public const int Theme_Design_Light = 2131689814;
-			
-			// aapt resource value: 0x7F0F0157
-			public const int Theme_Design_Light_BottomSheetDialog = 2131689815;
-			
-			// aapt resource value: 0x7F0F0158
-			public const int Theme_Design_Light_NoActionBar = 2131689816;
-			
-			// aapt resource value: 0x7F0F0159
-			public const int Theme_Design_NoActionBar = 2131689817;
-			
-			// aapt resource value: 0x7F0F015A
-			public const int Theme_MaterialComponents = 2131689818;
-			
-			// aapt resource value: 0x7F0F015B
-			public const int Theme_MaterialComponents_BottomSheetDialog = 2131689819;
-			
-			// aapt resource value: 0x7F0F015C
-			public const int Theme_MaterialComponents_Bridge = 2131689820;
-			
-			// aapt resource value: 0x7F0F015D
-			public const int Theme_MaterialComponents_CompactMenu = 2131689821;
-			
-			// aapt resource value: 0x7F0F015E
-			public const int Theme_MaterialComponents_Dialog = 2131689822;
-			
-			// aapt resource value: 0x7F0F0161
-			public const int Theme_MaterialComponents_DialogWhenLarge = 2131689825;
-			
-			// aapt resource value: 0x7F0F015F
-			public const int Theme_MaterialComponents_Dialog_Alert = 2131689823;
-			
-			// aapt resource value: 0x7F0F0160
-			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131689824;
-			
-			// aapt resource value: 0x7F0F0162
-			public const int Theme_MaterialComponents_Light = 2131689826;
-			
-			// aapt resource value: 0x7F0F0163
-			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131689827;
-			
-			// aapt resource value: 0x7F0F0164
-			public const int Theme_MaterialComponents_Light_Bridge = 2131689828;
-			
-			// aapt resource value: 0x7F0F0165
-			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131689829;
-			
-			// aapt resource value: 0x7F0F0166
-			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131689830;
-			
-			// aapt resource value: 0x7F0F0167
-			public const int Theme_MaterialComponents_Light_Dialog = 2131689831;
-			
-			// aapt resource value: 0x7F0F016A
-			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131689834;
-			
-			// aapt resource value: 0x7F0F0168
-			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131689832;
-			
-			// aapt resource value: 0x7F0F0169
-			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131689833;
-			
-			// aapt resource value: 0x7F0F016B
-			public const int Theme_MaterialComponents_Light_NoActionBar = 2131689835;
-			
-			// aapt resource value: 0x7F0F016C
-			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131689836;
-			
-			// aapt resource value: 0x7F0F016D
-			public const int Theme_MaterialComponents_NoActionBar = 2131689837;
-			
-			// aapt resource value: 0x7F0F016E
-			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131689838;
-			
-			// aapt resource value: 0x7F0F016F
-			public const int Theme_MediaRouter = 2131689839;
-			
-			// aapt resource value: 0x7F0F0170
-			public const int Theme_MediaRouter_Light = 2131689840;
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131689789;
 			
 			// aapt resource value: 0x7F0F0172
-			public const int Theme_MediaRouter_LightControlPanel = 2131689842;
+			public const int ThemeOverlay_AppCompat = 2131689842;
+			
+			// aapt resource value: 0x7F0F0173
+			public const int ThemeOverlay_AppCompat_ActionBar = 2131689843;
+			
+			// aapt resource value: 0x7F0F0174
+			public const int ThemeOverlay_AppCompat_Dark = 2131689844;
+			
+			// aapt resource value: 0x7F0F0175
+			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131689845;
+			
+			// aapt resource value: 0x7F0F0176
+			public const int ThemeOverlay_AppCompat_Dialog = 2131689846;
+			
+			// aapt resource value: 0x7F0F0177
+			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131689847;
+			
+			// aapt resource value: 0x7F0F0178
+			public const int ThemeOverlay_AppCompat_Light = 2131689848;
+			
+			// aapt resource value: 0x7F0F0179
+			public const int ThemeOverlay_MaterialComponents = 2131689849;
+			
+			// aapt resource value: 0x7F0F017A
+			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131689850;
+			
+			// aapt resource value: 0x7F0F017B
+			public const int ThemeOverlay_MaterialComponents_Dark = 2131689851;
+			
+			// aapt resource value: 0x7F0F017C
+			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131689852;
+			
+			// aapt resource value: 0x7F0F017D
+			public const int ThemeOverlay_MaterialComponents_Dialog = 2131689853;
+			
+			// aapt resource value: 0x7F0F017E
+			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131689854;
+			
+			// aapt resource value: 0x7F0F017F
+			public const int ThemeOverlay_MaterialComponents_Light = 2131689855;
+			
+			// aapt resource value: 0x7F0F0180
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131689856;
+			
+			// aapt resource value: 0x7F0F0181
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131689857;
+			
+			// aapt resource value: 0x7F0F0182
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131689858;
+			
+			// aapt resource value: 0x7F0F0183
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131689859;
+			
+			// aapt resource value: 0x7F0F0184
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131689860;
+			
+			// aapt resource value: 0x7F0F0185
+			public const int ThemeOverlay_MediaRouter_Dark = 2131689861;
+			
+			// aapt resource value: 0x7F0F0186
+			public const int ThemeOverlay_MediaRouter_Light = 2131689862;
+			
+			// aapt resource value: 0x7F0F013E
+			public const int Theme_AppCompat = 2131689790;
+			
+			// aapt resource value: 0x7F0F013F
+			public const int Theme_AppCompat_CompactMenu = 2131689791;
+			
+			// aapt resource value: 0x7F0F0140
+			public const int Theme_AppCompat_DayNight = 2131689792;
+			
+			// aapt resource value: 0x7F0F0141
+			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131689793;
+			
+			// aapt resource value: 0x7F0F0142
+			public const int Theme_AppCompat_DayNight_Dialog = 2131689794;
+			
+			// aapt resource value: 0x7F0F0145
+			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131689797;
+			
+			// aapt resource value: 0x7F0F0143
+			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131689795;
+			
+			// aapt resource value: 0x7F0F0144
+			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131689796;
+			
+			// aapt resource value: 0x7F0F0146
+			public const int Theme_AppCompat_DayNight_NoActionBar = 2131689798;
+			
+			// aapt resource value: 0x7F0F0147
+			public const int Theme_AppCompat_Dialog = 2131689799;
+			
+			// aapt resource value: 0x7F0F014A
+			public const int Theme_AppCompat_DialogWhenLarge = 2131689802;
+			
+			// aapt resource value: 0x7F0F0148
+			public const int Theme_AppCompat_Dialog_Alert = 2131689800;
+			
+			// aapt resource value: 0x7F0F0149
+			public const int Theme_AppCompat_Dialog_MinWidth = 2131689801;
+			
+			// aapt resource value: 0x7F0F014B
+			public const int Theme_AppCompat_Light = 2131689803;
+			
+			// aapt resource value: 0x7F0F014C
+			public const int Theme_AppCompat_Light_DarkActionBar = 2131689804;
+			
+			// aapt resource value: 0x7F0F014D
+			public const int Theme_AppCompat_Light_Dialog = 2131689805;
+			
+			// aapt resource value: 0x7F0F0150
+			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131689808;
+			
+			// aapt resource value: 0x7F0F014E
+			public const int Theme_AppCompat_Light_Dialog_Alert = 2131689806;
+			
+			// aapt resource value: 0x7F0F014F
+			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131689807;
+			
+			// aapt resource value: 0x7F0F0151
+			public const int Theme_AppCompat_Light_NoActionBar = 2131689809;
+			
+			// aapt resource value: 0x7F0F0152
+			public const int Theme_AppCompat_NoActionBar = 2131689810;
+			
+			// aapt resource value: 0x7F0F0153
+			public const int Theme_Design = 2131689811;
+			
+			// aapt resource value: 0x7F0F0154
+			public const int Theme_Design_BottomSheetDialog = 2131689812;
+			
+			// aapt resource value: 0x7F0F0155
+			public const int Theme_Design_Light = 2131689813;
+			
+			// aapt resource value: 0x7F0F0156
+			public const int Theme_Design_Light_BottomSheetDialog = 2131689814;
+			
+			// aapt resource value: 0x7F0F0157
+			public const int Theme_Design_Light_NoActionBar = 2131689815;
+			
+			// aapt resource value: 0x7F0F0158
+			public const int Theme_Design_NoActionBar = 2131689816;
+			
+			// aapt resource value: 0x7F0F0159
+			public const int Theme_MaterialComponents = 2131689817;
+			
+			// aapt resource value: 0x7F0F015A
+			public const int Theme_MaterialComponents_BottomSheetDialog = 2131689818;
+			
+			// aapt resource value: 0x7F0F015B
+			public const int Theme_MaterialComponents_Bridge = 2131689819;
+			
+			// aapt resource value: 0x7F0F015C
+			public const int Theme_MaterialComponents_CompactMenu = 2131689820;
+			
+			// aapt resource value: 0x7F0F015D
+			public const int Theme_MaterialComponents_Dialog = 2131689821;
+			
+			// aapt resource value: 0x7F0F0160
+			public const int Theme_MaterialComponents_DialogWhenLarge = 2131689824;
+			
+			// aapt resource value: 0x7F0F015E
+			public const int Theme_MaterialComponents_Dialog_Alert = 2131689822;
+			
+			// aapt resource value: 0x7F0F015F
+			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131689823;
+			
+			// aapt resource value: 0x7F0F0161
+			public const int Theme_MaterialComponents_Light = 2131689825;
+			
+			// aapt resource value: 0x7F0F0162
+			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131689826;
+			
+			// aapt resource value: 0x7F0F0163
+			public const int Theme_MaterialComponents_Light_Bridge = 2131689827;
+			
+			// aapt resource value: 0x7F0F0164
+			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131689828;
+			
+			// aapt resource value: 0x7F0F0165
+			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131689829;
+			
+			// aapt resource value: 0x7F0F0166
+			public const int Theme_MaterialComponents_Light_Dialog = 2131689830;
+			
+			// aapt resource value: 0x7F0F0169
+			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131689833;
+			
+			// aapt resource value: 0x7F0F0167
+			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131689831;
+			
+			// aapt resource value: 0x7F0F0168
+			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131689832;
+			
+			// aapt resource value: 0x7F0F016A
+			public const int Theme_MaterialComponents_Light_NoActionBar = 2131689834;
+			
+			// aapt resource value: 0x7F0F016B
+			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131689835;
+			
+			// aapt resource value: 0x7F0F016C
+			public const int Theme_MaterialComponents_NoActionBar = 2131689836;
+			
+			// aapt resource value: 0x7F0F016D
+			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131689837;
+			
+			// aapt resource value: 0x7F0F016E
+			public const int Theme_MediaRouter = 2131689838;
+			
+			// aapt resource value: 0x7F0F016F
+			public const int Theme_MediaRouter_Light = 2131689839;
 			
 			// aapt resource value: 0x7F0F0171
-			public const int Theme_MediaRouter_Light_DarkControlPanel = 2131689841;
+			public const int Theme_MediaRouter_LightControlPanel = 2131689841;
+			
+			// aapt resource value: 0x7F0F0170
+			public const int Theme_MediaRouter_Light_DarkControlPanel = 2131689840;
+			
+			// aapt resource value: 0x7F0F0187
+			public const int Widget_AppCompat_ActionBar = 2131689863;
 			
 			// aapt resource value: 0x7F0F0188
-			public const int Widget_AppCompat_ActionBar = 2131689864;
+			public const int Widget_AppCompat_ActionBar_Solid = 2131689864;
 			
 			// aapt resource value: 0x7F0F0189
-			public const int Widget_AppCompat_ActionBar_Solid = 2131689865;
+			public const int Widget_AppCompat_ActionBar_TabBar = 2131689865;
 			
 			// aapt resource value: 0x7F0F018A
-			public const int Widget_AppCompat_ActionBar_TabBar = 2131689866;
+			public const int Widget_AppCompat_ActionBar_TabText = 2131689866;
 			
 			// aapt resource value: 0x7F0F018B
-			public const int Widget_AppCompat_ActionBar_TabText = 2131689867;
+			public const int Widget_AppCompat_ActionBar_TabView = 2131689867;
 			
 			// aapt resource value: 0x7F0F018C
-			public const int Widget_AppCompat_ActionBar_TabView = 2131689868;
+			public const int Widget_AppCompat_ActionButton = 2131689868;
 			
 			// aapt resource value: 0x7F0F018D
-			public const int Widget_AppCompat_ActionButton = 2131689869;
+			public const int Widget_AppCompat_ActionButton_CloseMode = 2131689869;
 			
 			// aapt resource value: 0x7F0F018E
-			public const int Widget_AppCompat_ActionButton_CloseMode = 2131689870;
+			public const int Widget_AppCompat_ActionButton_Overflow = 2131689870;
 			
 			// aapt resource value: 0x7F0F018F
-			public const int Widget_AppCompat_ActionButton_Overflow = 2131689871;
+			public const int Widget_AppCompat_ActionMode = 2131689871;
 			
 			// aapt resource value: 0x7F0F0190
-			public const int Widget_AppCompat_ActionMode = 2131689872;
+			public const int Widget_AppCompat_ActivityChooserView = 2131689872;
 			
 			// aapt resource value: 0x7F0F0191
-			public const int Widget_AppCompat_ActivityChooserView = 2131689873;
+			public const int Widget_AppCompat_AutoCompleteTextView = 2131689873;
 			
 			// aapt resource value: 0x7F0F0192
-			public const int Widget_AppCompat_AutoCompleteTextView = 2131689874;
-			
-			// aapt resource value: 0x7F0F0193
-			public const int Widget_AppCompat_Button = 2131689875;
-			
-			// aapt resource value: 0x7F0F0199
-			public const int Widget_AppCompat_ButtonBar = 2131689881;
-			
-			// aapt resource value: 0x7F0F019A
-			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131689882;
-			
-			// aapt resource value: 0x7F0F0194
-			public const int Widget_AppCompat_Button_Borderless = 2131689876;
-			
-			// aapt resource value: 0x7F0F0195
-			public const int Widget_AppCompat_Button_Borderless_Colored = 2131689877;
-			
-			// aapt resource value: 0x7F0F0196
-			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131689878;
-			
-			// aapt resource value: 0x7F0F0197
-			public const int Widget_AppCompat_Button_Colored = 2131689879;
+			public const int Widget_AppCompat_Button = 2131689874;
 			
 			// aapt resource value: 0x7F0F0198
-			public const int Widget_AppCompat_Button_Small = 2131689880;
+			public const int Widget_AppCompat_ButtonBar = 2131689880;
+			
+			// aapt resource value: 0x7F0F0199
+			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131689881;
+			
+			// aapt resource value: 0x7F0F0193
+			public const int Widget_AppCompat_Button_Borderless = 2131689875;
+			
+			// aapt resource value: 0x7F0F0194
+			public const int Widget_AppCompat_Button_Borderless_Colored = 2131689876;
+			
+			// aapt resource value: 0x7F0F0195
+			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131689877;
+			
+			// aapt resource value: 0x7F0F0196
+			public const int Widget_AppCompat_Button_Colored = 2131689878;
+			
+			// aapt resource value: 0x7F0F0197
+			public const int Widget_AppCompat_Button_Small = 2131689879;
+			
+			// aapt resource value: 0x7F0F019A
+			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131689882;
 			
 			// aapt resource value: 0x7F0F019B
-			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131689883;
+			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131689883;
 			
 			// aapt resource value: 0x7F0F019C
-			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131689884;
+			public const int Widget_AppCompat_CompoundButton_Switch = 2131689884;
 			
 			// aapt resource value: 0x7F0F019D
-			public const int Widget_AppCompat_CompoundButton_Switch = 2131689885;
+			public const int Widget_AppCompat_DrawerArrowToggle = 2131689885;
 			
 			// aapt resource value: 0x7F0F019E
-			public const int Widget_AppCompat_DrawerArrowToggle = 2131689886;
+			public const int Widget_AppCompat_DropDownItem_Spinner = 2131689886;
 			
 			// aapt resource value: 0x7F0F019F
-			public const int Widget_AppCompat_DropDownItem_Spinner = 2131689887;
+			public const int Widget_AppCompat_EditText = 2131689887;
 			
 			// aapt resource value: 0x7F0F01A0
-			public const int Widget_AppCompat_EditText = 2131689888;
+			public const int Widget_AppCompat_ImageButton = 2131689888;
 			
 			// aapt resource value: 0x7F0F01A1
-			public const int Widget_AppCompat_ImageButton = 2131689889;
+			public const int Widget_AppCompat_Light_ActionBar = 2131689889;
 			
 			// aapt resource value: 0x7F0F01A2
-			public const int Widget_AppCompat_Light_ActionBar = 2131689890;
+			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131689890;
 			
 			// aapt resource value: 0x7F0F01A3
-			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131689891;
+			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131689891;
 			
 			// aapt resource value: 0x7F0F01A4
-			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131689892;
+			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131689892;
 			
 			// aapt resource value: 0x7F0F01A5
-			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131689893;
+			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131689893;
 			
 			// aapt resource value: 0x7F0F01A6
-			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131689894;
+			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131689894;
 			
 			// aapt resource value: 0x7F0F01A7
-			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131689895;
+			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131689895;
 			
 			// aapt resource value: 0x7F0F01A8
-			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131689896;
+			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131689896;
 			
 			// aapt resource value: 0x7F0F01A9
-			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131689897;
+			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131689897;
 			
 			// aapt resource value: 0x7F0F01AA
-			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131689898;
+			public const int Widget_AppCompat_Light_ActionButton = 2131689898;
 			
 			// aapt resource value: 0x7F0F01AB
-			public const int Widget_AppCompat_Light_ActionButton = 2131689899;
+			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131689899;
 			
 			// aapt resource value: 0x7F0F01AC
-			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131689900;
+			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131689900;
 			
 			// aapt resource value: 0x7F0F01AD
-			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131689901;
+			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131689901;
 			
 			// aapt resource value: 0x7F0F01AE
-			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131689902;
+			public const int Widget_AppCompat_Light_ActivityChooserView = 2131689902;
 			
 			// aapt resource value: 0x7F0F01AF
-			public const int Widget_AppCompat_Light_ActivityChooserView = 2131689903;
+			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131689903;
 			
 			// aapt resource value: 0x7F0F01B0
-			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131689904;
+			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131689904;
 			
 			// aapt resource value: 0x7F0F01B1
-			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131689905;
+			public const int Widget_AppCompat_Light_ListPopupWindow = 2131689905;
 			
 			// aapt resource value: 0x7F0F01B2
-			public const int Widget_AppCompat_Light_ListPopupWindow = 2131689906;
+			public const int Widget_AppCompat_Light_ListView_DropDown = 2131689906;
 			
 			// aapt resource value: 0x7F0F01B3
-			public const int Widget_AppCompat_Light_ListView_DropDown = 2131689907;
+			public const int Widget_AppCompat_Light_PopupMenu = 2131689907;
 			
 			// aapt resource value: 0x7F0F01B4
-			public const int Widget_AppCompat_Light_PopupMenu = 2131689908;
+			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131689908;
 			
 			// aapt resource value: 0x7F0F01B5
-			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131689909;
+			public const int Widget_AppCompat_Light_SearchView = 2131689909;
 			
 			// aapt resource value: 0x7F0F01B6
-			public const int Widget_AppCompat_Light_SearchView = 2131689910;
+			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131689910;
 			
 			// aapt resource value: 0x7F0F01B7
-			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131689911;
+			public const int Widget_AppCompat_ListMenuView = 2131689911;
 			
 			// aapt resource value: 0x7F0F01B8
-			public const int Widget_AppCompat_ListMenuView = 2131689912;
+			public const int Widget_AppCompat_ListPopupWindow = 2131689912;
 			
 			// aapt resource value: 0x7F0F01B9
-			public const int Widget_AppCompat_ListPopupWindow = 2131689913;
+			public const int Widget_AppCompat_ListView = 2131689913;
 			
 			// aapt resource value: 0x7F0F01BA
-			public const int Widget_AppCompat_ListView = 2131689914;
+			public const int Widget_AppCompat_ListView_DropDown = 2131689914;
 			
 			// aapt resource value: 0x7F0F01BB
-			public const int Widget_AppCompat_ListView_DropDown = 2131689915;
+			public const int Widget_AppCompat_ListView_Menu = 2131689915;
 			
 			// aapt resource value: 0x7F0F01BC
-			public const int Widget_AppCompat_ListView_Menu = 2131689916;
+			public const int Widget_AppCompat_PopupMenu = 2131689916;
 			
 			// aapt resource value: 0x7F0F01BD
-			public const int Widget_AppCompat_PopupMenu = 2131689917;
+			public const int Widget_AppCompat_PopupMenu_Overflow = 2131689917;
 			
 			// aapt resource value: 0x7F0F01BE
-			public const int Widget_AppCompat_PopupMenu_Overflow = 2131689918;
+			public const int Widget_AppCompat_PopupWindow = 2131689918;
 			
 			// aapt resource value: 0x7F0F01BF
-			public const int Widget_AppCompat_PopupWindow = 2131689919;
+			public const int Widget_AppCompat_ProgressBar = 2131689919;
 			
 			// aapt resource value: 0x7F0F01C0
-			public const int Widget_AppCompat_ProgressBar = 2131689920;
+			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131689920;
 			
 			// aapt resource value: 0x7F0F01C1
-			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131689921;
+			public const int Widget_AppCompat_RatingBar = 2131689921;
 			
 			// aapt resource value: 0x7F0F01C2
-			public const int Widget_AppCompat_RatingBar = 2131689922;
+			public const int Widget_AppCompat_RatingBar_Indicator = 2131689922;
 			
 			// aapt resource value: 0x7F0F01C3
-			public const int Widget_AppCompat_RatingBar_Indicator = 2131689923;
+			public const int Widget_AppCompat_RatingBar_Small = 2131689923;
 			
 			// aapt resource value: 0x7F0F01C4
-			public const int Widget_AppCompat_RatingBar_Small = 2131689924;
+			public const int Widget_AppCompat_SearchView = 2131689924;
 			
 			// aapt resource value: 0x7F0F01C5
-			public const int Widget_AppCompat_SearchView = 2131689925;
+			public const int Widget_AppCompat_SearchView_ActionBar = 2131689925;
 			
 			// aapt resource value: 0x7F0F01C6
-			public const int Widget_AppCompat_SearchView_ActionBar = 2131689926;
+			public const int Widget_AppCompat_SeekBar = 2131689926;
 			
 			// aapt resource value: 0x7F0F01C7
-			public const int Widget_AppCompat_SeekBar = 2131689927;
+			public const int Widget_AppCompat_SeekBar_Discrete = 2131689927;
 			
 			// aapt resource value: 0x7F0F01C8
-			public const int Widget_AppCompat_SeekBar_Discrete = 2131689928;
+			public const int Widget_AppCompat_Spinner = 2131689928;
 			
 			// aapt resource value: 0x7F0F01C9
-			public const int Widget_AppCompat_Spinner = 2131689929;
+			public const int Widget_AppCompat_Spinner_DropDown = 2131689929;
 			
 			// aapt resource value: 0x7F0F01CA
-			public const int Widget_AppCompat_Spinner_DropDown = 2131689930;
+			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131689930;
 			
 			// aapt resource value: 0x7F0F01CB
-			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131689931;
+			public const int Widget_AppCompat_Spinner_Underlined = 2131689931;
 			
 			// aapt resource value: 0x7F0F01CC
-			public const int Widget_AppCompat_Spinner_Underlined = 2131689932;
+			public const int Widget_AppCompat_TextView_SpinnerItem = 2131689932;
 			
 			// aapt resource value: 0x7F0F01CD
-			public const int Widget_AppCompat_TextView_SpinnerItem = 2131689933;
+			public const int Widget_AppCompat_Toolbar = 2131689933;
 			
 			// aapt resource value: 0x7F0F01CE
-			public const int Widget_AppCompat_Toolbar = 2131689934;
+			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131689934;
 			
 			// aapt resource value: 0x7F0F01CF
-			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131689935;
+			public const int Widget_Compat_NotificationActionContainer = 2131689935;
 			
 			// aapt resource value: 0x7F0F01D0
-			public const int Widget_Compat_NotificationActionContainer = 2131689936;
+			public const int Widget_Compat_NotificationActionText = 2131689936;
 			
 			// aapt resource value: 0x7F0F01D1
-			public const int Widget_Compat_NotificationActionText = 2131689937;
+			public const int Widget_Design_AppBarLayout = 2131689937;
 			
 			// aapt resource value: 0x7F0F01D2
-			public const int Widget_Design_AppBarLayout = 2131689938;
+			public const int Widget_Design_BottomNavigationView = 2131689938;
 			
 			// aapt resource value: 0x7F0F01D3
-			public const int Widget_Design_BottomNavigationView = 2131689939;
+			public const int Widget_Design_BottomSheet_Modal = 2131689939;
 			
 			// aapt resource value: 0x7F0F01D4
-			public const int Widget_Design_BottomSheet_Modal = 2131689940;
+			public const int Widget_Design_CollapsingToolbar = 2131689940;
 			
 			// aapt resource value: 0x7F0F01D5
-			public const int Widget_Design_CollapsingToolbar = 2131689941;
+			public const int Widget_Design_FloatingActionButton = 2131689941;
 			
 			// aapt resource value: 0x7F0F01D6
-			public const int Widget_Design_FloatingActionButton = 2131689942;
+			public const int Widget_Design_NavigationView = 2131689942;
 			
 			// aapt resource value: 0x7F0F01D7
-			public const int Widget_Design_NavigationView = 2131689943;
+			public const int Widget_Design_ScrimInsetsFrameLayout = 2131689943;
 			
 			// aapt resource value: 0x7F0F01D8
-			public const int Widget_Design_ScrimInsetsFrameLayout = 2131689944;
+			public const int Widget_Design_Snackbar = 2131689944;
 			
 			// aapt resource value: 0x7F0F01D9
-			public const int Widget_Design_Snackbar = 2131689945;
+			public const int Widget_Design_TabLayout = 2131689945;
 			
 			// aapt resource value: 0x7F0F01DA
-			public const int Widget_Design_TabLayout = 2131689946;
+			public const int Widget_Design_TextInputLayout = 2131689946;
 			
 			// aapt resource value: 0x7F0F01DB
-			public const int Widget_Design_TextInputLayout = 2131689947;
+			public const int Widget_MaterialComponents_BottomAppBar = 2131689947;
 			
 			// aapt resource value: 0x7F0F01DC
-			public const int Widget_MaterialComponents_BottomAppBar = 2131689948;
+			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131689948;
 			
 			// aapt resource value: 0x7F0F01DD
-			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131689949;
+			public const int Widget_MaterialComponents_BottomNavigationView = 2131689949;
 			
 			// aapt resource value: 0x7F0F01DE
-			public const int Widget_MaterialComponents_BottomNavigationView = 2131689950;
+			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131689950;
 			
 			// aapt resource value: 0x7F0F01DF
-			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131689951;
+			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131689951;
 			
 			// aapt resource value: 0x7F0F01E0
-			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131689952;
+			public const int Widget_MaterialComponents_Button = 2131689952;
 			
 			// aapt resource value: 0x7F0F01E1
-			public const int Widget_MaterialComponents_Button = 2131689953;
+			public const int Widget_MaterialComponents_Button_Icon = 2131689953;
 			
 			// aapt resource value: 0x7F0F01E2
-			public const int Widget_MaterialComponents_Button_Icon = 2131689954;
+			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131689954;
 			
 			// aapt resource value: 0x7F0F01E3
-			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131689955;
+			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131689955;
 			
 			// aapt resource value: 0x7F0F01E4
-			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131689956;
+			public const int Widget_MaterialComponents_Button_TextButton = 2131689956;
 			
 			// aapt resource value: 0x7F0F01E5
-			public const int Widget_MaterialComponents_Button_TextButton = 2131689957;
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131689957;
 			
 			// aapt resource value: 0x7F0F01E6
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131689958;
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131689958;
 			
 			// aapt resource value: 0x7F0F01E7
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131689959;
+			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131689959;
 			
 			// aapt resource value: 0x7F0F01E8
-			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131689960;
+			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131689960;
 			
 			// aapt resource value: 0x7F0F01E9
-			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131689961;
+			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131689961;
 			
 			// aapt resource value: 0x7F0F01EA
-			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131689962;
-			
-			// aapt resource value: 0x7F0F01EB
-			public const int Widget_MaterialComponents_CardView = 2131689963;
-			
-			// aapt resource value: 0x7F0F01F0
-			public const int Widget_MaterialComponents_ChipGroup = 2131689968;
-			
-			// aapt resource value: 0x7F0F01EC
-			public const int Widget_MaterialComponents_Chip_Action = 2131689964;
-			
-			// aapt resource value: 0x7F0F01ED
-			public const int Widget_MaterialComponents_Chip_Choice = 2131689965;
-			
-			// aapt resource value: 0x7F0F01EE
-			public const int Widget_MaterialComponents_Chip_Entry = 2131689966;
+			public const int Widget_MaterialComponents_CardView = 2131689962;
 			
 			// aapt resource value: 0x7F0F01EF
-			public const int Widget_MaterialComponents_Chip_Filter = 2131689967;
+			public const int Widget_MaterialComponents_ChipGroup = 2131689967;
+			
+			// aapt resource value: 0x7F0F01EB
+			public const int Widget_MaterialComponents_Chip_Action = 2131689963;
+			
+			// aapt resource value: 0x7F0F01EC
+			public const int Widget_MaterialComponents_Chip_Choice = 2131689964;
+			
+			// aapt resource value: 0x7F0F01ED
+			public const int Widget_MaterialComponents_Chip_Entry = 2131689965;
+			
+			// aapt resource value: 0x7F0F01EE
+			public const int Widget_MaterialComponents_Chip_Filter = 2131689966;
+			
+			// aapt resource value: 0x7F0F01F0
+			public const int Widget_MaterialComponents_FloatingActionButton = 2131689968;
 			
 			// aapt resource value: 0x7F0F01F1
-			public const int Widget_MaterialComponents_FloatingActionButton = 2131689969;
+			public const int Widget_MaterialComponents_NavigationView = 2131689969;
 			
 			// aapt resource value: 0x7F0F01F2
-			public const int Widget_MaterialComponents_NavigationView = 2131689970;
+			public const int Widget_MaterialComponents_Snackbar = 2131689970;
 			
 			// aapt resource value: 0x7F0F01F3
-			public const int Widget_MaterialComponents_Snackbar = 2131689971;
+			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131689971;
 			
 			// aapt resource value: 0x7F0F01F4
-			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131689972;
+			public const int Widget_MaterialComponents_TabLayout = 2131689972;
 			
 			// aapt resource value: 0x7F0F01F5
-			public const int Widget_MaterialComponents_TabLayout = 2131689973;
+			public const int Widget_MaterialComponents_TabLayout_Colored = 2131689973;
 			
 			// aapt resource value: 0x7F0F01F6
-			public const int Widget_MaterialComponents_TabLayout_Colored = 2131689974;
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131689974;
 			
 			// aapt resource value: 0x7F0F01F7
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131689975;
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131689975;
 			
 			// aapt resource value: 0x7F0F01F8
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131689976;
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131689976;
 			
 			// aapt resource value: 0x7F0F01F9
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131689977;
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131689977;
 			
 			// aapt resource value: 0x7F0F01FA
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131689978;
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131689978;
 			
 			// aapt resource value: 0x7F0F01FB
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131689979;
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131689979;
 			
 			// aapt resource value: 0x7F0F01FC
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131689980;
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131689980;
 			
 			// aapt resource value: 0x7F0F01FD
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131689981;
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131689981;
 			
 			// aapt resource value: 0x7F0F01FE
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131689982;
+			public const int Widget_MaterialComponents_Toolbar = 2131689982;
 			
 			// aapt resource value: 0x7F0F01FF
-			public const int Widget_MaterialComponents_Toolbar = 2131689983;
+			public const int Widget_MediaRouter_Light_MediaRouteButton = 2131689983;
 			
 			// aapt resource value: 0x7F0F0200
-			public const int Widget_MediaRouter_Light_MediaRouteButton = 2131689984;
+			public const int Widget_MediaRouter_MediaRouteButton = 2131689984;
 			
 			// aapt resource value: 0x7F0F0201
-			public const int Widget_MediaRouter_MediaRouteButton = 2131689985;
-			
-			// aapt resource value: 0x7F0F0202
-			public const int Widget_Support_CoordinatorLayout = 2131689986;
+			public const int Widget_Support_CoordinatorLayout = 2131689985;
 			
 			static Style()
 			{

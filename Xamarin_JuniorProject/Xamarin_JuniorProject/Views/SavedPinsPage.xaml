@@ -11,7 +11,7 @@
            
 
    <ScrollView >      
-        <controls:CustomStackLayout  ItemsSource="{Binding Pins}"/>
+        <controls:CustomStackLayout  ItemsSource="{Binding Pins}" />
    </ScrollView>
                  <Button Text="Add" Command="{Binding AddPinPage}" BorderColor="#2b3c3c" BorderWidth="1" BackgroundColor="#4ba862" WidthRequest="60" HeightRequest="60"
                          BorderRadius="30" TextColor="White" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,20,22"/>
