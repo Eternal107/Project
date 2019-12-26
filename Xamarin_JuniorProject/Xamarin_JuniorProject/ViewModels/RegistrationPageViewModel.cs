@@ -13,29 +13,36 @@ namespace Xamarin_JuniorProject.ViewModels
 {
     public class RegistrationPageViewModel : ViewModelBase
     {
-       
-        public DelegateCommand ToTabbedPage => new DelegateCommand(PushTabbedPage, CanRegister);
+        public DelegateCommand TabbedPage;
+        public DelegateCommand ToTabbedPage =>
+            TabbedPage ?? (TabbedPage = new DelegateCommand(PushTabbedPage, CanRegister));
+
+
+        private string login;
+        private string password;
+        private string email;
 
         private bool  isValid;
+  
+
         public bool IsValid
         {
             get { return isValid; }
             set { SetProperty(ref isValid, value); }
         }
 
-        private string email;
+
         public string Email
         {
             get { return email; }
             set { SetProperty(ref email, value); }
         }
-        private string login;
+
         public string Login
         {
             get { return login; }
             set { SetProperty(ref login, value); }
         }
-        private string password;
         public string Password
         {
             get { return password; }
@@ -48,7 +55,7 @@ namespace Xamarin_JuniorProject.ViewModels
             : base(navigationService, repository, authorizationService, pinService)
         {
             Title = "Registration Page";
-
+            TabbedPage = new DelegateCommand(PushTabbedPage, CanRegister);
 
         }
 
@@ -63,7 +70,11 @@ namespace Xamarin_JuniorProject.ViewModels
 
         private bool CanRegister()
         {
-            return IsValid;  
+
+
+            return IsValid;
+
+            
         }
 
 
@@ -73,7 +84,7 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             base.OnPropertyChanged(propertyName);
             if (propertyName == nameof(IsValid) )
-                ToTabbedPage.RaiseCanExecuteChanged();
+                TabbedPage.RaiseCanExecuteChanged();
         }
 
     }
