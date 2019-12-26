@@ -2,6 +2,8 @@
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Runtime;
+using Plugin.Permissions;
 using Prism;
 using Prism.Ioc;
 using Xamarin.Forms;
@@ -22,29 +24,26 @@ namespace Xamarin_JuniorProject.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            // Override default BitmapDescriptorFactory by your implementation. 
-            
+
+
             UserDialogs.Init(this);
-            Rg.Plugins.Popup.Popup.Init(this,bundle);
+            Rg.Plugins.Popup.Popup.Init(this, bundle);
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, bundle);
             Xamarin.FormsGoogleMaps.Init(this, bundle); // initialize for Xamarin.Forms.GoogleMaps
             LoadApplication(new App(new AndroidInitializer()));
         }
 
 
-        public override void OnBackPressed()
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
-            if (Rg.Plugins.Popup.Popup.SendBackPressed(base.OnBackPressed))
-            {
-                // Do something if there are some pages in the `PopupStack`
-            }
-            else
-            {
-                // Do something if there are not any pages in the `PopupStack`
-            }
+            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+
     }
 
-   
+
 
     public class AndroidInitializer : IPlatformInitializer
     {
@@ -54,4 +53,3 @@ namespace Xamarin_JuniorProject.Droid
         }
     }
 }
-

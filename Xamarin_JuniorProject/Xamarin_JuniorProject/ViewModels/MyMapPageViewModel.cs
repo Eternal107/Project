@@ -2,59 +2,38 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Input;
 using Acr.UserDialogs;
 using Prism.Commands;
 using Prism.Navigation;
+using Rg.Plugins.Popup.Services;
+using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
+using Xamarin_JuniorProject.Controls;
 using Xamarin_JuniorProject.Extentions;
 using Xamarin_JuniorProject.Models;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Services.Pin;
 using Xamarin_JuniorProject.Services.Repository;
-
+using Xamarin_JuniorProject.ViewModels.ModalViewModels;
+using Xamarin_JuniorProject.Views.ModalViews;
 
 namespace Xamarin_JuniorProject.ViewModels
 {
     public class MyMapPageViewModel : ViewModelBase
     {
 
-        private Action _showSlider;
-        public Action ShowSlider
-        {
-            get { return _showSlider; }
-            set { SetProperty(ref _showSlider, value); }
-        }
-
-        private Action _hideSlider;
-        public Action HideSlider
-        {
-            get { return _hideSlider; }
-            set { SetProperty(ref _hideSlider, value); }
-        }
-
-        private SliderPageViewModel _sliderViewModel;
-        public SliderPageViewModel SliderViewModel
-        {
-            get { return _sliderViewModel; }
-            set { SetProperty(ref _sliderViewModel, value); }
-        }
 
 
 
 
-        private EventHandler<MapLongClickedEventArgs> longClicked;
-        public EventHandler<MapLongClickedEventArgs> LongClicked
-        {
-            get { return longClicked; }
-            set { SetProperty(ref longClicked, value); }
-        }
 
-        private EventHandler<PinClickedEventArgs> pinClicked;
-        public EventHandler<PinClickedEventArgs> PinClicked
-        {
-            get { return pinClicked; }
-            set { SetProperty(ref pinClicked, value); }
-        }
+        public ICommand LongClicked => new Command<MapLongClickedEventArgs>(OnLongclicked);
+
+
+
+        public ICommand PinClicked => new Command<PinClickedEventArgs>(OnPinClicked);
 
 
         private ObservableCollection<Pin> pins;
@@ -65,83 +44,123 @@ namespace Xamarin_JuniorProject.ViewModels
         }
 
 
+        private CameraPosition _mapCameraPosition;
+        public CameraPosition MapCameraPosition
+        {
+            get { return _mapCameraPosition; }
+            set { SetProperty(ref _mapCameraPosition, value); }
+        }
+
 
         public MyMapPageViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService)
             : base(navigationService, repository, authorizationService, pinService)
         {
-            SliderViewModel = new SliderPageViewModel(navigationService, repository, authorizationService, pinService);
+
             Pins = new ObservableCollection<Pin>();
             Title = "Map";
-            LongClicked = OnLongclicked;
-            PinClicked = OnPinClicked;
-            LoadFromDataBase();
+            MapCameraPosition=new CameraPosition(new Position(0, 0), 0);
+            MessagingCenter.Subscribe<SavePinsPageViewModel,CustomPinView> (this, "AddPin",async (sender,pin) =>
+            {
+                await LoadFromDataBase();
+                var newPin = (await PinService.GetPins(App.CurrentUserId)).LastOrDefault(x => x.ID == pin.PinID);
+                var Pin = newPin.ToPin();
+                MapCameraPosition = new CameraPosition(Pin.Position, 5);
+                if (!Pins.Contains(Pin))
+                {
+                    Pins.Add(Pin);
 
-        }
+                }
+                OnPinClicked(Pin);
+                MessagingCenter.Subscribe<PinModalView>(this, "DeletePin", (seconSender) =>
+                {
 
+                    Pins.Remove(Pins.LastOrDefault());
+                    MessagingCenter.Unsubscribe<PinModalView>(this, "DeletePin");
+                });
+            });
 
-        private async void OnPinClicked(object sender, PinClickedEventArgs e)
-        {
-
-            var p = new NavigationParameters();
-            p.Add("SelectedPin", e.Pin);
-            await NavigationService.NavigateAsync("PinModalView",p,useModalNavigation:true);
-            
            
         }
 
 
-        private async void LoadFromDataBase()
+        private async void OnPinClicked(Pin pin)
         {
 
-            var PinModels = await PinService.GetPins(App.CurrentUserId);
+
+
+            var p = new NavigationParameters();
+            p.Add("SelectedPin", pin);
+            await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService, Repository, AuthorizationService, PinService, pin) });
+
+
+        }
+
+        private async void OnPinClicked( PinClickedEventArgs e)
+        {
+
+
+
+            var p = new NavigationParameters();
+            p.Add("SelectedPin", e.Pin);
+            await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService, Repository, AuthorizationService, PinService, e.Pin) });
+
+
+        }
+
+
+
+        private async Task LoadFromDataBase()
+        {
+            Pins.Clear();
+
+            var PinModels = (await PinService.GetPins(App.CurrentUserId)).Where(x => x.IsFavorite == true);
             if (PinModels != null)
             {
-                
+
                 foreach (PinModel model in PinModels)
                 {
-                    Pin newPin = new Pin() { Label = model.Name, Position = new Position(model.Latitude, model.Longtitude), Type = model.IsFavorite == true ? PinType.SavedPin : PinType.Place,Tag= model.Description };
+                    Pin newPin = new Pin() { Label = model.Name, Position = new Position(model.Latitude, model.Longtitude), Type = model.IsFavorite == true ? PinType.SavedPin : PinType.Place, Tag = model.Description };
                     Pins.Add(newPin);
                 }
-                
+
             }
         }
 
-        private async void OnLongclicked(object sender, MapLongClickedEventArgs e)
+        private async void OnLongclicked( MapLongClickedEventArgs e)
         {
 
             var lat = e.Point.Latitude;
             var lng = e.Point.Longitude;
-
-            PromptResult result = await UserDialogs.Instance.PromptAsync(string.Format("{0}, {1}", lat, lng), "Add pin?", "Ok", "Cancel", "Name");
-            if (result.Ok)
+            var pin = Pins.LastOrDefault(x => x.Position == e.Point);
+            if (pin == null)
             {
+                PromptResult result = await UserDialogs.Instance.PromptAsync(string.Format("{0}, {1}", lat, lng), "Add pin?", "Ok", "Cancel", "Name");
+                if (result.Ok)
+                {
 
-                Pins.Add(new Pin() { Position = new Position(lat, lng), Type = PinType.Place, Label = result.Text,Tag= "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" });
-                await PinService.AddPin(Pins.Last().ToPinModel((string)Pins.Last().Tag));
-               
+                    Pins.Add(new Pin() { Position = new Position(lat, lng), Type = PinType.SavedPin, Label = result.Text, Tag = "" });
+                    await PinService.AddPin(Pins.Last().ToPinModel((string)Pins.Last().Tag));
+
+                }
             }
 
         }
 
-        public override void OnNavigatedFrom(INavigationParameters parameters)
-        {
-            
-            
-            parameters.Add("PinList", Pins);
-        }
 
-        public override void OnNavigatedTo(INavigationParameters parameters)
+
+        public override async void OnNavigatedTo(INavigationParameters parameters)
         {
-          
-            if(parameters.ContainsKey("ChangedPin") && parameters.ContainsKey("InnitialPin"))
+
+            if (parameters.ContainsKey("LoadFromDataBase"))
             {
-                var innitialPin = parameters.GetValue<Pin>("InnitialPin");
-                var newPin = parameters.GetValue<Pin>("ChangedPin");
 
-                Pins.Remove(innitialPin);
-                Pins.Add(newPin);
-              
-               
+                await LoadFromDataBase();
+            }
+            else if (parameters.ContainsKey("DeletePin"))
+            {
+                var oldPin = parameters.GetValue<Pin>("DeletePin");
+                Pins.Remove(oldPin);
+
             }
         }
     }

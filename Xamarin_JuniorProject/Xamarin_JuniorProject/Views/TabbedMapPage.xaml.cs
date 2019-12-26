@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿
 using Xamarin.Forms;
+using Xamarin_JuniorProject.ViewModels;
 
 namespace Xamarin_JuniorProject.Views
 {
@@ -10,7 +9,12 @@ namespace Xamarin_JuniorProject.Views
         public TabbedMapPage()
         {
             InitializeComponent();
-            
+
+            MessagingCenter.Subscribe<SavePinsPageViewModel>(this, "ToFirstPage", (sender) =>
+                 {
+                     CurrentPage = this.Children[0];
+
+                 });
         }
     }
 }

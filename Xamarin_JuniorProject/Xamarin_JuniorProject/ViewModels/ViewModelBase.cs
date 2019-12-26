@@ -1,11 +1,5 @@
-﻿using Prism.Commands;
-using Prism.Mvvm;
+﻿using Prism.Mvvm;
 using Prism.Navigation;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Xamarin_JuniorProject.Database;
-using Xamarin_JuniorProject.Services;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Services.Pin;
 using Xamarin_JuniorProject.Services.Repository;
@@ -48,7 +42,10 @@ namespace Xamarin_JuniorProject.ViewModels
             
         }
 
-     
+        public void OnNavigatingTo(INavigationParameters parameters)
+        {
+             
+        }
     }
 }
 

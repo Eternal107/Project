@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Prism.Commands;
 using Prism.Navigation;
+using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin_JuniorProject.Controls;
 using Xamarin_JuniorProject.Extentions;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Services.Pin;
 using Xamarin_JuniorProject.Services.Repository;
+using Xamarin_JuniorProject.Views;
 
 namespace Xamarin_JuniorProject.ViewModels
 {
     public class SavePinsPageViewModel : ViewModelBase
     {
-        private ObservableCollection<CustomPinView> pins=new ObservableCollection<CustomPinView>();
+        private ObservableCollection<CustomPinView> pins = new ObservableCollection<CustomPinView>();
 
         public ObservableCollection<CustomPinView> Pins
         {
@@ -36,32 +38,35 @@ namespace Xamarin_JuniorProject.ViewModels
             _addPinPage ?? (_addPinPage = new DelegateCommand(ToAddPinPage));
 
 
-        private async void ToAddPinPage ()
+        private async void ToAddPinPage()
         {
             await NavigationService.NavigateAsync("AddPinPage");
         }
 
 
-        public override void OnNavigatedTo(INavigationParameters parameters)
+        public override async void OnNavigatedTo(INavigationParameters parameters)
         {
-            if (parameters.ContainsKey("PinList"))
-            {
-                var MapPins = parameters.GetValue<ObservableCollection<Pin>>("PinList");
-                if (MapPins != null)
+            var MapPins = await PinService.GetPins(App.CurrentUserId);
+            if (MapPins != null)
+                foreach (var pin in MapPins)
                 {
-                   foreach (var pin in MapPins)
-                     Pins.Add(new CustomPinView(pin.ToPinModel((string)pin.Tag)) {Tapped=ToSetPin });
+                    var PinView = pin.PinModelToPinView();
+                    PinView.Tapped = ToSetPin;
+                    Pins.Add(PinView);
                 }
-            }
         }
 
         private async void ToSetPin(object o, EventArgs e)
         {
-            await NavigationService.NavigateAsync("AddPinPage");
+            var p = new NavigationParameters();
+            p.Add("UpdatePin", (CustomPinView)o);
+            MessagingCenter.Send(this, "ToFirstPage");
+            MessagingCenter.Send(this, "AddPin",(CustomPinView)o);
         }
 
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
+            parameters.Add("LoadFromDataBase", true);
             Pins.Clear();
         }
     }
