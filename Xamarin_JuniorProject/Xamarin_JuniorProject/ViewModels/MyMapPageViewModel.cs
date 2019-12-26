@@ -18,26 +18,6 @@ namespace Xamarin_JuniorProject.ViewModels
     public class MyMapPageViewModel : ViewModelBase
     {
 
-        private Action _showSlider;
-        public Action ShowSlider
-        {
-            get { return _showSlider; }
-            set { SetProperty(ref _showSlider, value); }
-        }
-
-        private Action _hideSlider;
-        public Action HideSlider
-        {
-            get { return _hideSlider; }
-            set { SetProperty(ref _hideSlider, value); }
-        }
-
-        private SliderPageViewModel _sliderViewModel;
-        public SliderPageViewModel SliderViewModel
-        {
-            get { return _sliderViewModel; }
-            set { SetProperty(ref _sliderViewModel, value); }
-        }
 
 
 
@@ -69,18 +49,20 @@ namespace Xamarin_JuniorProject.ViewModels
         public MyMapPageViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService)
             : base(navigationService, repository, authorizationService, pinService)
         {
-            SliderViewModel = new SliderPageViewModel(navigationService, repository, authorizationService, pinService);
+
             Pins = new ObservableCollection<Pin>();
             Title = "Map";
             LongClicked = OnLongclicked;
             PinClicked = OnPinClicked;
-            LoadFromDataBase();
+ 
 
         }
 
 
         private async void OnPinClicked(object sender, PinClickedEventArgs e)
         {
+
+            
 
             var p = new NavigationParameters();
             p.Add("SelectedPin", e.Pin);
@@ -92,8 +74,9 @@ namespace Xamarin_JuniorProject.ViewModels
 
         private async void LoadFromDataBase()
         {
-
-            var PinModels = await PinService.GetPins(App.CurrentUserId);
+            Pins.Clear();
+            
+            var PinModels = (await PinService.GetPins(App.CurrentUserId)).Where(x=>x.IsFavorite==true);
             if (PinModels != null)
             {
                 
@@ -111,37 +94,36 @@ namespace Xamarin_JuniorProject.ViewModels
 
             var lat = e.Point.Latitude;
             var lng = e.Point.Longitude;
-
-            PromptResult result = await UserDialogs.Instance.PromptAsync(string.Format("{0}, {1}", lat, lng), "Add pin?", "Ok", "Cancel", "Name");
-            if (result.Ok)
+            var pin = Pins.LastOrDefault(x => x.Position == e.Point);
+            if (pin==null)
             {
+                PromptResult result = await UserDialogs.Instance.PromptAsync(string.Format("{0}, {1}", lat, lng), "Add pin?", "Ok", "Cancel", "Name");
+                if (result.Ok)
+                {
 
-                Pins.Add(new Pin() { Position = new Position(lat, lng), Type = PinType.Place, Label = result.Text,Tag= "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" });
-                await PinService.AddPin(Pins.Last().ToPinModel((string)Pins.Last().Tag));
-               
+                    Pins.Add(new Pin() { Position = new Position(lat, lng), Type = PinType.SavedPin, Label = result.Text, Tag = "" });
+                    await PinService.AddPin(Pins.Last().ToPinModel((string)Pins.Last().Tag));
+
+                }
             }
 
         }
 
-        public override void OnNavigatedFrom(INavigationParameters parameters)
-        {
-            
-            
-            parameters.Add("PinList", Pins);
-        }
 
-        public override void OnNavigatedTo(INavigationParameters parameters)
+
+        public override async void OnNavigatedTo(INavigationParameters parameters)
         {
           
-            if(parameters.ContainsKey("ChangedPin") && parameters.ContainsKey("InnitialPin"))
+            if(parameters.ContainsKey("LoadFromDataBase"))
             {
-                var innitialPin = parameters.GetValue<Pin>("InnitialPin");
-                var newPin = parameters.GetValue<Pin>("ChangedPin");
+                
+                LoadFromDataBase();
+            }
+            else if(parameters.ContainsKey("DeletePin"))
+            {
+                var oldPin = parameters.GetValue<Pin>("DeletePin");
+                Pins.Remove(oldPin);
 
-                Pins.Remove(innitialPin);
-                Pins.Add(newPin);
-              
-               
             }
         }
     }

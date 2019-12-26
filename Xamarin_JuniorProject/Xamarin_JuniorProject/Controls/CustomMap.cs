@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Acr.UserDialogs;
+using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
@@ -64,6 +67,7 @@ namespace Xamarin_JuniorProject.Controls
                 {
                     Map.PinClicked -= (EventHandler<PinClickedEventArgs>)oldValue;
                     Map.PinClicked += (EventHandler<PinClickedEventArgs>)newValue;
+
                 }
 
             });
@@ -81,7 +85,7 @@ namespace Xamarin_JuniorProject.Controls
 
         public CustomMap()
         {
-           
+            this.MyLocationButtonClicked += GetPermission;
             this.MapType = MapType.Street;
 
             this.MyLocationEnabled = false;
@@ -92,32 +96,48 @@ namespace Xamarin_JuniorProject.Controls
 
             this.UiSettings.MyLocationButtonEnabled = true;
 
-            // IndoorLevelPickerEnabled
             this.UiSettings.IndoorLevelPickerEnabled = true;
 
-            // ScrollGesturesEnabled
             this.UiSettings.ScrollGesturesEnabled = true;
-
-            
-            // TiltGesturesEnabled
 
             this.UiSettings.TiltGesturesEnabled = true;
 
-
-            // ZoomControlsEnabled
-
             this.UiSettings.ZoomControlsEnabled = true;
             
-           
-            // ZoomGesturesEnabled
-
             this.UiSettings.ZoomGesturesEnabled = true;
-
+          
         }
 
 
 
+        private async void GetPermission (object o, MyLocationButtonClickedEventArgs e)
+        {if (!MyLocationEnabled)
+            {
+                try
+                {
+                    var status = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Location);
+                    if (status != PermissionStatus.Granted)
+                    {
 
+                        status = (await CrossPermissions.Current.RequestPermissionsAsync(Permission.Location))[Permission.Location];
+                    }
+
+                    if (status == PermissionStatus.Granted)
+                    {
+                        this.MyLocationEnabled = true;
+                    }
+                    else 
+                    {
+                        this.MyLocationEnabled = false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    //Something went wrong
+                }
+            }
+        }
+    
 
         private static void ItemAdded(BindableObject bindable, object oldValue, object newValue)
         {
@@ -135,7 +155,7 @@ namespace Xamarin_JuniorProject.Controls
             }
         }
 
-        private async void OnPinsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        private  void OnPinsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             switch (e.Action)
             {

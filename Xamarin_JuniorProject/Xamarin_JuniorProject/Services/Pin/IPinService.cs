@@ -11,7 +11,7 @@ namespace Xamarin_JuniorProject.Services.Pin
         Task AddPin(PinModel pin);
 
         Task DeletePin(PinModel pin);
-
+        Task UpdatePin(PinModel pin);
         Task<List<PinModel>> GetPins(int userId);
     }
 

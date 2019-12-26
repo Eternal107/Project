@@ -5,13 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Prism.Unity.Forms" Version="7.2.0.1422" />
+    <PackageReference Include="Plugin.Permissions" Version="4.0.4-beta" />
+    <PackageReference Include="Prism.Unity.Forms" Version="7.1.0.431" />
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
     <PackageReference Include="Acr.UserDialogs" Version="7.0.35" />
     <PackageReference Include="Xamarin.Forms.GoogleMaps.Clustering" Version="1.1.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="3.2.0" />
-    <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.759" />
+    <PackageReference Include="Prism.Plugin.Popups" Version="2.2.0.293" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,7 +24,6 @@
     <Folder Include="Services\Authorization\" />
     <Folder Include="Behaviors\" />
     <Folder Include="Services\Pin\" />
-    <Folder Include="Extentions\" />
     <Folder Include="Views\ModalViews\" />
     <Folder Include="ViewModels\ModalViewModels\" />
   </ItemGroup>

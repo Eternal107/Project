@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using Prism.Commands;
 using Prism.Navigation;
 using Xamarin.Forms.GoogleMaps;
+using Xamarin_JuniorProject.Controls;
 using Xamarin_JuniorProject.Extentions;
+using Xamarin_JuniorProject.Models;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Services.Pin;
 using Xamarin_JuniorProject.Services.Repository;
@@ -19,13 +22,22 @@ namespace Xamarin_JuniorProject.ViewModels
             LongClicked = OnMapLongclicked;
         }
 
-        private Pin _innitialPin;
+        private bool UpdatePin=false;
 
-        private Pin _currentPin;
-        public Pin CurrentPin
+        public DelegateCommand AddOrSave => new DelegateCommand(OnAddOrSaveClicked);
+
+        private PinModel _currentPin;
+        public PinModel CurrentPin
         {
             get { return _currentPin; }
             set { SetProperty(ref _currentPin, value); }
+        }
+
+        private string _toolbarButtonText="Add";
+        public string ToolbarButtonText
+        {
+            get { return _toolbarButtonText; }
+            set { SetProperty(ref _toolbarButtonText, value); }
         }
 
         private ObservableCollection<Pin> pins = new ObservableCollection<Pin>();
@@ -45,24 +57,46 @@ namespace Xamarin_JuniorProject.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            if(parameters.ContainsKey("PinSettings"))
+           
+            if (parameters.ContainsKey("PinSettings"))
             {
-                CurrentPin = parameters.GetValue<Pin>("PinSettings");
-                if (CurrentPin.Tag == null)
-                    CurrentPin.Tag = "";
-                _innitialPin = CurrentPin;
-                Pins.Add(CurrentPin);
+                CurrentPin = parameters.GetValue<PinModel>("PinSettings");
+                UpdatePin = true;
+                ToolbarButtonText = "Update";
+                Pins.Add(CurrentPin.ToPin());
+            }
+            else if(parameters.ContainsKey("UpdatePin"))
+            {
+                var PinView = parameters.GetValue<CustomPinView>("UpdatePin");
+                CurrentPin = new PinModel() {IsFavorite=PinView.IsFavorite, ID = PinView.PinID,UserID=PinView.UserID, Name = PinView.PinName.Text, Latitude = Convert.ToDouble(PinView.PinLat.Text), Longtitude = Convert.ToDouble(PinView.PinLng.Text), Description = PinView.PinText.Text };
+                UpdatePin = true;
+                ToolbarButtonText = "Update";
+                Pins.Add(CurrentPin.ToPin());
+
+            }
+            else
+            {
+
+                CurrentPin = new PinModel() {Name="",UserID=App.CurrentUserId };
+               
+                Pins.Add(CurrentPin.ToPin());
             }
           
         }
 
-        public override void OnNavigatedFrom(INavigationParameters parameters)
+        public override async void OnNavigatedFrom(INavigationParameters parameters)
         {
-            parameters.Add("InnitialPin", _innitialPin);
-            parameters.Add("ChangedPin", CurrentPin);
-            PinService.AddPin(CurrentPin.ToPinModel((string)CurrentPin.Tag));
-       
+            if (UpdatePin)
+            {
+                parameters.Add("LoadFromDataBase", true);          
+            }  
+        }
 
+        private async void  OnAddOrSaveClicked()
+        {
+            if(UpdatePin)
+            await PinService.UpdatePin(CurrentPin);
+            else await PinService.AddPin(CurrentPin);
         }
 
         private  void OnMapLongclicked(object sender, MapLongClickedEventArgs e)
@@ -71,9 +105,10 @@ namespace Xamarin_JuniorProject.ViewModels
             var lat = e.Point.Latitude;
             var lng = e.Point.Longitude;
 
-            var newPin = new Pin() { Label = CurrentPin.Label ,Position = new Position(lat, lng), Type = PinType.SavedPin,Tag=CurrentPin.Tag };
-            
-            CurrentPin = newPin;
+            var newPin = new Pin() { Label = CurrentPin.Name ,Position = new Position(lat, lng), Type = CurrentPin.IsFavorite?PinType.SavedPin:PinType.Place,Tag=CurrentPin.Description };
+
+            CurrentPin.Latitude = lat;
+            CurrentPin.Longtitude = lng;
             Pins.Clear();
             Pins.Add(newPin);
           

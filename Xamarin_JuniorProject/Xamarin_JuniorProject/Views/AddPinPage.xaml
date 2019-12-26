@@ -5,17 +5,18 @@
              x:Class="Xamarin_JuniorProject.Views.AddPinPage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Command="{Binding AddPinCommand}"/>
+        <ToolbarItem Text="{Binding ToolbarButtonText}"  Command="{Binding AddOrSave}"/>
+
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        <StackLayout>
-            <Entry Text="{Binding CurrentPin.Label}" Placeholder="Label"/>
-            <Entry Text="{Binding CurrentPin.Position.Longitude}" Placeholder="Longitude" IsEnabled="False"/>
-            <Entry Text="{Binding CurrentPin.Position.Latitude}" Placeholder="Latitude" IsEnabled="False"/>
-            <Editor Text="{Binding CurrentPin.Tag}" Placeholder="Description" AutoSize="TextChanges" MaxLength="100"/>
-            <StackLayout >
-                <Label Text="Favorite pin"/>
+        <StackLayout >
+            <Entry Text="{Binding CurrentPin.Name}" Placeholder="Label" FontSize="20"/>
+            <Entry Text="{Binding CurrentPin.Longtitude}" Placeholder="Longitude" IsEnabled="False" FontSize="20"/>
+            <Entry Text="{Binding CurrentPin.Latitude}" Placeholder="Latitude" IsEnabled="False" FontSize="20"/>
+            <Editor Text="{Binding CurrentPin.Description}" Placeholder="Description" AutoSize="TextChanges" MaxLength="100" FontSize="20"/>
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Favorite pin" FontSize="20"/>
                 <CheckBox IsChecked="{Binding CurrentPin.IsFavorite}"/>
             </StackLayout>
             <controls:CustomMap PinSource="{Binding Pins}" MyMapLongClicked="{Binding LongClicked}" />

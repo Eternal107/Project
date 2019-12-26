@@ -1,5 +1,6 @@
 ﻿using Prism.Commands;
 using Prism.Navigation;
+using System.Linq;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Services.Pin;
@@ -27,17 +28,32 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
         public DelegateCommand AddPinPage =>
             _addPinPage ?? (_addPinPage = new DelegateCommand(ToAddPinPage));
 
+        private DelegateCommand _deletePin;
+        public DelegateCommand DeletePin =>
+            _deletePin ?? (_deletePin = new DelegateCommand(ToDeletePin));
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
             CurrentPin = parameters.GetValue<Pin>("SelectedPin");
+      
+        }
+
+        private async void ToDeletePin()
+        {
+            var p = new NavigationParameters();
+            p.Add("DeletePin", CurrentPin);
+            var pinModel = (await PinService.GetPins(App.CurrentUserId)).LastOrDefault(x => x.Latitude == CurrentPin.Position.Latitude && x.Longtitude == CurrentPin.Position.Longitude);
+            await PinService.DeletePin(pinModel);
+            await NavigationService.GoBackAsync(p,useModalNavigation:true);
+
         }
 
         private async void ToAddPinPage()
         {
-            var p = new NavigationParameters();
-            p.Add("PinSettings", CurrentPin);
 
+            var pinModel = (await PinService.GetPins(App.CurrentUserId)).LastOrDefault(x=>x.Latitude==CurrentPin.Position.Latitude && x.Longtitude== CurrentPin.Position.Longitude);
+            var p = new NavigationParameters();
+            p.Add("PinSettings", pinModel);
             await NavigationService.NavigateAsync("AddPinPage", p);
 
         }

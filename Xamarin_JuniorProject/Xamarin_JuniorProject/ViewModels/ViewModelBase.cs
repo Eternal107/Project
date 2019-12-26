@@ -48,7 +48,10 @@ namespace Xamarin_JuniorProject.ViewModels
             
         }
 
-     
+        public void OnNavigatingTo(INavigationParameters parameters)
+        {
+            
+        }
     }
 }
 

@@ -23,11 +23,19 @@ namespace Xamarin_JuniorProject.Services.Pin
 
             public async Task DeletePin(PinModel pin)
             {
-            PinModel Model = await _repositoryService.Get<PinModel>(x=>x.ID==pin.ID);
-            if (pin != null)
-            {
-                await _repositoryService.Delete(pin);
+               if (pin != null)
+                 {
+                    PinModel Model = await _repositoryService.Get<PinModel>(x => x.Latitude == pin.Latitude && x.Longtitude == pin.Longtitude);
+                    if (Model != null)
+                      {
+                        await _repositoryService.Delete(Model);
+                      }
+                }
             }
+
+            public async Task UpdatePin(PinModel pin)
+            {
+               await _repositoryService.Update(pin);
             }
 
             public async Task<List<PinModel>> GetPins(int userId)

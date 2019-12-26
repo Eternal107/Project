@@ -42,26 +42,28 @@ namespace Xamarin_JuniorProject.ViewModels
         }
 
 
-        public override void OnNavigatedTo(INavigationParameters parameters)
+        public override async void OnNavigatedTo(INavigationParameters parameters)
         {
-            if (parameters.ContainsKey("PinList"))
-            {
-                var MapPins = parameters.GetValue<ObservableCollection<Pin>>("PinList");
-                if (MapPins != null)
+            var MapPins = await PinService.GetPins(App.CurrentUserId);
+            if (MapPins != null)
+                foreach (var pin in MapPins)
                 {
-                   foreach (var pin in MapPins)
-                     Pins.Add(new CustomPinView(pin.ToPinModel((string)pin.Tag)) {Tapped=ToSetPin });
+                    var PinView = pin.PinModelToPinView();
+                    PinView.Tapped = ToSetPin;
+                    Pins.Add(PinView);
                 }
-            }
         }
 
         private async void ToSetPin(object o, EventArgs e)
         {
-            await NavigationService.NavigateAsync("AddPinPage");
+            var p = new NavigationParameters();
+            p.Add("UpdatePin", (CustomPinView)o);
+            await NavigationService.NavigateAsync("AddPinPage",p);
         }
 
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
+            parameters.Add("LoadFromDataBase", true);
             Pins.Clear();
         }
     }

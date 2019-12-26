@@ -10,6 +10,7 @@ using Xamarin_JuniorProject.Services.Pin;
 using Xamarin_JuniorProject.Views.ModalViews;
 using Xamarin_JuniorProject.ViewModels.ModalViewModels;
 using Prism.Plugin.Popups;
+using Prism.Navigation;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xamarin_JuniorProject
@@ -37,7 +38,9 @@ namespace Xamarin_JuniorProject
             if (Current.Properties.ContainsKey("LoggedIn"))
             {
                 CurrentUserId = (int)Current.Properties["LoggedIn"];
-                await NavigationService.NavigateAsync("NavigationPage/TabbedMapPage");
+                var p = new NavigationParameters();
+                p.Add("LoadFromDataBase", true);
+                await NavigationService.NavigateAsync("NavigationPage/TabbedMapPage",p);
             }
             else
 
