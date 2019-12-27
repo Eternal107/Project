@@ -114,9 +114,9 @@ namespace Xamarin_JuniorProject.ViewModels
             var lng = e.Point.Longitude;
 
             var newPin = new Pin() { Label = CurrentPin.Name, Position = new Position(lat, lng), Type = CurrentPin.IsFavorite ? PinType.SavedPin : PinType.Place, Tag = CurrentPin.Description };
-
+            int tempID = CurrentPin.ID;
             CurrentPin = newPin.ToPinModel((string)newPin.Tag);
-
+            CurrentPin.ID = tempID;
             Pins.Clear();
             Pins.Add(newPin);
 

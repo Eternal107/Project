@@ -13,6 +13,7 @@
     <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="3.2.0" />
     <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.759" />
     <PackageReference Include="Plugin.Permissions" Version="3.0.0.12" />
+    <PackageReference Include="NFCForms" Version="2.3.2" />
   </ItemGroup>
 
   <ItemGroup>

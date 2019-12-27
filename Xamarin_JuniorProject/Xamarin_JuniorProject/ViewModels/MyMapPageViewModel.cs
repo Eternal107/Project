@@ -36,6 +36,9 @@ namespace Xamarin_JuniorProject.ViewModels
         public ICommand PinClicked => new Command<PinClickedEventArgs>(OnPinClicked);
 
 
+
+        public ICommand TextChanged => new Command(OnTextChanged);
+
         private ObservableCollection<Pin> pins;
         public ObservableCollection<Pin> Pins
         {
@@ -49,6 +52,13 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             get { return _mapCameraPosition; }
             set { SetProperty(ref _mapCameraPosition, value); }
+        }
+
+        private string _searchText;
+        public string SearchText
+        {
+            get { return _searchText; }
+            set { SetProperty(ref _searchText, value); }
         }
 
 
@@ -85,26 +95,16 @@ namespace Xamarin_JuniorProject.ViewModels
 
         private async void OnPinClicked(Pin pin)
         {
-
-
-
             var p = new NavigationParameters();
             p.Add("SelectedPin", pin);
             await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService, Repository, AuthorizationService, PinService, pin) });
-
-
         }
 
         private async void OnPinClicked( PinClickedEventArgs e)
         {
-
-
-
             var p = new NavigationParameters();
             p.Add("SelectedPin", e.Pin);
             await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService, Repository, AuthorizationService, PinService, e.Pin) });
-
-
         }
 
 
@@ -145,6 +145,31 @@ namespace Xamarin_JuniorProject.ViewModels
             }
 
         }
+
+        private async void OnTextChanged()
+        {
+            if (!string.IsNullOrEmpty(SearchText))
+            {
+                Pins.Clear();
+
+                var PinModels = (await PinService.GetPins(App.CurrentUserId)).Where(x => x.IsFavorite == true && (x.Name.Contains(SearchText) || x.Description.Contains(SearchText) || x.Latitude.ToString().Contains(SearchText) || x.Longtitude.ToString().Contains(SearchText)));
+                if (PinModels != null)
+                {
+
+                    foreach (PinModel model in PinModels)
+                    {
+                        Pin newPin = new Pin() { Label = model.Name, Position = new Position(model.Latitude, model.Longtitude), Type = model.IsFavorite == true ? PinType.SavedPin : PinType.Place, Tag = model.Description };
+                        Pins.Add(newPin);
+                    }
+
+                }
+            }
+            else
+            {
+                await LoadFromDataBase();
+            }
+        }
+
 
 
 

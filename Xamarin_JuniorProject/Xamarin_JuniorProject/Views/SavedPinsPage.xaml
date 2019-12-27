@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:Xamarin_JuniorProject.Controls"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Xamarin_JuniorProject.Controls"
+             xmlns:modularity="http://prismlibrary.com"
              x:Class="Xamarin_JuniorProject.Views.SavedPinsPage"
              Title="{Binding Title}">
 
@@ -9,13 +11,19 @@
         <Grid >
           
            
-
+            <StackLayout>
+       <SearchBar Text="{Binding SearchText}" Placeholder="Search" >
+           <SearchBar.Behaviors>
+               <modularity:EventToCommandBehavior EventName="TextChanged" Command="{Binding TextChanged}"/>
+           </SearchBar.Behaviors>
+           </SearchBar>
    <ScrollView >      
         <controls:CustomStackLayout  ItemsSource="{Binding Pins}" />
    </ScrollView>
-                 <Button Text="Add" Command="{Binding AddPinPage}" BorderColor="#2b3c3c" BorderWidth="1" BackgroundColor="#4ba862" WidthRequest="60" HeightRequest="60"
-                         BorderRadius="30" TextColor="White" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,20,22"/>
 
+                </StackLayout>
+            <Button Text="Add" Command="{Binding AddPinPage}" BorderColor="#2b3c3c" BorderWidth="1" BackgroundColor="#4ba862" WidthRequest="60" HeightRequest="60"
+                         BorderRadius="30" TextColor="White" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,20,22"/>
         </Grid>
         
     </ContentPage.Content>

@@ -105,7 +105,7 @@ namespace Xamarin_JuniorProject.Controls
             MapLongClicked += (o, e) => { MyMapLongClicked?.Execute(e); };
             MapClicked += (o, e) => { MyMapClicked?.Execute(e); };
             PinClicked += (o, e) => { MyPinClicked?.Execute(e); };
-
+            
 
             this.MyLocationButtonClicked += GetPermission;
             this.MapType = MapType.Street;
