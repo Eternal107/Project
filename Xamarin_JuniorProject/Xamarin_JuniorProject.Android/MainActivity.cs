@@ -1,8 +1,10 @@
 ﻿using Acr.UserDialogs;
 using Android.App;
+using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
+using Plugin.NFC;
 using Plugin.Permissions;
 using Prism;
 using Prism.Ioc;
@@ -29,8 +31,17 @@ namespace Xamarin_JuniorProject.Droid
             UserDialogs.Init(this);
             Rg.Plugins.Popup.Popup.Init(this, bundle);
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, bundle);
+            CrossNFC.Init(this);
             Xamarin.FormsGoogleMaps.Init(this, bundle); // initialize for Xamarin.Forms.GoogleMaps
             LoadApplication(new App(new AndroidInitializer()));
+        }
+
+        protected override void OnNewIntent(Intent intent)
+        {
+            base.OnNewIntent(intent);
+
+      
+            CrossNFC.OnNewIntent(intent);
         }
 
 

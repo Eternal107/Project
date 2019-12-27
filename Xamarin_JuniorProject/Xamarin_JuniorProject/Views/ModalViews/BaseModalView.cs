@@ -9,11 +9,15 @@ namespace Xamarin_JuniorProject.Views.ModalViews
     {
         public BaseModalView()
         {
-            Animation = new MoveAnimation
+            Animation = new MoveAnimation()
             {
-                PositionIn = Rg.Plugins.Popup.Enums.MoveAnimationOptions.Bottom
+                PositionIn = Rg.Plugins.Popup.Enums.MoveAnimationOptions.Bottom,
+                DurationIn = 300,
+                DurationOut=300
             };
+            
             BackgroundColor = Color.Transparent;
+            
         }
     }
 }

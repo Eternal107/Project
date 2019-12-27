@@ -151,8 +151,8 @@ namespace Xamarin_JuniorProject.ViewModels
             if (!string.IsNullOrEmpty(SearchText))
             {
                 Pins.Clear();
-
-                var PinModels = (await PinService.GetPins(App.CurrentUserId)).Where(x => x.IsFavorite == true && (x.Name.Contains(SearchText) || x.Description.Contains(SearchText) || x.Latitude.ToString().Contains(SearchText) || x.Longtitude.ToString().Contains(SearchText)));
+                var Text = SearchText.ToLower();
+                var PinModels = (await PinService.GetPins(App.CurrentUserId)).Where(x => x.IsFavorite == true && (x.Name.Contains(Text) || x.Description.Contains(Text) || x.Latitude.ToString().Contains(Text) || x.Longtitude.ToString().Contains(Text)));
                 if (PinModels != null)
                 {
 

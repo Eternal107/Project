@@ -11,6 +11,7 @@ using Xamarin_JuniorProject.Views.ModalViews;
 using Xamarin_JuniorProject.ViewModels.ModalViewModels;
 using Prism.Plugin.Popups;
 using Prism.Navigation;
+using System.Threading.Tasks;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xamarin_JuniorProject
@@ -29,11 +30,11 @@ namespace Xamarin_JuniorProject
 
             InitializeComponent();
 
-            SetupNavigation();
+            await SetupNavigation();
 
         }
 
-        private async void SetupNavigation()
+        private async Task SetupNavigation()
         {
             if (Current.Properties.ContainsKey("LoggedIn"))
             {

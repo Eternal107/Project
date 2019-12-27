@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Input;
 using Prism.Navigation;
 using Xamarin.Forms;
 using Xamarin_JuniorProject.Database;
@@ -12,23 +13,24 @@ namespace Xamarin_JuniorProject.ViewModels
     public class TabbedMapPageViewModel:ViewModelBase
     {
 
-        private int _tabbedPageIndex;
-        public int TabbedPageIndex
-        {
-            get { return _tabbedPageIndex; }
-            set { SetProperty(ref _tabbedPageIndex, value); }
-        }
+
+        public ICommand SignOut => new Command(OnSignOut);
+
 
 
         public TabbedMapPageViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService)
             : base(navigationService, repository, authorizationService, pinService)
         {
-            MessagingCenter.Subscribe<SavePinsPageViewModel>(this, "ToFirstPage", (sender) =>
-            {
-                TabbedPageIndex = 0;
-            });
+            
         }
 
+        private async void OnSignOut()
+        {
+            Prism.PrismApplicationBase.Current.Properties.Clear();
+            await Prism.PrismApplicationBase.Current.SavePropertiesAsync() ;
+            App.CurrentUserId = -1;
+            await NavigationService.NavigateAsync("/NavigationPage/MainPage");
+        }
        
     }
 }

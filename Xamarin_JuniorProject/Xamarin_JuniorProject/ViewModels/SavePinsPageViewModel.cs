@@ -88,8 +88,8 @@ namespace Xamarin_JuniorProject.ViewModels
             if (!string.IsNullOrEmpty(SearchText))
             {
                 Pins.Clear();
-
-                var MapPins = (await PinService.GetPins(App.CurrentUserId)).Where(x => x.IsFavorite == true && (x.Name.Contains(SearchText) || x.Description.Contains(SearchText) || x.Latitude.ToString().Contains(SearchText) || x.Longtitude.ToString().Contains(SearchText)));
+                var Text = SearchText.ToLower();
+                var MapPins = (await PinService.GetPins(App.CurrentUserId)).Where(x => x.IsFavorite == true && (x.Name.Contains(Text) || x.Description.Contains(Text) || x.Latitude.ToString().Contains(Text) || x.Longtitude.ToString().Contains(Text)));
                 if (MapPins != null)
                     foreach (var pin in MapPins)
                     {

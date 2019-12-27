@@ -46,8 +46,11 @@ namespace Xamarin_JuniorProject.ViewModels
             if (Loginization)
             {
                 PrismApplicationBase.Current.Properties.Add("LoggedIn", App.CurrentUserId);
+                
                 await PrismApplicationBase.Current.SavePropertiesAsync();
-                await NavigationService.NavigateAsync("/NavigationPage/TabbedMapPage");
+                var p = new NavigationParameters();
+                p.Add("LoadFromDataBase", true);
+                await NavigationService.NavigateAsync("/NavigationPage/TabbedMapPage",p);
             }
 
         }

@@ -11,7 +11,7 @@ namespace Xamarin_JuniorProject.Services.Authorization
 
         Task<bool> Login(string userName, string password);
         Task<bool> Register(UserRegistrationModel user);
-        bool IsAuthorized { get; }
+
     }
 
 }

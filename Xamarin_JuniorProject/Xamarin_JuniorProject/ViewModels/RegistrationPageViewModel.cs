@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
+using Acr.UserDialogs;
 using Prism.Commands;
 using Prism.Navigation;
 using Xamarin_JuniorProject.Database;
@@ -65,7 +66,10 @@ namespace Xamarin_JuniorProject.ViewModels
             var CheckRegistration = await AuthorizationService.Register(CurrentUser);
             if (CheckRegistration)
                 await NavigationService.GoBackAsync();
-
+            else
+            {
+                await UserDialogs.Instance.AlertAsync("Login is already taken");
+            }
         }
 
         private bool CanRegister()

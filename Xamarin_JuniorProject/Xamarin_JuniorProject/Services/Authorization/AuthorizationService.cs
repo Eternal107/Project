@@ -9,7 +9,7 @@ namespace Xamarin_JuniorProject.Services.Authorization
     {
         IRepositoryService Repository;
 
-        public bool IsAuthorized { get; }
+
 
         public async Task<bool> Register(UserRegistrationModel user)
         {

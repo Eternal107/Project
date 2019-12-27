@@ -14,7 +14,7 @@
             <behaviors:ValidationGroupBehavior x:Name="form" IsValid="{Binding BindingContext.IsValid, Source={x:Reference this}, Mode=OneWayToSource}"/>
         </StackLayout.Behaviors>
         
-        <Label Text="Enter your name"/>
+        <Label Text="Enter your login"/>
         <Entry x:Name = "LoginEntry" ReturnType="Next" Placeholder = "Login" Text="{Binding Login}">
             <Entry.Behaviors>
                 <behaviors:ValidationBehavior Group="{x:Reference form}" 
