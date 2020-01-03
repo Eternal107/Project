@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modalviews:BaseModalView
+    xmlns:modalviews="clr-namespace:Xamarin_JuniorProject.Views.ModalViews"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Xamarin_JuniorProject.Views.ModalViews.NFCModalView">
+
+            <Frame HeightRequest="270"
+               BackgroundColor="AliceBlue"
+               VerticalOptions="End"
+               HorizontalOptions="Fill">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+			<Button Text="Read Tag" Command="{Binding ReadTag}"/>
+			<Button Text="Write Tag (Text)" Command="{Binding WriteTag}" />
+			<Button Text="Clear Tag" Command="{Binding ClearTag}" />
+		</StackLayout>
+</Frame>
+
+</modalviews:BaseModalView>

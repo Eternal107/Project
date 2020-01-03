@@ -5,7 +5,7 @@ using Android.Runtime;
 namespace Xamarin_JuniorProject.Droid
 {
     [Application]
-    [MetaData("com.google.android.maps.v2.API_KEY",
+    [MetaData("com.google11.android.maps.v2.API_KEY",
               Value = Constants.GOOGLE_MAPS_API_KEY)]
     public class MyApp : Application
     {

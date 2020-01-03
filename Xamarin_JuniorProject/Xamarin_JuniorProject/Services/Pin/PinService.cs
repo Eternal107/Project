@@ -16,31 +16,32 @@ namespace Xamarin_JuniorProject.Services.Pin
 
         }
 
-        public async Task AddPin(PinModel pin)
+        //TODO: return task
+        public  Task AddPinAsync(PinModel pin)
         {
-            await _repositoryService.Insert(pin);
+            return _repositoryService.InsertAsync(pin);
         }
 
-        public async Task DeletePin(PinModel pin)
+        public async Task DeletePinAsync(PinModel pin)
         {
             if (pin != null)
             {
-                PinModel Model = await _repositoryService.Get<PinModel>(x => x.Latitude == pin.Latitude && x.Longtitude == pin.Longtitude);
+                PinModel Model = await _repositoryService.GetAsync<PinModel>(pin.ID);
                 if (Model != null)
                 {
-                    await _repositoryService.Delete(Model);
+                    await _repositoryService.DeleteAsync(Model);
                 }
             }
         }
 
-        public async Task UpdatePin(PinModel pin)
+        public  Task UpdatePinAsync(PinModel pin)
         {
-            await _repositoryService.Update(pin);
+            return _repositoryService.UpdateAsync(pin);
         }
 
-        public async Task<List<PinModel>> GetPins(int userId)
+        public async Task<List<PinModel>> GetPinsAsync(int userId)
         {
-            var allPins = await _repositoryService.Get<PinModel>();
+            var allPins = await _repositoryService.GetAsync<PinModel>();
             return allPins.FindAll(x => x.UserID == userId);
         }
     }

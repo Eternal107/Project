@@ -25,7 +25,7 @@ namespace Xamarin_JuniorProject.ViewModels
     {
 
 
-
+        IPinService PinService { get; }
 
 
 
@@ -62,49 +62,52 @@ namespace Xamarin_JuniorProject.ViewModels
         }
 
 
-        public MyMapPageViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService)
-            : base(navigationService, repository, authorizationService, pinService)
+        public MyMapPageViewModel(INavigationService navigationService, IPinService pinService)
+            : base(navigationService)
         {
 
             Pins = new ObservableCollection<Pin>();
             Title = "Map";
-            MapCameraPosition=new CameraPosition(new Position(0, 0), 0);
-            MessagingCenter.Subscribe<SavePinsPageViewModel,CustomPinView> (this, "AddPin",async (sender,pin) =>
-            {
-                await LoadFromDataBase();
-                var newPin = (await PinService.GetPins(App.CurrentUserId)).LastOrDefault(x => x.ID == pin.PinID);
-                var Pin = newPin.ToPin();
-                MapCameraPosition = new CameraPosition(Pin.Position, 5);
-                if (!Pins.Contains(Pin))
-                {
-                    Pins.Add(Pin);
-
-                }
-                OnPinClicked(Pin);
-                MessagingCenter.Subscribe<PinModalView>(this, "DeletePin", (seconSender) =>
-                {
-
-                    Pins.Remove(Pins.LastOrDefault());
-                    MessagingCenter.Unsubscribe<PinModalView>(this, "DeletePin");
-                });
-            });
-
-           
+            PinService = pinService;
+            MapCameraPosition = new CameraPosition(new Position(0, 0), 0);
+            //TODO: lambda to separate method
+            MessagingCenter.Subscribe<SavePinsPageViewModel, CustomPinView>(this, "AddPin", ShowPin);
+              
         }
 
+
+        private async void ShowPin(SavePinsPageViewModel sender,CustomPinView pin)
+        {
+            await LoadFromDataBase();
+            var newPin = (await PinService.GetPinsAsync(App.CurrentUserId)).LastOrDefault(x => x.ID == pin.PinID);
+            var Pin = newPin.ToPin();
+            MapCameraPosition = new CameraPosition(Pin.Position, 5);
+            if (!Pins.Contains(Pin))
+            {
+                Pins.Add(Pin);
+
+            }
+            OnPinClicked(Pin);
+            MessagingCenter.Subscribe<PinModalView>(this, "DeletePin", (seconSender) =>
+            {
+                Pins.Remove(Pins.LastOrDefault());
+                MessagingCenter.Unsubscribe<PinModalView>(this, "DeletePin");
+            });
+        }
+        
 
         private async void OnPinClicked(Pin pin)
         {
             var p = new NavigationParameters();
-            p.Add("SelectedPin", pin);
-            await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService, Repository, AuthorizationService, PinService, pin) });
+            p.Add(Constants.NavigationParameters.SelectedPin, pin);
+            await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService, PinService, pin) });
         }
 
-        private async void OnPinClicked( PinClickedEventArgs e)
+        private async void OnPinClicked(PinClickedEventArgs e)
         {
             var p = new NavigationParameters();
-            p.Add("SelectedPin", e.Pin);
-            await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService, Repository, AuthorizationService, PinService, e.Pin) });
+            p.Add(Constants.NavigationParameters.SelectedPin, e.Pin);
+            await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService,PinService, e.Pin) });
         }
 
 
@@ -113,20 +116,19 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             Pins.Clear();
 
-            var PinModels = (await PinService.GetPins(App.CurrentUserId)).Where(x => x.IsFavorite == true);
+            var PinModels = (await PinService.GetPinsAsync(App.CurrentUserId)).Where(x => x.IsFavorite == true);
             if (PinModels != null)
             {
 
                 foreach (PinModel model in PinModels)
-                {
-                    Pin newPin = new Pin() { Label = model.Name, Position = new Position(model.Latitude, model.Longtitude), Type = model.IsFavorite == true ? PinType.SavedPin : PinType.Place, Tag = model.Description };
-                    Pins.Add(newPin);
+                {                  
+                    Pins.Add(model.ToPin());
                 }
 
             }
         }
 
-        private async void OnLongclicked( MapLongClickedEventArgs e)
+        private async void OnLongclicked(MapLongClickedEventArgs e)
         {
 
             var lat = e.Point.Latitude;
@@ -134,12 +136,13 @@ namespace Xamarin_JuniorProject.ViewModels
             var pin = Pins.LastOrDefault(x => x.Position == e.Point);
             if (pin == null)
             {
+                //TODO: to resources
                 PromptResult result = await UserDialogs.Instance.PromptAsync(string.Format("{0}, {1}", lat, lng), "Add pin?", "Ok", "Cancel", "Name");
                 if (result.Ok)
                 {
 
                     Pins.Add(new Pin() { Position = new Position(lat, lng), Type = PinType.SavedPin, Label = result.Text, Tag = "" });
-                    await PinService.AddPin(Pins.Last().ToPinModel((string)Pins.Last().Tag));
+                    await PinService.AddPinAsync(Pins.Last().ToPinModel());
 
                 }
             }
@@ -152,16 +155,17 @@ namespace Xamarin_JuniorProject.ViewModels
             {
                 Pins.Clear();
                 var Text = SearchText.ToLower();
-                var PinModels = (await PinService.GetPins(App.CurrentUserId)).Where(x => x.IsFavorite == true && (x.Name.Contains(Text) || x.Description.Contains(Text) || x.Latitude.ToString().Contains(Text) || x.Longtitude.ToString().Contains(Text)));
+                var PinModels = (await PinService.GetPinsAsync(App.CurrentUserId))
+                    .Where(x => x.IsFavorite == true && (x.Name.Contains(Text) ||
+                    x.Description.Contains(Text) || x.Latitude.ToString().Contains(Text)
+                    || x.Longtitude.ToString().Contains(Text)));
+
                 if (PinModels != null)
                 {
-
                     foreach (PinModel model in PinModels)
                     {
-                        Pin newPin = new Pin() { Label = model.Name, Position = new Position(model.Latitude, model.Longtitude), Type = model.IsFavorite == true ? PinType.SavedPin : PinType.Place, Tag = model.Description };
-                        Pins.Add(newPin);
+                        Pins.Add(model.ToPin());
                     }
-
                 }
             }
             else
@@ -170,22 +174,16 @@ namespace Xamarin_JuniorProject.ViewModels
             }
         }
 
-
-
-
         public override async void OnNavigatedTo(INavigationParameters parameters)
         {
 
-            if (parameters.ContainsKey("LoadFromDataBase"))
+            if (parameters.ContainsKey(Constants.NavigationParameters.LoadFromDataBase))
             {
-
                 await LoadFromDataBase();
             }
-            else if (parameters.ContainsKey("DeletePin"))
+            else if (parameters.TryGetValue(Constants.NavigationParameters.DeletePin, out Pin oldPin))
             {
-                var oldPin = parameters.GetValue<Pin>("DeletePin");
                 Pins.Remove(oldPin);
-
             }
         }
     }

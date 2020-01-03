@@ -20,28 +20,26 @@ namespace Xamarin_JuniorProject.ViewModels
 {
     public class SavePinsPageViewModel : ViewModelBase
     {
-        private ObservableCollection<CustomPinView> pins = new ObservableCollection<CustomPinView>();
+        IPinService PinService { get; }
 
-        public ObservableCollection<CustomPinView> Pins
+        public SavePinsPageViewModel(INavigationService navigationService, IPinService pinService)
+            : base(navigationService)
         {
-            get { return pins; }
-            set { SetProperty(ref pins, value); }
+            //TODO: to resources
+            PinService = pinService;
+            Title = "Saved Pins";
         }
 
-
-
-        public SavePinsPageViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService)
-            : base(navigationService, repository, authorizationService, pinService)
+        private ObservableCollection<CustomPinView> _pins = new ObservableCollection<CustomPinView>();
+        public ObservableCollection<CustomPinView> Pins
         {
-            Title = "Saved Pins";
-            pins = new ObservableCollection<CustomPinView>();
+            get { return _pins; }
+            set { SetProperty(ref _pins, value); }
         }
 
         public ICommand TextChanged => new Command(OnTextChanged);
 
-        private DelegateCommand _addPinPage;
-        public DelegateCommand AddPinPage =>
-            _addPinPage ?? (_addPinPage = new DelegateCommand(ToAddPinPage));
+        public DelegateCommand AddPinPage => new DelegateCommand(ToAddPinPage);
 
         private string _searchText;
         public string SearchText
@@ -53,9 +51,8 @@ namespace Xamarin_JuniorProject.ViewModels
 
         private async void ToAddPinPage()
         {
-            await NavigationService.NavigateAsync("AddPinPage");
+            await NavigationService.NavigateAsync($"{nameof(AddPinPage)}");
         }
-
 
         public override async void OnNavigatedTo(INavigationParameters parameters)
         {
@@ -65,22 +62,25 @@ namespace Xamarin_JuniorProject.ViewModels
         private async void ToSetPin(object o, EventArgs e)
         {
             var p = new NavigationParameters();
-            p.Add("UpdatePin", (CustomPinView)o);
+            p.Add(Constants.NavigationParameters.UpdatePin, (CustomPinView)o);
+            //TODO: constants
             MessagingCenter.Send(this, "ToFirstPage");
-            MessagingCenter.Send(this, "AddPin",(CustomPinView)o);
+            MessagingCenter.Send(this, "AddPin", (CustomPinView)o);
         }
 
         private async Task LoadFromDataBaseAsync()
         {
             Pins.Clear();
-            var MapPins = await PinService.GetPins(App.CurrentUserId);
+            var MapPins = await PinService.GetPinsAsync(App.CurrentUserId);
             if (MapPins != null)
+            {
                 foreach (var pin in MapPins)
                 {
                     var PinView = pin.PinModelToPinView();
                     PinView.Tapped = ToSetPin;
                     Pins.Add(PinView);
                 }
+            }
         }
 
         private async void OnTextChanged()
@@ -89,14 +89,19 @@ namespace Xamarin_JuniorProject.ViewModels
             {
                 Pins.Clear();
                 var Text = SearchText.ToLower();
-                var MapPins = (await PinService.GetPins(App.CurrentUserId)).Where(x => x.IsFavorite == true && (x.Name.Contains(Text) || x.Description.Contains(Text) || x.Latitude.ToString().Contains(Text) || x.Longtitude.ToString().Contains(Text)));
+                var MapPins = (await PinService.GetPinsAsync(App.CurrentUserId))
+                    .Where(x => x.IsFavorite == true && (x.Name.Contains(Text) || x.Description.Contains(Text)
+                    || x.Latitude.ToString().Contains(Text) || x.Longtitude.ToString().Contains(Text)));
+
                 if (MapPins != null)
+                {
                     foreach (var pin in MapPins)
                     {
                         var PinView = pin.PinModelToPinView();
                         PinView.Tapped = ToSetPin;
                         Pins.Add(PinView);
                     }
+                }
             }
             else
             {
@@ -106,8 +111,7 @@ namespace Xamarin_JuniorProject.ViewModels
 
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
-            parameters.Add("LoadFromDataBase", true);
-            
+            parameters.Add(Constants.NavigationParameters.LoadFromDataBase, true);
         }
     }
 }

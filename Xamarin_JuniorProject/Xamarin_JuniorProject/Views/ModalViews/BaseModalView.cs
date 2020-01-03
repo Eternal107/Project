@@ -13,7 +13,7 @@ namespace Xamarin_JuniorProject.Views.ModalViews
             {
                 PositionIn = Rg.Plugins.Popup.Enums.MoveAnimationOptions.Bottom,
                 DurationIn = 300,
-                DurationOut=300
+                DurationOut = 300
             };
             
             BackgroundColor = Color.Transparent;

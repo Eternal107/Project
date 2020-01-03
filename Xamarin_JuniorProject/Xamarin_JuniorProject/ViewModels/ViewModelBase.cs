@@ -9,12 +9,11 @@ namespace Xamarin_JuniorProject.ViewModels
     public class ViewModelBase : BindableBase, INavigationAware
     {
 
+        //TODO: readonly
+        protected INavigationService NavigationService { get; }
 
-        protected INavigationService NavigationService { get; private set; }
-        protected IRepositoryService Repository { get; private set; }
-        protected IAuthorizationService AuthorizationService { get; private set; }
-        protected IPinService PinService { get; private set; }
 
+        //TODO: REGIONS
         private string _title;
         public string Title
         {
@@ -22,29 +21,27 @@ namespace Xamarin_JuniorProject.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public ViewModelBase(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService,IPinService pinService)
+        //TODO: move each service to the next line
+        public ViewModelBase(INavigationService navigationService)
         {
             NavigationService = navigationService;
-            Repository = repository;
-            AuthorizationService = authorizationService;
-            PinService = pinService;
         }
 
 
 
         public virtual void OnNavigatedFrom(INavigationParameters parameters)
         {
-            
+
         }
 
         public virtual void OnNavigatedTo(INavigationParameters parameters)
         {
-            
+
         }
 
         public void OnNavigatingTo(INavigationParameters parameters)
         {
-             
+
         }
     }
 }

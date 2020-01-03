@@ -9,8 +9,8 @@ namespace Xamarin_JuniorProject.Services.Authorization
     public interface IAuthorizationService
     {
 
-        Task<bool> Login(string userName, string password);
-        Task<bool> Register(UserRegistrationModel user);
+        Task<bool> LoginAsync(string userName, string password);
+        Task<bool> RegisterAsync(UserRegistrationModel user);
 
     }
 

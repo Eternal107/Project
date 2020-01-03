@@ -92,6 +92,12 @@
     <PackageReference Include="Plugin.NFC">
       <Version>0.1.11</Version>
     </PackageReference>
+    <PackageReference Include="Plugin.FacebookClient">
+      <Version>2.1.14</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.VKontakte">
+      <Version>1.0.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.Designer.cs" />

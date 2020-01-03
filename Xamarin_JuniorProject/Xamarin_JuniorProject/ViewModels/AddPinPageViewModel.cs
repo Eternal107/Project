@@ -17,16 +17,22 @@ namespace Xamarin_JuniorProject.ViewModels
 {
     public class AddPinPageViewModel : ViewModelBase
     {
-        public AddPinPageViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService)
-             : base(navigationService, repository, authorizationService, pinService)
-        {
-            Title = "Pin Settings";
-          
-        }
+        private IPinService PinService { get; }
 
         private bool UpdatePin = false;
 
-        public DelegateCommand AddOrSave => new DelegateCommand(OnAddOrSaveClicked);
+        public AddPinPageViewModel(INavigationService navigationService,IPinService pinService)
+             : base(navigationService)
+        {
+            Title = "Pin Settings";
+            PinService = pinService;
+        }
+
+        #region -- Public properties --
+
+        public ICommand AddOrSave => new Command(OnAddOrSaveClicked);
+
+        public ICommand MapClicked => new Command<MapClickedEventArgs>(OnMapclicked);
 
         private PinModel _currentPin;
         public PinModel CurrentPin
@@ -50,32 +56,41 @@ namespace Xamarin_JuniorProject.ViewModels
             set { SetProperty(ref _toolbarButtonText, value); }
         }
 
-        private ObservableCollection<Pin> pins = new ObservableCollection<Pin>();
-
+        private ObservableCollection<Pin> _pins = new ObservableCollection<Pin>();
         public ObservableCollection<Pin> Pins
         {
-            get { return pins; }
-            set { SetProperty(ref pins, value); }
+            get { return _pins; }
+            set { SetProperty(ref _pins, value); }
         }
 
-        public ICommand MapClicked => new Command<MapClickedEventArgs>(OnMapclicked);
-        
+        #endregion
+
+        #region -- Private helpers--
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-
-            if (parameters.ContainsKey("PinSettings"))
+            
+            if (parameters.TryGetValue(Constants.NavigationParameters.PinSettings, out PinModel CurrentPin))
             {
-                CurrentPin = parameters.GetValue<PinModel>("PinSettings");
+                this.CurrentPin = CurrentPin;
                 UpdatePin = true;
                 ToolbarButtonText = "Update";
                 MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longtitude), 5);
                 Pins.Add(CurrentPin.ToPin());
             }
-            else if (parameters.ContainsKey("UpdatePin"))
+            else if (parameters.TryGetValue(Constants.NavigationParameters.UpdatePin, out CustomPinView PinView))
             {
-                var PinView = parameters.GetValue<CustomPinView>("UpdatePin");
-                CurrentPin = new PinModel() { IsFavorite = PinView.IsFavorite, ID = PinView.PinID, UserID = PinView.UserID, Name = PinView.PinName.Text, Latitude = Convert.ToDouble(PinView.PinLat.Text), Longtitude = Convert.ToDouble(PinView.PinLng.Text), Description = PinView.PinText.Text };
+                
+                this.CurrentPin = new PinModel()
+                {
+                    IsFavorite = PinView.IsFavorite,
+                    ID = PinView.PinID,
+                    UserID = PinView.UserID, Name = PinView.PinName.Text,
+                    Latitude = Convert.ToDouble(PinView.PinLat.Text),
+                    Longtitude = Convert.ToDouble(PinView.PinLng.Text),
+                    Description = PinView.PinText.Text
+                };
+
                 UpdatePin = true;
                 MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longtitude), 5);
                 ToolbarButtonText = "Update";
@@ -85,26 +100,29 @@ namespace Xamarin_JuniorProject.ViewModels
             else
             {
 
-                CurrentPin = new PinModel() { Name = "", UserID = App.CurrentUserId, Latitude = 40, Longtitude = 20 };
+                CurrentPin = new PinModel()
+                {
+                    Name = string.Empty,
+                    UserID = App.CurrentUserId,
+                    Latitude = 40,
+                    Longtitude = 20
+                };
 
                 Pins.Add(CurrentPin.ToPin());
             }
 
         }
 
-        public override async void OnNavigatedFrom(INavigationParameters parameters)
-        {
-            if (UpdatePin)
-            {
-                parameters.Add("LoadFromDataBase", true);
-            }
-        }
-
         private async void OnAddOrSaveClicked()
         {
             if (UpdatePin)
-                await PinService.UpdatePin(CurrentPin);
-            else await PinService.AddPin(CurrentPin);
+            {
+                await PinService.UpdatePinAsync(CurrentPin);
+            }
+            else
+            {
+                await PinService.AddPinAsync(CurrentPin);
+            }
         }
 
         private void OnMapclicked( MapClickedEventArgs e)
@@ -113,14 +131,35 @@ namespace Xamarin_JuniorProject.ViewModels
             var lat = e.Point.Latitude;
             var lng = e.Point.Longitude;
 
-            var newPin = new Pin() { Label = CurrentPin.Name, Position = new Position(lat, lng), Type = CurrentPin.IsFavorite ? PinType.SavedPin : PinType.Place, Tag = CurrentPin.Description };
+            var newPin = new Pin()
+            {
+                Label = CurrentPin.Name,
+                Position = new Position(lat, lng),
+                Type = CurrentPin.IsFavorite ? PinType.SavedPin : PinType.Place,
+                Tag = CurrentPin.Description
+            };
+
             int tempID = CurrentPin.ID;
-            CurrentPin = newPin.ToPinModel((string)newPin.Tag);
+            CurrentPin = newPin.ToPinModel();
             CurrentPin.ID = tempID;
             Pins.Clear();
             Pins.Add(newPin);
 
 
         }
+
+        #endregion
+
+        #region --Overrides--
+        public override async void OnNavigatedFrom(INavigationParameters parameters)
+        {
+            if (UpdatePin)
+            {
+                parameters.Add(Constants.NavigationParameters.LoadFromDataBase, true);
+            }
+        }
+
+        #endregion
+
     }
 }

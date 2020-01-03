@@ -12,11 +12,12 @@ using Xamarin_JuniorProject.ViewModels.ModalViewModels;
 using Prism.Plugin.Popups;
 using Prism.Navigation;
 using System.Threading.Tasks;
+using Prism.Unity;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xamarin_JuniorProject
 {
-    public partial class App
+    public partial class App : PrismApplication
     {
         public static int CurrentUserId;
 
@@ -26,16 +27,15 @@ namespace Xamarin_JuniorProject
 
         protected override async void OnInitialized()
         {
-
-
             InitializeComponent();
 
             await SetupNavigation();
-
         }
 
         private async Task SetupNavigation()
         {
+            //TODO: keys to constants
+            //TODO: navigation nameof(page)
             if (Current.Properties.ContainsKey("LoggedIn"))
             {
                 CurrentUserId = (int)Current.Properties["LoggedIn"];
@@ -44,18 +44,20 @@ namespace Xamarin_JuniorProject
                 await NavigationService.NavigateAsync("NavigationPage/TabbedMapPage", p);
             }
             else
-
+            {
                 await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            }
 
         }
 
-
-
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            //services
             containerRegistry.RegisterInstance<IRepositoryService>(Container.Resolve<RepositoryService>());
             containerRegistry.RegisterInstance<IAuthorizationService>(Container.Resolve<AuthorizationService>());
             containerRegistry.RegisterInstance<IPinService>(Container.Resolve<PinService>());
+
+            //navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
 
             containerRegistry.RegisterPopupNavigationService();
@@ -65,6 +67,7 @@ namespace Xamarin_JuniorProject
             containerRegistry.RegisterForNavigation<SavedPinsPage, SavePinsPageViewModel>();
             containerRegistry.RegisterForNavigation<AddPinPage, AddPinPageViewModel>();
             containerRegistry.RegisterForNavigation<PinModalView, PinModalViewModel>();
+            containerRegistry.RegisterForNavigation<NFCModalView, NFCModalViewModel>();
             containerRegistry.RegisterForNavigation<TabbedMapPage>();
         }
     }

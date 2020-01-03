@@ -7,14 +7,14 @@ namespace Xamarin_JuniorProject.Extentions
     public static class PinToModelExtention
     {
 
-        public static PinModel ToPinModel(this Pin pin, string description)
+        public static PinModel ToPinModel(this Pin pin)
         {
             PinModel Model = new PinModel();
             Model.Name = pin.Label;
             Model.Latitude = pin.Position.Latitude;
             Model.Longtitude = pin.Position.Longitude;
             Model.UserID = App.CurrentUserId;
-            Model.Description = description;
+            Model.Description = (string)pin.Tag;
             Model.IsFavorite = pin.Type == PinType.SavedPin;
             return Model;
 

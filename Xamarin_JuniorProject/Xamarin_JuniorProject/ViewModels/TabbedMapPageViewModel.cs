@@ -7,6 +7,7 @@ using Xamarin_JuniorProject.Services;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Services.Pin;
 using Xamarin_JuniorProject.Services.Repository;
+using Xamarin_JuniorProject.Views;
 
 namespace Xamarin_JuniorProject.ViewModels
 {
@@ -18,8 +19,7 @@ namespace Xamarin_JuniorProject.ViewModels
 
 
 
-        public TabbedMapPageViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService)
-            : base(navigationService, repository, authorizationService, pinService)
+        public TabbedMapPageViewModel(INavigationService navigationService): base(navigationService)
         {
             
         }
@@ -28,8 +28,8 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             Prism.PrismApplicationBase.Current.Properties.Clear();
             await Prism.PrismApplicationBase.Current.SavePropertiesAsync() ;
-            App.CurrentUserId = -1;
-            await NavigationService.NavigateAsync("/NavigationPage/MainPage");
+     
+            await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainPage)}");
         }
        
     }

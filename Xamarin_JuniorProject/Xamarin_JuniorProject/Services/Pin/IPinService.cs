@@ -8,11 +8,12 @@ namespace Xamarin_JuniorProject.Services.Pin
 {
     public interface IPinService
     {
-        Task AddPin(PinModel pin);
+        //TODO: add async
+        Task AddPinAsync(PinModel pin);
 
-        Task DeletePin(PinModel pin);
-        Task UpdatePin(PinModel pin);
-        Task<List<PinModel>> GetPins(int userId);
+        Task DeletePinAsync(PinModel pin);
+        Task UpdatePinAsync(PinModel pin);
+        Task<List<PinModel>> GetPinsAsync(int userId);
     }
 
 }

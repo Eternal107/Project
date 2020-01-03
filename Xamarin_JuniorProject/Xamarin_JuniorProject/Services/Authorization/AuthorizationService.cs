@@ -9,35 +9,34 @@ namespace Xamarin_JuniorProject.Services.Authorization
     {
         IRepositoryService Repository;
 
-
-
-        public async Task<bool> Register(UserRegistrationModel user)
+        public async Task<bool> RegisterAsync(UserRegistrationModel user)
         {
             var result = false;
             try
             {
-                await Repository.Insert(user);
+                await Repository.InsertAsync(user);
                 result = true;
             }
             catch (SQLite.SQLiteException)
             {
 
             }
+
             return result;
         }
 
-        public async Task<bool> Login(string login, string password)
+        public async Task<bool> LoginAsync(string login, string password)
         {
             var result = false;
 
-            var users = await Repository.Get<UserRegistrationModel>(x => x.Login == login && x.Password == password);
-
+            var users = await Repository.GetAsync<UserRegistrationModel>(x => x.Login == login && x.Password == password);
 
             if (users != null)
             {
                 App.CurrentUserId = users.ID;
                 result = true;
             }
+
             return result;
         }
 
@@ -45,8 +44,5 @@ namespace Xamarin_JuniorProject.Services.Authorization
         {
             Repository = repositoryService;
         }
-
-
-
     }
 }

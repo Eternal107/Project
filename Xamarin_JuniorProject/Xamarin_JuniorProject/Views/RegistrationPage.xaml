@@ -5,8 +5,6 @@
              x:Class="Xamarin_JuniorProject.Views.RegistrationPage"
              Title="{Binding Title}"
              x:Name="this">
-    
-       
             
         
         <StackLayout VerticalOptions="Center">

@@ -11,11 +11,14 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
 {
     public class PinModalViewModel : ViewModelBase
     {
-        public PinModalViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService,Pin pin)
-            : base(navigationService, repository, authorizationService, pinService)
+        public PinModalViewModel(INavigationService navigationService,IPinService pinService,Pin pin)
+            : base(navigationService)
         {
             CurrentPin = pin;
+            PinService = pinService;
         }
+
+        IPinService PinService { get; }
 
         private Pin _currentPin;
         public Pin CurrentPin
@@ -26,32 +29,40 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
 
 
 
-        private DelegateCommand _addPinPage;
-        public DelegateCommand AddPinPage =>
-            _addPinPage ?? (_addPinPage = new DelegateCommand(ToAddPinPage));
 
-        private DelegateCommand _deletePin;
-        public DelegateCommand DeletePin =>
-            _deletePin ?? (_deletePin = new DelegateCommand(ToDeletePin));
+        public DelegateCommand AddPinPage => new DelegateCommand(ToAddPinPage);
 
-        
+        public DelegateCommand DeletePin =>new DelegateCommand(ToDeletePin);
+
+        public DelegateCommand Nfc => new DelegateCommand(ToNfc);
 
         private async void ToDeletePin()
         {
             var p = new NavigationParameters();
-            p.Add("DeletePin", CurrentPin);
-            var pinModel = (await PinService.GetPins(App.CurrentUserId)).LastOrDefault(x => x.Latitude == CurrentPin.Position.Latitude && x.Longtitude == CurrentPin.Position.Longitude);
-            await PinService.DeletePin(pinModel);
+            p.Add(Constants.NavigationParameters.DeletePin, CurrentPin);
+            var pinModel = (await PinService.GetPinsAsync(App.CurrentUserId))
+                .LastOrDefault(x => x.Latitude == CurrentPin.Position.Latitude && x.Longtitude == CurrentPin.Position.Longitude);
+            await PinService.DeletePinAsync(pinModel);
+
             await NavigationService.GoBackAsync(p, useModalNavigation: true);
+
+        }
+
+        private async void ToNfc()
+        {
+
+            await PopupNavigation.Instance.PopAsync();
+            await NavigationService.NavigateAsync("NFCModalView");
 
         }
 
         private async void ToAddPinPage()
         {
 
-            var pinModel = (await PinService.GetPins(App.CurrentUserId)).LastOrDefault(x => x.Latitude == CurrentPin.Position.Latitude && x.Longtitude == CurrentPin.Position.Longitude);
+            var pinModel = (await PinService.GetPinsAsync(App.CurrentUserId))
+                .LastOrDefault(x => x.Latitude == CurrentPin.Position.Latitude && x.Longtitude == CurrentPin.Position.Longitude);
             var p = new NavigationParameters();
-            p.Add("PinSettings", pinModel);
+            p.Add(Constants.NavigationParameters.PinSettings, pinModel);
             await PopupNavigation.Instance.PopAsync();
             await NavigationService.NavigateAsync("AddPinPage", p);
 

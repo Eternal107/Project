@@ -14,11 +14,14 @@ namespace Xamarin_JuniorProject.ViewModels
 {
     public class RegistrationPageViewModel : ViewModelBase
     {
-        public DelegateCommand TabbedPage;
+        IAuthorizationService AuthorizationService { get; }
+
+        private DelegateCommand TabbedPage;
         public DelegateCommand ToTabbedPage =>
-            TabbedPage ?? (TabbedPage = new DelegateCommand(PushTabbedPage, CanRegister));
+          TabbedPage??(new DelegateCommand(PushTabbedPage, CanRegister));
 
-
+        //TODO: toghether with bindable property
+        //TODO: underscore
         private string login;
         private string password;
         private string email;
@@ -52,20 +55,22 @@ namespace Xamarin_JuniorProject.ViewModels
 
        
 
-        public RegistrationPageViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService)
-            : base(navigationService, repository, authorizationService, pinService)
+        public RegistrationPageViewModel(INavigationService navigationService, IAuthorizationService authorizationService)
+            : base(navigationService)
         {
             Title = "Registration Page";
             TabbedPage = new DelegateCommand(PushTabbedPage, CanRegister);
-
+            AuthorizationService = authorizationService;
         }
 
         private async void PushTabbedPage()
         {
             var CurrentUser = new UserRegistrationModel() { Email = Email, Login = Login, Password = Password };
-            var CheckRegistration = await AuthorizationService.Register(CurrentUser);
+            var CheckRegistration = await AuthorizationService.RegisterAsync(CurrentUser);
             if (CheckRegistration)
+            {
                 await NavigationService.GoBackAsync();
+            }
             else
             {
                 await UserDialogs.Instance.AlertAsync("Login is already taken");
@@ -74,23 +79,18 @@ namespace Xamarin_JuniorProject.ViewModels
 
         private bool CanRegister()
         {
-
-
-            return IsValid;
-
-            
+            return IsValid;    
         }
 
 
-      
+
 
         protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             base.OnPropertyChanged(propertyName);
-            if (propertyName == nameof(IsValid) )
-                TabbedPage.RaiseCanExecuteChanged();
+            if (propertyName == nameof(IsValid))
+                ToTabbedPage.RaiseCanExecuteChanged();
         }
-
     }
 
 }

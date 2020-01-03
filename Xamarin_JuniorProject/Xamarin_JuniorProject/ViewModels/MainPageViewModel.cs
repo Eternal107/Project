@@ -1,20 +1,27 @@
-﻿using Prism;
+﻿using Acr.UserDialogs;
+using Prism;
 using Prism.Commands;
 using Prism.Navigation;
+using Xamarin.Forms;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Services.Pin;
 using Xamarin_JuniorProject.Services.Repository;
+using Xamarin_JuniorProject.Views;
 
 namespace Xamarin_JuniorProject.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
-        public MainPageViewModel(INavigationService navigationService, IRepositoryService repository, IAuthorizationService authorizationService, IPinService pinService)
-            : base(navigationService, repository, authorizationService, pinService)
+        private IAuthorizationService AuthorizationService { get; }
+
+        public MainPageViewModel(INavigationService navigationService,IAuthorizationService authorizationService)
+            : base(navigationService)
         {
             Title = "Login Page";
-
+            AuthorizationService = authorizationService;
         }
+
+        #region -- Public properties --
 
         private string _login;
         public string Login
@@ -30,33 +37,39 @@ namespace Xamarin_JuniorProject.ViewModels
             set { SetProperty(ref _password, value); }
         }
 
-        private DelegateCommand _tabbedPage;
-        public DelegateCommand ToTabbedPage =>
-            _tabbedPage ?? (_tabbedPage = new DelegateCommand(PushTabbedPage));
 
-        private DelegateCommand RegistrationPage;
-        public DelegateCommand ToRegistrationPage =>
-            RegistrationPage ?? (RegistrationPage = new DelegateCommand(PushRegistrationPage));
+        public DelegateCommand ToTabbedPage => new DelegateCommand(PushTabbedPage);
 
+        public DelegateCommand ToRegistrationPage => new DelegateCommand(PushRegistrationPage);
 
+        #endregion
+
+        #region -- Private helpers -
 
         private async void PushTabbedPage()
         {
-            var Loginization = await AuthorizationService.Login(Login, Password);
+            var Loginization = await AuthorizationService.LoginAsync(Login, Password);
             if (Loginization)
             {
                 PrismApplicationBase.Current.Properties.Add("LoggedIn", App.CurrentUserId);
-                
+
                 await PrismApplicationBase.Current.SavePropertiesAsync();
                 var p = new NavigationParameters();
-                p.Add("LoadFromDataBase", true);
-                await NavigationService.NavigateAsync("/NavigationPage/TabbedMapPage",p);
+                p.Add(Constants.NavigationParameters.LoadFromDataBase, true);
+                await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(TabbedMapPage)}", p);
+            }
+            else
+            {
+                await UserDialogs.Instance.AlertAsync("Wrong Login or password");
             }
 
         }
+
         private async void PushRegistrationPage()
         {
-            await NavigationService.NavigateAsync("RegistrationPage");
+            await NavigationService.NavigateAsync($"{nameof(RegistrationPage)}");
         }
+
+        #endregion
     }
 }

@@ -22,33 +22,33 @@ namespace Xamarin_JuniorProject.Services.Repository
 
         }
 
-        public async Task<List<T>> Get<T>() where T : new()
+        public async Task<List<T>> GetAsync<T>() where T : new()
         {
             await db.CreateTableAsync<T>();
 
             return await db.Table<T>().ToListAsync();
         }
-        public async Task<T> Get<T>(int id) where T : new()
+        public async Task<T> GetAsync<T>(int id) where T : new()
         {
             await db.CreateTableAsync<T>();
             return await db.FindAsync<T>(id);
         }
-        public async Task<T> Get<T>(Expression<Func<T, bool>> predicate) where T : new()
+        public async Task<T> GetAsync<T>(Expression<Func<T, bool>> predicate) where T : new()
         {
             await db.CreateTableAsync<T>();
             return await db.FindAsync(predicate);
         }
-        public async Task<int> Insert<T>(T entity) where T : new()
+        public async Task<int> InsertAsync<T>(T entity) where T : new()
         {
             await db.CreateTableAsync<T>();
             return await db.InsertAsync(entity);
         }
-        public async Task<int> Update<T>(T entity) where T : new()
+        public async Task<int> UpdateAsync<T>(T entity) where T : new()
         {
             await db.CreateTableAsync<T>();
             return await db.UpdateAsync(entity);
         }
-        public async Task<int> Delete<T>(T entity) where T : new()
+        public async Task<int> DeleteAsync<T>(T entity) where T : new()
         {
             await db.CreateTableAsync<T>();
             return await db.DeleteAsync(entity);
