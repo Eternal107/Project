@@ -16,6 +16,8 @@ namespace Xamarin_JuniorProject.Extentions
             Model.UserID = App.CurrentUserId;
             Model.Description = (string)pin.Tag;
             Model.IsFavorite = pin.Type == PinType.SavedPin;
+            Model.ImagePath = pin.Icon != null ? pin.Icon.AbsolutePath : string.Empty;
+            
             return Model;
 
         }

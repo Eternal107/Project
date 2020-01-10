@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:maps1="clr-namespace:Xamarin_JuniorProject.Controls"
-             xmlns:modularity="http://prismlibrary.com"
+             xmlns:modularity="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              x:Class="Xamarin_JuniorProject.Views.MyMapPage"
              Title="{Binding Title}">
 
@@ -11,7 +11,7 @@
            <SearchBar.Behaviors>
                <modularity:EventToCommandBehavior EventName="TextChanged" Command="{Binding TextChanged}"/>
            </SearchBar.Behaviors>
-           </SearchBar>
+       </SearchBar>
         <maps1:CustomMap x:Name="Map" PinSource="{Binding Pins}"
                          MyMapLongClicked="{Binding LongClicked}"
                          MyPinClicked="{Binding PinClicked}" 

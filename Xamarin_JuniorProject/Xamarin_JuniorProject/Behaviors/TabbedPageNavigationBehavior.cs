@@ -37,5 +37,3 @@ namespace Xamarin_JuniorProject.Behaviors
         }
     }
 }
-
-

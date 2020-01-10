@@ -1,6 +1,9 @@
-﻿using Prism.Commands;
+﻿using Plugin.Media;
+using Plugin.Media.Abstractions;
+using Prism.Commands;
 using Prism.Navigation;
 using Rg.Plugins.Popup.Services;
+using System.IO;
 using System.Linq;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin_JuniorProject.Services.Authorization;
@@ -11,14 +14,24 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
 {
     public class PinModalViewModel : ViewModelBase
     {
-        public PinModalViewModel(INavigationService navigationService,IPinService pinService,Pin pin)
-            : base(navigationService)
+        private IPinService PinService { get; }
+
+        public PinModalViewModel(INavigationService navigationService,
+                                 IPinService pinService,
+                                 Pin pin)
+                                 : base(navigationService)
         {
             CurrentPin = pin;
             PinService = pinService;
         }
 
-        IPinService PinService { get; }
+        #region -- Public properties --
+
+        public DelegateCommand AddPinPage => new DelegateCommand(ToAddPinPage);
+
+        public DelegateCommand DeletePin => new DelegateCommand(ToDeletePin);
+
+        public DelegateCommand AddImage => new DelegateCommand(AddImageToPin);
 
         private Pin _currentPin;
         public Pin CurrentPin
@@ -27,47 +40,56 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
             set { SetProperty(ref _currentPin, value); }
         }
 
+        private string _imageSource;
+        public string ImageSource
+        {
+            get { return _imageSource; }
+            set { SetProperty(ref _imageSource, value); }
+        }
 
+        #endregion
 
-
-        public DelegateCommand AddPinPage => new DelegateCommand(ToAddPinPage);
-
-        public DelegateCommand DeletePin =>new DelegateCommand(ToDeletePin);
-
-        public DelegateCommand Nfc => new DelegateCommand(ToNfc);
+        #region -- Private helpers--
 
         private async void ToDeletePin()
         {
             var p = new NavigationParameters();
             p.Add(Constants.NavigationParameters.DeletePin, CurrentPin);
-            var pinModel = (await PinService.GetPinsAsync(App.CurrentUserId))
-                .LastOrDefault(x => x.Latitude == CurrentPin.Position.Latitude && x.Longtitude == CurrentPin.Position.Longitude);
+            var pinModel = await PinService.FindPinModelAsync(CurrentPin);
             await PinService.DeletePinAsync(pinModel);
 
             await NavigationService.GoBackAsync(p, useModalNavigation: true);
 
         }
 
-        private async void ToNfc()
+        public async void AddImageToPin()
         {
+            PickMediaOptions options = new PickMediaOptions();
 
-            await PopupNavigation.Instance.PopAsync();
-            await NavigationService.NavigateAsync("NFCModalView");
+            options.CustomPhotoSize = 6;
+            options.PhotoSize=PhotoSize.Custom;
 
+            var file = await CrossMedia.Current.PickPhotoAsync(options);
+            if (file != null)
+            {
+                CurrentPin.Icon = BitmapDescriptorFactory.FromStream(file.GetStream());
+
+                var pinModel = await PinService.FindPinModelAsync(CurrentPin);
+                pinModel.ImagePath = file.Path;
+                await PinService.UpdatePinAsync(pinModel);
+            }
         }
 
         private async void ToAddPinPage()
         {
-
-            var pinModel = (await PinService.GetPinsAsync(App.CurrentUserId))
-                .LastOrDefault(x => x.Latitude == CurrentPin.Position.Latitude && x.Longtitude == CurrentPin.Position.Longitude);
+            var pinModel = await PinService.FindPinModelAsync(CurrentPin);
             var p = new NavigationParameters();
             p.Add(Constants.NavigationParameters.PinSettings, pinModel);
             await PopupNavigation.Instance.PopAsync();
             await NavigationService.NavigateAsync("AddPinPage", p);
-
         }
-        
+
+        #endregion
     }
 }
 

@@ -1,11 +1,9 @@
 ﻿using Acr.UserDialogs;
 using Prism;
-using Prism.Commands;
 using Prism.Navigation;
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin_JuniorProject.Services.Authorization;
-using Xamarin_JuniorProject.Services.Pin;
-using Xamarin_JuniorProject.Services.Repository;
 using Xamarin_JuniorProject.Views;
 
 namespace Xamarin_JuniorProject.ViewModels
@@ -14,14 +12,20 @@ namespace Xamarin_JuniorProject.ViewModels
     {
         private IAuthorizationService AuthorizationService { get; }
 
-        public MainPageViewModel(INavigationService navigationService,IAuthorizationService authorizationService)
-            : base(navigationService)
+        public MainPageViewModel(INavigationService navigationService,
+                                 IAuthorizationService authorizationService)
+                                 : base(navigationService)
         {
             Title = "Login Page";
             AuthorizationService = authorizationService;
         }
 
         #region -- Public properties --
+
+
+        public ICommand ToTabbedPage => new Command(PushTabbedPage);
+
+        public ICommand ToRegistrationPage => new Command(PushRegistrationPage);
 
         private string _login;
         public string Login
@@ -36,11 +40,6 @@ namespace Xamarin_JuniorProject.ViewModels
             get { return _password; }
             set { SetProperty(ref _password, value); }
         }
-
-
-        public DelegateCommand ToTabbedPage => new DelegateCommand(PushTabbedPage);
-
-        public DelegateCommand ToRegistrationPage => new DelegateCommand(PushRegistrationPage);
 
         #endregion
 

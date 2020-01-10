@@ -59,8 +59,6 @@
                 <behaviors:ValidationBehavior Group="{x:Reference form}" 
                                               PropertyName="Text">
                     <behaviors:ValidationBehavior.Validators>
-                       
-                       
                         <behaviors:PasswordsEqualityValidator
                             confirmPassword="{x:Reference passwordEntry}"/>
                     </behaviors:ValidationBehavior.Validators>
@@ -73,9 +71,6 @@
 		        HorizontalOptions="Center"
 		        />
 		    
-		    
-	
         </StackLayout>
-        
-   
+         
 </ContentPage>

@@ -13,17 +13,14 @@ namespace Xamarin_JuniorProject.ViewModels
 {
     public class TabbedMapPageViewModel:ViewModelBase
     {
-
-
-        public ICommand SignOut => new Command(OnSignOut);
-
-
-
         public TabbedMapPageViewModel(INavigationService navigationService): base(navigationService)
         {
             
         }
-
+        #region -- Public properties --
+        public ICommand SignOut => new Command(OnSignOut);
+        #endregion
+        #region -- Private helpers--
         private async void OnSignOut()
         {
             Prism.PrismApplicationBase.Current.Properties.Clear();
@@ -31,6 +28,6 @@ namespace Xamarin_JuniorProject.ViewModels
      
             await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainPage)}");
         }
-       
+        #endregion
     }
 }

@@ -16,16 +16,11 @@ namespace Xamarin_JuniorProject.Controls
             null,
             propertyChanged: ItemAdded);
 
-
         public ObservableCollection<CustomPinView> ItemsSource
         {
             get => (ObservableCollection<CustomPinView>)GetValue(ItemsSourceProperty);
             set => SetValue(ItemsSourceProperty, value);
         }
-
-
-
-
 
         private static void ItemAdded(BindableObject bindable, object oldValue, object newValue)
         {

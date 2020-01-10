@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:Xamarin_JuniorProject.Controls"
-             xmlns:modularity="http://prismlibrary.com"
+             xmlns:modularity="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              x:Class="Xamarin_JuniorProject.Views.SavedPinsPage"
              Title="{Binding Title}">
 

@@ -67,7 +67,6 @@ namespace Xamarin_JuniorProject
             containerRegistry.RegisterForNavigation<SavedPinsPage, SavePinsPageViewModel>();
             containerRegistry.RegisterForNavigation<AddPinPage, AddPinPageViewModel>();
             containerRegistry.RegisterForNavigation<PinModalView, PinModalViewModel>();
-            containerRegistry.RegisterForNavigation<NFCModalView, NFCModalViewModel>();
             containerRegistry.RegisterForNavigation<TabbedMapPage>();
         }
     }

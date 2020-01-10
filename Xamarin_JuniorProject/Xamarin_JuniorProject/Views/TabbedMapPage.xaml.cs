@@ -10,11 +10,10 @@ namespace Xamarin_JuniorProject.Views
         {
             InitializeComponent();
 
-            MessagingCenter.Subscribe<SavePinsPageViewModel>(this, "ToFirstPage", (sender) =>
-                 {
-                     CurrentPage = this.Children[0];
-
-                 });
+            MessagingCenter.Subscribe<SavePinsPageViewModel>(this, Constants.MessagingCenter.ToFirstPage, (sender) =>
+            {
+                CurrentPage = this.Children[0];
+            });
         }
     }
 }

@@ -16,53 +16,55 @@ namespace Xamarin_JuniorProject.ViewModels
     {
         IAuthorizationService AuthorizationService { get; }
 
-        private DelegateCommand TabbedPage;
-        public DelegateCommand ToTabbedPage =>
-          TabbedPage??(new DelegateCommand(PushTabbedPage, CanRegister));
-
-        //TODO: toghether with bindable property
-        //TODO: underscore
-        private string login;
-        private string password;
-        private string email;
-
-        private bool  isValid;
-  
-
-        public bool IsValid
-        {
-            get { return isValid; }
-            set { SetProperty(ref isValid, value); }
-        }
-
-
-        public string Email
-        {
-            get { return email; }
-            set { SetProperty(ref email, value); }
-        }
-
-        public string Login
-        {
-            get { return login; }
-            set { SetProperty(ref login, value); }
-        }
-        public string Password
-        {
-            get { return password; }
-            set { SetProperty(ref password, value); }
-        }
-
-       
-
-        public RegistrationPageViewModel(INavigationService navigationService, IAuthorizationService authorizationService)
-            : base(navigationService)
+        public RegistrationPageViewModel(INavigationService navigationService,
+                                         IAuthorizationService authorizationService)
+                                         : base(navigationService)
         {
             Title = "Registration Page";
             TabbedPage = new DelegateCommand(PushTabbedPage, CanRegister);
             AuthorizationService = authorizationService;
         }
 
+        #region -- Public properties --
+
+        private DelegateCommand TabbedPage;
+        public DelegateCommand ToTabbedPage =>
+          TabbedPage??(new DelegateCommand(PushTabbedPage, CanRegister));
+
+        //TODO: toghether with bindable property
+        //TODO: underscore
+
+        private bool  _isValid;
+        public bool IsValid
+        {
+            get { return _isValid; }
+            set { SetProperty(ref _isValid, value); }
+        }
+
+        private string _email;
+        public string Email
+        {
+            get { return _email; }
+            set { SetProperty(ref _email, value); }
+        }
+
+        private string _login;
+        public string Login
+        {
+            get { return _login; }
+            set { SetProperty(ref _login, value); }
+        }
+
+        private string _password;
+        public string Password
+        {
+            get { return _password; }
+            set { SetProperty(ref _password, value); }
+        }
+
+        #endregion
+
+        #region -- Private helpers--
         private async void PushTabbedPage()
         {
             var CurrentUser = new UserRegistrationModel() { Email = Email, Login = Login, Password = Password };
@@ -81,9 +83,9 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             return IsValid;    
         }
+        #endregion
 
-
-
+        #region --Overrides--
 
         protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
@@ -91,7 +93,8 @@ namespace Xamarin_JuniorProject.ViewModels
             if (propertyName == nameof(IsValid))
                 ToTabbedPage.RaiseCanExecuteChanged();
         }
-    }
 
+        #endregion
+    }
 }
 

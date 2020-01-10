@@ -6,18 +6,19 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="{Binding ToolbarButtonText}"  Command="{Binding AddOrSave}"/>
-
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        <StackLayout >
+        <StackLayout>
             <Entry Text="{Binding CurrentPin.Name}" Placeholder="Label" FontSize="20"/>
             <Entry Text="{Binding CurrentPin.Longtitude}" Placeholder="Longitude" IsEnabled="False" FontSize="20"/>
             <Entry Text="{Binding CurrentPin.Latitude}" Placeholder="Latitude" IsEnabled="False" FontSize="20"/>
             <Editor Text="{Binding CurrentPin.Description}" Placeholder="Description" AutoSize="TextChanges" MaxLength="100" FontSize="20"/>
             <StackLayout Orientation="Horizontal" >
-                <Label Text="Favorite pin" FontSize="20"/>
+                <Label Text="Favorite pin" FontSize="16"/>
                 <CheckBox IsChecked="{Binding CurrentPin.IsFavorite}"/>
+                <Button Text="Change image" TextColor="White"  FontSize="16"  BackgroundColor="Gray" HorizontalOptions="CenterAndExpand" Command="{Binding ChangeImage}"/>
+                <Button  Text="Delete image" TextColor="White"  FontSize="16"  BackgroundColor="Red" HorizontalOptions="CenterAndExpand" Command="{Binding DeleteImage}"/>
             </StackLayout>
             <controls:CustomMap PinSource="{Binding Pins}" MyMapClicked="{Binding MapClicked}" MapCameraPosition="{Binding MapCameraPosition}" />
         </StackLayout>

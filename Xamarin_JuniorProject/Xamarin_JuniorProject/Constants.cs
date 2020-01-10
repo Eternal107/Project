@@ -16,6 +16,14 @@ namespace Xamarin_JuniorProject
             public const string UpdatePin = "UpdatePin";
             public const string SelectedPin = "SelectedPin";
         }
+
+        public static class MessagingCenter
+        {
+            public const string DeletePin = "DeletePin";
+            public const string AddPin = "AddPin";
+            public const string ToFirstPage = "ToFirstPage";
+        }
+
     }
 
 }

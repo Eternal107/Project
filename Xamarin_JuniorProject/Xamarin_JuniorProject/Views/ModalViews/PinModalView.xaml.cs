@@ -15,7 +15,7 @@ namespace Xamarin_JuniorProject.Views.ModalViews
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            MessagingCenter.Send(this, "DeletePin");
+            MessagingCenter.Send(this, Constants.MessagingCenter.DeletePin);
         }
     }
 }

@@ -22,13 +22,16 @@ namespace Xamarin_JuniorProject.ViewModels
     {
         IPinService PinService { get; }
 
-        public SavePinsPageViewModel(INavigationService navigationService, IPinService pinService)
-            : base(navigationService)
+        public SavePinsPageViewModel(INavigationService navigationService,
+                                     IPinService pinService)
+                                     : base(navigationService)
         {
             //TODO: to resources
             PinService = pinService;
             Title = "Saved Pins";
         }
+
+        #region -- Public properties --
 
         private ObservableCollection<CustomPinView> _pins = new ObservableCollection<CustomPinView>();
         public ObservableCollection<CustomPinView> Pins
@@ -39,7 +42,7 @@ namespace Xamarin_JuniorProject.ViewModels
 
         public ICommand TextChanged => new Command(OnTextChanged);
 
-        public DelegateCommand AddPinPage => new DelegateCommand(ToAddPinPage);
+        public ICommand AddPinPage => new Command(ToAddPinPage);
 
         private string _searchText;
         public string SearchText
@@ -48,24 +51,22 @@ namespace Xamarin_JuniorProject.ViewModels
             set { SetProperty(ref _searchText, value); }
         }
 
+        #endregion
+
+        #region -- Private helpers--
 
         private async void ToAddPinPage()
         {
             await NavigationService.NavigateAsync($"{nameof(AddPinPage)}");
         }
 
-        public override async void OnNavigatedTo(INavigationParameters parameters)
-        {
-            await LoadFromDataBaseAsync();
-        }
-
-        private async void ToSetPin(object o, EventArgs e)
+        private void ToSetPin(object o, EventArgs e)
         {
             var p = new NavigationParameters();
             p.Add(Constants.NavigationParameters.UpdatePin, (CustomPinView)o);
             //TODO: constants
-            MessagingCenter.Send(this, "ToFirstPage");
-            MessagingCenter.Send(this, "AddPin", (CustomPinView)o);
+            MessagingCenter.Send(this, Constants.MessagingCenter.ToFirstPage);
+            MessagingCenter.Send(this, Constants.MessagingCenter.AddPin, (CustomPinView)o);
         }
 
         private async Task LoadFromDataBaseAsync()
@@ -108,11 +109,20 @@ namespace Xamarin_JuniorProject.ViewModels
                 await LoadFromDataBaseAsync();
             }
         }
+        #endregion
+        #region --Overrides--
+
+        public override async void OnNavigatedTo(INavigationParameters parameters)
+        {
+            await LoadFromDataBaseAsync();
+        }
 
         public override void OnNavigatedFrom(INavigationParameters parameters)
         {
             parameters.Add(Constants.NavigationParameters.LoadFromDataBase, true);
         }
+
+        #endregion
     }
 }
 

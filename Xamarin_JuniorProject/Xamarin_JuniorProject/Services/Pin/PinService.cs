@@ -13,11 +13,9 @@ namespace Xamarin_JuniorProject.Services.Pin
         public PinService(IRepositoryService repositoryService)
         {
             _repositoryService = repositoryService;
-
         }
 
-        //TODO: return task
-        public  Task AddPinAsync(PinModel pin)
+        public Task AddPinAsync(PinModel pin)
         {
             return _repositoryService.InsertAsync(pin);
         }
@@ -34,7 +32,13 @@ namespace Xamarin_JuniorProject.Services.Pin
             }
         }
 
-        public  Task UpdatePinAsync(PinModel pin)
+        public Task<PinModel> FindPinModelAsync(Xamarin.Forms.GoogleMaps.Pin pin)
+        {
+            return _repositoryService.GetAsync<PinModel>(x =>
+            x.Latitude == pin.Position.Latitude && x.Longtitude == pin.Position.Longitude && x.UserID == App.CurrentUserId);
+        }
+
+        public Task UpdatePinAsync(PinModel pin)
         {
             return _repositoryService.UpdateAsync(pin);
         }

@@ -12,9 +12,6 @@ namespace Xamarin_JuniorProject.Views
         public MainPage()
         {
             InitializeComponent();
-
-            
-            
         }
     }
 }

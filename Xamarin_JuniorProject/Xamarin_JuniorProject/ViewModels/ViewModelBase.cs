@@ -9,26 +9,24 @@ namespace Xamarin_JuniorProject.ViewModels
     public class ViewModelBase : BindableBase, INavigationAware
     {
 
-        //TODO: readonly
         protected INavigationService NavigationService { get; }
 
-
-        //TODO: REGIONS
-        private string _title;
-        public string Title
-        {
-            get { return _title; }
-            set { SetProperty(ref _title, value); }
-        }
-
-        //TODO: move each service to the next line
         public ViewModelBase(INavigationService navigationService)
         {
             NavigationService = navigationService;
         }
 
 
+        #region -- Public properties --
+        private string _title;
+        public string Title
+        {
+            get { return _title; }
+            set { SetProperty(ref _title, value); }
+        }
+        #endregion
 
+        #region --Overrides--
         public virtual void OnNavigatedFrom(INavigationParameters parameters)
         {
 
@@ -43,6 +41,7 @@ namespace Xamarin_JuniorProject.ViewModels
         {
 
         }
+        #endregion
     }
 }
 

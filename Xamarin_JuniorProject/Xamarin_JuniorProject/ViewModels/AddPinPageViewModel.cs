@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Windows.Input;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 using Prism.Commands;
 using Prism.Navigation;
 using Xamarin.Forms;
@@ -21,8 +24,9 @@ namespace Xamarin_JuniorProject.ViewModels
 
         private bool UpdatePin = false;
 
-        public AddPinPageViewModel(INavigationService navigationService,IPinService pinService)
-             : base(navigationService)
+        public AddPinPageViewModel(INavigationService navigationService,
+                                   IPinService pinService)
+                                   : base(navigationService)
         {
             Title = "Pin Settings";
             PinService = pinService;
@@ -33,6 +37,10 @@ namespace Xamarin_JuniorProject.ViewModels
         public ICommand AddOrSave => new Command(OnAddOrSaveClicked);
 
         public ICommand MapClicked => new Command<MapClickedEventArgs>(OnMapclicked);
+
+        public ICommand DeleteImage => new Command(DeletePinImage);
+
+        public ICommand ChangeImage => new Command(ChangeOrAddImage);
 
         private PinModel _currentPin;
         public PinModel CurrentPin
@@ -67,67 +75,57 @@ namespace Xamarin_JuniorProject.ViewModels
 
         #region -- Private helpers--
 
-        public override void OnNavigatedTo(INavigationParameters parameters)
+        private  void DeletePinImage()
         {
-            
-            if (parameters.TryGetValue(Constants.NavigationParameters.PinSettings, out PinModel CurrentPin))
+            if(!string.IsNullOrEmpty(CurrentPin.ImagePath))
             {
-                this.CurrentPin = CurrentPin;
-                UpdatePin = true;
-                ToolbarButtonText = "Update";
-                MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longtitude), 5);
+                CurrentPin.ImagePath = string.Empty;
+
+                Pins.Clear();
                 Pins.Add(CurrentPin.ToPin());
             }
-            else if (parameters.TryGetValue(Constants.NavigationParameters.UpdatePin, out CustomPinView PinView))
+        }
+
+        private async void ChangeOrAddImage()
+        {
+            PickMediaOptions options = new PickMediaOptions();
+
+            options.CustomPhotoSize = 6;
+            options.PhotoSize = PhotoSize.Custom;
+
+            var file = await CrossMedia.Current.PickPhotoAsync(options);
+            if (file != null)
             {
-                
-                this.CurrentPin = new PinModel()
-                {
-                    IsFavorite = PinView.IsFavorite,
-                    ID = PinView.PinID,
-                    UserID = PinView.UserID, Name = PinView.PinName.Text,
-                    Latitude = Convert.ToDouble(PinView.PinLat.Text),
-                    Longtitude = Convert.ToDouble(PinView.PinLng.Text),
-                    Description = PinView.PinText.Text
-                };
+                CurrentPin.ImagePath = file.Path;
 
-                UpdatePin = true;
-                MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longtitude), 5);
-                ToolbarButtonText = "Update";
-                Pins.Add(CurrentPin.ToPin());
-
-            }
-            else
-            {
-
-                CurrentPin = new PinModel()
-                {
-                    Name = string.Empty,
-                    UserID = App.CurrentUserId,
-                    Latitude = 40,
-                    Longtitude = 20
-                };
-
+                Pins.Clear();
                 Pins.Add(CurrentPin.ToPin());
             }
-
         }
 
         private async void OnAddOrSaveClicked()
         {
-            if (UpdatePin)
-            {
-                await PinService.UpdatePinAsync(CurrentPin);
+            var pinModel =await PinService.FindPinModelAsync(Pins.LastOrDefault());
+            if (pinModel != null)
+            {             
+                CurrentPin.ID = pinModel.ID;
+                await PinService.UpdatePinAsync(CurrentPin);            
             }
             else
             {
-                await PinService.AddPinAsync(CurrentPin);
+                if (UpdatePin)
+                {
+                    await PinService.UpdatePinAsync(CurrentPin);
+                }
+                else
+                {
+                    await PinService.AddPinAsync(CurrentPin);
+                }
             }
         }
 
         private void OnMapclicked( MapClickedEventArgs e)
         {
-
             var lat = e.Point.Latitude;
             var lng = e.Point.Longitude;
 
@@ -139,19 +137,53 @@ namespace Xamarin_JuniorProject.ViewModels
                 Tag = CurrentPin.Description
             };
 
+            if(!string.IsNullOrEmpty(CurrentPin.ImagePath))
+            {
+                newPin.Icon= BitmapDescriptorFactory.FromStream(File.OpenRead(CurrentPin.ImagePath));
+            }
             int tempID = CurrentPin.ID;
+            string tempPath=CurrentPin.ImagePath;
             CurrentPin = newPin.ToPinModel();
             CurrentPin.ID = tempID;
+            CurrentPin.ImagePath = tempPath;
             Pins.Clear();
             Pins.Add(newPin);
-
 
         }
 
         #endregion
 
         #region --Overrides--
-        public override async void OnNavigatedFrom(INavigationParameters parameters)
+
+        public override void OnNavigatedTo(INavigationParameters parameters)
+        {
+
+            if (parameters.TryGetValue(Constants.NavigationParameters.PinSettings, out PinModel pin))
+            {
+                CurrentPin = pin;
+                UpdatePin = true;
+                ToolbarButtonText = "Update";
+                MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longtitude), 5);
+                Pins.Add(CurrentPin.ToPin());
+            }
+            else
+            {
+                CurrentPin = new PinModel()
+                {
+                    Name = string.Empty,
+                    UserID = App.CurrentUserId,
+                    Latitude = 1.3541171,
+                    Longtitude = 103.8659237,
+                    IsFavorite = true,
+                    Description = string.Empty
+                };
+                MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longtitude), 5);
+                Pins.Add(CurrentPin.ToPin());
+            }
+
+        }
+
+        public override  void OnNavigatedFrom(INavigationParameters parameters)
         {
             if (UpdatePin)
             {

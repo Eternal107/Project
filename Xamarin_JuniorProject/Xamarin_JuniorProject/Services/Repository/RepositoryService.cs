@@ -15,11 +15,8 @@ namespace Xamarin_JuniorProject.Services.Repository
 
         public RepositoryService()
         {
-
             var DataBasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), Constants.DATA_BASE_PATH);
             db = new SQLiteAsyncConnection(DataBasePath);
-
-
         }
 
         public async Task<List<T>> GetAsync<T>() where T : new()

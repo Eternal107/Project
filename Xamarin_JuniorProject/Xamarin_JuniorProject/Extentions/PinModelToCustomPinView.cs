@@ -18,6 +18,7 @@ namespace Xamarin_JuniorProject.Extentions
             PinView.PinLng.Text = model.Longtitude.ToString();
             PinView.PinText.Text = model.Description;
             PinView.IsFavorite = model.IsFavorite;
+            PinView.ImagePath = model.ImagePath;
             return PinView;
         }
     }

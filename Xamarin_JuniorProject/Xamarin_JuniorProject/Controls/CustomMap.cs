@@ -16,6 +16,27 @@ namespace Xamarin_JuniorProject.Controls
 {
     public class CustomMap : ClusteredMap
     {
+        public CustomMap()
+        {
+            MapLongClicked += (o, e) => { MyMapLongClicked?.Execute(e); };
+            MapClicked += (o, e) => { MyMapClicked?.Execute(e); };
+            PinClicked += (o, e) => { MyPinClicked?.Execute(e); };
+            MyLocationButtonClicked += GetPermission;
+
+            this.MapType = MapType.Street;
+            this.UiSettings.MyLocationButtonEnabled = true;
+            this.MyLocationEnabled = false;
+            this.UiSettings.CompassEnabled = true;
+            this.UiSettings.RotateGesturesEnabled = true;
+            this.UiSettings.IndoorLevelPickerEnabled = true;
+            this.UiSettings.ScrollGesturesEnabled = true;
+            this.UiSettings.TiltGesturesEnabled = true;
+            this.UiSettings.ZoomControlsEnabled = true;
+            this.UiSettings.ZoomGesturesEnabled = true;
+
+            GetPermission(null, null);
+        }
+
         public static readonly BindableProperty PinSourceProperty = BindableProperty.Create(
             nameof(PinSource),
             typeof(ObservableCollection<Pin>),
@@ -36,17 +57,7 @@ namespace Xamarin_JuniorProject.Controls
             typeof(CameraPosition),
             typeof(CustomMap),
             null,
-            propertyChanged: (bindable, oldValue, newValue) =>
-            {
-                if (newValue != null)
-                {
-                    
-                    
-                    CameraUpdate update = CameraUpdateFactory.NewCameraPosition((CameraPosition)newValue);
-                    (bindable as CustomMap).InitialCameraUpdate=(update);
-                    (bindable as CustomMap).MoveCamera(update);
-                }
-            });
+            propertyChanged: MapCameraPositionPropertyChanged);
 
 
         public CameraPosition MapCameraPosition
@@ -97,40 +108,6 @@ namespace Xamarin_JuniorProject.Controls
             set => SetValue(MyPinClickedProperty, value);
         }
 
-
-
-
-        public CustomMap()
-        {
-            MapLongClicked += (o, e) => { MyMapLongClicked?.Execute(e); };
-            MapClicked += (o, e) => { MyMapClicked?.Execute(e); };
-            PinClicked += (o, e) => { MyPinClicked?.Execute(e); };
-            
-
-            this.MyLocationButtonClicked += GetPermission;
-            this.MapType = MapType.Street;
-            this.UiSettings.MyLocationButtonEnabled = true;
-            this.MyLocationEnabled = false;
-
-            this.UiSettings.CompassEnabled = true;
-
-            this.UiSettings.RotateGesturesEnabled = true;
-
-            this.UiSettings.IndoorLevelPickerEnabled = true;
-
-            this.UiSettings.ScrollGesturesEnabled = true;
-
-            this.UiSettings.TiltGesturesEnabled = true;
-
-            this.UiSettings.ZoomControlsEnabled = true;
-
-            this.UiSettings.ZoomGesturesEnabled = true;
-            GetPermission(null, null);
-
-        }
-
-
-
         private async void GetPermission(object o, MyLocationButtonClickedEventArgs e)
         {
             if (!MyLocationEnabled)
@@ -140,7 +117,6 @@ namespace Xamarin_JuniorProject.Controls
                     var status = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Location);
                     if (status != PermissionStatus.Granted)
                     {
-
                         status = (await CrossPermissions.Current.RequestPermissionsAsync(Permission.Location))[Permission.Location];
                     }
 
@@ -160,6 +136,15 @@ namespace Xamarin_JuniorProject.Controls
             }
         }
 
+        private static void MapCameraPositionPropertyChanged(BindableObject bindable, object oldValue, object newValue)
+        {
+            if (newValue != null)
+            {
+                CameraUpdate update = CameraUpdateFactory.NewCameraPosition((CameraPosition)newValue);
+                (bindable as CustomMap).InitialCameraUpdate = (update);
+                (bindable as CustomMap).MoveCamera(update);
+            }
+        }
 
         private static void ItemAdded(BindableObject bindable, object oldValue, object newValue)
         {

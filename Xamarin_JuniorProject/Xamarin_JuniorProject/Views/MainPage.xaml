@@ -6,12 +6,8 @@
              >
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Sign Up"  Command="{Binding ToRegistrationPage}"/>
-       
     </ContentPage.ToolbarItems>
-    <ContentPage.Content>
-        
-            
-        
+    
         <StackLayout VerticalOptions="Center" >
             <Label Text="Login" />
             <Entry  Text="{Binding Login}" Placeholder="Login" />
@@ -21,5 +17,4 @@
             <Label x:Name="messageLabel" />
         </StackLayout>
         
-    </ContentPage.Content>
 </ContentPage>
