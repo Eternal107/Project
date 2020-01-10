@@ -1,4 +1,5 @@
-﻿using Plugin.Media;
+﻿using Acr.UserDialogs;
+using Plugin.Media;
 using Plugin.Media.Abstractions;
 using Prism.Commands;
 using Prism.Navigation;
@@ -68,15 +69,25 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
 
             options.CustomPhotoSize = 6;
             options.PhotoSize=PhotoSize.Custom;
-
-            var file = await CrossMedia.Current.PickPhotoAsync(options);
-            if (file != null)
+            try
             {
-                CurrentPin.Icon = BitmapDescriptorFactory.FromStream(file.GetStream());
+                var file = await CrossMedia.Current.PickPhotoAsync(options);
 
-                var pinModel = await PinService.FindPinModelAsync(CurrentPin);
-                pinModel.ImagePath = file.Path;
-                await PinService.UpdatePinAsync(pinModel);
+                if (file != null)
+                {
+                    var pinModel = await PinService.FindPinModelAsync(CurrentPin);
+                    pinModel.ImagePath = file.Path;
+                    await PinService.UpdatePinAsync(pinModel);
+
+                    CurrentPin.Icon = BitmapDescriptorFactory.FromStream(File.OpenRead(file.Path));
+                    var p = new NavigationParameters();
+                    p.Add(Constants.NavigationParameters.LoadFromDataBase, true);
+                    await NavigationService.GoBackAsync(p, useModalNavigation: true);
+                }
+            }
+            catch
+            {
+                await UserDialogs.Instance.AlertAsync("Wrong image format");
             }
         }
 
@@ -86,7 +97,7 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
             var p = new NavigationParameters();
             p.Add(Constants.NavigationParameters.PinSettings, pinModel);
             await PopupNavigation.Instance.PopAsync();
-            await NavigationService.NavigateAsync("AddPinPage", p);
+            await NavigationService.NavigateAsync($"{nameof(AddPinPage)}", p);
         }
 
         #endregion

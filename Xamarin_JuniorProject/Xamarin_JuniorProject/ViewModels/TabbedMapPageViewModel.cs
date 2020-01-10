@@ -23,10 +23,9 @@ namespace Xamarin_JuniorProject.ViewModels
         #region -- Private helpers--
         private async void OnSignOut()
         {
-            Prism.PrismApplicationBase.Current.Properties.Clear();
-            await Prism.PrismApplicationBase.Current.SavePropertiesAsync() ;
+            Settings.SavedUserId = -1;
      
-            await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(MainPage)}");
+            await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(LoginPage)}");
         }
         #endregion
     }

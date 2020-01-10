@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    
+        <data name="DoYouWantToAddNewPin" xml:space="preserve">
+    <value>Do you want to add new pin?</value>
+  </data>
+    <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+    <data name="AddImage" xml:space="preserve">
+    <value>Add Image</value>
+  </data>
+    <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+    <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+    <data name="EnterYourEmail" xml:space="preserve">
+    <value>Enter your email</value>
+  </data>
+    <data name="InvalidEmail" xml:space="preserve">
+    <value>Invalid email</value>
+  </data>
+    <data name="PasswordsDoNotMatch" xml:space="preserve">
+    <value>Passwords do not match</value>
+  </data>
+    <data name="PasswordMustContainAtLeastFiveCharacters" xml:space="preserve">
+    <value>Password must contain at least five characters</value>
+  </data>
+    <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+    <data name="PasswordsMustBe10Digits" xml:space="preserve">
+    <value>Password must be 10 digit</value>
+  </data>
+    <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+    <data name="Registration" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+    <data name="Longitude" xml:space="preserve">
+    <value>Longitude</value>
+  </data>
+    <data name="Latitude" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+    <data name="Scanner" xml:space="preserve">
+    <value>Scanner</value>
+  </data>
+    <data name="EnterYourLogin" xml:space="preserve">
+    <value>Enter your login</value>
+  </data>
+ <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+    <data name="Label" xml:space="preserve">
+    <value>Label</value>
+  </data>
+    <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+    <data name="FavoritePin" xml:space="preserve">
+    <value>Favorite pin</value>
+  </data>
+    <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+    <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+    <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+    <data name="SignIn" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+    <data name="SignUp" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+     <data name="LogOut" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+    <data name="PinSearch" xml:space="preserve">
+    <value>Pin Search</value>
+  </data>
+    <data name="EnterYourPassword" xml:space="preserve">
+    <value>Enter your password</value>
+  </data>
+    <data name="FirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+    <data name="LastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+    <data name="PasswordConfirmation" xml:space="preserve">
+    <value>Password confirmation</value>
+  </data>
+    <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+    <data name="DeleteImage" xml:space="preserve">
+    <value>Delete Image</value>
+  </data>
+    <data name="ChangeImage" xml:space="preserve">
+    <value>Change Image</value>
+  </data>
+     <data name="SavedPins" xml:space="preserve">
+    <value>Saved Pins</value>
+  </data>
+    <data name="RegistrationPage" xml:space="preserve">
+    <value>RegistrationPage</value>
+  </data>
+     <data name="LoginPage" xml:space="preserve">
+    <value>Login Page</value>
+  </data>
+    <data name="Map" xml:space="preserve">
+    <value>Map</value>
+  </data>
+     <data name="PinSettings" xml:space="preserve">
+    <value>Pin Settings</value>
+  </data>
+     <data name="LoginIsAlreadyTaken" xml:space="preserve">
+    <value>Login Is Already Taken</value>
+  </data>
+     <data name="WrongLoginOrPassword" xml:space="preserve">
+    <value>Wrong Login or password</value>
+  </data>
+   <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+
+    
+</root>
+

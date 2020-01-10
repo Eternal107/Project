@@ -3,16 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:maps1="clr-namespace:Xamarin_JuniorProject.Controls"
              xmlns:modularity="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
              x:Class="Xamarin_JuniorProject.Views.MyMapPage"
              Title="{Binding Title}">
 
    <StackLayout>
-       <SearchBar Text="{Binding SearchText}" Placeholder="Search" >
+       <SearchBar Text="{Binding SearchText}" Placeholder="{x:Static Resources:AppResources.PinSearch}" >
            <SearchBar.Behaviors>
                <modularity:EventToCommandBehavior EventName="TextChanged" Command="{Binding TextChanged}"/>
            </SearchBar.Behaviors>
        </SearchBar>
-        <maps1:CustomMap x:Name="Map" PinSource="{Binding Pins}"
+        <maps1:CustomMap PinSource="{Binding Pins}"
                          MyMapLongClicked="{Binding LongClicked}"
                          MyPinClicked="{Binding PinClicked}" 
                          MapCameraPosition="{Binding MapCameraPosition}"

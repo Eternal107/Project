@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:Xamarin_JuniorProject.Controls"
              xmlns:modularity="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
              x:Class="Xamarin_JuniorProject.Views.SavedPinsPage"
              Title="{Binding Title}">
 
@@ -12,7 +13,7 @@
           
            
             <StackLayout>
-       <SearchBar Text="{Binding SearchText}" Placeholder="Search" >
+       <SearchBar Text="{Binding SearchText}" Placeholder="{x:Static Resources:AppResources.PinSearch}" >
            <SearchBar.Behaviors>
                <modularity:EventToCommandBehavior EventName="TextChanged" Command="{Binding TextChanged}"/>
            </SearchBar.Behaviors>
@@ -22,7 +23,7 @@
    </ScrollView>
 
                 </StackLayout>
-            <Button Text="Add" Command="{Binding AddPinPage}" BorderColor="#2b3c3c" BorderWidth="1" BackgroundColor="#4ba862" WidthRequest="60" HeightRequest="60"
+            <Button Text="{x:Static Resources:AppResources.Add}" Command="{Binding AddPinPage}" BorderColor="#2b3c3c" BorderWidth="1" BackgroundColor="#4ba862" WidthRequest="60" HeightRequest="60"
                          BorderRadius="30" TextColor="White" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,20,22"/>
         </Grid>
         

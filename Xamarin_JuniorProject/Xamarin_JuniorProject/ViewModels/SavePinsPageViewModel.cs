@@ -1,20 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Prism.Commands;
 using Prism.Navigation;
 using Xamarin.Forms;
-using Xamarin.Forms.GoogleMaps;
 using Xamarin_JuniorProject.Controls;
 using Xamarin_JuniorProject.Extentions;
-using Xamarin_JuniorProject.Models;
-using Xamarin_JuniorProject.Services.Authorization;
+using Xamarin_JuniorProject.Resources;
 using Xamarin_JuniorProject.Services.Pin;
-using Xamarin_JuniorProject.Services.Repository;
-using Xamarin_JuniorProject.Views;
+
 
 namespace Xamarin_JuniorProject.ViewModels
 {
@@ -26,9 +21,8 @@ namespace Xamarin_JuniorProject.ViewModels
                                      IPinService pinService)
                                      : base(navigationService)
         {
-            //TODO: to resources
             PinService = pinService;
-            Title = "Saved Pins";
+            Title = AppResources.SavedPins;
         }
 
         #region -- Public properties --
@@ -64,7 +58,6 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             var p = new NavigationParameters();
             p.Add(Constants.NavigationParameters.UpdatePin, (CustomPinView)o);
-            //TODO: constants
             MessagingCenter.Send(this, Constants.MessagingCenter.ToFirstPage);
             MessagingCenter.Send(this, Constants.MessagingCenter.AddPin, (CustomPinView)o);
         }

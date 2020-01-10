@@ -2,13 +2,14 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xamarin_JuniorProject.Views.TabbedMapPage"
-            xmlns:local="clr-namespace:Xamarin_JuniorProject.Views;assembly=Xamarin_JuniorProject"
-            xmlns:behaviors="clr-namespace:Xamarin_JuniorProject.Behaviors"
-            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-            android:TabbedPage.ToolbarPlacement="Bottom">
+             xmlns:local="clr-namespace:Xamarin_JuniorProject.Views;assembly=Xamarin_JuniorProject"
+             xmlns:behaviors="clr-namespace:Xamarin_JuniorProject.Behaviors"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
+             android:TabbedPage.ToolbarPlacement="Bottom">
 
     <TabbedPage.ToolbarItems>
-        <ToolbarItem Text="Sign out"  Command="{Binding SignOut}"/>
+        <ToolbarItem Text="{x:Static Resources:AppResources.LogOut}"  Command="{Binding SignOut}"/>
     </TabbedPage.ToolbarItems>
 
     <TabbedPage.Behaviors>

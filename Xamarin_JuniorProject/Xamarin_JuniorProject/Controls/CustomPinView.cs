@@ -38,7 +38,7 @@ namespace Xamarin_JuniorProject.Controls
         public Label PinLat = new Label() { HorizontalOptions = LayoutOptions.CenterAndExpand };
         public Label PinLng = new Label() { HorizontalOptions = LayoutOptions.CenterAndExpand };
         public Editor PinText = new Editor() { AutoSize = EditorAutoSizeOption.TextChanges, IsEnabled = false };
-        public Image PinImage = new Image() { WidthRequest = 100, HeightRequest = 100 };
+        public Image PinImage = new Image() { IsVisible = false };
         public bool IsFavorite;
         public int PinID;
         public int UserID;
@@ -69,9 +69,12 @@ namespace Xamarin_JuniorProject.Controls
 
         private static void ImagePathChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            var customPinView = bindable as CustomPinView; 
+            var customPinView = bindable as CustomPinView;
             if (newValue != null)
+            {
+                customPinView.PinImage.IsVisible = true;
                 customPinView.PinImage.Source = (string)newValue;
+            }
         }
 
     }

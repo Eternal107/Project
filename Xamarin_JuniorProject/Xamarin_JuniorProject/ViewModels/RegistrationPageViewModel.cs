@@ -1,14 +1,11 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-using System.Text.RegularExpressions;
+﻿using System.Runtime.CompilerServices;
 using Acr.UserDialogs;
 using Prism.Commands;
 using Prism.Navigation;
 using Xamarin_JuniorProject.Database;
-using Xamarin_JuniorProject.Services;
+using Xamarin_JuniorProject.Resources;
 using Xamarin_JuniorProject.Services.Authorization;
-using Xamarin_JuniorProject.Services.Pin;
-using Xamarin_JuniorProject.Services.Repository;
+
 
 namespace Xamarin_JuniorProject.ViewModels
 {
@@ -20,7 +17,7 @@ namespace Xamarin_JuniorProject.ViewModels
                                          IAuthorizationService authorizationService)
                                          : base(navigationService)
         {
-            Title = "Registration Page";
+            Title = AppResources.RegistrationPage;
             TabbedPage = new DelegateCommand(PushTabbedPage, CanRegister);
             AuthorizationService = authorizationService;
         }
@@ -31,8 +28,6 @@ namespace Xamarin_JuniorProject.ViewModels
         public DelegateCommand ToTabbedPage =>
           TabbedPage??(new DelegateCommand(PushTabbedPage, CanRegister));
 
-        //TODO: toghether with bindable property
-        //TODO: underscore
 
         private bool  _isValid;
         public bool IsValid
@@ -67,7 +62,12 @@ namespace Xamarin_JuniorProject.ViewModels
         #region -- Private helpers--
         private async void PushTabbedPage()
         {
-            var CurrentUser = new UserRegistrationModel() { Email = Email, Login = Login, Password = Password };
+            var CurrentUser = new UserRegistrationModel()
+            {
+                Email = Email,
+                Login = Login,
+                Password = Password
+            };
             var CheckRegistration = await AuthorizationService.RegisterAsync(CurrentUser);
             if (CheckRegistration)
             {
@@ -75,7 +75,7 @@ namespace Xamarin_JuniorProject.ViewModels
             }
             else
             {
-                await UserDialogs.Instance.AlertAsync("Login is already taken");
+                await UserDialogs.Instance.AlertAsync(AppResources.LoginIsAlreadyTaken);
             }
         }
 

@@ -1,5 +1,4 @@
-﻿
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -11,6 +10,7 @@ using Xamarin.Forms.GoogleMaps;
 using Xamarin_JuniorProject.Controls;
 using Xamarin_JuniorProject.Extentions;
 using Xamarin_JuniorProject.Models;
+using Xamarin_JuniorProject.Resources;
 using Xamarin_JuniorProject.Services.Pin;
 using Xamarin_JuniorProject.ViewModels.ModalViewModels;
 using Xamarin_JuniorProject.Views.ModalViews;
@@ -29,7 +29,7 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             Pins = new ObservableCollection<Pin>();
             MapCameraPosition = new CameraPosition(new Position(0, 0), 0);
-            Title = "Map";
+            Title = AppResources.Map;
             PinService = pinService;
             MessagingCenter.Subscribe<SavePinsPageViewModel, CustomPinView>(this, Constants.MessagingCenter.AddPin, ShowPin);
         }
@@ -121,8 +121,8 @@ namespace Xamarin_JuniorProject.ViewModels
             var pin = Pins.LastOrDefault(x => x.Position == e.Point);
             if (pin == null)
             {
-                //TODO: to resources
-                PromptResult result = await UserDialogs.Instance.PromptAsync(string.Format("{0}, {1}", lat, lng), "Add pin?", "Ok", "Cancel", "Name");
+    
+                PromptResult result = await UserDialogs.Instance.PromptAsync(string.Format("{0}, {1}", lat, lng), AppResources.DoYouWantToAddNewPin, AppResources.OK, AppResources.Cancel, AppResources.Name);
                 if (result.Ok)
                 {
                     Pins.Add(new Pin() { Position = new Position(lat, lng), Type = PinType.SavedPin, Label = result.Text, Tag = string.Empty });

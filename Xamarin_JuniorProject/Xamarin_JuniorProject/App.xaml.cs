@@ -33,19 +33,17 @@ namespace Xamarin_JuniorProject
         }
 
         private async Task SetupNavigation()
-        {
-            //TODO: keys to constants
-            //TODO: navigation nameof(page)
-            if (Current.Properties.ContainsKey("LoggedIn"))
+        { 
+            if (Settings.SavedUserId!=-1)
             {
-                CurrentUserId = (int)Current.Properties["LoggedIn"];
+                CurrentUserId = Settings.SavedUserId;
                 var p = new NavigationParameters();
-                p.Add("LoadFromDataBase", true);
-                await NavigationService.NavigateAsync("NavigationPage/TabbedMapPage", p);
+                p.Add(Constants.NavigationParameters.LoadFromDataBase, true);
+                await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(TabbedMapPage)}", p);
             }
             else
             {
-                await NavigationService.NavigateAsync("NavigationPage/MainPage");
+                await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(LoginPage)}");
             }
 
         }
@@ -61,7 +59,7 @@ namespace Xamarin_JuniorProject
             containerRegistry.RegisterForNavigation<NavigationPage>();
 
             containerRegistry.RegisterPopupNavigationService();
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
             containerRegistry.RegisterForNavigation<RegistrationPage, RegistrationPageViewModel>();
             containerRegistry.RegisterForNavigation<MyMapPage, MyMapPageViewModel>();
             containerRegistry.RegisterForNavigation<SavedPinsPage, SavePinsPageViewModel>();

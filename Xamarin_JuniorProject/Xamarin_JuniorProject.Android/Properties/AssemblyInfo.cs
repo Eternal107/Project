@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Android.App;
@@ -17,6 +18,7 @@ using Android.App;
 [assembly: ComVisible(false)]
 [assembly: UsesFeature("android.hardware.camera", Required = true)]
 [assembly: UsesFeature("android.hardware.camera.autofocus", Required = true)]
+[assembly: NeutralResourcesLanguage("en-US")]
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version

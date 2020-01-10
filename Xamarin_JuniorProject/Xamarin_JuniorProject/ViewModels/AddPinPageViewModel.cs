@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Windows.Input;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
-using Prism.Commands;
 using Prism.Navigation;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
-using Xamarin_JuniorProject.Controls;
 using Xamarin_JuniorProject.Extentions;
 using Xamarin_JuniorProject.Models;
-using Xamarin_JuniorProject.Services.Authorization;
+using Xamarin_JuniorProject.Resources;
 using Xamarin_JuniorProject.Services.Pin;
-using Xamarin_JuniorProject.Services.Repository;
+
 
 namespace Xamarin_JuniorProject.ViewModels
 {
@@ -28,7 +25,7 @@ namespace Xamarin_JuniorProject.ViewModels
                                    IPinService pinService)
                                    : base(navigationService)
         {
-            Title = "Pin Settings";
+            Title = AppResources.PinSettings;
             PinService = pinService;
         }
 
@@ -57,7 +54,7 @@ namespace Xamarin_JuniorProject.ViewModels
         }
 
 
-        private string _toolbarButtonText = "Add";
+        private string _toolbarButtonText = AppResources.Add;
         public string ToolbarButtonText
         {
             get { return _toolbarButtonText; }
@@ -162,7 +159,7 @@ namespace Xamarin_JuniorProject.ViewModels
             {
                 CurrentPin = pin;
                 UpdatePin = true;
-                ToolbarButtonText = "Update";
+                ToolbarButtonText = AppResources.Update;
                 MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longtitude), 5);
                 Pins.Add(CurrentPin.ToPin());
             }

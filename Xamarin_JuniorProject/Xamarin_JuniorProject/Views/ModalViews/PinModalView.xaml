@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:modal="clr-namespace:Xamarin_JuniorProject.Views.ModalViews"
+    xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
     x:Class="Xamarin_JuniorProject.Views.ModalViews.PinModalView">
 
     <ContentPage.Content>
@@ -14,12 +15,12 @@
 
             
        <StackLayout>
-            <Entry Text="{Binding CurrentPin.Label}" Placeholder="Label"  FontSize="20" IsEnabled="False" />
-                <Editor Text="{Binding CurrentPin.Tag}" Placeholder="Description"   FontSize="20" AutoSize="TextChanges" MaxLength="100" IsEnabled="False"/>
+            <Entry Text="{Binding CurrentPin.Label}" Placeholder="{x:Static Resources:AppResources.Label}"  FontSize="20" IsEnabled="False" />
+                <Editor Text="{Binding CurrentPin.Tag}" Placeholder="{x:Static Resources:AppResources.Description}"  FontSize="20" AutoSize="TextChanges" MaxLength="100" IsEnabled="False"/>
                 <StackLayout Orientation="Horizontal">
-                    <Button  Text="Settings" TextColor="White"  FontSize="20"  BackgroundColor="Blue" HorizontalOptions="CenterAndExpand" Command="{Binding AddPinPage}"/>
-                    <Button  Text="Delete" TextColor="White"  FontSize="20"  BackgroundColor="Red" HorizontalOptions="CenterAndExpand" Command="{Binding DeletePin}"/>
-                    <Button Text="Add image" TextColor="White"  FontSize="20"  BackgroundColor="Gray" HorizontalOptions="CenterAndExpand" Command="{Binding AddImage}"/>
+                    <Button  Text="{x:Static Resources:AppResources.Settings}" TextColor="White"  FontSize="20"  BackgroundColor="Blue" HorizontalOptions="CenterAndExpand" Command="{Binding AddPinPage}"/>
+                    <Button  Text="{x:Static Resources:AppResources.Delete}" TextColor="White"  FontSize="20"  BackgroundColor="Red" HorizontalOptions="CenterAndExpand" Command="{Binding DeletePin}"/>
+                    <Button Text="{x:Static Resources:AppResources.AddImage}" TextColor="White"  FontSize="20"  BackgroundColor="Gray" HorizontalOptions="CenterAndExpand" Command="{Binding AddImage}"/>
                 </StackLayout>
        </StackLayout>
   </Frame>  

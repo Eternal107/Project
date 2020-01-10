@@ -3,20 +3,21 @@ using Prism;
 using Prism.Navigation;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Xamarin_JuniorProject.Resources;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Views;
 
 namespace Xamarin_JuniorProject.ViewModels
 {
-    public class MainPageViewModel : ViewModelBase
+    public class LoginPageViewModel : ViewModelBase
     {
         private IAuthorizationService AuthorizationService { get; }
 
-        public MainPageViewModel(INavigationService navigationService,
+        public LoginPageViewModel(INavigationService navigationService,
                                  IAuthorizationService authorizationService)
                                  : base(navigationService)
         {
-            Title = "Login Page";
+            Title = AppResources.LoginPage;
             AuthorizationService = authorizationService;
         }
 
@@ -50,16 +51,14 @@ namespace Xamarin_JuniorProject.ViewModels
             var Loginization = await AuthorizationService.LoginAsync(Login, Password);
             if (Loginization)
             {
-                PrismApplicationBase.Current.Properties.Add("LoggedIn", App.CurrentUserId);
-
-                await PrismApplicationBase.Current.SavePropertiesAsync();
+                Settings.SavedUserId = App.CurrentUserId;
                 var p = new NavigationParameters();
                 p.Add(Constants.NavigationParameters.LoadFromDataBase, true);
                 await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(TabbedMapPage)}", p);
             }
             else
             {
-                await UserDialogs.Instance.AlertAsync("Wrong Login or password");
+                await UserDialogs.Instance.AlertAsync(AppResources.WrongLoginOrPassword);
             }
 
         }

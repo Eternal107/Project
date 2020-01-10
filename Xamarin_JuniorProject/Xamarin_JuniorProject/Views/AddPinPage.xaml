@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:Xamarin_JuniorProject.Controls"
+             xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
              x:Class="Xamarin_JuniorProject.Views.AddPinPage">
 
     <ContentPage.ToolbarItems>
@@ -10,15 +11,15 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Entry Text="{Binding CurrentPin.Name}" Placeholder="Label" FontSize="20"/>
-            <Entry Text="{Binding CurrentPin.Longtitude}" Placeholder="Longitude" IsEnabled="False" FontSize="20"/>
-            <Entry Text="{Binding CurrentPin.Latitude}" Placeholder="Latitude" IsEnabled="False" FontSize="20"/>
-            <Editor Text="{Binding CurrentPin.Description}" Placeholder="Description" AutoSize="TextChanges" MaxLength="100" FontSize="20"/>
+            <Entry Text="{Binding CurrentPin.Name}" Placeholder="{x:Static Resources:AppResources.Label}" FontSize="20"/>
+            <Entry Text="{Binding CurrentPin.Longtitude}" Placeholder="{x:Static Resources:AppResources.Longitude}" IsEnabled="False" FontSize="20"/>
+            <Entry Text="{Binding CurrentPin.Latitude}" Placeholder="{x:Static Resources:AppResources.Latitude}" IsEnabled="False" FontSize="20"/>
+            <Editor Text="{Binding CurrentPin.Description}" Placeholder="{x:Static Resources:AppResources.Description}" AutoSize="TextChanges" MaxLength="100" FontSize="20"/>
             <StackLayout Orientation="Horizontal" >
-                <Label Text="Favorite pin" FontSize="16"/>
+                <Label Text="{x:Static Resources:AppResources.FavoritePin}" FontSize="16"/>
                 <CheckBox IsChecked="{Binding CurrentPin.IsFavorite}"/>
-                <Button Text="Change image" TextColor="White"  FontSize="16"  BackgroundColor="Gray" HorizontalOptions="CenterAndExpand" Command="{Binding ChangeImage}"/>
-                <Button  Text="Delete image" TextColor="White"  FontSize="16"  BackgroundColor="Red" HorizontalOptions="CenterAndExpand" Command="{Binding DeleteImage}"/>
+                <Button Text="{x:Static Resources:AppResources.ChangeImage}" TextColor="White"  FontSize="16"  BackgroundColor="Gray" HorizontalOptions="CenterAndExpand" Command="{Binding ChangeImage}"/>
+                <Button  Text="{x:Static Resources:AppResources.DeleteImage}" TextColor="White"  FontSize="16"  BackgroundColor="Red" HorizontalOptions="CenterAndExpand" Command="{Binding DeleteImage}"/>
             </StackLayout>
             <controls:CustomMap PinSource="{Binding Pins}" MyMapClicked="{Binding MapClicked}" MapCameraPosition="{Binding MapCameraPosition}" />
         </StackLayout>
