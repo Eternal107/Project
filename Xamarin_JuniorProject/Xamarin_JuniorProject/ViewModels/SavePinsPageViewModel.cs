@@ -15,6 +15,7 @@ namespace Xamarin_JuniorProject.ViewModels
 {
     public class SavePinsPageViewModel : ViewModelBase
     {
+        //TODO: You know
         IPinService PinService { get; }
 
         public SavePinsPageViewModel(INavigationService navigationService,
@@ -27,6 +28,7 @@ namespace Xamarin_JuniorProject.ViewModels
 
         #region -- Public properties --
 
+        //TODO: Fix view model
         private ObservableCollection<CustomPinView> _pins = new ObservableCollection<CustomPinView>();
         public ObservableCollection<CustomPinView> Pins
         {
@@ -34,8 +36,8 @@ namespace Xamarin_JuniorProject.ViewModels
             set { SetProperty(ref _pins, value); }
         }
 
+        //TODO: come on
         public ICommand TextChanged => new Command(OnTextChanged);
-
         public ICommand AddPinPage => new Command(ToAddPinPage);
 
         private string _searchText;
@@ -56,6 +58,7 @@ namespace Xamarin_JuniorProject.ViewModels
 
         private void ToSetPin(object o, EventArgs e)
         {
+            //TODO: Do something with this
             var p = new NavigationParameters();
             p.Add(Constants.NavigationParameters.UpdatePin, (CustomPinView)o);
             MessagingCenter.Send(this, Constants.MessagingCenter.ToFirstPage);
@@ -70,6 +73,7 @@ namespace Xamarin_JuniorProject.ViewModels
             {
                 foreach (var pin in MapPins)
                 {
+                    //TODO: Fix view model
                     var PinView = pin.PinModelToPinView();
                     PinView.Tapped = ToSetPin;
                     Pins.Add(PinView);
@@ -91,6 +95,7 @@ namespace Xamarin_JuniorProject.ViewModels
                 {
                     foreach (var pin in MapPins)
                     {
+                        //TODO: Fix view model
                         var PinView = pin.PinModelToPinView();
                         PinView.Tapped = ToSetPin;
                         Pins.Add(PinView);

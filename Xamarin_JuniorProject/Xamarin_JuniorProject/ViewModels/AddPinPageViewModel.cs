@@ -31,6 +31,7 @@ namespace Xamarin_JuniorProject.ViewModels
 
         #region -- Public properties --
 
+        //TODO: add "Command" word to command names and methods names
         public ICommand AddOrSave => new Command(OnAddOrSaveClicked);
 
         public ICommand MapClicked => new Command<MapClickedEventArgs>(OnMapclicked);
@@ -39,6 +40,7 @@ namespace Xamarin_JuniorProject.ViewModels
 
         public ICommand ChangeImage => new Command(ChangeOrAddImage);
 
+        //TODO: Use pin view model
         private PinModel _currentPin;
         public PinModel CurrentPin
         {
@@ -60,7 +62,7 @@ namespace Xamarin_JuniorProject.ViewModels
             get { return _toolbarButtonText; }
             set { SetProperty(ref _toolbarButtonText, value); }
         }
-
+        //TODO: Use pin view model
         private ObservableCollection<Pin> _pins = new ObservableCollection<Pin>();
         public ObservableCollection<Pin> Pins
         {
@@ -102,7 +104,8 @@ namespace Xamarin_JuniorProject.ViewModels
 
         private async void OnAddOrSaveClicked()
         {
-            var pinModel =await PinService.FindPinModelAsync(Pins.LastOrDefault());
+            var pinModel = await PinService.FindPinModelAsync(Pins.LastOrDefault());
+
             if (pinModel != null)
             {             
                 CurrentPin.ID = pinModel.ID;
@@ -121,7 +124,7 @@ namespace Xamarin_JuniorProject.ViewModels
             }
         }
 
-        private void OnMapclicked( MapClickedEventArgs e)
+        private void OnMapclicked(MapClickedEventArgs e)
         {
             var lat = e.Point.Latitude;
             var lng = e.Point.Longitude;
@@ -138,6 +141,7 @@ namespace Xamarin_JuniorProject.ViewModels
             {
                 newPin.Icon= BitmapDescriptorFactory.FromStream(File.OpenRead(CurrentPin.ImagePath));
             }
+            //TODO: Fix after making current pin a view model
             int tempID = CurrentPin.ID;
             string tempPath=CurrentPin.ImagePath;
             CurrentPin = newPin.ToPinModel();
@@ -154,7 +158,6 @@ namespace Xamarin_JuniorProject.ViewModels
 
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-
             if (parameters.TryGetValue(Constants.NavigationParameters.PinSettings, out PinModel pin))
             {
                 CurrentPin = pin;
@@ -174,6 +177,7 @@ namespace Xamarin_JuniorProject.ViewModels
                     IsFavorite = true,
                     Description = string.Empty
                 };
+
                 MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longtitude), 5);
                 Pins.Add(CurrentPin.ToPin());
             }

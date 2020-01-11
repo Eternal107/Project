@@ -11,6 +11,7 @@ using Xamarin_JuniorProject.Controls;
 using Xamarin_JuniorProject.Extentions;
 using Xamarin_JuniorProject.Models;
 using Xamarin_JuniorProject.Resources;
+using Xamarin_JuniorProject.Services.CategoryService;
 using Xamarin_JuniorProject.Services.Pin;
 using Xamarin_JuniorProject.ViewModels.ModalViewModels;
 using Xamarin_JuniorProject.Views.ModalViews;
@@ -22,15 +23,19 @@ namespace Xamarin_JuniorProject.ViewModels
 
 
         private IPinService PinService { get; }
-
+        private ICategoryService CategoryService { get; }
         public MyMapPageViewModel(INavigationService navigationService,
-                                  IPinService pinService)
-           : base(navigationService)
+                                  IPinService pinService,
+                                  ICategoryService categoryService)
+                                  : base(navigationService)
         {
             Pins = new ObservableCollection<Pin>();
+            CategoryList = new ObservableCollection<string>();
             MapCameraPosition = new CameraPosition(new Position(0, 0), 0);
             Title = AppResources.Map;
             PinService = pinService;
+            CategoryService = categoryService;
+            
             MessagingCenter.Subscribe<SavePinsPageViewModel, CustomPinView>(this, Constants.MessagingCenter.AddPin, ShowPin);
         }
         #region -- Public properties --
@@ -40,11 +45,20 @@ namespace Xamarin_JuniorProject.ViewModels
 
         public ICommand TextChanged => new Command(OnTextChanged);
 
+        public ICommand CategoryTapped => new Command<object>(OnCategoryTapped);
+
         private ObservableCollection<Pin> _pins;
         public ObservableCollection<Pin> Pins
         {
             get { return _pins; }
             set { SetProperty(ref _pins, value); }
+        }
+
+        private ObservableCollection<string> _categoryList;
+        public ObservableCollection<string> CategoryList
+        {
+            get { return _categoryList; }
+            set { SetProperty(ref _categoryList, value); }
         }
 
         private CameraPosition _mapCameraPosition;
@@ -67,7 +81,7 @@ namespace Xamarin_JuniorProject.ViewModels
 
         private async void ShowPin(SavePinsPageViewModel sender,CustomPinView pin)
         {
-            await LoadFromDataBase();
+            
             var newPin = (await PinService.GetPinsAsync(App.CurrentUserId)).LastOrDefault(x => x.ID == pin.PinID);
             var Pin = newPin.ToPin();
             MapCameraPosition = new CameraPosition(Pin.Position, 5);
@@ -80,26 +94,12 @@ namespace Xamarin_JuniorProject.ViewModels
 
             MessagingCenter.Subscribe<PinModalView>(this, Constants.MessagingCenter.DeletePin, (seconSender) =>
             {
-                Pins.Remove(Pins.LastOrDefault());
+                Pins.Remove(Pin);
                 MessagingCenter.Unsubscribe<PinModalView>(this, Constants.MessagingCenter.DeletePin);
             });
         }
-        
-        private async void OnPinClicked(Pin pin)
-        {
-            var p = new NavigationParameters();
-            p.Add(Constants.NavigationParameters.SelectedPin, pin);
-            await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService, PinService, pin) });
-        }
 
-        private async void OnPinClicked(PinClickedEventArgs e)
-        {
-            var p = new NavigationParameters();
-            p.Add(Constants.NavigationParameters.SelectedPin, e.Pin);
-            await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService,PinService, e.Pin) });
-        }
-
-        private async Task LoadFromDataBase()
+        private async void OnCategoryTapped(object o)
         {
             Pins.Clear();
 
@@ -107,8 +107,47 @@ namespace Xamarin_JuniorProject.ViewModels
             if (PinModels != null)
             {
                 foreach (PinModel model in PinModels)
+                {
+                    Pins.Add(model.ToPin());
+                }
+            }
+        }
+
+
+        private async void OnPinClicked(Pin pin)
+        {
+            var p = new NavigationParameters();
+            p.Add(Constants.NavigationParameters.SelectedPin, pin);
+            //TODO:Make normal navigation
+            //TODO: Pin to nav parameters
+            await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService, PinService,CategoryService, pin) });
+        }
+
+        private async void OnPinClicked(PinClickedEventArgs e)
+        {
+            var p = new NavigationParameters();
+            p.Add(Constants.NavigationParameters.SelectedPin, e.Pin);
+            await PopupNavigation.Instance.PushAsync(new PinModalView() { BindingContext = new PinModalViewModel(NavigationService,PinService, CategoryService, e.Pin) });
+        }
+
+        private async Task LoadFromDataBase()
+        {
+            Pins.Clear();
+            CategoryList.Clear();
+            var PinModels = (await PinService.GetPinsAsync(App.CurrentUserId)).Where(x => x.IsFavorite == true);
+            var CategoryModels = await CategoryService.GetCategoriesAsync(App.CurrentUserId);
+            if (PinModels != null)
+            {
+                foreach (PinModel model in PinModels)
                 {                  
                     Pins.Add(model.ToPin());
+                }
+            }
+            if(CategoryModels!=null)
+            {
+                foreach (var model in CategoryModels)
+                {
+                    CategoryList.Add(model.Category);
                 }
             }
         }
@@ -174,6 +213,11 @@ namespace Xamarin_JuniorProject.ViewModels
             }
         }
 
+        public override  void OnNavigatedFrom(INavigationParameters parameters)
+        {
+            Pins.Clear();
+            CategoryList.Clear();
+        }
         #endregion
     }
 }

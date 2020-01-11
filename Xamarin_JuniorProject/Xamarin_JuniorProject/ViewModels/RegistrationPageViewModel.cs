@@ -28,7 +28,6 @@ namespace Xamarin_JuniorProject.ViewModels
         public DelegateCommand ToTabbedPage =>
           TabbedPage??(new DelegateCommand(PushTabbedPage, CanRegister));
 
-
         private bool  _isValid;
         public bool IsValid
         {
@@ -68,7 +67,9 @@ namespace Xamarin_JuniorProject.ViewModels
                 Login = Login,
                 Password = Password
             };
+
             var CheckRegistration = await AuthorizationService.RegisterAsync(CurrentUser);
+
             if (CheckRegistration)
             {
                 await NavigationService.GoBackAsync();
@@ -90,6 +91,8 @@ namespace Xamarin_JuniorProject.ViewModels
         protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             base.OnPropertyChanged(propertyName);
+
+            //TODO: SKOBOCHKI!!!!
             if (propertyName == nameof(IsValid))
                 ToTabbedPage.RaiseCanExecuteChanged();
         }

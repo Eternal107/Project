@@ -43,10 +43,12 @@ namespace Xamarin_JuniorProject.Controls
             switch (e.Action)
             {
                 case NotifyCollectionChangedAction.Add:
+                    //TODO: SKOBOSKKI!!!!!!!!!!
                     foreach (var pin in e.NewItems.Cast<CustomPinView>())
                         Children.Add(pin);
                     break;
                 case NotifyCollectionChangedAction.Remove:
+                    //TODO: SKOBOCHKKI!!!!!!!!!!
                     foreach (var pin in e.OldItems.Cast<CustomPinView>())
                         Children.Remove(pin);
                     break;

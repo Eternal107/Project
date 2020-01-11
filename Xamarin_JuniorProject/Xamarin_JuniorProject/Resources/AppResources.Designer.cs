@@ -304,5 +304,23 @@ namespace Xamarin_JuniorProject.Resources {
                 return ResourceManager.GetString("Update", resourceCulture);
             }
         }
+        
+        internal static string WrongImageFormat {
+            get {
+                return ResourceManager.GetString("WrongImageFormat", resourceCulture);
+            }
+        }
+        
+        internal static string Categories {
+            get {
+                return ResourceManager.GetString("Categories", resourceCulture);
+            }
+        }
+        
+        internal static string DoYouWantToAddNewCategory {
+            get {
+                return ResourceManager.GetString("DoYouWantToAddNewCategory", resourceCulture);
+            }
+        }
     }
 }

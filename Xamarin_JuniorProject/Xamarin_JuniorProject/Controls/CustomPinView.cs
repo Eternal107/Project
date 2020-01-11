@@ -5,6 +5,7 @@ using Xamarin_JuniorProject.Models;
 
 namespace Xamarin_JuniorProject.Controls
 {
+    //TODO: Make it normal please
     public class CustomPinView : StackLayout
     {
         private TapGestureRecognizer Tap = new TapGestureRecognizer();
@@ -38,7 +39,7 @@ namespace Xamarin_JuniorProject.Controls
         public Label PinLat = new Label() { HorizontalOptions = LayoutOptions.CenterAndExpand };
         public Label PinLng = new Label() { HorizontalOptions = LayoutOptions.CenterAndExpand };
         public Editor PinText = new Editor() { AutoSize = EditorAutoSizeOption.TextChanges, IsEnabled = false };
-        public Image PinImage = new Image() { IsVisible = false };
+        public Image PinImage = new Image() { IsVisible = false,WidthRequest=100,HeightRequest=100 };
         public bool IsFavorite;
         public int PinID;
         public int UserID;
@@ -70,6 +71,7 @@ namespace Xamarin_JuniorProject.Controls
         private static void ImagePathChanged(BindableObject bindable, object oldValue, object newValue)
         {
             var customPinView = bindable as CustomPinView;
+
             if (newValue != null)
             {
                 customPinView.PinImage.IsVisible = true;

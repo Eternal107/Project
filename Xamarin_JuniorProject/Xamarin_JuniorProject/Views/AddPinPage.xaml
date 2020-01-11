@@ -1,9 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:Xamarin_JuniorProject.Controls"
-             xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
-             x:Class="Xamarin_JuniorProject.Views.AddPinPage">
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:controls="clr-namespace:Xamarin_JuniorProject.Controls"
+                 xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
+                 xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 x:Class="Xamarin_JuniorProject.Views.AddPinPage">
+
+    <popup:PopupPage.Animation>
+        <animations:MoveAnimation EasingIn="Linear"
+                                  EasingOut="Linear"
+                                  PositionIn="Right"
+                                  PositionOut="Right"/>
+    </popup:PopupPage.Animation>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="{Binding ToolbarButtonText}"  Command="{Binding AddOrSave}"/>
@@ -24,4 +33,4 @@
             <controls:CustomMap PinSource="{Binding Pins}" MyMapClicked="{Binding MapClicked}" MapCameraPosition="{Binding MapCameraPosition}" />
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</popup:PopupPage>

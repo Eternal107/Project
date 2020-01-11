@@ -142,7 +142,14 @@
    <data name="Update" xml:space="preserve">
     <value>Update</value>
   </data>
-
-    
+     <data name="WrongImageFormat" xml:space="preserve">
+    <value>Wrong image format</value>
+  </data>
+    <data name="Categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+     <data name="DoYouWantToAddNewCategory" xml:space="preserve">
+    <value>Do you want to add new Category?</value>
+  </data>
 </root>
 

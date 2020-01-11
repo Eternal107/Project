@@ -11,6 +11,7 @@ namespace Xamarin_JuniorProject.ViewModels
 {
     public class LoginPageViewModel : ViewModelBase
     {
+        //TODO: make another name
         private IAuthorizationService AuthorizationService { get; }
 
         public LoginPageViewModel(INavigationService navigationService,
@@ -52,6 +53,7 @@ namespace Xamarin_JuniorProject.ViewModels
             if (Loginization)
             {
                 Settings.SavedUserId = App.CurrentUserId;
+                //TODO: rename to parameters or something else what is not one lettered
                 var p = new NavigationParameters();
                 p.Add(Constants.NavigationParameters.LoadFromDataBase, true);
                 await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(TabbedMapPage)}", p);
@@ -60,7 +62,6 @@ namespace Xamarin_JuniorProject.ViewModels
             {
                 await UserDialogs.Instance.AlertAsync(AppResources.WrongLoginOrPassword);
             }
-
         }
 
         private async void PushRegistrationPage()

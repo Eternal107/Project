@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:maps1="clr-namespace:Xamarin_JuniorProject.Controls"
              xmlns:modularity="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
-             xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
+             xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources" xmlns:layouts="clr-namespace:AiForms.Layouts;assembly=AiForms.Layouts"
              x:Class="Xamarin_JuniorProject.Views.MyMapPage"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             x:Name="MapPage">
 
    <StackLayout>
        <SearchBar Text="{Binding SearchText}" Placeholder="{x:Static Resources:AppResources.PinSearch}" >
@@ -13,6 +14,18 @@
                <modularity:EventToCommandBehavior EventName="TextChanged" Command="{Binding TextChanged}"/>
            </SearchBar.Behaviors>
        </SearchBar>
+
+       <ScrollView Orientation="Horizontal" >
+<layouts:RepeatableStack Orientation="Horizontal"  ItemsSource="{Binding CategoryList}"  Padding="3" >
+	<layouts:RepeatableStack.ItemTemplate>
+		<DataTemplate>
+			<maps1:CustomLabel Text="{Binding .}" Tapped="{ Binding BindingContext.CategoryTapped,Source={x:Reference MapPage}}"
+                               FontSize="18"  />
+		</DataTemplate>
+	</layouts:RepeatableStack.ItemTemplate>
+</layouts:RepeatableStack>
+</ScrollView>
+
         <maps1:CustomMap PinSource="{Binding Pins}"
                          MyMapLongClicked="{Binding LongClicked}"
                          MyPinClicked="{Binding PinClicked}" 

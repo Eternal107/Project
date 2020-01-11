@@ -10,8 +10,6 @@
 
     <ContentPage.Content>
         <Grid >
-          
-           
             <StackLayout>
        <SearchBar Text="{Binding SearchText}" Placeholder="{x:Static Resources:AppResources.PinSearch}" >
            <SearchBar.Behaviors>

@@ -10,6 +10,7 @@ namespace Xamarin_JuniorProject.Views.ModalViews
         public PinModalView()
         {
             InitializeComponent();
+            
         }
 
         protected override void OnDisappearing()

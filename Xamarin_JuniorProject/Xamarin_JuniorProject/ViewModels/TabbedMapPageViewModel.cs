@@ -11,22 +11,34 @@ using Xamarin_JuniorProject.Views;
 
 namespace Xamarin_JuniorProject.ViewModels
 {
-    public class TabbedMapPageViewModel:ViewModelBase
+    public class TabbedMapPageViewModel : ViewModelBase
     {
         public TabbedMapPageViewModel(INavigationService navigationService): base(navigationService)
         {
             
         }
+
         #region -- Public properties --
+
         public ICommand SignOut => new Command(OnSignOut);
+        public ICommand ToCategoryListPage => new Command(OnCategoryListPage);
+
         #endregion
+
         #region -- Private helpers--
+
         private async void OnSignOut()
         {
             Settings.SavedUserId = -1;
      
             await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(LoginPage)}");
         }
+
+        private async void OnCategoryListPage()
+        {
+            await NavigationService.NavigateAsync($"{nameof(CategoryListPage)}");
+        }
+
         #endregion
     }
 }

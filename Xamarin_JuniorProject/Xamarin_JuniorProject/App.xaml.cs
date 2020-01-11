@@ -13,6 +13,7 @@ using Prism.Plugin.Popups;
 using Prism.Navigation;
 using System.Threading.Tasks;
 using Prism.Unity;
+using Xamarin_JuniorProject.Services.CategoryService;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xamarin_JuniorProject
@@ -54,7 +55,7 @@ namespace Xamarin_JuniorProject
             containerRegistry.RegisterInstance<IRepositoryService>(Container.Resolve<RepositoryService>());
             containerRegistry.RegisterInstance<IAuthorizationService>(Container.Resolve<AuthorizationService>());
             containerRegistry.RegisterInstance<IPinService>(Container.Resolve<PinService>());
-
+            containerRegistry.RegisterInstance<ICategoryService>(Container.Resolve<CategoryService>());
             //navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
 
@@ -65,6 +66,7 @@ namespace Xamarin_JuniorProject
             containerRegistry.RegisterForNavigation<SavedPinsPage, SavePinsPageViewModel>();
             containerRegistry.RegisterForNavigation<AddPinPage, AddPinPageViewModel>();
             containerRegistry.RegisterForNavigation<PinModalView, PinModalViewModel>();
+            containerRegistry.RegisterForNavigation<CategoryListPage, CategoryListPageViewModel>();
             containerRegistry.RegisterForNavigation<TabbedMapPage>();
         }
     }

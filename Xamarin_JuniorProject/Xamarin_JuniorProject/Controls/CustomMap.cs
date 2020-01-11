@@ -18,14 +18,17 @@ namespace Xamarin_JuniorProject.Controls
     {
         public CustomMap()
         {
+            //TODO: Make methods
             MapLongClicked += (o, e) => { MyMapLongClicked?.Execute(e); };
             MapClicked += (o, e) => { MyMapClicked?.Execute(e); };
             PinClicked += (o, e) => { MyPinClicked?.Execute(e); };
             MyLocationButtonClicked += GetPermission;
 
+            //TODO: Make properties in xaml
             this.MapType = MapType.Street;
-            this.UiSettings.MyLocationButtonEnabled = true;
             this.MyLocationEnabled = false;
+
+            this.UiSettings.MyLocationButtonEnabled = true;
             this.UiSettings.CompassEnabled = true;
             this.UiSettings.RotateGesturesEnabled = true;
             this.UiSettings.IndoorLevelPickerEnabled = true;
@@ -44,13 +47,11 @@ namespace Xamarin_JuniorProject.Controls
             null,
             propertyChanged: ItemAdded);
 
-
         public ObservableCollection<Pin> PinSource
         {
             get => (ObservableCollection<Pin>)GetValue(PinSourceProperty);
             set => SetValue(PinSourceProperty, value);
         }
-
 
         public static readonly BindableProperty MapCameraPositionProperty = BindableProperty.Create(
             nameof(MapCameraPosition),
@@ -58,7 +59,6 @@ namespace Xamarin_JuniorProject.Controls
             typeof(CustomMap),
             null,
             propertyChanged: MapCameraPositionPropertyChanged);
-
 
         public CameraPosition MapCameraPosition
         {
@@ -72,14 +72,11 @@ namespace Xamarin_JuniorProject.Controls
             typeof(CustomMap),
             null);
 
-
-
         public ICommand MyMapLongClicked
         {
             get => (ICommand)GetValue(MyMapLongClickedProperty);
             set => SetValue(MyMapLongClickedProperty, value);
         }
-
 
         public static readonly BindableProperty MyMapClickedProperty = BindableProperty.Create(
            nameof(MyPinClicked),
@@ -87,20 +84,18 @@ namespace Xamarin_JuniorProject.Controls
            typeof(CustomMap),
            null);
 
-
         public ICommand MyMapClicked
         {
             get => (ICommand)GetValue(MyMapClickedProperty);
             set => SetValue(MyMapClickedProperty, value);
         }
 
-
+        //TODO: Make names to parameters
         public static readonly BindableProperty MyPinClickedProperty = BindableProperty.Create(
-            nameof(MyPinClicked),
+            propertyName: nameof(MyPinClicked),
             typeof(ICommand),
             typeof(CustomMap),
             null);
-
 
         public ICommand MyPinClicked
         {
@@ -108,6 +103,7 @@ namespace Xamarin_JuniorProject.Controls
             set => SetValue(MyPinClickedProperty, value);
         }
 
+        //TODO: Move to view model
         private async void GetPermission(object o, MyLocationButtonClickedEventArgs e)
         {
             if (!MyLocationEnabled)
@@ -115,6 +111,7 @@ namespace Xamarin_JuniorProject.Controls
                 try
                 {
                     var status = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Location);
+
                     if (status != PermissionStatus.Granted)
                     {
                         status = (await CrossPermissions.Current.RequestPermissionsAsync(Permission.Location))[Permission.Location];
@@ -167,10 +164,12 @@ namespace Xamarin_JuniorProject.Controls
             switch (e.Action)
             {
                 case NotifyCollectionChangedAction.Add:
+                    //TODO: SKOBOCHKI!!!!!!
                     foreach (var pin in e.NewItems.Cast<Pin>())
                         Pins.Add(pin);
                     break;
                 case NotifyCollectionChangedAction.Remove:
+                    //TODO: SKOBOCHKI!!!!!!
                     foreach (var pin in e.OldItems.Cast<Pin>())
                         Pins.Remove(pin);
                     break;

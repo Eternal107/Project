@@ -26,7 +26,7 @@
         </Entry>
 
          <Label Text="{x:Static Resources:AppResources.EnterYourEmail}"/>
-        <Entry x:Name = "emailEntry" ReturnType="Next" Placeholder ="{x:Static Resources:AppResources.Email}" Text="{Binding Email}">
+        <Entry x:Name = "emailEntry" Keyboard="Email" ReturnType="Next" Placeholder ="{x:Static Resources:AppResources.Email}" Text="{Binding Email}">
             <Entry.Behaviors>
                 <behaviors:ValidationBehavior Group="{x:Reference form}" 
                                               PropertyName="Text">
