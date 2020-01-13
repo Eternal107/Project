@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
-using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
@@ -8,6 +8,7 @@ using Prism.Navigation;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
 using Xamarin_JuniorProject.Extentions;
+using Xamarin_JuniorProject.Helpers;
 using Xamarin_JuniorProject.Models;
 using Xamarin_JuniorProject.Resources;
 using Xamarin_JuniorProject.Services.Pin;
@@ -17,32 +18,32 @@ namespace Xamarin_JuniorProject.ViewModels
 {
     public class AddPinPageViewModel : ViewModelBase
     {
-        private IPinService PinService { get; }
+        private IPinService _pinService { get; }
 
-        private bool UpdatePin = false;
+        private bool _updatePin = false;
 
         public AddPinPageViewModel(INavigationService navigationService,
                                    IPinService pinService)
                                    : base(navigationService)
         {
             Title = AppResources.PinSettings;
-            PinService = pinService;
+            _pinService = pinService;
         }
 
         #region -- Public properties --
 
-        //TODO: add "Command" word to command names and methods names
-        public ICommand AddOrSave => new Command(OnAddOrSaveClicked);
+        public ICommand AddOrSaveCommand => ExtendedCommand.Create(OnAddOrSaveClickedCommand);
 
-        public ICommand MapClicked => new Command<MapClickedEventArgs>(OnMapclicked);
+        public ICommand MapClickedCommand => new Command<Position>(OnMapClickedCommand);
 
-        public ICommand DeleteImage => new Command(DeletePinImage);
+        public ICommand DeleteImageCommand => new Command(OnDeletePinImageCommand);
 
-        public ICommand ChangeImage => new Command(ChangeOrAddImage);
+        public ICommand ChangeImageCommand => ExtendedCommand.Create(OnChangeOrAddImageCommand);
 
-        //TODO: Use pin view model
-        private PinModel _currentPin;
-        public PinModel CurrentPin
+        public ICommand CancelButtonCommand => ExtendedCommand.Create(OnCancelButtonCommand);
+
+        private PinViewModel _currentPin;
+        public PinViewModel CurrentPin
         {
             get { return _currentPin; }
             set { SetProperty(ref _currentPin, value); }
@@ -62,7 +63,6 @@ namespace Xamarin_JuniorProject.ViewModels
             get { return _toolbarButtonText; }
             set { SetProperty(ref _toolbarButtonText, value); }
         }
-        //TODO: Use pin view model
         private ObservableCollection<Pin> _pins = new ObservableCollection<Pin>();
         public ObservableCollection<Pin> Pins
         {
@@ -74,7 +74,12 @@ namespace Xamarin_JuniorProject.ViewModels
 
         #region -- Private helpers--
 
-        private  void DeletePinImage()
+        private Task OnCancelButtonCommand()
+        {
+            return NavigationService.GoBackAsync();
+        }
+
+        private void OnDeletePinImageCommand()
         {
             if(!string.IsNullOrEmpty(CurrentPin.ImagePath))
             {
@@ -85,7 +90,7 @@ namespace Xamarin_JuniorProject.ViewModels
             }
         }
 
-        private async void ChangeOrAddImage()
+        private async Task OnChangeOrAddImageCommand()
         {
             PickMediaOptions options = new PickMediaOptions();
 
@@ -102,54 +107,43 @@ namespace Xamarin_JuniorProject.ViewModels
             }
         }
 
-        private async void OnAddOrSaveClicked()
+        private async Task OnAddOrSaveClickedCommand()
         {
-            var pinModel = await PinService.FindPinModelAsync(Pins.LastOrDefault());
+            var pinModel = await _pinService.FindPinModelAsync(Pins.LastOrDefault());
+            CurrentPin.CategoryID = -1;
 
             if (pinModel != null)
             {             
                 CurrentPin.ID = pinModel.ID;
-                await PinService.UpdatePinAsync(CurrentPin);            
+                await _pinService.UpdatePinAsync(CurrentPin.ToModel());            
             }
             else
             {
-                if (UpdatePin)
+                if (_updatePin)
                 {
-                    await PinService.UpdatePinAsync(CurrentPin);
+                    await _pinService.UpdatePinAsync(CurrentPin.ToModel());
                 }
                 else
                 {
-                    await PinService.AddPinAsync(CurrentPin);
+                    await _pinService.AddPinAsync(CurrentPin.ToModel());
                 }
             }
+
+            await NavigationService.GoBackAsync();
         }
 
-        private void OnMapclicked(MapClickedEventArgs e)
+        private void OnMapClickedCommand(Position point)
         {
-            var lat = e.Point.Latitude;
-            var lng = e.Point.Longitude;
+            var lat = point.Latitude;
+            var lng = point.Longitude;
 
-            var newPin = new Pin()
-            {
-                Label = CurrentPin.Name,
-                Position = new Position(lat, lng),
-                Type = CurrentPin.IsFavorite ? PinType.SavedPin : PinType.Place,
-                Tag = CurrentPin.Description
-            };
+            CurrentPin.Latitude = lat;
+            CurrentPin.Longitude = lng;
 
-            if(!string.IsNullOrEmpty(CurrentPin.ImagePath))
-            {
-                newPin.Icon= BitmapDescriptorFactory.FromStream(File.OpenRead(CurrentPin.ImagePath));
-            }
-            //TODO: Fix after making current pin a view model
-            int tempID = CurrentPin.ID;
-            string tempPath=CurrentPin.ImagePath;
-            CurrentPin = newPin.ToPinModel();
-            CurrentPin.ID = tempID;
-            CurrentPin.ImagePath = tempPath;
+            var newPin = CurrentPin.ToPin();
+
             Pins.Clear();
             Pins.Add(newPin);
-
         }
 
         #endregion
@@ -160,33 +154,32 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             if (parameters.TryGetValue(Constants.NavigationParameters.PinSettings, out PinModel pin))
             {
-                CurrentPin = pin;
-                UpdatePin = true;
+                CurrentPin = pin.ToViewModel();
+                _updatePin = true;
                 ToolbarButtonText = AppResources.Update;
-                MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longtitude), 5);
+                MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longitude), 5);
                 Pins.Add(CurrentPin.ToPin());
             }
             else
             {
-                CurrentPin = new PinModel()
+                CurrentPin = new PinViewModel()
                 {
                     Name = string.Empty,
                     UserID = App.CurrentUserId,
                     Latitude = 1.3541171,
-                    Longtitude = 103.8659237,
+                    Longitude = 103.8659237,
                     IsFavorite = true,
                     Description = string.Empty
                 };
 
-                MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longtitude), 5);
+                MapCameraPosition = new CameraPosition(new Position(CurrentPin.Latitude, CurrentPin.Longitude), 5);
                 Pins.Add(CurrentPin.ToPin());
             }
-
         }
 
         public override  void OnNavigatedFrom(INavigationParameters parameters)
         {
-            if (UpdatePin)
+            if (_updatePin)
             {
                 parameters.Add(Constants.NavigationParameters.LoadFromDataBase, true);
             }

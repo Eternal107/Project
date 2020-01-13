@@ -17,7 +17,6 @@ namespace Xamarin_JuniorProject.Views.ModalViews
             };
             
             BackgroundColor = Color.Transparent;
-            
         }
     }
 }

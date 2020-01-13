@@ -4,6 +4,7 @@
                  xmlns:controls="clr-namespace:Xamarin_JuniorProject.Controls"
                  xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
                  xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 xmlns:Prism="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
                  xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
                  x:Class="Xamarin_JuniorProject.Views.AddPinPage">
 
@@ -14,23 +15,74 @@
                                   PositionOut="Right"/>
     </popup:PopupPage.Animation>
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="{Binding ToolbarButtonText}"  Command="{Binding AddOrSave}"/>
-    </ContentPage.ToolbarItems>
+    <popup:PopupPage.Resources>
 
-    <ContentPage.Content>
-        <StackLayout>
-            <Entry Text="{Binding CurrentPin.Name}" Placeholder="{x:Static Resources:AppResources.Label}" FontSize="20"/>
-            <Entry Text="{Binding CurrentPin.Longtitude}" Placeholder="{x:Static Resources:AppResources.Longitude}" IsEnabled="False" FontSize="20"/>
-            <Entry Text="{Binding CurrentPin.Latitude}" Placeholder="{x:Static Resources:AppResources.Latitude}" IsEnabled="False" FontSize="20"/>
-            <Editor Text="{Binding CurrentPin.Description}" Placeholder="{x:Static Resources:AppResources.Description}" AutoSize="TextChanges" MaxLength="100" FontSize="20"/>
-            <StackLayout Orientation="Horizontal" >
-                <Label Text="{x:Static Resources:AppResources.FavoritePin}" FontSize="16"/>
-                <CheckBox IsChecked="{Binding CurrentPin.IsFavorite}"/>
-                <Button Text="{x:Static Resources:AppResources.ChangeImage}" TextColor="White"  FontSize="16"  BackgroundColor="Gray" HorizontalOptions="CenterAndExpand" Command="{Binding ChangeImage}"/>
-                <Button  Text="{x:Static Resources:AppResources.DeleteImage}" TextColor="White"  FontSize="16"  BackgroundColor="Red" HorizontalOptions="CenterAndExpand" Command="{Binding DeleteImage}"/>
-            </StackLayout>
-            <controls:CustomMap PinSource="{Binding Pins}" MyMapClicked="{Binding MapClicked}" MapCameraPosition="{Binding MapCameraPosition}" />
+        <Style TargetType="Button" x:Key="baseButtonStyle">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+        </Style>
+
+    </popup:PopupPage.Resources>
+
+    <StackLayout BackgroundColor="White">
+        <StackLayout Orientation="Horizontal" >
+            
+            <Button Text="{x:Static Resources:AppResources.Cancel}"  
+                    Command="{Binding CancelButtonCommand}"
+                    FontSize="16"
+                    HorizontalOptions="StartAndExpand"/>
+            <Button Text="{Binding ToolbarButtonText}" 
+                    Command="{Binding AddOrSaveCommand}" 
+                    FontSize="16"
+                    HorizontalOptions="EndAndExpand"/>
         </StackLayout>
-    </ContentPage.Content>
+            
+            <Entry Text="{Binding CurrentPin.Name}"
+                   Placeholder="{x:Static Resources:AppResources.Label}"
+                   FontSize="20"/>
+
+            <Entry Text="{Binding CurrentPin.Longitude}"
+                   Placeholder="{x:Static Resources:AppResources.Longitude}"
+                   IsEnabled="False"
+                   FontSize="20"/>
+
+            <Entry Text="{Binding CurrentPin.Latitude}"
+                   Placeholder="{x:Static Resources:AppResources.Latitude}"
+                   IsEnabled="False"
+                   FontSize="20"/>
+
+            <Editor Text="{Binding CurrentPin.Description}"
+                    Placeholder="{x:Static Resources:AppResources.Description}"
+                    AutoSize="TextChanges"
+                    MaxLength="100"
+                    FontSize="20"/>
+
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="{x:Static Resources:AppResources.FavoritePin}"
+                       FontSize="16"/>
+
+                <CheckBox IsChecked="{Binding CurrentPin.IsFavorite}"/>
+
+                <Button Text="{x:Static Resources:AppResources.ChangeImage}"
+                        Style="{x:StaticResource baseButtonStyle}"
+                        BackgroundColor="Gray"
+                        Command="{Binding ChangeImageCommand}"/>
+
+                <Button  Text="{x:Static Resources:AppResources.DeleteImage}"
+                         Style="{x:StaticResource baseButtonStyle}"
+                         BackgroundColor="Red"
+                         Command="{Binding DeleteImageCommand}"/>
+
+            </StackLayout>
+        <controls:CustomMap PinSource="{Binding Pins}"
+                            MapCameraPosition="{Binding MapCameraPosition}" >
+            <controls:CustomMap.Behaviors>
+                <Prism:EventToCommandBehavior EventName="MapClicked"
+                                              Command="{Binding MapClickedCommand}"
+                                              EventArgsParameterPath="Point"/>
+            </controls:CustomMap.Behaviors>
+        </controls:CustomMap>
+    </StackLayout>
+
 </popup:PopupPage>

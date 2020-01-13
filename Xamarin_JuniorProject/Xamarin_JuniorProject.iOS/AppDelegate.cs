@@ -23,7 +23,6 @@ namespace Xamarin_JuniorProject.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-
             Rg.Plugins.Popup.Popup.Init();
             Xamarin.FormsGoogleMaps.Init(Constants.GOOGLE_MAPS_API_KEY);
             LoadApplication(new App());

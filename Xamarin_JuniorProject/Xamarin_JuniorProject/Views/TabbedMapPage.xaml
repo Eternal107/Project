@@ -9,8 +9,11 @@
              android:TabbedPage.ToolbarPlacement="Bottom">
 
     <TabbedPage.ToolbarItems>
-        <ToolbarItem Text="{x:Static Resources:AppResources.Categories}"  Command="{Binding ToCategoryListPage}"/>
-        <ToolbarItem Text="{x:Static Resources:AppResources.LogOut}"  Command="{Binding SignOut}"/>
+        <ToolbarItem Text="{x:Static Resources:AppResources.Categories}"
+                     Command="{Binding ToCategoryListPageCommand}"/>
+
+        <ToolbarItem Text="{x:Static Resources:AppResources.LogOut}"
+                     Command="{Binding SignOutCommand}"/>
     </TabbedPage.ToolbarItems>
 
     <TabbedPage.Behaviors>

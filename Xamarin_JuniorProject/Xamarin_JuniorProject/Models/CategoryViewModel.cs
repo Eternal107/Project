@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using Prism.Mvvm;
 
 namespace Xamarin_JuniorProject.Models

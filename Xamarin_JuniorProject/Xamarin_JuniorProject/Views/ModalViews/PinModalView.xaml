@@ -4,7 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:modal="clr-namespace:Xamarin_JuniorProject.Views.ModalViews"
     xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
-    xmlns:controls="clr-namespace:Xamarin_JuniorProject.Controls"
     xmlns:layouts="clr-namespace:AiForms.Layouts;assembly=AiForms.Layouts"
     x:Class="Xamarin_JuniorProject.Views.ModalViews.PinModalView"
     x:Name="name">
@@ -29,17 +28,22 @@
              <ScrollView Orientation="Horizontal" >
                <layouts:RepeatableStack Orientation="Horizontal"
                                         ItemsSource="{Binding CategoryList}"
-                                        Padding="3" >
+                                        Padding="5">
 	             <layouts:RepeatableStack.ItemTemplate>
 		           <DataTemplate>
                        <Label Text="{Binding Category}">
                            <Label.Triggers>
-                               <DataTrigger TargetType="Label" Binding="{Binding IsSelected}" Value="True">
-                                   <Setter Property="BackgroundColor" Value="LightBlue"/>
+                               <DataTrigger TargetType="Label"
+                                            Binding="{Binding IsSelected}"
+                                            Value="True">
+
+                                   <Setter Property="BackgroundColor"
+                                           Value="LightBlue"/>
                                </DataTrigger>
                            </Label.Triggers>
                            <Label.GestureRecognizers>
-                               <TapGestureRecognizer Command="{Binding TappedCommand}" CommandParameter="{Binding .}"/>
+                               <TapGestureRecognizer Command="{Binding TappedCommand}"
+                                                     CommandParameter="{Binding .}"/>
                            </Label.GestureRecognizers>
                        </Label>
 		           </DataTemplate>
@@ -47,13 +51,33 @@
                </layouts:RepeatableStack>
              </ScrollView>
 
-         <Entry Text="{Binding CurrentPin.Label}" Placeholder="{x:Static Resources:AppResources.Label}"  FontSize="20" IsEnabled="False" />
+         <Entry Text="{Binding CurrentPin.Label}"
+                Placeholder="{x:Static Resources:AppResources.Label}"
+                FontSize="20"
+                IsEnabled="False" />
 
-         <Editor Text="{Binding CurrentPin.Tag}" Placeholder="{x:Static Resources:AppResources.Description}"  FontSize="20" AutoSize="TextChanges" MaxLength="100" IsEnabled="False"/>
+         <Editor Text="{Binding CurrentPin.Tag}"
+                 Placeholder="{x:Static Resources:AppResources.Description}"
+                 FontSize="20"
+                 AutoSize="TextChanges"
+                 MaxLength="100"
+                 IsEnabled="False"/>
+
                 <StackLayout Orientation="Horizontal">
-                    <Button Text="{x:Static Resources:AppResources.Settings}" Style="{x:StaticResource baseButtonStyle}" BackgroundColor="Blue" Command="{Binding AddPinPage}"/>
-                    <Button Text="{x:Static Resources:AppResources.Delete}"   Style="{x:StaticResource baseButtonStyle}" BackgroundColor="Red"  Command="{Binding DeletePin}"/>
-                    <Button Text="{x:Static Resources:AppResources.AddImage}" Style="{x:StaticResource baseButtonStyle}" BackgroundColor="Gray" Command="{Binding AddImage}"/>
+                    <Button Text="{x:Static Resources:AppResources.Settings}"
+                            Style="{x:StaticResource baseButtonStyle}"
+                            BackgroundColor="Blue"
+                            Command="{Binding AddPinPageCommand}"/>
+
+                    <Button Text="{x:Static Resources:AppResources.Delete}"
+                            Style="{x:StaticResource baseButtonStyle}"
+                            BackgroundColor="Red"
+                            Command="{Binding DeletePinCommand}"/>
+
+                    <Button Text="{x:Static Resources:AppResources.AddImage}"
+                            Style="{x:StaticResource baseButtonStyle}"
+                            BackgroundColor="Gray"
+                            Command="{Binding AddImageCommand}"/>
              </StackLayout>
          </StackLayout>
 

@@ -4,13 +4,14 @@ using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
+using Plugin.LocalNotification;
 using Plugin.Permissions;
 using Prism;
 using Prism.Ioc;
 using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps.Clustering;
 using Xamarin.Forms.GoogleMaps.Clustering.Android;
-using Xamarin.Forms.Platform.Android.AppLinks;
+
 
 [assembly: ExportRenderer(typeof(ClusteredMap), typeof(ClusteredMapRenderer))]
 namespace Xamarin_JuniorProject.Droid
@@ -22,33 +23,23 @@ namespace Xamarin_JuniorProject.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-
-
             UserDialogs.Init(this);
             Rg.Plugins.Popup.Popup.Init(this, bundle);
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, bundle);
+            Xamarin.FormsGoogleMaps.Init(this, bundle);
 
-
-
-            Xamarin.FormsGoogleMaps.Init(this, bundle); 
             LoadApplication(new App(new AndroidInitializer()));
         }
-
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-
-
     }
-
-
 
     public class AndroidInitializer : IPlatformInitializer
     {

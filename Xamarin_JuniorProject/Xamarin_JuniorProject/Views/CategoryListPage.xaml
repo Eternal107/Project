@@ -3,18 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xamarin_JuniorProject.Views.CategoryListPage"
              xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
-             >
+             xmlns:layouts="clr-namespace:AiForms.Layouts;assembly=AiForms.Layouts">
 
     <ContentPage.ToolbarItems>
-         <ToolbarItem Text="{x:Static Resources:AppResources.Add}"  Command="{Binding Add}"/>
+         <ToolbarItem Text="{x:Static Resources:AppResources.Add}"
+                      Command="{Binding AddCommand}"/>
     </ContentPage.ToolbarItems>
 
-    <ListView ItemsSource="{Binding CategoryList}"  >
-        <ListView.ItemTemplate>
+    <layouts:RepeatableStack ItemsSource="{Binding CategoryList}"
+                             Padding="5">
+        <layouts:RepeatableStack.ItemTemplate>
             <DataTemplate>
-                     <TextCell Text="{Binding .}"/>
-            </DataTemplate>
-        </ListView.ItemTemplate>
+                <Label Text="{Binding Category}"
+                       FontSize="20" >
 
-    </ListView>
+                    <Label.GestureRecognizers>
+
+                        <TapGestureRecognizer Command="{Binding TappedCommand}"
+                                              CommandParameter="{Binding .}"/>
+
+                    </Label.GestureRecognizers>
+                </Label>
+            </DataTemplate>
+        </layouts:RepeatableStack.ItemTemplate>
+    </layouts:RepeatableStack>
 </ContentPage>

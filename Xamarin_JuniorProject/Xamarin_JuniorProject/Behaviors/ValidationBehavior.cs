@@ -1,12 +1,12 @@
 ﻿using Xamarin.Forms;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using Xamarin_JuniorProject.Behaviors.Validators;
 
 namespace Xamarin_JuniorProject.Behaviors
 {
     public class ValidationBehavior : Behavior<View>
     {
-
         View _view;
         public string PropertyName { get; set; }
         public ValidationGroupBehavior Group { get; set; }
@@ -15,7 +15,6 @@ namespace Xamarin_JuniorProject.Behaviors
 
         public bool Validate()
         {
-
             bool isValid = true;
             string errorMessage = "";
 
@@ -24,7 +23,6 @@ namespace Xamarin_JuniorProject.Behaviors
                 isValid = validator.Check(_view.GetType()
                                        .GetProperty(PropertyName)
                                        .GetValue(_view) as string);
-
 
                 if (!isValid)
                 {
@@ -51,7 +49,6 @@ namespace Xamarin_JuniorProject.Behaviors
             _view = bindable as View;
             _view.PropertyChanged += OnPropertyChanged;
 
-
             if (Group != null)
             {
                 Group.Add(this);
@@ -64,14 +61,11 @@ namespace Xamarin_JuniorProject.Behaviors
 
             _view.PropertyChanged -= OnPropertyChanged;
 
-
             if (Group != null)
             {
                 Group.Remove(this);
             }
         }
-
-
 
         void OnPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
@@ -84,7 +78,6 @@ namespace Xamarin_JuniorProject.Behaviors
                     Group.Update();
                 }
             }
-
         }
     }
 }

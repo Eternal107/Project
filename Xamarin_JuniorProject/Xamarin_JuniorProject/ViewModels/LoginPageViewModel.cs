@@ -1,8 +1,9 @@
 ﻿using Acr.UserDialogs;
-using Prism;
 using Prism.Navigation;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Xamarin_JuniorProject.Helpers;
 using Xamarin_JuniorProject.Resources;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Views;
@@ -11,23 +12,21 @@ namespace Xamarin_JuniorProject.ViewModels
 {
     public class LoginPageViewModel : ViewModelBase
     {
-        //TODO: make another name
-        private IAuthorizationService AuthorizationService { get; }
+        private IAuthorizationService _authorizationService { get; }
 
         public LoginPageViewModel(INavigationService navigationService,
-                                 IAuthorizationService authorizationService)
-                                 : base(navigationService)
+                                  IAuthorizationService authorizationService)
+                                  : base(navigationService)
         {
             Title = AppResources.LoginPage;
-            AuthorizationService = authorizationService;
+            _authorizationService = authorizationService;
         }
 
         #region -- Public properties --
 
+        public ICommand ToTabbedPageCommand => ExtendedCommand.Create(OnToTabbedPageCommand);
 
-        public ICommand ToTabbedPage => new Command(PushTabbedPage);
-
-        public ICommand ToRegistrationPage => new Command(PushRegistrationPage);
+        public ICommand ToRegistrationPageCommand => ExtendedCommand.Create(OnToRegistrationPageCommand);
 
         private string _login;
         public string Login
@@ -45,18 +44,17 @@ namespace Xamarin_JuniorProject.ViewModels
 
         #endregion
 
-        #region -- Private helpers -
+        #region -- Private helpers --
 
-        private async void PushTabbedPage()
+        private async Task OnToTabbedPageCommand()
         {
-            var Loginization = await AuthorizationService.LoginAsync(Login, Password);
+            var Loginization = await _authorizationService.LoginAsync(Login, Password);
             if (Loginization)
             {
                 Settings.SavedUserId = App.CurrentUserId;
-                //TODO: rename to parameters or something else what is not one lettered
-                var p = new NavigationParameters();
-                p.Add(Constants.NavigationParameters.LoadFromDataBase, true);
-                await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(TabbedMapPage)}", p);
+                var parameters = new NavigationParameters();
+                parameters.Add(Constants.NavigationParameters.LoadFromDataBase, true);
+                await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(TabbedMapPage)}", parameters);
             }
             else
             {
@@ -64,9 +62,9 @@ namespace Xamarin_JuniorProject.ViewModels
             }
         }
 
-        private async void PushRegistrationPage()
+        private Task OnToRegistrationPageCommand()
         {
-            await NavigationService.NavigateAsync($"{nameof(RegistrationPage)}");
+            return NavigationService.NavigateAsync($"{nameof(RegistrationPage)}");
         }
 
         #endregion

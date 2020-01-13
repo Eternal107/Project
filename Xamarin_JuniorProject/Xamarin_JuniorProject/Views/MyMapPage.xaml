@@ -1,35 +1,71 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:maps1="clr-namespace:Xamarin_JuniorProject.Controls"
-             xmlns:modularity="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
-             xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources" xmlns:layouts="clr-namespace:AiForms.Layouts;assembly=AiForms.Layouts"
+             xmlns:maps="clr-namespace:Xamarin_JuniorProject.Controls"
+             xmlns:Prism="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources" 
+             xmlns:layouts="clr-namespace:AiForms.Layouts;assembly=AiForms.Layouts"
              x:Class="Xamarin_JuniorProject.Views.MyMapPage"
              Title="{Binding Title}"
              x:Name="MapPage">
 
+    <ContentPage.Resources>
+
+        <Style TargetType="Button" x:Key="baseButtonStyle">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+
    <StackLayout>
+       
        <SearchBar Text="{Binding SearchText}" Placeholder="{x:Static Resources:AppResources.PinSearch}" >
            <SearchBar.Behaviors>
-               <modularity:EventToCommandBehavior EventName="TextChanged" Command="{Binding TextChanged}"/>
+                <Prism:EventToCommandBehavior EventName="TextChanged" Command="{Binding TextChangedCommand }"/>
            </SearchBar.Behaviors>
        </SearchBar>
+       
+        <ScrollView Orientation="Horizontal">
+            <layouts:RepeatableStack Orientation="Horizontal"  ItemsSource="{Binding CategoryList}"  Padding="5" >
+	           <layouts:RepeatableStack.ItemTemplate>
+		           <DataTemplate>
+                        <Label Text="{Binding Category}" FontSize="20">
+                            
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{Binding IsSelected}" Value="True">
+                                    <Setter Property="BackgroundColor" Value="LightBlue"/>
+                                </DataTrigger>
+                            </Label.Triggers>
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TappedCommand}"
+                                                      CommandParameter="{Binding .}"/>
+                            </Label.GestureRecognizers>
+                            
+                        </Label>
+                    </DataTemplate>
+	           </layouts:RepeatableStack.ItemTemplate>
+           </layouts:RepeatableStack>
+        </ScrollView>
 
-       <ScrollView Orientation="Horizontal" >
-<layouts:RepeatableStack Orientation="Horizontal"  ItemsSource="{Binding CategoryList}"  Padding="3" >
-	<layouts:RepeatableStack.ItemTemplate>
-		<DataTemplate>
-			<maps1:CustomLabel Text="{Binding .}" Tapped="{ Binding BindingContext.CategoryTapped,Source={x:Reference MapPage}}"
-                               FontSize="18"  />
-		</DataTemplate>
-	</layouts:RepeatableStack.ItemTemplate>
-</layouts:RepeatableStack>
-</ScrollView>
-
-        <maps1:CustomMap PinSource="{Binding Pins}"
-                         MyMapLongClicked="{Binding LongClicked}"
-                         MyPinClicked="{Binding PinClicked}" 
+        <maps:CustomMap PinSource="{Binding Pins}"
                          MapCameraPosition="{Binding MapCameraPosition}"
-                         VerticalOptions="FillAndExpand"/>
-  </StackLayout>
+                         MyLocationEnabled="{Binding IsLocationEnabled}"
+                         VerticalOptions="FillAndExpand">
+            <maps:CustomMap.Behaviors>
+
+                <Prism:EventToCommandBehavior EventName="MapLongClicked"
+                                              Command="{Binding LongClickedCommand}"
+                                              EventArgsParameterPath="Point"/>
+
+                <Prism:EventToCommandBehavior EventName="PinClicked"
+                                              Command="{Binding PinClickedCommand}"
+                                              EventArgsParameterPath="Pin"/>
+            </maps:CustomMap.Behaviors>
+        </maps:CustomMap>
+    </StackLayout>
+    
 </ContentPage>

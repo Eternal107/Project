@@ -1,22 +1,20 @@
 ﻿using Acr.UserDialogs;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
-using Prism.Commands;
 using Prism.Navigation;
 using Rg.Plugins.Popup.Services;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Xamarin.Forms;
 using Xamarin.Forms.GoogleMaps;
-using Xamarin_JuniorProject.Controls;
 using Xamarin_JuniorProject.Extentions;
+using Xamarin_JuniorProject.Helpers;
 using Xamarin_JuniorProject.Models;
 using Xamarin_JuniorProject.Resources;
 using Xamarin_JuniorProject.Services.CategoryService;
 using Xamarin_JuniorProject.Services.Pin;
-
+using Xamarin_JuniorProject.Views;
 
 namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
 {
@@ -27,26 +25,23 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
 
         public PinModalViewModel(INavigationService navigationService,
                                  IPinService pinService,
-                                 ICategoryService categoryService,
-                                 Pin pin)
+                                 ICategoryService categoryService)
                                  : base(navigationService)
         {
-            CurrentPin = pin;
             _pinService = pinService;
             _categoryService = categoryService;
-            LoadCategories();
+
         }
 
         #region -- Public properties --
 
-        //TODO: Rename
-        public ICommand AddPinPage => new Command(ToAddPinPage);
+        public ICommand AddPinPageCommand => ExtendedCommand.Create(OnAddPinPageCommand);
 
-        public ICommand DeletePin => new Command(ToDeletePin);
+        public ICommand DeletePinCommand => ExtendedCommand.Create(OnDeletePinCommand);
        
-        public ICommand AddImage => new Command(AddImageToPin);
+        public ICommand AddImageCommand => ExtendedCommand.Create(OnAddImageCommand);
 
-        public ICommand CategoryTappedCommand => new Command<CategoryViewModel>(OnCategoryTappedCommand);
+        public ICommand CategoryTappedCommand => ExtendedCommand.Create<CategoryViewModel>(OnCategoryTappedCommand);
 
         private ObservableCollection<CategoryViewModel> _categoryList;
         public ObservableCollection<CategoryViewModel> CategoryList
@@ -69,30 +64,29 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
             set { SetProperty(ref _imageSource, value); }
         }
 
-        private string _currentPinCategoryText=string.Empty;
-        public string CurrentPinCategoryText
+        private CategoryViewModel _currentPinCategory;
+        public CategoryViewModel CurrentPinCategory
         {
-            get { return _currentPinCategoryText; }
-            set { SetProperty(ref _currentPinCategoryText, value); }
+            get { return _currentPinCategory; }
+            set { SetProperty(ref _currentPinCategory, value); }
         }
 
         #endregion
 
         #region -- Private helpers--
 
-        private async void LoadCategories()
+        private async Task LoadCategoriesAsync()
         {
             var categoryList = await _categoryService.GetCategoriesAsync(App.CurrentUserId);
-            var pinModel = await _pinService.FindPinModelAsync(CurrentPin);
             var categories = new ObservableCollection<CategoryViewModel>();
-            if (pinModel != null)
-            {
-                if (pinModel.Categories != null)
-                {
-                    foreach(var str in pinModel.Categories)
-                    CurrentPinCategoryText += pinModel.Categories+" ";
-                }
-            }
+
+            categories.Add(new CategoryViewModel(
+                -1,
+                App.CurrentUserId,
+                "No Category",
+                CategoryTappedCommand
+                ));
+
             if (categoryList != null)
             {
                 foreach (var category in categoryList)
@@ -104,31 +98,48 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
             CategoryList = categories;
         }
 
-        private async void OnCategoryTappedCommand(CategoryViewModel viewModel)
+        private async Task LoadPincategoryAsync()
         {
-            viewModel.IsSelected = !viewModel.IsSelected;
             var pinModel = await _pinService.FindPinModelAsync(CurrentPin);
-
-            foreach (var str in CurrentPinCategoryText.Split())
+            
+            foreach (var category in CategoryList)
             {
-                pinModel.Categories.Add(new CategoryModel() { Category = str, UserID = App.CurrentUserId });
+                if (category.ID == pinModel.CategoryID)
+                {
+                    category.IsSelected = true;
+                    CurrentPinCategory = category;
+                    break;
+                }
             }
-
-            await _pinService.UpdatePinAsync(pinModel);
         }
 
-        private async void ToDeletePin()
+        private async Task OnCategoryTappedCommand(CategoryViewModel viewModel)
+        {
+            if (CurrentPinCategory != viewModel)
+            {
+                viewModel.IsSelected = true;
+                var pinModel = await _pinService.FindPinModelAsync(CurrentPin);
+
+                var categoryIndex = CategoryList.IndexOf(CurrentPinCategory);
+                CategoryList[categoryIndex].IsSelected = false;
+                CurrentPinCategory = viewModel;
+                pinModel.CategoryID = viewModel.ID;
+                await _pinService.UpdatePinAsync(pinModel);
+            }
+        }
+
+        private async Task OnDeletePinCommand()
         {
             var p = new NavigationParameters();
             p.Add(Constants.NavigationParameters.DeletePin, CurrentPin);
+
             var pinModel = await _pinService.FindPinModelAsync(CurrentPin);
             await _pinService.DeletePinAsync(pinModel);
 
             await NavigationService.GoBackAsync(p, useModalNavigation: true);
-
         }
 
-        public async void AddImageToPin()
+        public async Task OnAddImageCommand()
         {
             PickMediaOptions options = new PickMediaOptions();
 
@@ -156,7 +167,7 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
             }
         }
 
-        private async void ToAddPinPage()
+        private async Task OnAddPinPageCommand()
         {
             var pinModel = await _pinService.FindPinModelAsync(CurrentPin);
             var p = new NavigationParameters();
@@ -169,7 +180,18 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
 
         #region --Overrides--
 
-       
+        public override async void OnNavigatedTo(INavigationParameters parameters)
+        {
+            await LoadCategoriesAsync();
+         
+            if (parameters.TryGetValue(Constants.NavigationParameters.SelectedPin, out Pin pin))
+            {
+                CurrentPin = pin;
+                await LoadPincategoryAsync();
+            }
+        }
+
+
 
         #endregion
     }

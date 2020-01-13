@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Prism.Navigation;
 using Xamarin.Forms;
 using Xamarin_JuniorProject.Database;
+using Xamarin_JuniorProject.Helpers;
 using Xamarin_JuniorProject.Services;
 using Xamarin_JuniorProject.Services.Authorization;
 using Xamarin_JuniorProject.Services.Pin;
@@ -20,23 +22,23 @@ namespace Xamarin_JuniorProject.ViewModels
 
         #region -- Public properties --
 
-        public ICommand SignOut => new Command(OnSignOut);
-        public ICommand ToCategoryListPage => new Command(OnCategoryListPage);
+        public ICommand SignOutCommand => ExtendedCommand.Create(OnSignOutCommand);
+        public ICommand ToCategoryListPageCommand => ExtendedCommand.Create(OnToCategoryListPageCommand);
 
         #endregion
 
         #region -- Private helpers--
 
-        private async void OnSignOut()
+        private Task OnSignOutCommand()
         {
             Settings.SavedUserId = -1;
      
-            await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(LoginPage)}");
+            return NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(LoginPage)}");
         }
 
-        private async void OnCategoryListPage()
+        private Task OnToCategoryListPageCommand()
         {
-            await NavigationService.NavigateAsync($"{nameof(CategoryListPage)}");
+            return NavigationService.NavigateAsync($"{nameof(CategoryListPage)}");
         }
 
         #endregion

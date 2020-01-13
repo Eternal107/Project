@@ -14,6 +14,7 @@ using Prism.Navigation;
 using System.Threading.Tasks;
 using Prism.Unity;
 using Xamarin_JuniorProject.Services.CategoryService;
+using Plugin.LocalNotification;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xamarin_JuniorProject
@@ -29,7 +30,6 @@ namespace Xamarin_JuniorProject
         protected override async void OnInitialized()
         {
             InitializeComponent();
-
             await SetupNavigation();
         }
 
@@ -46,7 +46,6 @@ namespace Xamarin_JuniorProject
             {
                 await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(LoginPage)}");
             }
-
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -56,9 +55,9 @@ namespace Xamarin_JuniorProject
             containerRegistry.RegisterInstance<IAuthorizationService>(Container.Resolve<AuthorizationService>());
             containerRegistry.RegisterInstance<IPinService>(Container.Resolve<PinService>());
             containerRegistry.RegisterInstance<ICategoryService>(Container.Resolve<CategoryService>());
+
             //navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
-
             containerRegistry.RegisterPopupNavigationService();
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
             containerRegistry.RegisterForNavigation<RegistrationPage, RegistrationPageViewModel>();

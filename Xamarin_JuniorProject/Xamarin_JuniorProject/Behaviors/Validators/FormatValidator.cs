@@ -1,7 +1,6 @@
-﻿using System;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
-namespace Xamarin_JuniorProject.Behaviors
+namespace Xamarin_JuniorProject.Behaviors.Validators
 {
     public class FormatValidator : IValidator
     {

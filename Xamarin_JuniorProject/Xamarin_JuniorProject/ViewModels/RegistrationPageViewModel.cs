@@ -6,27 +6,25 @@ using Xamarin_JuniorProject.Database;
 using Xamarin_JuniorProject.Resources;
 using Xamarin_JuniorProject.Services.Authorization;
 
-
 namespace Xamarin_JuniorProject.ViewModels
 {
     public class RegistrationPageViewModel : ViewModelBase
     {
-        IAuthorizationService AuthorizationService { get; }
+        IAuthorizationService _authorizationService { get; }
 
         public RegistrationPageViewModel(INavigationService navigationService,
                                          IAuthorizationService authorizationService)
                                          : base(navigationService)
         {
             Title = AppResources.RegistrationPage;
-            TabbedPage = new DelegateCommand(PushTabbedPage, CanRegister);
-            AuthorizationService = authorizationService;
+            _authorizationService = authorizationService;
         }
 
         #region -- Public properties --
 
-        private DelegateCommand TabbedPage;
-        public DelegateCommand ToTabbedPage =>
-          TabbedPage??(new DelegateCommand(PushTabbedPage, CanRegister));
+        private DelegateCommand _toTabbedPageCommand;
+        public DelegateCommand ToTabbedPageCommand =>
+          _toTabbedPageCommand ?? (_toTabbedPageCommand=new DelegateCommand(OnToTabbedPageCommand, CanRegister));
 
         private bool  _isValid;
         public bool IsValid
@@ -59,7 +57,7 @@ namespace Xamarin_JuniorProject.ViewModels
         #endregion
 
         #region -- Private helpers--
-        private async void PushTabbedPage()
+        private async void OnToTabbedPageCommand()
         {
             var CurrentUser = new UserRegistrationModel()
             {
@@ -68,7 +66,7 @@ namespace Xamarin_JuniorProject.ViewModels
                 Password = Password
             };
 
-            var CheckRegistration = await AuthorizationService.RegisterAsync(CurrentUser);
+            var CheckRegistration = await _authorizationService.RegisterAsync(CurrentUser);
 
             if (CheckRegistration)
             {
@@ -92,9 +90,10 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             base.OnPropertyChanged(propertyName);
 
-            //TODO: SKOBOCHKI!!!!
             if (propertyName == nameof(IsValid))
-                ToTabbedPage.RaiseCanExecuteChanged();
+            {
+                _toTabbedPageCommand.RaiseCanExecuteChanged();
+            }
         }
 
         #endregion

@@ -42,7 +42,6 @@ namespace Xamarin_JuniorProject.Behaviors
             foreach (ValidationBehavior validationItem in _validationBehaviors)
             {
                 isValid = isValid && validationItem.Validate();
-               
             }
 
             IsValid = isValid;
@@ -63,8 +62,6 @@ namespace Xamarin_JuniorProject.Behaviors
                 Label errorLabel = sibling as Label;
                 errorLabel.Text = message;
                 errorLabel.IsVisible = true;
-
-
             }
             else
             {
@@ -76,14 +73,12 @@ namespace Xamarin_JuniorProject.Behaviors
                     TextColor = Color.Red
                 });
             }
-           
         }
 
         public void RemoveError(View view)
         {
             StackLayout layout = view.Parent as StackLayout;
             int viewIndex = layout.Children.IndexOf(view);
-
 
             View sibling = layout.Children[viewIndex + 1];
             string siblingStyleId = view.Id.ToString();
@@ -92,8 +87,6 @@ namespace Xamarin_JuniorProject.Behaviors
             {
                 sibling.IsVisible = false;
             }
-
         }
-
     }
 }

@@ -2,27 +2,100 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:Xamarin_JuniorProject.Controls"
-             xmlns:modularity="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             xmlns:Prism="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
              xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
+             xmlns:layouts="clr-namespace:AiForms.Layouts;assembly=AiForms.Layouts"
              x:Class="Xamarin_JuniorProject.Views.SavedPinsPage"
              Title="{Binding Title}">
 
+  
+    <ContentPage.Resources>
+
+        <Style TargetType="Label" x:Key="baseLabelStyle">
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+        </Style>
+
+    </ContentPage.Resources>
 
     <ContentPage.Content>
         <Grid >
             <StackLayout>
-       <SearchBar Text="{Binding SearchText}" Placeholder="{x:Static Resources:AppResources.PinSearch}" >
-           <SearchBar.Behaviors>
-               <modularity:EventToCommandBehavior EventName="TextChanged" Command="{Binding TextChanged}"/>
-           </SearchBar.Behaviors>
-           </SearchBar>
-   <ScrollView >      
-        <controls:CustomStackLayout  ItemsSource="{Binding Pins}" />
-   </ScrollView>
+                 <SearchBar Text="{Binding SearchText}" Placeholder="{x:Static Resources:AppResources.PinSearch}" >
+                     <SearchBar.Behaviors>
+                        <Prism:EventToCommandBehavior EventName="TextChanged" Command="{Binding TextChangedCommand}"/>
+                     </SearchBar.Behaviors>
+                 </SearchBar>
+
+                <ScrollView Orientation="Horizontal">
+                    <layouts:RepeatableStack Orientation="Horizontal"  ItemsSource="{Binding CategoryList}"  Padding="5" >
+                        <layouts:RepeatableStack.ItemTemplate>
+                            <DataTemplate>
+                                <Label Text="{Binding Category}" FontSize="20">
+
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label" Binding="{Binding IsSelected}" Value="True">
+                                            <Setter Property="BackgroundColor" Value="LightBlue"/>
+                                        </DataTrigger>
+                                    </Label.Triggers>
+
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding TappedCommand}" CommandParameter="{Binding .}"/>
+                                    </Label.GestureRecognizers>
+
+                                </Label>
+                            </DataTemplate>
+                        </layouts:RepeatableStack.ItemTemplate>
+                    </layouts:RepeatableStack>
+                </ScrollView>
+
+                <ScrollView >
+                    <layouts:RepeatableStack ItemsSource="{Binding Pins}">
+                        <layouts:RepeatableStack.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                    <Label Text="{Binding Name}"
+                                           Style="{x:StaticResource baseLabelStyle}"/>
+
+                                    <Label Text="{Binding Latitude}"
+                                           Style="{x:StaticResource baseLabelStyle}"/>
+
+                                    <Label Text="{Binding Longitude}"
+                                           Style="{x:StaticResource baseLabelStyle}"/>
+
+                                    <Editor Text="{Binding Description}"
+                                            AutoSize="TextChanges"
+                                            IsEnabled="False"/>
+
+                                    <Image  Source="{Binding ImagePath}"
+                                            IsVisible="{Binding IsImageVisible}"
+                                            WidthRequest="100"
+                                            HeightRequest="100"/>
+
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding TappedCommand}"
+                                                              CommandParameter="{Binding .}"/>
+                                    </StackLayout.GestureRecognizers>
+                                    
+                                </StackLayout>
+                            </DataTemplate>
+                        </layouts:RepeatableStack.ItemTemplate>
+                    </layouts:RepeatableStack>
+                </ScrollView>
 
                 </StackLayout>
-            <Button Text="{x:Static Resources:AppResources.Add}" Command="{Binding AddPinPage}" BorderColor="#2b3c3c" BorderWidth="1" BackgroundColor="#4ba862" WidthRequest="60" HeightRequest="60"
-                         BorderRadius="30" TextColor="White" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,20,22"/>
+
+            <Button Text="{x:Static Resources:AppResources.Add}"
+                    Command="{Binding AddPinPageCommand}"
+                    BorderColor="White"
+                    BorderWidth="1"
+                    BackgroundColor="Green"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    BorderRadius="30"
+                    TextColor="White"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    Margin="0,0,20,22"/>
         </Grid>
         
     </ContentPage.Content>

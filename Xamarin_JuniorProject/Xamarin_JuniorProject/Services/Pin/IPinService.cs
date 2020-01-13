@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Xamarin.Forms.GoogleMaps;
 using Xamarin_JuniorProject.Models;
 
 namespace Xamarin_JuniorProject.Services.Pin
@@ -14,5 +12,4 @@ namespace Xamarin_JuniorProject.Services.Pin
         Task<PinModel> FindPinModelAsync(Xamarin.Forms.GoogleMaps.Pin pin);
         Task<List<PinModel>> GetPinsAsync(int userId);
     }
-
 }

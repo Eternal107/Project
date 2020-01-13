@@ -1,5 +1,4 @@
-﻿using System;
-namespace Xamarin_JuniorProject.Behaviors
+﻿namespace Xamarin_JuniorProject.Behaviors.Validators
 {
     public interface IValidator
     {

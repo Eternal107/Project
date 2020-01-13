@@ -2,19 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xamarin_JuniorProject.Views.LoginPage"
-             Title="{Binding Title}"
-             >
+             xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources" 
+             Title="{Binding Title}">
+    
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Sign Up"  Command="{Binding ToRegistrationPage}"/>
+        <ToolbarItem Text="Sign Up"  
+                     Command="{Binding ToRegistrationPageCommand}"/>
     </ContentPage.ToolbarItems>
     
-        <StackLayout VerticalOptions="Center" >
-            <Label Text="Login" />
-            <Entry  Text="{Binding Login}" Placeholder="Login" />
-            <Label Text="Password" />
-            <Entry Text="{Binding Password}" IsPassword="true" Placeholder="Password" />
-            <Button Text="Login" Command="{Binding ToTabbedPage}" />
-            <Label x:Name="messageLabel" />
-        </StackLayout>
+    <StackLayout VerticalOptions="Center" >
+        <Label Text="{x:Static Resources:AppResources.Login}" />
+            
+        <Entry  Text="{Binding Login}" 
+                Placeholder="{x:Static Resources:AppResources.Login}" />
+            
+        <Label Text="{x:Static Resources:AppResources.Password}" />
+            
+        <Entry Text="{Binding Password}" IsPassword="true" 
+               Placeholder="{x:Static Resources:AppResources.Password}" />
+
+        <Button Text="{x:Static Resources:AppResources.SignIn}" 
+                Command="{Binding ToTabbedPageCommand}" />
+    </StackLayout>
         
 </ContentPage>

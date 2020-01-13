@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xamarin_JuniorProject.Models;
 using Xamarin_JuniorProject.Services.Repository;
 
 namespace Xamarin_JuniorProject.Services.Pin
 {
-
     public class PinService : IPinService
     {
         private IRepositoryService _repositoryService;
@@ -49,5 +47,4 @@ namespace Xamarin_JuniorProject.Services.Pin
             return allPins.FindAll(x => x.UserID == userId);
         }
     }
-
 }

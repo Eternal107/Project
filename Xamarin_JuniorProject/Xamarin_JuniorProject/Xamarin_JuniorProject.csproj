@@ -16,12 +16,10 @@
     <PackageReference Include="Plugin.Permissions" Version="3.0.0.12" />
     <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
     <PackageReference Include="AiForms.Layouts" Version="1.1.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Resources\" />
     <Folder Include="Services\" />
     <Folder Include="Views\" />
@@ -30,10 +28,11 @@
     <Folder Include="Services\Authorization\" />
     <Folder Include="Behaviors\" />
     <Folder Include="Services\Pin\" />
-    <Folder Include="Extentions\" />
     <Folder Include="Views\ModalViews\" />
     <Folder Include="ViewModels\ModalViewModels\" />
     <Folder Include="Services\CategoryService\" />
+    <Folder Include="Behaviors\Validators\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -59,6 +58,8 @@
     </Compile>
     <Compile Update="Resources\AppResources.Designer.cs">
       <DependentUpon>AppResources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
   </ItemGroup>
 </Project>

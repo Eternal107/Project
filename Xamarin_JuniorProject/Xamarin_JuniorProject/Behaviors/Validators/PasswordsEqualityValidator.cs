@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
-namespace Xamarin_JuniorProject.Behaviors
+namespace Xamarin_JuniorProject.Behaviors.Validators
 {
     public class PasswordsEqualityValidator : IValidator
     {

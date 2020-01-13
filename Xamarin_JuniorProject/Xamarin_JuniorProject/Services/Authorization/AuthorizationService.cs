@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Xamarin_JuniorProject.Database;
 using Xamarin_JuniorProject.Services.Repository;
 

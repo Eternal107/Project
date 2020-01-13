@@ -18,29 +18,30 @@ namespace Xamarin_JuniorProject.ViewModels
 
 
         #region -- Public properties --
+
         private string _title;
         public string Title
         {
             get { return _title; }
             set { SetProperty(ref _title, value); }
         }
+
         #endregion
 
         #region --Overrides--
+
         public virtual void OnNavigatedFrom(INavigationParameters parameters)
         {
-
         }
 
         public virtual void OnNavigatedTo(INavigationParameters parameters)
         {
-
         }
 
         public void OnNavigatingTo(INavigationParameters parameters)
         {
-
         }
+
         #endregion
     }
 }
