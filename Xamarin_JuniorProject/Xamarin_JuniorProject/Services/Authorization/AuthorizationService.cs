@@ -1,24 +1,30 @@
-﻿using System.Threading.Tasks;
-using Xamarin_JuniorProject.Database;
+﻿using System;
+using System.Threading.Tasks;
+using Xamarin_JuniorProject.Models;
 using Xamarin_JuniorProject.Services.Repository;
 
 namespace Xamarin_JuniorProject.Services.Authorization
 {
     public class AuthorizationService : IAuthorizationService
     {
-        IRepositoryService Repository;
+        IRepositoryService _repositoryService;
+
+        public AuthorizationService(IRepositoryService repositoryService)
+        {
+            _repositoryService = repositoryService;
+        }
 
         public async Task<bool> RegisterAsync(UserRegistrationModel user)
         {
             var result = false;
             try
             {
-                await Repository.InsertAsync(user);
+                await _repositoryService.SaveOrUpdateAsync(user);
                 result = true;
             }
-            catch (SQLite.SQLiteException)
+            catch (SQLite.SQLiteException e)
             {
-
+                Console.WriteLine(e.Message);
             }
 
             return result;
@@ -27,21 +33,23 @@ namespace Xamarin_JuniorProject.Services.Authorization
         public async Task<bool> LoginAsync(string login, string password)
         {
             var result = false;
-
-            var users = await Repository.GetAsync<UserRegistrationModel>(x => x.Login == login && x.Password == password);
-
-            if (users != null)
+            try
             {
-                App.CurrentUserId = users.ID;
-                result = true;
+                var users = await _repositoryService.GetAsync<UserRegistrationModel>
+                    (x => x.Login == login && x.Password == password);
+                if (users != null)
+                {
+                    App.CurrentUserId = users.ID;
+                    result = true;
+                }
             }
-
+            catch(SQLite.SQLiteException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+           
             return result;
         }
 
-        public AuthorizationService(IRepositoryService repositoryService)
-        {
-            Repository = repositoryService;
-        }
     }
 }

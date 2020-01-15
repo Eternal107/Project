@@ -63,7 +63,7 @@ namespace Xamarin_JuniorProject.ViewModels
                         if(model.CategoryID==viewModel.ID)
                         {
                             model.CategoryID = -1;
-                            await _pinService.UpdatePinAsync(model);
+                            await _pinService.SaveOrUpdatePinAsync(model);
                         }
                     }
                 }
@@ -88,7 +88,7 @@ namespace Xamarin_JuniorProject.ViewModels
                         Category = result.Text
                     };
 
-                    await _categoryService.AddCategoryAsync(newCategory);
+                    await _categoryService.SaveOrUpdateCategoryAsync(newCategory);
                     CategoryList.Add(newCategory.ToViewModel(ItemTappedCommand));
                 }
             }

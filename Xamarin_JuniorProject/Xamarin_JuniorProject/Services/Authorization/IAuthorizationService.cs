@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Xamarin_JuniorProject.Database;
+using Xamarin_JuniorProject.Models;
 
 namespace Xamarin_JuniorProject.Services.Authorization
 {

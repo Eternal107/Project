@@ -14,7 +14,6 @@ using Prism.Navigation;
 using System.Threading.Tasks;
 using Prism.Unity;
 using Xamarin_JuniorProject.Services.CategoryService;
-using Plugin.LocalNotification;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xamarin_JuniorProject

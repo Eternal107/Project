@@ -4,6 +4,7 @@
              xmlns:behaviors="clr-namespace:Xamarin_JuniorProject.Behaviors"
              xmlns:validators="clr-namespace:Xamarin_JuniorProject.Behaviors.Validators"
              xmlns:Resources="clr-namespace:Xamarin_JuniorProject.Resources"
+             xmlns:Constants="clr-namespace:Xamarin_JuniorProject"
              x:Class="Xamarin_JuniorProject.Views.RegistrationPage"
              Title="{Binding Title}"
              x:Name="this">
@@ -23,13 +24,16 @@
 
             <Entry.Behaviors>
                 <behaviors:ValidationBehavior Group="{x:Reference form}" 
-                                              PropertyName="Text">
+                                              PropertyName="Text"
+                                              ErrorMessage="{x:Reference LoginEntryErrorLabel}">
                     <behaviors:ValidationBehavior.Validators>
                         <validators:RequiredValidator />
                     </behaviors:ValidationBehavior.Validators>
                 </behaviors:ValidationBehavior>
             </Entry.Behaviors>
         </Entry>
+
+        <Label x:Name="LoginEntryErrorLabel"/>
 
         <Label Text="{x:Static Resources:AppResources.EnterYourEmail}"/>
 
@@ -41,18 +45,21 @@
 
             <Entry.Behaviors>
                 <behaviors:ValidationBehavior Group="{x:Reference form}" 
-                                              PropertyName="Text">
+                                              PropertyName="Text"
+                                              ErrorMessage="{x:Reference EmailEntryErrorLabel}">
                     <behaviors:ValidationBehavior.Validators>
                         <validators:RequiredValidator />
                         <validators:FormatValidator
                             Message="{x:Static Resources:AppResources.InvalidEmail}"
-                            Format="^[_A-z0-9-]+(.[a-z0-9-]+)@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$" />
+                            Format="{x:Static Constants:Constants.EmailPatternRegex}" />
                     </behaviors:ValidationBehavior.Validators>
                 </behaviors:ValidationBehavior>
 
             </Entry.Behaviors>
         </Entry>
-        
+
+        <Label x:Name="EmailEntryErrorLabel"/>
+
         <Label Text="{x:Static Resources:AppResources.EnterYourPassword}"/>
         <Entry x:Name = "passwordEntry"
                ReturnType="Next"
@@ -61,24 +68,30 @@
 
             <Entry.Behaviors>
                 <behaviors:ValidationBehavior Group="{x:Reference form}" 
-                                              PropertyName="Text">
+                                              PropertyName="Text"
+                                              ErrorMessage="{x:Reference PasswordEntryErrorLabel}">
                     <behaviors:ValidationBehavior.Validators>
                         <validators:RequiredValidator />
-                        <validators:FormatValidator
-                            Message="{x:Static Resources:AppResources.PasswordsMustBe10Digits}"
-                            Format="^[0-9]{10}$" />
+                        <validators:PasswordNumberValidator/>
+                        <validators:PasswordLetterValidator/>
+                        <validators:LengthValidator
+                            Message="{x:Static Resources:AppResources.PasswordMustBeMore5Characters}"
+                            MinimalLength="6" />
                     </behaviors:ValidationBehavior.Validators>
                 </behaviors:ValidationBehavior>
 
             </Entry.Behaviors>
         </Entry>
 
+        <Label x:Name="PasswordEntryErrorLabel"/>
+
         <Entry ReturnType="Done"
                Placeholder ="{x:Static Resources:AppResources.PasswordConfirmation}">
 
             <Entry.Behaviors>
                 <behaviors:ValidationBehavior Group="{x:Reference form}" 
-                                              PropertyName="Text">
+                                              PropertyName="Text"
+                                              ErrorMessage="{x:Reference ConfirmPasswordEntryErrorLabel}">
                     <behaviors:ValidationBehavior.Validators>
                         <validators:PasswordsEqualityValidator
                             Message="{x:Static Resources:AppResources.PasswordsDoNotMatch}"
@@ -88,6 +101,8 @@
 
             </Entry.Behaviors>
         </Entry>
+
+        <Label x:Name="ConfirmPasswordEntryErrorLabel"/>
 
         <Button Text="{x:Static Resources:AppResources.Registration}"
                 Command="{Binding ToTabbedPageCommand}"

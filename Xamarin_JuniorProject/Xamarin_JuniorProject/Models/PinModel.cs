@@ -3,7 +3,7 @@
 namespace Xamarin_JuniorProject.Models
 {
     [Table(nameof(PinModel))]
-    public class PinModel
+    public class PinModel : ISQLModel
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }

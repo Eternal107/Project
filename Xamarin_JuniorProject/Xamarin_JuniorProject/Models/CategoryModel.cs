@@ -2,7 +2,7 @@
 
 namespace Xamarin_JuniorProject.Models
 {
-    public class CategoryModel
+    public class CategoryModel : ISQLModel
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }

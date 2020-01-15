@@ -1,8 +1,8 @@
 ﻿using SQLite;
 
-namespace Xamarin_JuniorProject.Database
+namespace Xamarin_JuniorProject.Models
 {
-    public class UserRegistrationModel
+    public class UserRegistrationModel : ISQLModel
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }

@@ -1,14 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Windows.Input;
 using Prism.Navigation;
 using Xamarin.Forms;
-using Xamarin_JuniorProject.Database;
 using Xamarin_JuniorProject.Helpers;
-using Xamarin_JuniorProject.Services;
-using Xamarin_JuniorProject.Services.Authorization;
-using Xamarin_JuniorProject.Services.Pin;
-using Xamarin_JuniorProject.Services.Repository;
 using Xamarin_JuniorProject.Views;
 
 namespace Xamarin_JuniorProject.ViewModels

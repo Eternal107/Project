@@ -8,6 +8,7 @@ namespace Xamarin_JuniorProject.Behaviors
     public class ValidationBehavior : Behavior<View>
     {
         View _view;
+        public Label ErrorMessage { get; set; }
         public string PropertyName { get; set; }
         public ValidationGroupBehavior Group { get; set; }
         public StackLayout stackLayout { get; set; }
@@ -22,7 +23,7 @@ namespace Xamarin_JuniorProject.Behaviors
             {
                 isValid = validator.Check(_view.GetType()
                                        .GetProperty(PropertyName)
-                                       .GetValue(_view) as string);
+                                       ?.GetValue(_view) as string);
 
                 if (!isValid)
                 {
@@ -30,16 +31,18 @@ namespace Xamarin_JuniorProject.Behaviors
                     break;
                 }
             }
-            if (Group != null)
+
+            if (Group != null && ErrorMessage != null)
+            {
                 if (!isValid)
                 {
-                    Group.ShowError(_view, errorMessage);
+                    Group.ShowError(ErrorMessage, errorMessage);
                 }
                 else
                 {
-                    Group.RemoveError(_view);
+                    Group.RemoveError(ErrorMessage);
                 }
-
+            }
             return isValid;
         }
 

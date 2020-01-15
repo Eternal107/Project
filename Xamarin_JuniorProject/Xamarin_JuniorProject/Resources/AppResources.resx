@@ -141,14 +141,11 @@
   <data name="PasswordsDoNotMatch" xml:space="preserve">
     <value>Passwords do not match</value>
   </data>
-  <data name="PasswordMustContainAtLeastFiveCharacters" xml:space="preserve">
-    <value>Password must contain at least five characters</value>
+  <data name="PasswordMustBeMore5Characters" xml:space="preserve">
+    <value>Password must more than 5 characters</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
-  </data>
-  <data name="PasswordsMustBe10Digits" xml:space="preserve">
-    <value>Password must be 10 digit</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>

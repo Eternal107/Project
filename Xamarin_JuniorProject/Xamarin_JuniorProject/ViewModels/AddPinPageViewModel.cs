@@ -115,18 +115,11 @@ namespace Xamarin_JuniorProject.ViewModels
             if (pinModel != null)
             {             
                 CurrentPin.ID = pinModel.ID;
-                await _pinService.UpdatePinAsync(CurrentPin.ToModel());            
+                await _pinService.SaveOrUpdatePinAsync(CurrentPin.ToModel());            
             }
             else
             {
-                if (_updatePin)
-                {
-                    await _pinService.UpdatePinAsync(CurrentPin.ToModel());
-                }
-                else
-                {
-                    await _pinService.AddPinAsync(CurrentPin.ToModel());
-                }
+                    await _pinService.SaveOrUpdatePinAsync(CurrentPin.ToModel());
             }
 
             await NavigationService.GoBackAsync();

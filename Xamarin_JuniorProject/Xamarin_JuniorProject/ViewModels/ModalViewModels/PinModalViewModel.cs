@@ -124,7 +124,7 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
                 CategoryList[categoryIndex].IsSelected = false;
                 CurrentPinCategory = viewModel;
                 pinModel.CategoryID = viewModel.ID;
-                await _pinService.UpdatePinAsync(pinModel);
+                await _pinService.SaveOrUpdatePinAsync(pinModel);
             }
         }
 
@@ -153,7 +153,7 @@ namespace Xamarin_JuniorProject.ViewModels.ModalViewModels
                 {
                     var pinModel = await _pinService.FindPinModelAsync(CurrentPin);
                     pinModel.ImagePath = file.Path;
-                    await _pinService.UpdatePinAsync(pinModel);
+                    await _pinService.SaveOrUpdatePinAsync(pinModel);
 
                     CurrentPin.Icon = BitmapDescriptorFactory.FromStream(File.OpenRead(file.Path));
                     var p = new NavigationParameters();

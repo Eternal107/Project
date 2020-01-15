@@ -2,7 +2,7 @@
 using Acr.UserDialogs;
 using Prism.Commands;
 using Prism.Navigation;
-using Xamarin_JuniorProject.Database;
+using Xamarin_JuniorProject.Models;
 using Xamarin_JuniorProject.Resources;
 using Xamarin_JuniorProject.Services.Authorization;
 

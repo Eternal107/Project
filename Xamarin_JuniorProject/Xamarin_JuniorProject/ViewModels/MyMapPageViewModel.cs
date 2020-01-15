@@ -36,7 +36,6 @@ namespace Xamarin_JuniorProject.ViewModels
             _pinService = pinService;
             _categoryService = categoryService;
             
-            MessagingCenter.Subscribe<SavePinsPageViewModel, PinViewViewModel>(this, Constants.MessagingCenter.AddPin, ShowPin);
         }
         #region -- Public properties --
         public ICommand LongClickedCommand =>  ExtendedCommand.Create<Position>(OnLongclickedCommand);
@@ -85,7 +84,7 @@ namespace Xamarin_JuniorProject.ViewModels
 
         #region -- Private helpers--
 
-        private async void ShowPin(SavePinsPageViewModel sender, PinViewViewModel pin)
+        private async void ShowPin(PinViewViewModel pin)
         {
             
             var newPin = (await _pinService.GetPinsAsync(App.CurrentUserId)).LastOrDefault(x => x.ID == pin.ID);
@@ -107,7 +106,7 @@ namespace Xamarin_JuniorProject.ViewModels
         private async Task OnCategoryTappedCommand(CategoryViewModel categoryView)
         {
             categoryView.IsSelected = !categoryView.IsSelected;
-            await OnTextChangedCommand();   
+            await OnCategoryTapped();   
         }
 
 
@@ -166,9 +165,14 @@ namespace Xamarin_JuniorProject.ViewModels
                         Type = PinType.SavedPin,
                         Label = result.Text,
                         Tag = string.Empty });
-                    await _pinService.AddPinAsync(Pins.Last().ToPinModel());
+                    await _pinService.SaveOrUpdatePinAsync(Pins.Last().ToPinModel());
                 }
             }
+        }
+
+        private Task OnCategoryTapped()
+        {
+            return OnTextChangedCommand();
         }
 
         private async Task OnTextChangedCommand()
@@ -184,22 +188,22 @@ namespace Xamarin_JuniorProject.ViewModels
 
                 if (PinModels != null)
                 {
+                    var Filter = CategoryList.Where(x => x.IsSelected == true);
+
                     var categoryFilter = new List<int>();
-                    foreach (var category in CategoryList)
+
+                    foreach (var category in Filter)
                     {
-                        if (category.IsSelected)
-                        {
-                            categoryFilter.Add(category.ID);
-                        }
+                        categoryFilter.Add(category.ID);
                     }
+
                     if (categoryFilter.Count != 0)
                     {
-                        foreach (PinModel model in PinModels)
+                        var pins = PinModels.Where(x => categoryFilter.Contains(x.CategoryID));
+
+                        foreach (PinModel model in pins)
                         {
-                            if (categoryFilter.Contains(model.CategoryID))
-                            {
-                                Pins.Add(model.ToPin());
-                            }
+                            Pins.Add(model.ToPin());
                         }
                     }
                     else
@@ -217,22 +221,22 @@ namespace Xamarin_JuniorProject.ViewModels
                 var PinModels = await _pinService.GetPinsAsync(App.CurrentUserId);
                 if (PinModels != null)
                 {
+                    var Filter = CategoryList.Where(x => x.IsSelected == true);
+
                     var categoryFilter = new List<int>();
-                    foreach (var category in CategoryList)
+
+                    foreach (var category in Filter)
                     {
-                        if (category.IsSelected)
-                        {
-                            categoryFilter.Add(category.ID);
-                        }
+                        categoryFilter.Add(category.ID);
                     }
+
                     if (categoryFilter.Count != 0)
                     {
-                        foreach (PinModel model in PinModels)
+                        var pinModels = PinModels.Where(x => categoryFilter.Contains(x.CategoryID));
+
+                        foreach (PinModel model in pinModels)
                         {
-                            if (categoryFilter.Contains(model.CategoryID))
-                            {
-                                Pins.Add(model.ToPin());
-                            }
+                            Pins.Add(model.ToPin());
                         }
                     }
                     else
@@ -276,6 +280,10 @@ namespace Xamarin_JuniorProject.ViewModels
 
         public override async void OnNavigatedTo(INavigationParameters parameters)
         {
+            if (parameters.TryGetValue(Constants.NavigationParameters.AddPin, out PinViewViewModel pinView))
+            {
+                ShowPin(pinView);
+            }
 
             if (parameters.ContainsKey(Constants.NavigationParameters.LoadFromDataBase))
             {

@@ -48,45 +48,15 @@ namespace Xamarin_JuniorProject.Behaviors
         }
 
 
-        public void ShowError(View view, string message)
+        public void ShowError(Label ErrorMessage, string message)
         {
-            StackLayout layout = view.Parent as StackLayout;
-            int viewIndex = layout.Children.IndexOf(view);
-
-
-            View sibling = layout.Children[viewIndex + 1];
-            string siblingStyleId = view.Id.ToString();
-
-            if (sibling.StyleId == siblingStyleId)
-            {
-                Label errorLabel = sibling as Label;
-                errorLabel.Text = message;
-                errorLabel.IsVisible = true;
-            }
-            else
-            {
-                layout.Children.Insert(viewIndex + 1, new Label
-                {
-                    Text = message,
-                    FontSize = 10,
-                    StyleId = view.Id.ToString(),
-                    TextColor = Color.Red
-                });
-            }
+            ErrorMessage.Text = message;
+            ErrorMessage.TextColor = Color.Red;
         }
 
-        public void RemoveError(View view)
+        public void RemoveError(Label ErrorMessage)
         {
-            StackLayout layout = view.Parent as StackLayout;
-            int viewIndex = layout.Children.IndexOf(view);
-
-            View sibling = layout.Children[viewIndex + 1];
-            string siblingStyleId = view.Id.ToString();
-
-            if (sibling.StyleId == siblingStyleId)
-            {
-                sibling.IsVisible = false;
-            }
+            ErrorMessage.TextColor = Color.Transparent;
         }
     }
 }

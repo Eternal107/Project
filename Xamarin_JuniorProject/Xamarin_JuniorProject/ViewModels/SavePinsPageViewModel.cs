@@ -67,10 +67,11 @@ namespace Xamarin_JuniorProject.ViewModels
             return NavigationService.NavigateAsync($"{nameof(AddPinPage)}");
         }
 
-        private void ToSetPin(object o)
+        private async void ToMapPagePin(object o)
         {
-            MessagingCenter.Send(this, Constants.MessagingCenter.ToFirstPage);
-            MessagingCenter.Send(this, Constants.MessagingCenter.AddPin, (PinViewViewModel)o);
+            var parameters = new NavigationParameters();
+            parameters.Add(Constants.NavigationParameters.AddPin, (PinViewViewModel)o);
+            await NavigationService.NavigateAsync($"{nameof(TabbedMapPage)}?selectedTab={nameof(MyMapPage)}",parameters);
         }
 
         private async Task OnCategoryTappedCommand(CategoryViewModel categoryView)
@@ -83,11 +84,14 @@ namespace Xamarin_JuniorProject.ViewModels
         {
             Pins.Clear();
             var MapPins = await _pinService.GetPinsAsync(App.CurrentUserId);
+
+            ICommand TappedCommand = new Command(ToMapPagePin);
+
             if (MapPins != null)
             {
                 foreach (var pin in MapPins)
                 {
-                    var PinView = pin.ToViewViewModel(new Command(ToSetPin));
+                    var PinView = pin.ToViewViewModel(TappedCommand);
                     Pins.Add(PinView);
                 }
             }
@@ -127,31 +131,39 @@ namespace Xamarin_JuniorProject.ViewModels
 
                 if (PinModels != null)
                 {
+                    var Filter = CategoryList.Where(x => x.IsSelected == true);
+
                     var categoryFilter = new List<int>();
-                    foreach (var category in CategoryList)
+
+                    foreach (var category in Filter)
                     {
-                        if (category.IsSelected)
-                        {
-                            categoryFilter.Add(category.ID);
-                        }
+                        categoryFilter.Add(category.ID);
                     }
+
                     if (categoryFilter.Count != 0)
                     {
-                        foreach (PinModel model in PinModels)
+                        ICommand TappedCommand = new Command(ToMapPagePin);
+
+                        var pins = PinModels.Where(x => categoryFilter.Contains(x.CategoryID));
+
+                        foreach (PinModel model in pins)
                         {
-                            if (categoryFilter.Contains(model.CategoryID))
-                            {
-                                Pins.Add(model.ToViewViewModel(new Command(ToSetPin)));
-                            }
+                            Pins.Add(model.ToViewViewModel(TappedCommand));
                         }
                     }
                     else
                     {
+                        ICommand TappedCommand = new Command(ToMapPagePin);
+
                         foreach (PinModel model in PinModels)
                         {
-                            Pins.Add(model.ToViewViewModel(new Command(ToSetPin)));
+                            Pins.Add(model.ToViewViewModel(TappedCommand));
                         }
                     }
+                }
+                else
+                {
+                    //do nothing
                 }
             }
             else
@@ -159,30 +171,35 @@ namespace Xamarin_JuniorProject.ViewModels
                 var PinModels = await _pinService.GetPinsAsync(App.CurrentUserId);
                 if (PinModels != null)
                 {
+                    var Filter = CategoryList.Where(x => x.IsSelected == true);
+
                     var categoryFilter = new List<int>();
-                    foreach (var category in CategoryList)
+
+                    foreach (var category in Filter)
                     {
-                        if (category.IsSelected)
-                        {
-                            categoryFilter.Add(category.ID);
-                        }
+                        categoryFilter.Add(category.ID);
                     }
+
                     if (categoryFilter.Count != 0)
                     {
                         Pins.Clear();
-                        foreach (PinModel model in PinModels)
+                        ICommand TappedCommand = new Command(ToMapPagePin);
+
+                        var pinModels = PinModels.Where(x => categoryFilter.Contains(x.CategoryID));
+
+                        foreach (PinModel model in pinModels)
                         {
-                            if (categoryFilter.Contains(model.CategoryID))
-                            {
-                                Pins.Add(model.ToViewViewModel(new Command(ToSetPin)));
-                            }
+                            Pins.Add(model.ToViewViewModel(TappedCommand));
                         }
                     }
                     else
                     {
                         await LoadPinsFromDataBaseAsync();
                     }
-
+                }
+                else
+                {
+                    //do nothing
                 }
             }
         }
